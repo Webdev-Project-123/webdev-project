@@ -13,6 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": ["warn", "windows"],
+    "eol-last": ["never", "windows"]
   }
 }
