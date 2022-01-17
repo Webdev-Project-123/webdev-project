@@ -13,7 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "path": "^0.12.7",
     "ramda": "^0.28.0",
     "sanctuary": "^3.1.0",
     "sanctuary-def": "^0.22.0"
