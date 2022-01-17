@@ -1,8 +1,11 @@
-import './App.scss';
-import styles from './test.module.css';
+import React from 'react';
 
-const App = () => {
-  return <div className={styles.App}>some text</div>;
-};
+function App() {
+  return (
+    <div className="font-bold text-4xl m-[2em] text-red-600 underline">
+      Hello World
+    </div>
+  );
+}
 
 export default App;
