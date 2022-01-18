@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 });
 
 // * Import api module
-const api = require('./src/api');
+const api = require('./api');
 
 // * Routing
 app.use('/api', api);
