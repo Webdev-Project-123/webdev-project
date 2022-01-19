@@ -10,10 +10,14 @@ const app = express();
 // * Import morgan module
 const morgan = require('morgan');
 
+// * Import cors module
+const cors = require('cors');
+
 // * Use middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('common'));
+app.use(cors());
 
 // * Import path module
 const path = require('path');
@@ -33,6 +37,9 @@ app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
 
+// // * Import http-errors module
+// const createError = require('http-error');
+
 // * Get homepage
 app.get('/', (req, res) => {
   res.status(200).redirect('/homepage/index.html');
@@ -46,5 +53,7 @@ app.use('/api', api);
 
 // * Error handling
 app.use((req, res) => {
-  res.status(404).redirect('404.html');
+  res
+    .status(404)
+    .sendFile(path.join(__dirname, 'public/404.html'));
 });
