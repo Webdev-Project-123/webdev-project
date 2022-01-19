@@ -21,16 +21,16 @@ const path = require('path');
 // * Serving static files in public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// * Import ramda module
-const R = require('ramda');
+// // * Import ramda module
+// const R = require('ramda');
 
-// * Import Sanctuary module
-const S = require('sanctuary');
+// // * Import Sanctuary module
+// const S = require('sanctuary');
 
 // * Load the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  S.show(`Server running on ${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
 
 // * Get homepage
