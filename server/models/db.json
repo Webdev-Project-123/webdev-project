@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user A",
+      "email": "userA@example.com",
+      "password": "######",
+      "cart": [
+        {
+          "id": 1,
+          "title": "book 1",
+          "price": "book 1 price"
+        }
+      ]
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "admin A",
+      "email": "adminA@example.com",
+      "password": "######"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "book 1",
+      "author": "book 1 author",
+      "description": "book 1 description",
+      "price": "book 1 price",
+      "images": [],
+      "rating": "book 1 rate"
+    }
+  ]
+}
