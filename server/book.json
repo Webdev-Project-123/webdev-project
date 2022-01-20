@@ -31,6 +31,22 @@
                     "comment": ":(("
                 }
             ]
+        },
+        {
+            "id": 3,
+            "book_name": "Thám tử lừng danh Conan tập 90",
+            "author": "Gosho Aoyama",
+            "price": 20,
+            "comment": [
+                {
+                    "user_id": 2,
+                    "comment": "Hay"
+                },
+                {
+                    "user_id": 2,
+                    "comment": ":(("
+                }
+            ]
         }
     ]
 }
