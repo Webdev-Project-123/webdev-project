@@ -1,11 +1,10 @@
 // * Import low module
-const low = require('lowdb');
+const lowdb = require('lowdb');
 
 // * Import FileSync module
 const FileSync = require('lowdb/adapters/FileSync');
 
 // * Initialize db
-const adapter = new FileSync('../models/db.json');
-const db = low(adapter);
+const db = lowdb(new FileSync('db.json'));
 
 module.exports = db;

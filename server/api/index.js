@@ -1,9 +1,12 @@
 const router = require('express').Router();
 
-// const S = require('sanctuary');
-// const $ = require('sanctuary-def');
+const R = require('ramda');
+const db = require('../models/db');
 
-router.get('/something', async (req, res) => {
+router.get('/something', (req, res) => {
+  const users = db.get('users').value()[0];
+  const cart = R.path(['cart'])(users);
+  console.log(cart);
   res.send('OK');
 });
 
