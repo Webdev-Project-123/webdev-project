@@ -1,0 +1,36 @@
+{
+    "book": [
+        {
+            "id": 1,
+            "book_name": "You don't know JS Up & Going",
+            "author": "Kyle Simpson",
+            "price": 12,
+            "comment": [
+                {
+                    "user_id": 1,
+                    "comment": "Intersting :D"
+                },
+                {
+                    "user_id": 2,
+                    "comment": "Boring book"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "book_name": "Cấu trúc dữ liệu và giải thuật",
+            "author": "Lê Minh Hoàng",
+            "price": 50,
+            "comment": [
+                {
+                    "user_id": 1,
+                    "comment": "Nice"
+                },
+                {
+                    "user_id": 2,
+                    "comment": ":(("
+                }
+            ]
+        }
+    ]
+}

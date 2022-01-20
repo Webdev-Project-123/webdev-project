@@ -1,0 +1,34 @@
+{
+    "user": [
+        {
+            "user_id": 1,
+            "username": "lemauanhphong",
+            "hash": "AB5568F44",
+            "cart": [
+                {
+                    "id_book": 2,
+                    "status": 1
+                },
+                {
+                    "id_book": 3,
+                    "status": 0
+                }
+            ]
+        },
+        {
+            "user_id": 2,
+            "username": "lemauanhphong_2",
+            "hash": "CG5469F44",
+            "cart": [
+                {
+                    "id_book": 1,
+                    "status": 0
+                },
+                {
+                    "id_book": 3,
+                    "status": 1
+                }
+            ]
+        }
+    ]
+}
