@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "lemauanhphong",
+      "email": "lemauanhphong@gmail.com",
+      "password": "AB5568F44",
+      "phone": "00000",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [
+        {
+          "id": 2,
+          "title": "",
+          "image": "",
+          "price": 11,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "title": "",
+          "image": "",
+          "price": 11,
+          "quantity": 1
+        }
+      ],
+      "bought": [
+        {
+          "id": 2,
+          "title": "",
+          "image": "",
+          "price": 11,
+          "quantity": 1,
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "",
+          "image": "",
+          "price": 11,
+          "quantity": 1,
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "lemauanhphong_2",
+      "email": "lemauanhphong@gmail.com",
+      "password": "CG5469F44",
+      "phone": "00000",
+      "address": "",
+      "avatar": "",
+      "role": "admin",
+      "cart": [],
+      "bought": []
+    }
+  ]
+}

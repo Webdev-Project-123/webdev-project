@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "author": "Author 1",
+      "categories": ["Type 1", "Type 2", "Type 3"],
+      "image": "",
+      "distributor": "Distributor 1",
+      "publishing-company": "Company 1",
+      "publication-date": "30/02/1998",
+      "model": "Model 1",
+      "price": 999,
+      "discount": 555,
+      "pages": 100,
+      "language": "Language 1",
+      "size": "Size 1",
+      "weight": 100,
+      "description": "Description 1",
+      "rating": [
+        {
+          "stars": 5,
+          "number": 100
+        },
+        {
+          "stars": 4,
+          "number": 100
+        },
+        {
+          "stars": 3,
+          "number": 100
+        },
+        {
+          "stars": 2,
+          "number": 100
+        },
+        {
+          "stars": 1,
+          "number": 100
+        }
+      ],
+      "comments": [
+        {
+          "avatar": "Avatar 1",
+          "content": "Content 1",
+          "stars": 5
+        }
+      ]
+    }
+  ]
+}

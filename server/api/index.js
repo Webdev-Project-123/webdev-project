@@ -4,7 +4,7 @@ const router = require('express').Router();
 // const $ = require('sanctuary-def');
 
 router.use('/something', (req, res) => {
-  res.send(`Id: ${req.query.id}`);
+  res.send('OK');
 });
 
 module.exports = router;

@@ -8,8 +8,8 @@
     "start": "node server.js",
     "dev": "nodemon --inspect --legacy-watch server.js",
     "lint": "eslint",
-    "json-server-user": "json-server --watch user.json",
-    "json-server-book": "json-server --watch book.json"
+    "json-server-user": "json-server --watch ./models/users.json",
+    "json-server-book": "json-server --watch ./models/products.json"
   },
   "author": "",
   "license": "ISC",

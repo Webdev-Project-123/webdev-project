@@ -22,19 +22,10 @@ app.use(cors());
 // * Import path module
 const path = require('path');
 
-// // * Serving static files in public folder
-// app.use(express.static(path.join(__dirname, 'public')));
-
 // * Serving static files in public folder
 app.use(
   express.static(path.join(__dirname, '../client/build')),
 );
-
-// * Import ramda module
-const R = require('ramda');
-
-// // * Import Sanctuary module
-// const S = require('sanctuary');
 
 // * Load the server
 const port = process.env.PORT || 5000;
@@ -42,24 +33,20 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-// // * Import http-errors module
-// const createError = require('http-error');
-
 // * Get homepage
 app.get('/', (req, res) => {
-  res.sendFile(
-    path.join(__dirname, '../client/build/index.html'),
-    (err) => {
-      R.when(
-        err,
-        res
-          .status(404)
-          .sendFile(
-            path.join(__dirname, './public/404.html'),
-          ),
-      );
-    },
-  );
+  res
+    .status(200)
+    .sendFile(
+      path.join(__dirname, '../client/build/index.html'),
+    );
+});
+
+// * Error 404 handling
+app.use((req, res) => {
+  res
+    .status(404)
+    .sendFile(path.join(__dirname, './public/404.html'));
 });
 
 // * Import api module
