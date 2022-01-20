@@ -56,6 +56,12 @@
       "cart": [],
       "bought": [],
       "uploaded": []
+    },
+    {
+      "id": 123
+    },
+    {
+      "id": 123
     }
   ],
   "products": [
@@ -63,7 +69,11 @@
       "id": 1,
       "title": "Product 1",
       "author": "Author 1",
-      "categories": ["Type 1", "Type 2", "Type 3"],
+      "categories": [
+        "Type 1",
+        "Type 2",
+        "Type 3"
+      ],
       "image": "",
       "distributor": "Distributor 1",
       "publishing-company": "Company 1",
