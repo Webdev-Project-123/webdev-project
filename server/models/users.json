@@ -54,7 +54,8 @@
       "avatar": "",
       "role": "admin",
       "cart": [],
-      "bought": []
+      "bought": [],
+      "uploaded": []
     }
   ]
 }
