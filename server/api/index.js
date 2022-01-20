@@ -1,14 +1,17 @@
 const router = require('express').Router();
 
-// const R = require('ramda');
-const db = require('../models/db');
+const auth = require('./auth');
+const cart = require('./cart');
+const bought = require('./bought');
+const upload = require('./upload');
+const products = require('./products');
+const categories = require('./categories');
 
-router.get('/something', async (req, res) => {
-  await db.get('users').push({ id: 123 }).write();
-  const users = await db.get('users').value();
-  // const cart = R.path(['cart'])(users);
-  console.log(users);
-  res.send('OK');
-});
+router.use('/auth', auth);
+router.use('/bought', bought);
+router.use('/cart', cart);
+router.use('/categories', categories);
+router.use('/products', products);
+router.use('/upload', upload);
 
 module.exports = router;
