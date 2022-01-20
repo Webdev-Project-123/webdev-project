@@ -1,13 +1,36 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "user A",
+      "email": "userA@example.com",
+      "password": "######",
+      "cart": [
+        {
+          "id": 1,
+          "title": "book 1",
+          "price": "book 1 price"
+        }
+      ]
     }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "admins": [
+    {
+      "id": 1,
+      "name": "admin A",
+      "email": "adminA@example.com",
+      "password": "######"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "books": [
+    {
+      "id": 1,
+      "title": "book 1",
+      "author": "book 1 author",
+      "description": "book 1 description",
+      "price": "book 1 price",
+      "images": [],
+      "rating": "book 1 rate"
+    }
+  ]
 }
