@@ -42,17 +42,17 @@ app.get('/', (req, res) => {
     );
 });
 
+// * Import api module
+const api = require('./api');
+
+// * Routing
+app.use('/api', api);
+
 // * Error 404 handling
 app.use((req, res) => {
   res
     .status(404)
     .sendFile(path.join(__dirname, './public/404.html'));
 });
-
-// * Import api module
-const api = require('./api');
-
-// * Routing
-app.use('/api', api);
 
 module.exports = app;
