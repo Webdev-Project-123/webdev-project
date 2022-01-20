@@ -67,3 +67,5 @@ const api = require('./api');
 
 // * Routing
 app.use('/api', api);
+
+module.exports = app;
