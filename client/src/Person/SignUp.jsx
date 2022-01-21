@@ -99,7 +99,7 @@ function SignUp() {
                 value={input.email}
                 className={inputStyle}
               />
-              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 mb-2 ml-9">
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full text-sm p-0 -mt-6 mb-2 ml-9">
                 Invalid Email*
               </p>
             </Label>
@@ -126,7 +126,7 @@ function SignUp() {
                 value={input.password}
                 className={inputStyle}
               />
-              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 mb-2 ml-9">
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full text-sm p-0 -mt-6 mb-2 ml-9">
                 Invalid Password*
               </p>
             </Label>
@@ -156,7 +156,7 @@ function SignUp() {
               <p
                 id="confirmPass"
                 onClick={handlePreventDefalut}
-                className="italic block w-full p-0 -mt-6 mb-2 ml-9"
+                className="italic block w-full p-0 -mt-6 mb-2 text-sm ml-9"
               >
                 Invalid Comfirm Password*
               </p>
@@ -184,7 +184,7 @@ function SignUp() {
                 value={input.phone}
                 className={inputStyle}
               />
-              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 ml-9">
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 text-sm -mt-6 ml-9">
                 Invalid Phone Number*
               </p>
             </Label>
@@ -194,14 +194,16 @@ function SignUp() {
               <span className="mr-2 hidden sm:inline ">Đã có tài khoản? </span>
               <a
                 href="#"
-                className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149]"
+                className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149] "
               >
                 Đăng nhập
               </a>
             </div>
             {/*  */}
-            <button className="border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right  font-bold active:translate-y-1 hover:bg-[#f7975f]">
-              Đăng ký
+            <button className="relative border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right font-bold active:translate-y-1 before:absolute before:w-0 before:h-full before:left-0 before:bottom-0 hover:before:w-full before:bg-[#fa8947] before:transition-all before:ease-in-out">
+              <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
+                Đăng kí
+              </span>
             </button>
           </div>
           <div className="w-full self-center mt-5">
