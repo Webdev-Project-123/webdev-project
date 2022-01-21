@@ -1,16 +1,14 @@
 const authService = require('./service');
 
 module.exports = {
-  signup: async (req, res, next) => {
-    let DTO = await authService.signup(req.body);
-    let stt = 200;
-    if (DTO.error) stt = 500;
+  signup: async (req, res) => {
+    const DTO = await authService.signup(req.body);
+    const stt = DTO.error ? 500 : 200;
     res.status(stt).json(DTO.msg);
   },
-  login: async (req, res, next) => { 
-    let DTO = await authService.login(req.body);
-    let stt = 200;
-    if (DTO.error) stt = 500;
+  login: async (req, res) => {
+    const DTO = await authService.login(req.body);
+    const stt = DTO.error ? 500 : 200;
     res.status(stt).json(DTO.msg);
   },
 };
