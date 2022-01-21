@@ -2,7 +2,9 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require('../../models/db');
 
-var listRefreshToken = [];
+const { v4: uuidv4 } = require("uuid");
+
+const { sendResetLink } = require("../../common/sendEmail");
 
 module.exports = {
   signup: async (body) => {
@@ -26,7 +28,7 @@ module.exports = {
     const salt = await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(body.password, salt);
     const objectUser = {
-      id: users.length + 1,
+      id: users[users.length - 1].id + 1,
       name: body.name,
       email: body.email,
       password: hashPassword,
@@ -39,6 +41,7 @@ module.exports = {
     };
 
     await db.get('users').push(objectUser).write();
+    await db.get('refresh-tokens').push({ id: objectUser.id, refreshToken: '' }).write();
 
     return {
       error: false,
@@ -67,7 +70,8 @@ module.exports = {
 
         const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
         const refreshToken = await jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '24h' });
-        listRefreshToken.push(refreshToken);
+        await db.get('refresh-tokens').find({ id: filterUser[0].id }).assign({ refreshToken }).write();
+
         return {
           accessToken,
           refreshToken,
@@ -104,31 +108,96 @@ module.exports = {
       };
     }
 
-    if (!listRefreshToken.includes(refreshToken)) {
+    try {
+      const result = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+      const users = await db.get('refresh-tokens').find({ refreshToken }).value();
+      
+      if (!users || users.length === 0) {
+        return {
+          statusCode: 403,
+          msg: 'FORBIDDEN',
+        };
+      }
+
+      // console.log(users.id);
+      const emails = await db.get('users').find({ 'id': users.id }).value();
+      // console.log(emails);
+      if (!emails || emails.length === 0 || result.email !== emails.email) {
+        return {
+          statusCode: 403,
+          msg: 'FORBIDDEN',
+        };
+      }
+
+      const payload = {
+        email: result.email,
+        role: result.role,
+      };
+      const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
+      return {
+        statusCode: 200,
+        msg: 'OK',
+        accessToken,
+      };
+    } catch (error) {
       return {
         statusCode: 403,
         msg: 'FORBIDDEN',
       };
     }
-
-    const result = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
-    if (result.err) {
-      listRefreshToken = listRefreshToken.filter((item) => item !== refreshToken);
-      return {
-        statusCode: 403,
-        msg: 'FORBIDDEN',
-      };
-    }
-
-    const payload = {
-      email: result.email,
-      role: result.role,
-    };
-    const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
-    return {
-      statusCode: 200,
-      msg: 'OK',
-      accessToken,
-    };
   },
+  
+  forgetPassword: async ({ email }) => {
+    try {
+      const token = uuidv4();
+      let info = await sendResetLink(email, token);
+
+      await db.get('reset-Token').push({
+        email: email,
+        resetToken: token,
+      }).write();
+
+      return {
+        statusCode: 200,
+        messageId: info.messageId,
+        msg: "Send success",
+      };
+    } catch (error) {
+      return {
+        statusCode: 500,
+        msg: error.message
+      }
+    }
+  },
+
+  resetPassword: async ({ token, newPassword }) => {
+    try {
+      const users = await db.get('users').value();
+      const reset_Token = await db.get('reset-Token').value();
+
+      const rsToken = reset_Token.filter((tempToken) => tempToken.resetToken === token);
+
+      if (rsToken.length === 1) {
+        let user = users.filter((user) => user.email === rsToken[0].email);
+
+        if (user.length === 1) {
+          let salt = await bcrypt.genSalt(10);
+          let hashPassword = await bcrypt.hash(newPassword, salt);
+
+          // user[0].password = hashPassword;
+          await db.get('users').find({ password: user[0].password }).assign({ newPassword }).write();
+        }
+      }
+
+      return {
+        statusCode: 200,
+        msg: "OK",
+      }
+    } catch (error) {
+      return {
+        statusCode: 500,
+        msg: error.message
+      }
+    }
+  }
 };

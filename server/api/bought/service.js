@@ -22,7 +22,7 @@ module.exports = {
       };
     }
 
-    if (filterUser[0].email !== req.user.email) {
+    if (filterUser[0].email !== req.user.email && req.user.role !== 'admin') {
       return {
         statusCode: 403,
         msg: 'FORBIDDEN',

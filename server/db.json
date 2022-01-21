@@ -2,119 +2,21 @@
   "users": [
     {
       "id": 1,
-      "name": "lemauanhphong",
-      "email": "lemauanhphsssssong@gmail.com",
-      "password": "AB5568F44",
-      "phone": "00000",
-      "address": "",
-      "avatar": "",
-      "role": "user",
-      "cart": [
-        {
-          "id": 2,
-          "title": "",
-          "image": "",
-          "price": 11,
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "title": "",
-          "image": "",
-          "price": 11,
-          "quantity": 1
-        }
-      ],
-      "bought": [
-        {
-          "id": 1,
-          "title": "",
-          "image": "",
-          "price": 11,
-          "quantity": 1,
-          "date": ""
-        },
-        {
-          "id": 2,
-          "title": "",
-          "image": "",
-          "price": 11,
-          "quantity": 1,
-          "date": ""
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "lemauanhphong_2",
+      "name": "Admin",
       "email": "lemauanhphong@gmail.com",
-      "password": "CG5469F44",
-      "phone": "00000",
+      "password": "$2b$10$lgy7rZL2Ljylty8kD5jMK.NbHa8vTFusmZ0u3sXcaz7XB5ggwgru.",
+      "phone": "",
       "address": "",
       "avatar": "",
       "role": "admin",
       "cart": [],
-      "bought": [],
-      "uploaded": []
-    },
-    {
-      "id": 3,
-      "email": "lemsauanhphong@gmail.com",
-      "password": "$2b$10$IV45eEvBKHNmgazH4QbSOuwbjxmcgIxWyxvDHr0Mpyq.Ag91SYB2q",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
       "bought": []
     },
     {
-      "id": 4,
-      "email": "lemsauanahphong@gmail.com",
-      "password": "$2b$10$taBf2x9c3q58xqRfbASq2uayAq6n7xi7voci.NhfRmIToY8d7On2O",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 5,
-      "email": "lemsauanahpshong@gmail.com",
-      "password": "$2b$10$fGUPnLIDpSXts6i5F60Ej.jKrJi5PNsdN.HkVz1VefIsxzFnpy4qq",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 6,
-      "email": "lemsauasdanahpshong@gmail.com",
-      "password": "$2b$10$MldA9Q8ffbo2Iw.mBqqI1uqubVN6Bn47/SkdfKqg0IfheRwOvVNR6",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 7,
-      "email": "lemsauasdanahpsahong@gmail.com",
-      "password": "$2b$10$Vuv5bOE59ZoO/4qTfhtDke6ACo7uh5bmkEJKinexTpGmZEqx3BwOW",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 8,
-      "email": "lemsauasdanaahpsahong@gmail.com",
-      "password": "$2b$10$YAUF2Wchphe.SkUXQTc5hO3X9.kmH0CROlBWRfCkgTRG7iHP5HA4K",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 9,
-      "email": "lemsauasdanaahpsaghong@gmail.com",
-      "password": "$2b$10$RbJVqKvrG0o0Bk9GKLNadODQymrUJEisOg6.ImZY/Sm9KZXJGoW6m",
+      "id": 2,
+      "name": "Le Mau Anh Phong",
+      "email": "ap14789654@gmail.com",
+      "password": "$2b$10$n4TW91fXJkqX6bE0Wrf5s.sj/y5k76FxEsXZldEPqzWBLPT9pjakW",
       "phone": "",
       "address": "",
       "avatar": "",
@@ -123,10 +25,10 @@
       "bought": []
     },
     {
-      "id": 10,
-      "name": "ok",
-      "email": "lemsauasdanaahpsaaaaghong@gmail.com",
-      "password": "$2b$10$wbODfHsWBe3mf1iiCyMOQeqCF/35pI6qrsQiv0rJmj0rUYBj1O/ga",
+      "id": 3,
+      "name": "Admin1",
+      "email": "hlehuy6@gmail.com",
+      "password": "$2b$10$lgy7rZL2Ljylty8kD5jMK.NbHa8vTFusmZ0u3sXcaz7XB5ggwgru.",
       "phone": "",
       "address": "",
       "avatar": "",
@@ -139,7 +41,9 @@
     {
       "id": 1,
       "publication-date": "2019-05-24",
-      "authors": ["Austin Govella"],
+      "authors": [
+        "Austin Govella"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Collaborative Product Design",
@@ -149,7 +53,13 @@
       "price": 35.49,
       "in-stock": 100,
       "discount": 30.49,
-      "rating": [50, 10, 0, 0, 0],
+      "rating": [
+        50,
+        10,
+        0,
+        0,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -157,12 +67,16 @@
           "stars": 5
         }
       ],
-      "categories": ["Design"]
+      "categories": [
+        "Design"
+      ]
     },
     {
       "id": 2,
       "publication-date": "2020-02-25",
-      "authors": ["Dave Malouf"],
+      "authors": [
+        "Dave Malouf"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is DesignOps?",
@@ -172,7 +86,13 @@
       "price": 23.11,
       "in-stock": 100,
       "discount": 20.11,
-      "rating": [10, 30, 0, 10, 0],
+      "rating": [
+        10,
+        30,
+        0,
+        10,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -180,12 +100,16 @@
           "stars": 4
         }
       ],
-      "categories": ["Design"]
+      "categories": [
+        "Design"
+      ]
     },
     {
       "id": 3,
       "publication-date": "2019-08-25",
-      "authors": ["Adam Lawrence"],
+      "authors": [
+        "Adam Lawrence"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is Service Design?",
@@ -194,8 +118,14 @@
       "image": "https://learning.oreilly.com/library/cover/9781492053668/750w/",
       "price": 23.33,
       "in-stock": 100,
-      "discount": 23.0,
-      "rating": [5, 30, 10, 10, 0],
+      "discount": 23,
+      "rating": [
+        5,
+        30,
+        10,
+        10,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -203,12 +133,17 @@
           "stars": 4
         }
       ],
-      "categories": ["Design"]
+      "categories": [
+        "Design"
+      ]
     },
     {
       "id": 4,
       "publication-date": "2020-06-30",
-      "authors": ["Lisa Owens", "Crystal Kadakia"],
+      "authors": [
+        "Lisa Owens",
+        "Crystal Kadakia"
+      ],
       "publishing-company": "Association for Talent Development",
       "language": "English",
       "title": "Designing for Modern Learning",
@@ -217,8 +152,14 @@
       "image": "https://learning.oreilly.com/library/cover/9781950496662/750w/",
       "price": 31.45,
       "in-stock": 100,
-      "discount": 31.0,
-      "rating": [0, 10, 20, 10, 1],
+      "discount": 31,
+      "rating": [
+        0,
+        10,
+        20,
+        10,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -226,12 +167,16 @@
           "stars": 3
         }
       ],
-      "categories": ["Design"]
+      "categories": [
+        "Design"
+      ]
     },
     {
       "id": 5,
       "publication-date": "2018-12-10",
-      "authors": ["Scott Riley"],
+      "authors": [
+        "Scott Riley"
+      ],
       "publishing-company": "Apress",
       "language": "English",
       "title": "Mindful Design: How and Why to Make Design Decisions for the Good of Those Using Your Product",
@@ -240,8 +185,14 @@
       "image": "https://learning.oreilly.com/library/cover/9781484242346/750w/",
       "price": 45.99,
       "in-stock": 100,
-      "discount": 45.0,
-      "rating": [10, 10, 10, 0, 0],
+      "discount": 45,
+      "rating": [
+        10,
+        10,
+        10,
+        0,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -249,12 +200,16 @@
           "stars": 4
         }
       ],
-      "categories": ["Design"]
+      "categories": [
+        "Design"
+      ]
     },
     {
       "id": 6,
       "publication-date": "2022-10-25",
-      "authors": ["Anthony Sarkis"],
+      "authors": [
+        "Anthony Sarkis"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Training Data for Machine Learning",
@@ -264,7 +219,13 @@
       "price": 25.69,
       "in-stock": 100,
       "discount": 24.33,
-      "rating": [20, 10, 5, 0, 1],
+      "rating": [
+        20,
+        10,
+        5,
+        0,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -272,12 +233,17 @@
           "stars": 5
         }
       ],
-      "categories": ["Machine Learning", "Data"]
+      "categories": [
+        "Machine Learning",
+        "Data"
+      ]
     },
     {
       "id": 7,
       "publication-date": "2019-10-22",
-      "authors": ["Cole Nussbaumer Knaflic"],
+      "authors": [
+        "Cole Nussbaumer Knaflic"
+      ],
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Storytelling with Data",
@@ -287,7 +253,13 @@
       "price": 44.99,
       "in-stock": 100,
       "discount": 41.99,
-      "rating": [100, 0, 10, 3, 2],
+      "rating": [
+        100,
+        0,
+        10,
+        3,
+        2
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -295,12 +267,17 @@
           "stars": 5
         }
       ],
-      "categories": ["Data"]
+      "categories": [
+        "Data"
+      ]
     },
     {
       "id": 8,
       "publication-date": "2020-12-25",
-      "authors": ["Kevin Poskitt", "Ginger Gatling"],
+      "authors": [
+        "Kevin Poskitt",
+        "Ginger Gatling"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Managing Data Orchestration and Integration at Scale",
@@ -310,7 +287,13 @@
       "price": 11.11,
       "in-stock": 100,
       "discount": 9.99,
-      "rating": [0, 30, 20, 10, 10],
+      "rating": [
+        0,
+        30,
+        20,
+        10,
+        10
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -318,12 +301,17 @@
           "stars": 4
         }
       ],
-      "categories": ["Data"]
+      "categories": [
+        "Data"
+      ]
     },
     {
       "id": 9,
       "publication-date": "2021-07-16",
-      "authors": ["Joao Ferreira", "Rene Modery"],
+      "authors": [
+        "Joao Ferreira",
+        "Rene Modery"
+      ],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Hands-On Microsoft Lists",
@@ -333,7 +321,13 @@
       "price": 36.74,
       "in-stock": 100,
       "discount": 35.99,
-      "rating": [0, 0, 30, 10, 0],
+      "rating": [
+        0,
+        0,
+        30,
+        10,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -341,7 +335,9 @@
           "stars": 3
         }
       ],
-      "categories": ["Data"]
+      "categories": [
+        "Data"
+      ]
     },
     {
       "id": 10,
@@ -351,7 +347,9 @@
         "Wajid Khattak",
         "Paul Buhler"
       ],
-      "publishing-company": ["Pearson"],
+      "publishing-company": [
+        "Pearson"
+      ],
       "language": "English",
       "title": "Big Data Fundamentals: Concepts, Drivers & Techniques",
       "description": "<span><div><p>“This text should be required reading for everyone in contemporary business.”</p><p>–Peter Woodhull, CEO, Modus21</p><p>“The one book that clearly describes and links Big Data concepts to business utility.”</p><p>–Dr. Christopher Starr, PhD</p><p>“Simply, this is the best Big Data book on the market!”</p><p>–Sam Rostam, Cascadian IT Group</p><p>“...one of the most contemporary approaches I’ve seen to Big Data fundamentals...”</p><p>–Joshua M. Davis, PhD</p><p><strong>The Definitive Plain-English Guide to Big Data for Business and Technology Professionals</strong></p><p><em>Big Data Fundamentals</em> provides a pragmatic, no-nonsense introduction to Big Data. Best-selling IT author Thomas Erl and his team clearly explain key Big Data concepts, theory and terminology, as well as fundamental technologies and techniques. All coverage is supported with case study examples and numerous simple diagrams.</p><p>The authors begin by explaining how Big Data can propel an organization forward by solving a spectrum of previously intractable business problems. Next, they demystify key analysis techniques and technologies and show how a Big Data solution environment can be built and integrated to offer competitive advantages.</p><ul><li><p>Discovering Big Data’s fundamental concepts and what makes it different from previous forms of data analysis and data science</p></li><li><p>Understanding the business motivations and drivers behind Big Data adoption, from operational improvements through innovation</p></li><li><p>Planning strategic, business-driven Big Data initiatives</p></li><li><p>Addressing considerations such as data management, governance, and security</p></li><li><p>Recognizing the 5 “V” characteristics of datasets in Big Data environments: volume, velocity, variety, veracity, and value</p></li><li><p>Clarifying Big Data’s relationships with OLTP, OLAP, ETL, data warehouses, and data marts</p></li><li><p>Working with Big Data in structured, unstructured, semi-structured, and metadata formats</p></li><li><p>Increasing value by integrating Big Data resources with corporate performance monitoring</p></li><li><p>Understanding how Big Data leverages distributed and parallel processing</p></li><li><p>Using NoSQL and other technologies to meet Big Data’s distinct data processing requirements</p></li><li><p>Leveraging statistical approaches of quantitative and qualitative analysis</p></li><li><p>Applying computational analysis methods, including machine learning</p></li></ul></div></span>",
@@ -360,7 +358,13 @@
       "price": 33.33,
       "in-stock": 100,
       "discount": 29.99,
-      "rating": [0, 0, 0, 20, 10],
+      "rating": [
+        0,
+        0,
+        0,
+        20,
+        10
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -368,7 +372,9 @@
           "stars": 2
         }
       ],
-      "categories": ["Data"]
+      "categories": [
+        "Data"
+      ]
     },
     {
       "id": 11,
@@ -386,7 +392,13 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 46.99,
-      "rating": [50, 100, 20, 10, 1],
+      "rating": [
+        50,
+        100,
+        20,
+        10,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -394,12 +406,18 @@
           "stars": 5
         }
       ],
-      "categories": ["Design", "Cloud"]
+      "categories": [
+        "Design",
+        "Cloud"
+      ]
     },
     {
       "id": 12,
       "publication-date": "2019-12-19",
-      "authors": ["J.R. Storment", "Mike Fuller"],
+      "authors": [
+        "J.R. Storment",
+        "Mike Fuller"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Cloud FinOps",
@@ -409,7 +427,13 @@
       "price": 40.99,
       "in-stock": 100,
       "discount": 32.99,
-      "rating": [0, 10, 30, 20, 0],
+      "rating": [
+        0,
+        10,
+        30,
+        20,
+        0
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -417,12 +441,17 @@
           "stars": 3
         }
       ],
-      "categories": ["Cloud"]
+      "categories": [
+        "Cloud"
+      ]
     },
     {
       "id": 13,
       "publication-date": "2021-05-04",
-      "authors": ["Danil Zburivsky", "Lynda Partner"],
+      "authors": [
+        "Danil Zburivsky",
+        "Lynda Partner"
+      ],
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "Designing Cloud Data Platforms",
@@ -432,7 +461,13 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 22.99,
-      "rating": [50, 50, 5, 1, 1],
+      "rating": [
+        50,
+        50,
+        5,
+        1,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -440,12 +475,18 @@
           "stars": 5
         }
       ],
-      "categories": ["Design", "Cloud", "Data"]
+      "categories": [
+        "Design",
+        "Cloud",
+        "Data"
+      ]
     },
     {
       "id": 14,
       "publication-date": "2020-02-07",
-      "authors": ["Roopesh Ramklass"],
+      "authors": [
+        "Roopesh Ramklass"
+      ],
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "Oracle Cloud Infrastructure Architect Associate All-in-One Exam Guide (Exam 1Z0-1072)",
@@ -455,7 +496,13 @@
       "price": 49.99,
       "in-stock": 100,
       "discount": 46.33,
-      "rating": [5, 100, 10, 1, 1],
+      "rating": [
+        5,
+        100,
+        10,
+        1,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -463,12 +510,19 @@
           "stars": 4
         }
       ],
-      "categories": ["Cloud", "Architect", "Infrastructure"]
+      "categories": [
+        "Cloud",
+        "Architect",
+        "Infrastructure"
+      ]
     },
     {
       "id": 15,
       "publication-date": "2021-10-15",
-      "authors": ["Prasenjit Sarkar", "Guillermo Ruiz"],
+      "authors": [
+        "Prasenjit Sarkar",
+        "Guillermo Ruiz"
+      ],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Oracle Cloud Infrastructure for Solutions Architects",
@@ -478,7 +532,13 @@
       "price": 37.99,
       "in-stock": 100,
       "discount": 35.99,
-      "rating": [0, 0, 10, 50, 5],
+      "rating": [
+        0,
+        0,
+        10,
+        50,
+        5
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -486,12 +546,18 @@
           "stars": 2
         }
       ],
-      "categories": ["Cloud", "Architect", "Infrastructure"]
+      "categories": [
+        "Cloud",
+        "Architect",
+        "Infrastructure"
+      ]
     },
     {
       "id": 16,
       "publication-date": "2019-09-30",
-      "authors": ["Aurélien Géron"],
+      "authors": [
+        "Aurélien Géron"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition",
@@ -501,7 +567,13 @@
       "price": 70.69,
       "in-stock": 100,
       "discount": 50.99,
-      "rating": [0, 0, 12, 51, 6],
+      "rating": [
+        0,
+        0,
+        12,
+        51,
+        6
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -531,7 +603,13 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 45.69,
-      "rating": [50, 50, 10, 1, 2],
+      "rating": [
+        50,
+        50,
+        10,
+        1,
+        2
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -539,12 +617,17 @@
           "stars": 5
         }
       ],
-      "categories": ["Design", "Machine Learning"]
+      "categories": [
+        "Design",
+        "Machine Learning"
+      ]
     },
     {
       "id": 18,
       "publication-date": "2022-06-25",
-      "authors": ["Chip Huyen"],
+      "authors": [
+        "Chip Huyen"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Designing Machine Learning Systems",
@@ -554,7 +637,13 @@
       "price": 26.66,
       "in-stock": 100,
       "discount": 23.22,
-      "rating": [1, 3, 2, 10, 50],
+      "rating": [
+        1,
+        3,
+        2,
+        10,
+        50
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -562,12 +651,18 @@
           "stars": 1
         }
       ],
-      "categories": ["Design", "Machine Learning"]
+      "categories": [
+        "Design",
+        "Machine Learning"
+      ]
     },
     {
       "id": 19,
       "publication-date": "2020-07-20",
-      "authors": ["Hannes Hapke", "Catherine Nelson"],
+      "authors": [
+        "Hannes Hapke",
+        "Catherine Nelson"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Building Machine Learning Pipelines",
@@ -577,7 +672,13 @@
       "price": 46.55,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [3, 2, 30, 20, 1],
+      "rating": [
+        3,
+        2,
+        30,
+        20,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -585,12 +686,16 @@
           "stars": 3
         }
       ],
-      "categories": ["Machine Learning"]
+      "categories": [
+        "Machine Learning"
+      ]
     },
     {
       "id": 20,
       "publication-date": "2021-10-29",
-      "authors": ["Ben Auffarth"],
+      "authors": [
+        "Ben Auffarth"
+      ],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Machine Learning for Time-Series with Python",
@@ -600,7 +705,13 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [10, 10, 20, 30, 40],
+      "rating": [
+        10,
+        10,
+        20,
+        30,
+        40
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -608,12 +719,16 @@
           "stars": 1
         }
       ],
-      "categories": ["Machine Learning"]
+      "categories": [
+        "Machine Learning"
+      ]
     },
     {
       "id": 21,
       "publication-date": "2021-12-27",
-      "authors": ["James Higginbotham"],
+      "authors": [
+        "James Higginbotham"
+      ],
       "publishing-company": "Addison-Wesley Professional",
       "language": "English",
       "title": "Principles of Web API Design: Delivering Value with APIs and Microservices",
@@ -623,7 +738,13 @@
       "price": 48.99,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [0, 0, 1, 5, 100],
+      "rating": [
+        0,
+        0,
+        1,
+        5,
+        100
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -631,12 +752,17 @@
           "stars": 1
         }
       ],
-      "categories": ["Web", "Design"]
+      "categories": [
+        "Web",
+        "Design"
+      ]
     },
     {
       "id": 22,
       "publication-date": "2019-10-23",
-      "authors": ["Arnaud Lauret"],
+      "authors": [
+        "Arnaud Lauret"
+      ],
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "The Design of Web APIs",
@@ -646,7 +772,13 @@
       "price": 55.99,
       "in-stock": 100,
       "discount": 50.11,
-      "rating": [20, 30, 1, 0, 5],
+      "rating": [
+        20,
+        30,
+        1,
+        0,
+        5
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -654,12 +786,17 @@
           "stars": 4
         }
       ],
-      "categories": ["Web", "Design"]
+      "categories": [
+        "Web",
+        "Design"
+      ]
     },
     {
       "id": 23,
       "publication-date": "2018-05-11",
-      "authors": ["Jennifer Robbins"],
+      "authors": [
+        "Jennifer Robbins"
+      ],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Learning Web Design, 5th Edition",
@@ -669,7 +806,13 @@
       "price": 69.69,
       "in-stock": 100,
       "discount": 46.64,
-      "rating": [50, 10, 10, 5, 1],
+      "rating": [
+        50,
+        10,
+        10,
+        5,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -677,12 +820,17 @@
           "stars": 5
         }
       ],
-      "categories": ["Web", "Design"]
+      "categories": [
+        "Web",
+        "Design"
+      ]
     },
     {
       "id": 24,
       "publication-date": "2020-10-06",
-      "authors": ["Mike Amundsen"],
+      "authors": [
+        "Mike Amundsen"
+      ],
       "publishing-company": "Pragmatic Bookshelf",
       "language": "English",
       "title": "Design and Build Great Web APIs",
@@ -692,7 +840,13 @@
       "price": 39.99,
       "in-stock": 100,
       "discount": 29.99,
-      "rating": [20, 10, 10, 5, 5],
+      "rating": [
+        20,
+        10,
+        10,
+        5,
+        5
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -700,7 +854,10 @@
           "stars": 4
         }
       ],
-      "categories": ["Web", "Design"]
+      "categories": [
+        "Web",
+        "Design"
+      ]
     },
     {
       "id": 25,
@@ -719,7 +876,13 @@
       "price": 24.96,
       "in-stock": 100,
       "discount": 21.42,
-      "rating": [2, 3, 30, 1, 1],
+      "rating": [
+        2,
+        3,
+        30,
+        1,
+        1
+      ],
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -727,8 +890,30 @@
           "stars": 3
         }
       ],
-      "categories": ["Web", "Design"]
+      "categories": [
+        "Web",
+        "Design"
+      ]
     }
   ],
-  "refresh-tokens": []
+  "reset-Token": [
+    {
+      "email": "",
+      "resetToken": ""
+    },
+    {
+      "email": "hlehuy6@gmail.com",
+      "resetToken": "54f1fc17-a5db-4f8c-aef3-12cde32e31a3"
+    }
+  ],
+  "refresh-tokens": [
+    {
+      "id": 1,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlbWF1YW5ocGhvbmdAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyNzgwMDY3LCJleHAiOjE2NDI4NjY0Njd9.bf_JzWaJgZkg65cCvQg3InPduoJ8gF_IMIYafXvcS1A"
+    },
+    {
+      "id": 2,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI3ODE0ODIsImV4cCI6MTY0Mjg2Nzg4Mn0.D51vk4f3tAxEEXw-4YMV8e0iPhqcQpWybVTEcnto13U"
+    }
+  ]
 }
