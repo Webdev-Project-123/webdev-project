@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "lemauanhphong",
-      "email": "lemauanhphsong@gmail.com",
+      "email": "lemauanhphsssssong@gmail.com",
       "password": "AB5568F44",
       "phone": "00000",
       "address": "",
@@ -58,7 +58,6 @@
       "uploaded": []
     },
     {
-<<<<<<< HEAD
       "id": 3,
       "email": "lemsauanhphong@gmail.com",
       "password": "$2b$10$IV45eEvBKHNmgazH4QbSOuwbjxmcgIxWyxvDHr0Mpyq.Ag91SYB2q",
@@ -111,12 +110,29 @@
       "role": "user",
       "cart": [],
       "bought": []
-=======
-      "id": 123
     },
     {
-      "id": 123
->>>>>>> origin/server
+      "id": 9,
+      "email": "lemsauasdanaahpsaghong@gmail.com",
+      "password": "$2b$10$RbJVqKvrG0o0Bk9GKLNadODQymrUJEisOg6.ImZY/Sm9KZXJGoW6m",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 10,
+      "name": "ok",
+      "email": "lemsauasdanaahpsaaaaghong@gmail.com",
+      "password": "$2b$10$wbODfHsWBe3mf1iiCyMOQeqCF/35pI6qrsQiv0rJmj0rUYBj1O/ga",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
