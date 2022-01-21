@@ -55,4 +55,10 @@ app.use((req, res) => {
     .sendFile(path.join(__dirname, './public/404.html'));
 });
 
+app.use((error, req, res) => {
+  let { statusCode, msg } = error;
+  if (!statusCode) statusCode = 500;
+  res.status(statusCode).json(msg);
+});
+
 module.exports = app;

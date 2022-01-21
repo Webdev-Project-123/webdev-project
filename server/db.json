@@ -56,6 +56,51 @@
       "cart": [],
       "bought": [],
       "uploaded": []
+    },
+    {
+      "id": 3,
+      "email": "lemsauanhphong@gmail.com",
+      "password": "$2b$10$IV45eEvBKHNmgazH4QbSOuwbjxmcgIxWyxvDHr0Mpyq.Ag91SYB2q",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 4,
+      "email": "lemsauanahphong@gmail.com",
+      "password": "$2b$10$taBf2x9c3q58xqRfbASq2uayAq6n7xi7voci.NhfRmIToY8d7On2O",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 5,
+      "email": "lemsauanahpshong@gmail.com",
+      "password": "$2b$10$fGUPnLIDpSXts6i5F60Ej.jKrJi5PNsdN.HkVz1VefIsxzFnpy4qq",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 6,
+      "email": "lemsauasdanahpshong@gmail.com",
+      "password": "$2b$10$MldA9Q8ffbo2Iw.mBqqI1uqubVN6Bn47/SkdfKqg0IfheRwOvVNR6",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 7,
+      "email": "lemsauasdanahpsahong@gmail.com",
+      "password": "$2b$10$Vuv5bOE59ZoO/4qTfhtDke6ACo7uh5bmkEJKinexTpGmZEqx3BwOW",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
@@ -63,7 +108,11 @@
       "id": 1,
       "title": "Product 1",
       "author": "Author 1",
-      "categories": ["Type 1", "Type 2", "Type 3"],
+      "categories": [
+        "Type 1",
+        "Type 2",
+        "Type 3"
+      ],
       "image": "",
       "distributor": "Distributor 1",
       "publishing-company": "Company 1",
