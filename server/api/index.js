@@ -4,7 +4,7 @@ const auth = require('./auth');
 // const cart = require('./cart');
 const bought = require('./bought');
 // const upload = require('./upload');
-// const products = require('./products');
+const products = require('./products');
 // const categories = require('./categories');
 
 router.use('/auth', auth);

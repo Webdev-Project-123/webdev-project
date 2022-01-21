@@ -23,16 +23,16 @@ module.exports = {
             title: 'productName',
             image: 'productImage',
             price: 'productPrice',
-            discount: 'productSalePrice',
             rating: 'productRate',
+            discount: 'productSalePrice',
           }),
           R.pickAll([
             'id',
             'title',
             'image',
             'price',
-            'discount',
             'rating',
+            'discount',
           ]),
         ),
       )(hotProducts),
@@ -41,9 +41,36 @@ module.exports = {
     return DTO;
   },
 
-  // get: async (qId) => {
-  //   const products = await db.get('products').value();
+  get: async (id) => {
+    const products = await db.get('products').value();
 
+    // * Get product by id
+    const product = await R.find(
+      R.propEq('id', parseInt(id, 10)),
+    )(products);
 
-  // }
+    const DTO = {
+      status: R.isNil(product) ? 410 : 200,
+      message: 'Product is ready!',
+      data: await renameKeys({
+        id: 'productId',
+        title: 'productName',
+        pages: 'productPages',
+        image: 'productImage',
+        price: 'productPrice',
+        rating: 'productRate',
+        authors: 'productAuthors',
+        description: 'productDesc',
+        language: 'productLanguage',
+        comments: 'productComments',
+        discount: 'productSalePrice',
+        'in-stock': 'productInStock',
+        categories: 'productCategories',
+        'publication-date': 'productPublishDate',
+        'publishing-company': 'productPublishComp',
+      })(product),
+    };
+
+    return DTO;
+  },
 };
