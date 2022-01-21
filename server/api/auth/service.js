@@ -66,9 +66,9 @@ module.exports = {
           role: filterUser[0].role,
         };
         const signOptions = {
-          expiresIn: '12h',
+          expiresIn: '60s',
         };
-        const token = await jwt.sign(payload, secret_key, signOptions);
+        const token = await jwt.sign(payload, process.env.SECRET_KEY, signOptions);
 
         return {
           token,

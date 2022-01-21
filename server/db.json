@@ -110,7 +110,6 @@
       "role": "user",
       "cart": [],
       "bought": []
-<<<<<<< HEAD
     },
     {
       "id": 9,
@@ -134,8 +133,6 @@
       "role": "user",
       "cart": [],
       "bought": []
-=======
->>>>>>> origin/server
     }
   ],
   "products": [

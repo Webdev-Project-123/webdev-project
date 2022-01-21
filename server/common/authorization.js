@@ -1,7 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-const publicKey = process.env.PUBLIC_KEY;
-
 module.exports = {
   isValid: async (req, res, next) => {
     const authHeader = req.headers.authorization;
@@ -14,7 +12,7 @@ module.exports = {
       };
     }
 
-    const user = await jwt.verify(token, publicKey);
+    const user = await jwt.verify(token, process.env.SECRET_KEY);
     if (user.err) {
       return {
         error: true,
