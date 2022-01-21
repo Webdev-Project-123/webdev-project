@@ -2,8 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require('../../models/db');
 
-const secret_key = process.env.SECRET_KEY;
-// console.log(secret);
+var listRefreshToken = [];
 
 module.exports = {
   signup: async (body) => {
@@ -65,15 +64,16 @@ module.exports = {
           email: filterUser[0].email,
           role: filterUser[0].role,
         };
-        const signOptions = {
-          expiresIn: '60s',
-        };
-        const token = await jwt.sign(payload, process.env.SECRET_KEY, signOptions);
 
+        const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
+        const refreshToken = await jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '24h' });
+        listRefreshToken.push(refreshToken);
         return {
-          token,
+          accessToken,
+          refreshToken,
           error: false,
-          msg: 'Welcome back',
+          msg: 'OK',
+          statusCode: 200,
         };
       }
 
@@ -93,6 +93,42 @@ module.exports = {
     return {
       error: true,
       msg: 'Error in login phase',
+    };
+  },
+  token: async (body) => {
+    const refreshToken = body.refreshToken;
+    if (!refreshToken) {
+      return {
+        statusCode: 401,
+        msg: 'UNAUTHORIZED',
+      };
+    }
+
+    if (!listRefreshToken.includes(refreshToken)) {
+      return {
+        statusCode: 403,
+        msg: 'FORBIDDEN',
+      };
+    }
+
+    const result = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+    if (result.err) {
+      listRefreshToken = listRefreshToken.filter((item) => item !== refreshToken);
+      return {
+        statusCode: 403,
+        msg: 'FORBIDDEN',
+      };
+    }
+
+    const payload = {
+      email: result.email,
+      role: result.role,
+    };
+    const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
+    return {
+      statusCode: 200,
+      msg: 'OK',
+      accessToken,
     };
   },
 };
