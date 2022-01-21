@@ -23,7 +23,7 @@ function Login() {
   return (
     <div className="w-screen h-screen relative flex justify-center items-center font-robotoS">
       <img className="h-full w-full absolute object-cover" src={loginBg} />
-      <div className="relative w-2/5 h-4/5 px-20 bg-[rgb(252,236,221,0.95)] rounded-md flex justify-center gap-8 flex-col text-[#2b2727] z-10">
+      <div className="relative xl:w-2/5 xl:h-3/5 md:w-4/5 md:h-3/5 sm:h-3/5 w-11/12 h-5/6 md:px-10 px-7 bg-[rgb(252,236,221,0.95)] rounded-md flex justify-center gap-5 md:gap-8 flex-col text-[#2b2727] z-10">
         <div className="absolute top-5 left-5 w-auto h-auto flex group cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,10 @@ function Login() {
           </svg>
           <h1>Trang chủ</h1>
         </div>
-        <div className="mx-auto flex justify-center items-center gap-2">
-          <h1 className="font-robotoS text-3xl">Đăng nhập vào Wordy</h1>
+        <div className="mx-auto flex justify-center items-center gap-2 mt-12 xl:mt-[3rem] md:mt-0 h-auto">
+          <h1 className="font-robotoS lg:text-3xl md:text-3xl">
+            Đăng nhập vào Wordy
+          </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8"
@@ -89,7 +91,7 @@ function Login() {
             Bạn quên mật khẩu ?
           </a>
         </div>
-        <div className="self-end flex justify-center items-center gap-4">
+        <div className="self-end flex justify-center items-center gap-4 mt-3 md:mt-0">
           <button className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out">
             Đăng ký
           </button>
