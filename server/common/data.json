@@ -1,0 +1,572 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "publication-date": "2019-05-24",
+      "authors": ["Austin Govella"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Collaborative Product Design",
+      "description": "<span><div><p>You can launch a new app or website in days by piecing together frameworks and hosting on AWS. Implementation is no longer the problem. But that speed to market just makes it tougher to confirm that your team is actually building the right product.</p><p>Ideal for agile teams and lean organizations, this guide includes 11 practical tools to help you collaborate on strategy, user research, and UX. Hundreds of real-world tips help you facilitate productive meetings and create good collaboration habits. Designers, developers, and product owners will learn how to build better products much faster than before.</p><p>Topics include:</p><ul><li><b>Foundations for collaboration and facilitation:</b> Learn how to work better together with your team, stakeholders, and clients</li><li><b>Project strategy:</b> Help teams align with shared goals and vision</li><li><b>User research and personas:</b> Identify and understand your users and share that vision with the broader organization</li><li><b>Journey maps:</b> Build better touchpoints that improve conversion and retention</li><li><b>Interfaces and prototypes:</b> Rightsize sketches and wireframes so you can test and iterate quickly</li></ul></div></span>",
+      "pages": 468,
+      "image": "https://learning.oreilly.com/library/cover/9781491975022/",
+      "price": 35.49,
+      "discount": [10, 20, 30],
+      "rating": [50, 10, 0, 0, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Design"]
+    },
+    {
+      "id": 2,
+      "publication-date": "2020-02-25",
+      "authors": ["Dave Malouf"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "What Is DesignOps?",
+      "description": "<span><div><p>Design is no longer a value-add that only some companies choose to afford. In today’s marketplace it’s a valuable strategic contributor for every organization. But getting the most value out of a design practice requires that these same organizations create an intentional operational practice—design operations (DesignOps). This comprehensive report provides an introduction to DesignOps along with practical patterns for using it within your organization.</p><p>Author Dave Malouf takes you through DesignOps concepts, components, methods, and tools and shows you how to put them to work. Operationalize your design practices and demonstrate and amplify the value of design for your company and customers alike.</p><ul><li>Explore frameworks, including the DesignOps Canvas and Projects, Process, People, to help you better understand DesignOps practices and create your own</li><li>Understand the pieces that make up DesignOps, from human resources to delivery management, culture, and more</li><li>Learn the role Agile can play in DesignOps</li><li>Dive into common metrics to help determine the health of your design organization</li><li>Discover how to assess the effectiveness of design operations in meeting goals</li></ul></div></span>",
+      "pages": 58,
+      "image": "https://learning.oreilly.com/library/cover/9781492083023/",
+      "price": 23.11,
+      "discount": [10, 20, 30],
+      "rating": [10, 30, 0, 10, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Design"]
+    },
+    {
+      "id": 3,
+      "publication-date": "2019-08-25",
+      "authors": ["Adam Lawrence"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "What Is Service Design?",
+      "description": "<span><div><p>Companies and their customers today often don’t focus on the same things. While a restaurant may work hard to create an exciting new menu item, diners care more about courtesy. A bank will spend thousands promoting trust while customers struggle to access their website. This report explains how service design can help your organization innovate to deliver great experiences, not just great products, by understanding your customers' needs.</p><p>Service design experts Adam Lawrence, Marc Stickdorn, Markus Hormeß, and Jakob Schneider explain that service design is a mindset, a process, a toolset, and a cross-disciplinary language. You’ll learn how cross-functional teams  can create and orchestrate great customer or employee experiences that satisfy the requirements of the business, the user, and other stakeholders.</p><p>This report explores how:</p><ul><li>Service design applies to physical and digital products as well as services</li><li>Today’s informed customers have created a new challenge for businesses</li><li>Service design is similar to design thinking and compatible with Agile and Lean</li><li>Designers can promote low-risk progress through iterative prototyping</li><li>Lightweight, iterative research can keep teams from solving the wrong problem</li><li>This approach offers a common language for cross-silo collaboration</li></ul></div></span>",
+      "pages": 54,
+      "image": "https://learning.oreilly.com/library/cover/9781492053668/",
+      "price": 23.33,
+      "discount": [10, 20, 30],
+      "rating": [5, 30, 10, 10, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Design"]
+    },
+    {
+      "id": 4,
+      "publication-date": "2020-06-30",
+      "authors": ["Lisa Owens", "Crystal Kadakia"],
+      "publishing-company": "Association for Talent Development",
+      "language": "English",
+      "title": "Designing for Modern Learning",
+      "description": "<span><p><b>Meet Learning Needs With New Tools and New Thinking</b></p><p>Learning is no longer an activity or luxury that only occurs at specific stages in your life or career. With the digital revolution, learning has become immediate, real-time, and relevant whether you’re young, old, in the workforce, in school, or at home. As a learning and development professional, you’ve likely confronted the digital learning revolution armed with instructional design models from the pre-digital world. But today’s digital universe has a new model to address its wealth of new technologies and a new philosophy of learning experience design: learning cluster design. </p><p><em>Designing for Modern Learning: Beyond ADDIE and SAM</em> offers you and your learners a new way to learn. It describes the fundamental shift that has occurred in the nature of L&amp;D’s role as a result of the digital revolution and introduces a new five-step model: the Owens-Kadakia Learning Cluster Design Model (OK-LCD Model), a new five-step model for training design that meets the needs of modern learning. The model’s five steps or actions are an easy-to-follow mnemonic, CLUSTER:</p><ul><li>Change on-the-job behavior</li><li> Learn learner-to-learner differences</li><li> Upgrade existing assets</li><li> Surround learning with meaningful assets</li><li> Track transformation of Everyone’s Results. </li></ul><p>In each chapter, the authors share stories of business leaders, L&amp;D professionals, and learners who have successfully adopted the OK-LCD Model, detailing how they altered organizational mindsets to meet the needs of modern learners and their organizations. Included are how-to features, tools, tips, and real-life “in practice” sections. </p><p>This is an exciting time to be in L&amp;D. It’s time to join the revolution.</p></span>",
+      "pages": 292,
+      "image": "https://learning.oreilly.com/library/cover/9781950496662/",
+      "price": 31.45,
+      "discount": [10, 20, 30],
+      "rating": [0, 10, 20, 10, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Not bad!",
+          "stars": 3
+        }
+      ],
+      "categories": ["Design"]
+    },
+    {
+      "id": 5,
+      "publication-date": "2018-12-10",
+      "authors": ["Scott Riley"],
+      "publishing-company": "Apress",
+      "language": "English",
+      "title": "Mindful Design: How and Why to Make Design Decisions for the Good of Those Using Your Product",
+      "description": "<span><p/><p>Learn to create seamless designs backed by a responsible understanding of the human mind. This book examines how human behavior can be used to integrate your product design into lifestyle, rather than interrupt it, and make decisions for the good of those that are using your product. </p><p><i>Mindful Design</i> introduces the areas of brain science that matter to designers, and passionately explains how those areas affect each human’s day-to-day experiences with products and interfaces. You will learn about the neurological aspects and limitations of human vision and perception; about our attachment to harmony and dissonance, such as visual harmony, musical harmony; and about our brain’s propensity towards pattern recognition and how we perceive the world cognitively.  </p><p>In the second half of the book you will focus on the practical application of what you have learned, specific to interaction and interface design. Real-world examples are used throughout so that you can really see how design is impacting our everyday digital experience.<br/></p><p>Design is a responsibility, but not enough designers understand the human mind or the process of thought. This book explores the key factors involved and shows you how to make the right design choices.<br/></p><p><b>What You'll Learn</b></p><p/><ul><li>Review how attention and distraction work and the cost of attentional switching<br/></li><li>Use Gestalt principles to communicate visual grouping<br/></li><li>Ensure your underlying models make sense to your audience<br/></li><li>Use time, progression, and transition to create a composition<br/></li><li>Carefully examine controlling behavior through reductionist and behaviorist motivation concepts <br/></li><li>Apply the theoretical knowledge to practical, mindful application design<br/></li></ul><p/><p><b>Who This Book Is For</b></p>\n\nThe primary audience for this book is professional designers who wish to learn more about the human mind and how to apply that to their work. The book is also useful for design-focussed product owners and startup founders who wish to apply ethical thinking to a team, or when bootstrapping their products. The secondary audience is design students who are either studying a ‘traditional’ visual design course, or a UX/interaction design course who have a desire to learn how they might be able to apply mindful design to their early careers. Finally, a tertiary audience for this book would be tutors involved in teaching design, or peripheral, courses who may wish to incorporate its teachings into their lectures, workshops or seminars.<p/><br/><p/>\n  </span>",
+      "pages": 544,
+      "image": "https://learning.oreilly.com/library/cover/9781484242346/",
+      "price": 45.99,
+      "discount": [10, 20, 30],
+      "rating": [10, 10, 10, 0, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Design"]
+    },
+    {
+      "id": 6,
+      "publication-date": "2022-10-25",
+      "authors": ["Anthony Sarkis"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Training Data for Machine Learning",
+      "description": "<span><div><p>Your training data has as much to do with the success of your data project as the algorithms themselves--most failures in deep learning systems relate to training data. But while training data is the foundation for successful machine learning, there are few comprehensive resources to help you ace the process. This hands-on guide explains how to work with and scale training data. You'll gain a solid understanding of the concepts, tools, and processes needed to:</p><p/><ul><li>Design, deploy, and ship training data for production-grade deep learning applications</li><li>Integrate with a growing ecosystem of tools</li><li>Recognize and correct new training data-based failure modes</li><li>Improve existing system performance and avoid development risks</li><li>Confidently use automation and acceleration approaches to more effectively create training data</li><li>Avoid data loss by structuring metadata around created datasets</li><li>Clearly explain training data concepts to subject matter experts and other shareholders</li><li>Successfully maintain, operate, and improve your system</li></ul></div></span>",
+      "pages": 175,
+      "image": "https://learning.oreilly.com/library/cover/9781492094517/",
+      "price": 25.69,
+      "discount": [10, 20, 30],
+      "rating": [20, 10, 5, 0, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Machine Learning", "Data"]
+    },
+    {
+      "id": 7,
+      "publication-date": "2019-10-22",
+      "authors": ["Cole Nussbaumer Knaflic"],
+      "publishing-company": "Wiley",
+      "language": "English",
+      "title": "Storytelling with Data",
+      "description": "<span><p><b>Influence action through data!</b></p><p>This is not a book. It is a one-of-a-kind immersive learning experience through which you can become—or teach others to be—a powerful data storyteller.</p><p><i>Let’s practice! </i>helps you build confidence and credibility to create graphs and visualizations that make sense and weave them into action-inspiring stories. Expanding upon best seller <i>storytelling with data</i>’s foundational lessons, <i>Let’s practice! </i>delivers fresh content, a plethora of new examples, and over 100 hands-on exercises. Author and data storytelling maven Cole Nussbaumer Knaflic guides you along the path to hone core skills and become a well-practiced data communicator. Each chapter includes:</p><p>● <b>Practice with Cole:</b> exercises based on real-world examples first posed for you to consider and solve, followed by detailed step-by-step illustration and explanation</p><p>● <b>Practice on your own:</b> thought-provoking questions and even more exercises to be assigned or worked through individually, without prescribed solutions</p><p>● <b>Practice at work:</b> practical guidance and hands-on exercises for applying <i>storytelling with data </i>lessons on the job, including instruction on when and how to solicit useful feedback and refine for greater impact</p><p>The lessons and exercises found within this comprehensive guide will empower you to master—or develop in others—data storytelling skills and transition your work from acceptable to exceptional. By investing in these skills for ourselves and our teams, we can all tell inspiring and influential data stories!</p></span>",
+      "pages": 553,
+      "image": "https://learning.oreilly.com/library/cover/9781119621492/",
+      "price": 44.99,
+      "discount": [10, 20, 30],
+      "rating": [100, 0, 10, 3, 2],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Data"]
+    },
+    {
+      "id": 8,
+      "publication-date": "2020-12-25",
+      "authors": ["Kevin Poskitt", "Ginger Gatling"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Managing Data Orchestration and Integration at Scale",
+      "description": "<span><div><p>Why is data integration still a challenge today? And what does data orchestration mean? In this report, Kevin Poskitt and Ginger Gatling from SAP provide in-depth examples that show how companies have evolved from using data integration to data orchestration. By combining streaming data with application data, external data, and social data, data engineers and developers can achieve trusted business outcomes.</p><p>You'll learn how to use R, Python, TensorFlow, Apache Kafka, and other open source tools--either to extract data from SAP to put into a data lake or to orchestrate and integrate massive data volumes across complex landscapes. If you're ready to close the gap between the data experts on the SAP team and the development professionals in your company, this guide is indispensable.</p><p>You'll examine:</p><ul><li>Data integration challenges--and why data orchestration needs to evolve</li><li>The business imperative for data integration</li><li>The reality of hybrid data management today</li><li>Examples of how companies can use OS technologies for data integration</li><li>The challenges of managing multiple open source stacks</li><li>How to orchestrate integration and processing across OS tools while scaling across enterprise apps</li><li>How to leverage OS technologies with SAP Data Intelligence</li><li>How to address tool and data sprawl when using multiple tools and engines</li><li>Complex data orchestration examples</li><li>Machine learning within data orchestration</li></ul></div></span>",
+      "pages": 69,
+      "image": "https://learning.oreilly.com/library/cover/9781492093862/",
+      "price": 11.11,
+      "discount": [10, 20, 30],
+      "rating": [0, 30, 20, 10, 10],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Data"]
+    },
+    {
+      "id": 9,
+      "publication-date": "2021-07-16",
+      "authors": ["Joao Ferreira", "Rene Modery"],
+      "publishing-company": "Packt Publishing",
+      "language": "English",
+      "title": "Hands-On Microsoft Lists",
+      "description": "<span><p><b>Prepare to be a Microsoft Lists advocate and transform the way data is harnessed in your organization</b></p><h4>Key Features</h4><ul><li>Get to grips with Microsoft Lists and organize your data efficiently</li><li>Discover best practices and real-world scenarios to track information, events, and issues in your organization</li><li>Take control of your data by creating custom data models using Microsoft Lists</li></ul><h4>Book Description</h4><p>Microsoft Lists is an extremely flexible and powerful platform for creating custom data models. Hands-On Microsoft Lists is an easy-to-read guide for those who want to get started with Lists, as well as those who are already familiar with the basic concepts and want to create custom and flexible Lists that are easily available through a web interface.</p><p>This comprehensive introduction to Lists will show you how to get up to speed in no time with the help of practical guidance and examples. Complete with hands-on tutorials and projects, you'll understand how to use and implement Microsoft Lists effectively. You'll start by covering all the basic concepts that will help you to build your Microsoft Lists and get the most out of the platform. As you progress, you'll explore how to customize Microsoft Lists layouts and forms. Later chapters will guide you through integrating Microsoft Lists with the Power Platform. Throughout the book, you'll work with practical scenarios that you can use daily to improve the collaboration in your organization.</p><p>By the end of this Microsoft book, you'll have learned how to create custom data models to improve the way your data is put together, managed, and consumed in your workplace.</p><h4>What you will learn</h4><ul><li>Use the Lists platform effectively in the modern workplace</li><li>Get to grips with data privacy</li><li>Discover how to customize Microsoft Lists data and forms</li><li>Automate processes using Microsoft Lists</li><li>Extend the default features of Microsoft Lists using the SharePoint framework</li><li>Create custom list templates using PnP PowerShell</li><li>Extend Microsoft Lists using Power Platform</li></ul><h4>Who this book is for</h4><p>This book is for business professionals and end users working with Microsoft 365 tools such as Microsoft SharePoint and Microsoft Teams who are looking to improve the way their data is structured, managed, and consumed inside an organization. Basic knowledge of SharePoint and Excel is assumed.</p></span>",
+      "pages": 354,
+      "image": "https://learning.oreilly.com/library/cover/9781801075046/",
+      "price": 36.74,
+      "discount": [10, 20, 30],
+      "rating": [0, 0, 30, 10, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Not bad!",
+          "stars": 3
+        }
+      ],
+      "categories": ["Data"]
+    },
+    {
+      "id": 10,
+      "publication-date": "2016-01-05",
+      "authors": [
+        "Thomas Erl",
+        "Wajid Khattak",
+        "Paul Buhler"
+      ],
+      "publishing-company": ["Pearson"],
+      "language": "English",
+      "title": "Big Data Fundamentals: Concepts, Drivers & Techniques",
+      "description": "<span><div><p>“This text should be required reading for everyone in contemporary business.”</p><p>–Peter Woodhull, CEO, Modus21</p><p>“The one book that clearly describes and links Big Data concepts to business utility.”</p><p>–Dr. Christopher Starr, PhD</p><p>“Simply, this is the best Big Data book on the market!”</p><p>–Sam Rostam, Cascadian IT Group</p><p>“...one of the most contemporary approaches I’ve seen to Big Data fundamentals...”</p><p>–Joshua M. Davis, PhD</p><p><strong>The Definitive Plain-English Guide to Big Data for Business and Technology Professionals</strong></p><p><em>Big Data Fundamentals</em> provides a pragmatic, no-nonsense introduction to Big Data. Best-selling IT author Thomas Erl and his team clearly explain key Big Data concepts, theory and terminology, as well as fundamental technologies and techniques. All coverage is supported with case study examples and numerous simple diagrams.</p><p>The authors begin by explaining how Big Data can propel an organization forward by solving a spectrum of previously intractable business problems. Next, they demystify key analysis techniques and technologies and show how a Big Data solution environment can be built and integrated to offer competitive advantages.</p><ul><li><p>Discovering Big Data’s fundamental concepts and what makes it different from previous forms of data analysis and data science</p></li><li><p>Understanding the business motivations and drivers behind Big Data adoption, from operational improvements through innovation</p></li><li><p>Planning strategic, business-driven Big Data initiatives</p></li><li><p>Addressing considerations such as data management, governance, and security</p></li><li><p>Recognizing the 5 “V” characteristics of datasets in Big Data environments: volume, velocity, variety, veracity, and value</p></li><li><p>Clarifying Big Data’s relationships with OLTP, OLAP, ETL, data warehouses, and data marts</p></li><li><p>Working with Big Data in structured, unstructured, semi-structured, and metadata formats</p></li><li><p>Increasing value by integrating Big Data resources with corporate performance monitoring</p></li><li><p>Understanding how Big Data leverages distributed and parallel processing</p></li><li><p>Using NoSQL and other technologies to meet Big Data’s distinct data processing requirements</p></li><li><p>Leveraging statistical approaches of quantitative and qualitative analysis</p></li><li><p>Applying computational analysis methods, including machine learning</p></li></ul></div></span>",
+      "pages": 303,
+      "image": "https://learning.oreilly.com/library/cover/9780134291185/",
+      "price": 33.33,
+      "discount": [10, 20, 30],
+      "rating": [0, 0, 0, 20, 10],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Bad!",
+          "stars": 2
+        }
+      ],
+      "categories": ["Data"]
+    },
+    {
+      "id": 11,
+      "publication-date": "2021-05-17",
+      "authors": [
+        "Kasun Indrasiri",
+        "Sriskandarajah Suhothayan"
+      ],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Design Patterns for Cloud Native Applications",
+      "description": "<span><div><p>With the immense cost savings and scalability the cloud provides, the rationale for building cloud native applications is no longer in question. The real issue is how. With this practical guide, developers will learn about the most commonly used design patterns for building cloud native applications using APIs, data, events, and streams in both greenfield and brownfield development.</p><p>You'll learn how to incrementally design, develop, and deploy large and effective cloud native applications that you can manage and maintain at scale with minimal cost, time, and effort. Authors Kasun Indrasiri and Sriskandarajah Suhothayan highlight use cases that effectively demonstrate the challenges you might encounter at each step.</p><ul><li>Learn the fundamentals of cloud native applications</li><li>Explore key cloud native communication, connectivity, and composition patterns</li><li>Learn decentralized data management techniques</li><li>Use event-driven architecture to build distributed and scalable cloud native applications</li><li>Explore the most commonly used patterns for API management and consumption</li><li>Examine some of the tools and technologies you'll need for building cloud native systems</li></ul></div></span>",
+      "pages": 487,
+      "image": "https://learning.oreilly.com/library/cover/9781492090700/",
+      "price": 47.99,
+      "discount": [10, 20, 30],
+      "rating": [50, 100, 20, 10, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent",
+          "stars": 5
+        }
+      ],
+      "categories": ["Design", "Cloud"]
+    },
+    {
+      "id": 12,
+      "publication-date": "2019-12-19",
+      "authors": ["J.R. Storment", "Mike Fuller"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Cloud FinOps",
+      "description": "<span><div><p>Despite many uncertainties in cloud computing, one truth is evident: costs will always tend to go up unless you’re actively engaged in the process. Whether you’re new to managing cloud spend or a seasoned pro, this book will clarify the often misunderstood workings of cloud billing fundamentals and provide expert strategies on creating a culture of cloud cost management in your organization.</p><p>Drawing on real-world examples of successes and failures of large-scale cloud spenders, this book outlines a road map for building a culture of FinOps in your organization. Beginning with the fundamental concepts required to understand cloud billing concepts, you’ll learn how to enable an efficient and effective FinOps machine.</p><ul><li>Learn how the cloud works when it comes to financial management</li><li>Set up a FinOps team and build a framework for making spend efficiency a priority</li><li>Examine the anatomy of a cloud bill and learn how to manage it</li><li>Get operational recipes for maximizing cloud efficiency</li><li>Understand how to motivate engineering teams to take cost-saving actions</li><li>Explore the FinOps lifecycle: Inform, Optimize, and Operate</li><li>Learn the DNA of a highly functional cloud FinOps culture</li></ul></div></span>",
+      "pages": 399,
+      "image": "https://learning.oreilly.com/library/cover/9781492054610/",
+      "price": 40.99,
+      "discount": [10, 20, 30],
+      "rating": [0, 10, 30, 20, 0],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 3
+        }
+      ],
+      "categories": ["Cloud"]
+    },
+    {
+      "id": 13,
+      "publication-date": "2021-05-04",
+      "authors": ["Danil Zburivsky", "Lynda Partner"],
+      "publishing-company": "Manning Publications",
+      "language": "English",
+      "title": "Designing Cloud Data Platforms",
+      "description": "<span>\n    \n    In <i>Designing Cloud Data Platforms</i>, Danil Zburivsky and Lynda Partner reveal a six-layer approach that increases flexibility and reduces costs. Discover patterns for ingesting data from a variety of sources, then learn to harness pre-built services provided by cloud vendors.\n  \n  </span>",
+      "pages": 574,
+      "image": "https://learning.oreilly.com/library/cover/9781617296444/",
+      "price": 50.99,
+      "discount": [10, 20, 30],
+      "rating": [50, 50, 5, 1, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Design", "Cloud", "Data"]
+    },
+    {
+      "id": 14,
+      "publication-date": "2020-02-07",
+      "authors": ["Roopesh Ramklass"],
+      "publishing-company": "McGraw-Hill",
+      "language": "English",
+      "title": "Oracle Cloud Infrastructure Architect Associate All-in-One Exam Guide (Exam 1Z0-1072)",
+      "description": "<span><p><strong>Publisher's Note: Products purchased from Third Party sellers are not guaranteed by the publisher for quality, authenticity, or access to any online entitlements included with the product.</strong></p><p><strong>This study guide covers 100% of the objectives for the Oracle Cloud Infrastructure Architect Associate exam</strong></p><p>Pass the new Oracle Cloud Infrastructure Architect Associate exam with ease using the detailed information contained in this effective self-study system. Written by an Oracle expert and respected author, <i>Oracle Cloud Infrastructure Architect Associate All-in-One Exam Guide (Exam 1Z0-1072) </i>offers complete coverage of every subject on the challenging exam. Hands-on exercises, practice exam questions with in-depth explanations, “Notes,” “Exam Tips,” and “Cautions” throughout provide professional insight and call out potentially harmful situations. Beyond exam preparation, this guide also serves as a valuable on-the-job reference.</p><p>Covers all exam topics, including:<br/>\n• Oracle Cloud Infrastructure concepts<br/>\n• OCI identity and access management<br/>\n• OCI networking<br/>\n• Compute instances<br/>\n• Storage<br/>\n• Database<br/>\n• Automation tools<br/>\n• OCI best practice architectures</p><p>Online content includes:<br/>\n• 140 practice questions<br/>\n• Fully-customizable online test engine<br/>\n</p></span>",
+      "pages": 574,
+      "image": "https://learning.oreilly.com/library/cover/9781260452600/",
+      "price": 49.99,
+      "discount": [10, 20, 30],
+      "rating": [5, 100, 10, 1, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Cloud", "Architect", "Infrastructure"]
+    },
+    {
+      "id": 15,
+      "publication-date": "2021-10-15",
+      "authors": ["Prasenjit Sarkar", "Guillermo Ruiz"],
+      "publishing-company": "Packt Publishing",
+      "language": "English",
+      "title": "Oracle Cloud Infrastructure for Solutions Architects",
+      "description": "<span><p><b>Develop enterprise architect skills by building secure, highly available, and cost-effective solutions with Oracle Functions, Terraform, and the Oracle Cloud VMware Solution</b></p><h4>Key Features</h4><ul><li>Explore Oracle's Gen 2.0 Cloud infrastructure and its high-performance computing capabilities</li><li>Understand hybrid cloud capabilities and learn to migrate apps from on-premises VMware clusters to OCI</li><li>Learn to create Kubernetes clusters and run containerized applications on Oracle's Container Engine</li></ul><h4>Book Description</h4><p>Oracle Cloud Infrastructure (OCI) is a set of complementary cloud services that enables you to build and run a wide range of applications and services in a highly available hosted environment. This book is a fast-paced practical guide that will help you develop the capabilities to leverage OCI services and effectively manage your cloud infrastructure.</p><p>Oracle Cloud Infrastructure for Solutions Architects begins by helping you get to grips with the fundamentals of Oracle Cloud Infrastructure, and moves on to cover the building blocks of the layers of Infrastructure as a Service (IaaS), such as Identity and Access Management (IAM), compute, storage, network, and database. As you advance, you'll delve into the development aspects of OCI, where you'll learn to build cloud-native applications and perform operations on OCI resources as well as use the CLI, API, and SDK. Finally, you'll explore the capabilities of building an Oracle hybrid cloud infrastructure.</p><p>By the end of this book, you'll have learned how to leverage the OCI and gained a solid understanding of the persona of an architect as well as a developer's perspective.</p><h4>What you will learn</h4><ul><li>Become well-versed with the building blocks of OCI Gen 2.0 Cloud</li><li>Control access to your cloud resources using IAM components</li><li>Manage and operate various compute instances</li><li>Tune and configure various storage options for your apps</li><li>Develop applications on OCI using OCI Registry (OCIR), Cloud Shell, OCI Container Engine for Kubernetes (OKE), and Service Mesh</li><li>Discover ways to use object-relational mapping (ORM) to create infrastructure blocks using Terraform code</li></ul><h4>Who this book is for</h4><p>This book is for cloud architects, cloud developers, and DevSecOps engineers who want to learn how to architect and develop on Oracle Cloud Infrastructure by leveraging a wide range of OCI IAAS capabilities. Working knowledge of Linux, exposure to basic programming, and a basic understanding of networking concepts are needed to get the most out of this book.</p></span>",
+      "pages": 337,
+      "image": "https://learning.oreilly.com/library/cover/9781800566460/",
+      "price": 37.99,
+      "discount": [10, 20, 30],
+      "rating": [0, 0, 10, 50, 5],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Bad!",
+          "stars": 2
+        }
+      ],
+      "categories": ["Cloud", "Architect", "Infrastructure"]
+    },
+    {
+      "id": 16,
+      "publication-date": "2019-09-30",
+      "authors": ["Aurélien Géron"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition",
+      "description": "<span><div><p>Through a series of recent breakthroughs, deep learning has boosted the entire field of machine learning. Now, even programmers who know close to nothing about this technology can use simple, efficient tools to implement programs capable of learning from data. This practical book shows you how.</p><p>By using concrete examples, minimal theory, and two production-ready Python frameworks—Scikit-Learn and TensorFlow—author Aurélien Géron helps you gain an intuitive understanding of the concepts and tools for building intelligent systems. You’ll learn a range of techniques, starting with simple linear regression and progressing to deep neural networks. With exercises in each chapter to help you apply what you’ve learned, all you need is programming experience to get started.</p><ul><li>Explore the machine learning landscape, particularly neural nets</li><li>Use Scikit-Learn to track an example machine-learning project end-to-end</li><li>Explore several training models, including support vector machines, decision trees, random forests, and ensemble methods</li><li>Use the TensorFlow library to build and train neural nets</li><li>Dive into neural net architectures, including convolutional nets, recurrent nets, and deep reinforcement learning</li><li>Learn techniques for training and scaling deep neural nets</li></ul></div></span>",
+      "pages": 1268,
+      "image": "https://learning.oreilly.com/library/cover/9781492032632/",
+      "price": 70.69,
+      "discount": [10, 20, 30],
+      "rating": [0, 0, 12, 51, 6],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Bad!",
+          "stars": 2
+        }
+      ],
+      "categories": [
+        "Software Development",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 17,
+      "publication-date": "2020-10-19",
+      "authors": [
+        "Valliappa Lakshmanan",
+        "Sara Robinson",
+        "Michael Munn"
+      ],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Machine Learning Design Patterns",
+      "description": "<span><div><p>The design patterns in this book capture best practices and solutions to recurring problems in machine learning. The authors, three Google engineers, catalog proven methods to help data scientists tackle common problems throughout the ML process. These design patterns codify the experience of hundreds of experts into straightforward, approachable advice.</p><p>In this book, you will find detailed explanations of 30 patterns for data and problem representation, operationalization, repeatability, reproducibility, flexibility, explainability, and fairness. Each pattern includes a description of the problem, a variety of potential solutions, and recommendations for choosing the best technique for your situation.</p><p>You'll learn how to:</p><ul><li>Identify and mitigate common challenges when training, evaluating, and deploying ML models</li><li>Represent data for different ML model types, including embeddings, feature crosses, and more</li><li>Choose the right model type for specific problems</li><li>Build a robust training loop that uses checkpoints, distribution strategy, and hyperparameter tuning</li><li>Deploy scalable ML systems that you can retrain and update to reflect new data</li><li>Interpret model predictions for stakeholders and ensure models are treating users fairly</li></ul></div></span>",
+      "pages": 618,
+      "image": "https://learning.oreilly.com/library/cover/9781098115777/",
+      "price": 50.99,
+      "discount": [10, 20, 30],
+      "rating": [50, 50, 10, 1, 2],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Design", "Machine Learning"]
+    },
+    {
+      "id": 18,
+      "publication-date": "2022-06-25",
+      "authors": ["Chip Huyen"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Designing Machine Learning Systems",
+      "description": "<span><div><p>Many tutorials show you how to develop ML systems from ideation to deployed models. But with constant changes in tooling, those systems can quickly become outdated. Without an intentional design to hold the components together, these systems will become a technical liability, prone to errors and be quick to fall apart.</p><p>In this book, Chip Huyen provides a framework for designing real-world ML systems that are quick to deploy, reliable, scalable, and iterative. These systems have the capacity to learn from new data, improve on past mistakes, and adapt to changing requirements and environments. Youâ??ll learn everything from project scoping, data management, model development, deployment, and infrastructure to team structure and business analysis.</p><ul><li>Learn the challenges and requirements of an ML system in production</li><li>Build training data with different sampling and labeling methods</li><li>Leverage best techniques to engineer features for your ML models to avoid data leakage</li><li>Select, develop, debug, and evaluate ML models that are best suit for your tasks</li><li>Deploy different types of ML systems for different hardware</li><li>Explore major infrastructural choices and hardware designs</li><li>Understand the human side of ML, including integrating ML into business, user experience, and team structure</li></ul></div></span>",
+      "pages": 237,
+      "image": "https://learning.oreilly.com/library/cover/9781098107956/",
+      "price": 26.66,
+      "discount": [10, 20, 30],
+      "rating": [1, 3, 2, 10, 50],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Worst!",
+          "stars": 1
+        }
+      ],
+      "categories": ["Design", "Machine Learning"]
+    },
+    {
+      "id": 19,
+      "publication-date": "2020-07-20",
+      "authors": ["Hannes Hapke", "Catherine Nelson"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Building Machine Learning Pipelines",
+      "description": "<span><div><p>Companies are spending billions on machine learning projects, but it’s money wasted if the models can’t be deployed effectively. In this practical guide, Hannes Hapke and Catherine Nelson walk you through the steps of automating a machine learning pipeline using the TensorFlow ecosystem. You’ll learn the techniques and tools that will cut deployment time from days to minutes, so that you can focus on developing new models rather than maintaining legacy systems.</p><p>Data scientists, machine learning engineers, and DevOps engineers will discover how to go beyond model development to successfully productize their data science projects, while managers will better understand the role they play in helping to accelerate these projects.</p><ul><li>Understand the steps to build a machine learning pipeline</li><li>Build your pipeline using components from TensorFlow Extended</li><li>Orchestrate your machine learning pipeline with Apache Beam, Apache Airflow, and Kubeflow Pipelines</li><li>Work with data using TensorFlow Data Validation and TensorFlow Transform</li><li>Analyze a model in detail using TensorFlow Model Analysis</li><li>Examine fairness and bias in your model performance</li><li>Deploy models with TensorFlow Serving or TensorFlow Lite for mobile devices</li><li>Learn privacy-preserving machine learning techniques</li></ul></div></span>",
+      "pages": 472,
+      "image": "https://learning.oreilly.com/library/cover/9781492053187/",
+      "price": 46.55,
+      "discount": [10, 20, 30],
+      "rating": [3, 2, 30, 20, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Not bad!",
+          "stars": 3
+        }
+      ],
+      "categories": ["Machine Learning"]
+    },
+    {
+      "id": 20,
+      "publication-date": "2021-10-29",
+      "authors": ["Ben Auffarth"],
+      "publishing-company": "Packt Publishing",
+      "language": "English",
+      "title": "Machine Learning for Time-Series with Python",
+      "description": "<span><p><b>Become proficient in deriving insights from time-series data and analyzing a model's performance</b></p><h4>Key Features</h4><ul><li>Explore popular and modern machine learning methods including the latest online and deep learning algorithms</li><li>Learn to increase the accuracy of your predictions by matching the right model with the right problem</li><li>Master time-series via real-world case studies on operations management, digital marketing, finance, and healthcare</li></ul><h4>Book Description</h4><p>Machine learning has emerged as a powerful tool to understand hidden complexities in time-series datasets, which frequently need to be analyzed in areas as diverse as healthcare, economics, digital marketing, and social sciences. These datasets are essential for forecasting and predicting outcomes or for detecting anomalies to support informed decision making.</p><p>This book covers Python basics for time-series and builds your understanding of traditional autoregressive models as well as modern non-parametric models. You will become confident with loading time-series datasets from any source, deep learning models like recurrent neural networks and causal convolutional network models, and gradient boosting with feature engineering.</p><p>Machine Learning for Time-Series with Python explains the theory behind several useful models and guides you in matching the right model to the right problem. The book also includes real-world case studies covering weather, traffic, biking, and stock market data.</p><p>By the end of this book, you will be proficient in effectively analyzing time-series datasets with machine learning principles.</p><h4>What you will learn</h4><ul><li>Understand the main classes of time-series and learn how to detect outliers and patterns</li><li>Choose the right method to solve time-series problems</li><li>Characterize seasonal and correlation patterns through autocorrelation and statistical techniques</li><li>Get to grips with time-series data visualization</li><li>Understand classical time-series models like ARMA and ARIMA</li><li>Implement deep learning models, like Gaussian processes, transformers, and state-of-the-art machine learning models</li><li>Become familiar with many libraries like Prophet, XGboost, and TensorFlow</li></ul><h4>Who this book is for</h4><p>This book is ideal for data analysts, data scientists, and Python developers who are looking to perform time-series analysis to effectively predict outcomes. Basic knowledge of the Python language is essential. Familiarity with statistics is desirable.</p></span>",
+      "pages": 434,
+      "image": "https://learning.oreilly.com/library/cover/9781801819626/",
+      "price": 47.99,
+      "discount": [10, 20, 30],
+      "rating": [10, 10, 20, 30, 40],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Worst!",
+          "stars": 1
+        }
+      ],
+      "categories": ["Machine Learning"]
+    },
+    {
+      "id": 21,
+      "publication-date": "2021-12-27",
+      "authors": ["James Higginbotham"],
+      "publishing-company": "Addison-Wesley Professional",
+      "language": "English",
+      "title": "Principles of Web API Design: Delivering Value with APIs and Microservices",
+      "description": "<span><div><p><strong>The Full-Lifecycle Guide to API Design</strong></p><p><em><strong>Principles of Web API Design</strong></em> brings together principles and processes to help you succeed across the entire API design lifecycle. Drawing on extensive in-the-trenches experience, leading consultant James Higginbotham helps you align every stakeholder on specific outcomes, design APIs that deliver value, and scale the design process from small teams to the entire organization.</p><p>Higginbotham helps you bring an \"outside-in\" perspective to API design to reflect the voices of customers and product teams, map requirements to specific and well-organized APIs, and choose the right API style for writing them. He walks through a real-world example from the ground up, offering guidance for anyone designing new APIs or extending existing APIs.</p><ul><li><p>Deliver great APIs by getting your design processes right</p></li><li><p>Gain agreement on specific outcomes from design teams, customers, and other stakeholders</p></li><li><p>Craft job stories, conduct EventStorming, and model capabilities</p></li><li><p>Identify the right APIs, and organize operations into coherent API profiles</p></li><li><p>Choose the best styles for each project: REST, gRPC, GraphQL, or event-based async APIs</p></li><li><p>Refine designs based on feedback from documenters, testers, and customers</p></li><li><p>Decompose APIs into microservices</p></li><li><p>Mature your API program, implementing design and management processes that scale</p></li></ul><p>This guide is invaluable for anyone involved in planning or building APIs--architects, developers, team leaders, managers in single and multi-team environments, and any technical or business professional delivering \"API-as-a-product\" offerings.</p><p><em>Register your book for convenient access to downloads, updates, and/or corrections as they become available. See inside book for details.</em></p></div></span>",
+      "pages": 473,
+      "image": "https://learning.oreilly.com/library/cover/9780137355754/",
+      "price": 48.99,
+      "discount": [10, 20, 30],
+      "rating": [0, 0, 1, 5, 100],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Worst!",
+          "stars": 1
+        }
+      ],
+      "categories": ["Web", "Design"]
+    },
+    {
+      "id": 22,
+      "publication-date": "2019-10-23",
+      "authors": ["Arnaud Lauret"],
+      "publishing-company": "Manning Publications",
+      "language": "English",
+      "title": "The Design of Web APIs",
+      "description": "<span><p>Drawing on author Arnaud Lauret's many years of API design experience, this book teaches you how to gather requirements, how to balance business and technical goals, and how to adopt a consumer-first mindset. It teaches effective practices using numerous interesting examples.</p></span>",
+      "pages": 614,
+      "image": "https://learning.oreilly.com/library/cover/9781617295102/",
+      "price": 55.99,
+      "discount": [10, 20, 30],
+      "rating": [20, 30, 1, 0, 5],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Web", "Design"]
+    },
+    {
+      "id": 23,
+      "publication-date": "2018-05-11",
+      "authors": ["Jennifer Robbins"],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Learning Web Design, 5th Edition",
+      "description": "<span><div><p>Do you want to build web pages but have no prior experience? This friendly guide is the perfect place to start. You’ll begin at square one, learning how the web and web pages work, and then steadily build from there. By the end of the book, you’ll have the skills to create a simple site with multicolumn pages that adapt for mobile devices.</p><p>Each chapter provides exercises to help you learn various techniques and short quizzes to make sure you understand key concepts.</p><p>This thoroughly revised edition is ideal for students and professionals of all backgrounds and skill levels. It is simple and clear enough for beginners, yet thorough enough to be a useful reference for experienced developers keeping their skills up to date.</p><ul><li>Build HTML pages with text, links, images, tables, and forms</li><li>Use style sheets (CSS) for colors, backgrounds, formatting text, page layout, and even simple animation effects</li><li>Learn how JavaScript works and why the language is so important in web design</li><li>Create and optimize web images so they’ll download as quickly as possible</li><li><b>NEW!</b> Use CSS Flexbox and Grid for sophisticated and flexible page layout</li><li><b>NEW!</b> Learn the ins and outs of Responsive Web Design to make web pages look great on all devices</li><li><b>NEW!</b> Become familiar with the command line, Git, and other tools in the modern web developer’s toolkit</li><li><b>NEW!</b> Get to know the super-powers of SVG graphics</li></ul></div></span>",
+      "pages": 1305,
+      "image": "https://learning.oreilly.com/library/cover/9781491960196/",
+      "price": 69.69,
+      "discount": [10, 20, 30],
+      "rating": [50, 10, 10, 5, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Excellent!",
+          "stars": 5
+        }
+      ],
+      "categories": ["Web", "Design"]
+    },
+    {
+      "id": 24,
+      "publication-date": "2020-10-06",
+      "authors": ["Mike Amundsen"],
+      "publishing-company": "Pragmatic Bookshelf",
+      "language": "English",
+      "title": "Design and Build Great Web APIs",
+      "description": "<span><div><p>APIs are transforming the business world at an increasing pace. Gain the essential skills needed to quickly design, build, and deploy quality web APIs that are robust, reliable, and resilient. Go from initial design through prototyping and implementation to deployment of mission-critical APIs for your organization. Test, secure, and deploy your API with confidence and avoid the \"release into production\" panic. Tackle just about any API challenge with more than a dozen open-source utilities and common programming patterns you can apply right away.</p><p>Good API design means starting with the API-First principle - understanding who is using the API and what they want to do with it - and applying basic design skills to match customers' needs while solving business-critical problems. Use the Sketch-Design-Build method to create reliable and scalable web APIs quickly and easily without a lot of risk to the day-to-day business operations. Create clear sequence diagrams, accurate specifications, and machine-readable API descriptions all reviewed, tested, and ready to turn into fully-functional NodeJS code.</p><p>Create reliable test collections with Postman and implement proper identity and access control security with AuthO-without added cost or risk to the company. Deploy all of this to Heroku using a continuous delivery approach that pushes secure, well-tested code to your public servers ready for use by both internal and external developers.</p><p>From design to code to test to deployment, unlock hidden business value and release stable and scalable web APIs that meet customer needs and solve important business problems in a consistent and reliable manner.</p></div></span>",
+      "pages": 452,
+      "image": "https://learning.oreilly.com/library/cover/9781680508123/",
+      "price": 39.99,
+      "discount": [10, 20, 30],
+      "rating": [20, 10, 10, 5, 5],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Good!",
+          "stars": 4
+        }
+      ],
+      "categories": ["Web", "Design"]
+    },
+    {
+      "id": 25,
+      "publication-date": "2018-09-17",
+      "authors": [
+        "Brenda Jin",
+        "Saurabh Sahni",
+        "Amir Shevat"
+      ],
+      "publishing-company": "O'Reilly Media, Inc.",
+      "language": "English",
+      "title": "Designing Web APIs",
+      "description": "<span><div><p>Using a web API to provide services to application developers is one of the more satisfying endeavors that software engineers undertake. But building a popular API with a thriving developer ecosystem is also one of the most challenging. With this practical guide, developers, architects, and tech leads will learn how to navigate complex decisions for designing, scaling, marketing, and evolving interoperable APIs.</p><p>Authors Brenda Jin, Saurabh Sahni, and Amir Shevat explain API design theory and provide hands-on exercises for building your web API and managing its operation in production. You’ll also learn how to build and maintain a following of app developers. This book includes expert advice, worksheets, checklists, and case studies from companies including Slack, Stripe, Facebook, Microsoft, Cloudinary, Oracle, and GitHub.</p><ul><li>Get an overview of request-response and event-driven API design paradigms</li><li>Learn best practices for designing an API that meets the needs of your users</li><li>Use a template to create an API design process</li><li>Scale your web API to support a growing number of API calls and use cases</li><li>Regularly adapt the API to reflect changes to your product or business</li><li>Provide developer resources that include API documentation, samples, and tools</li></ul></div></span>",
+      "pages": 271,
+      "image": "https://learning.oreilly.com/library/cover/9781492026914/",
+      "price": 24.96,
+      "discount": [10, 20, 30],
+      "rating": [2, 3, 30, 1, 1],
+      "comments": [
+        {
+          "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
+          "content": "Not bad!",
+          "stars": 3
+        }
+      ],
+      "categories": ["Web", "Design"]
+    }
+  ]
+}
