@@ -11,6 +11,9 @@ module.exports = {
     let DTO = await authService.login(req.body);
     let stt = 200;
     if (DTO.error) stt = 500;
-    res.status(stt).json(DTO.msg);
+    res.status(stt).json({
+      token: DTO.token,
+      msg: DTO.msg,
+    });
   },
 };

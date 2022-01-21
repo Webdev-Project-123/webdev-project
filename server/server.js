@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
     );
 });
 
-// * Import api module
+// * Import api module, common module
 const api = require('./api');
 
 // * Routing
