@@ -37,7 +37,7 @@ module.exports = {
     };
 
     await db.get('users').push(objectUser).write();
-    await db.get('refreshToken').push({ id: objectUser.id, refreshToken: '' }).write();
+    await db.get('refresh-tokens').push({ id: objectUser.id, refreshToken: '' }).write();
 
     return {
       error: false,
@@ -66,7 +66,7 @@ module.exports = {
 
         const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
         const refreshToken = await jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '24h' });
-        await db.get('refreshToken').find({ id: filterUser[0].id }).assign({ refreshToken }).write();
+        await db.get('refresh-tokens').find({ id: filterUser[0].id }).assign({ refreshToken }).write();
 
         return {
           accessToken,
@@ -106,13 +106,25 @@ module.exports = {
 
     try {
       const result = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
-      const users = await db.get('refreshToken').find({ refreshToken }).value();
+      const users = await db.get('refresh-tokens').find({ refreshToken }).value();
+      
       if (!users || users.length === 0) {
         return {
           statusCode: 403,
           msg: 'FORBIDDEN',
         };
       }
+
+      // console.log(users.id);
+      const emails = await db.get('users').find({ 'id': users.id }).value();
+      // console.log(emails);
+      if (!emails || emails.length === 0 || result.email !== emails.email) {
+        return {
+          statusCode: 403,
+          msg: 'FORBIDDEN',
+        };
+      }
+
       const payload = {
         email: result.email,
         role: result.role,
