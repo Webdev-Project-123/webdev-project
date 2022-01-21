@@ -14,8 +14,4 @@ router.use('/upload', upload);
 router.use('/products', products);
 router.use('/categories', categories);
 
-const auth = require('./auth');
-
-router.use('/auth', auth);
-
 module.exports = router;
