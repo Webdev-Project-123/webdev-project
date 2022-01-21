@@ -10,4 +10,8 @@ router.get('/something', (req, res) => {
   res.send('OK');
 });
 
+const auth = require('./auth');
+
+router.use('/auth', auth);
+
 module.exports = router;
