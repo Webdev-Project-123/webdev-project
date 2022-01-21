@@ -16,7 +16,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^14.1.0",
+    "dotenv": "^14.2.0",
     "express": "^4.17.2",
     "http-errors": "^1.8.1",
     "json-server": "^0.17.0",
