@@ -33,9 +33,6 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-// * Import ramda module
-const R = require('ramda');
-
 // * Get homepage
 app.get('/', (req, res) => {
   res
@@ -52,27 +49,19 @@ const api = require('./api');
 app.use('/api', api);
 
 // * Error 404 handling
-app.use((err, req, res, next) => {
-  if (err) next(err);
-  else {
-    res
-      .status(404)
-      .sendFile(path.join(__dirname, './public/404.html'));
-  }
-});
-
-app.use((err, req, res, next) => {
-  if (R.equals(err.statusCode, 404)) {
-    res
-      .status(404)
-      .sendFile(path.join(__dirname, './public/404.html'));
-  } else next(err);
+app.use((req, res) => {
+  res
+    .status(404)
+    .sendFile(path.join(__dirname, './public/404.html'));
 });
 
 // * The other errors handling
 app.use((err, req, res) => {
   const { statusCode, message } = err;
-  res.status(statusCode || 500).json(message);
+  res.status(statusCode || 500).json({
+    status: statusCode || 500,
+    message: message || 'Internal Server Error',
+  });
 });
 
 module.exports = app;
