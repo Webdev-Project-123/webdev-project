@@ -58,7 +58,6 @@
       "uploaded": []
     },
     {
-<<<<<<< HEAD
       "id": 3,
       "email": "lemsauanhphong@gmail.com",
       "password": "$2b$10$IV45eEvBKHNmgazH4QbSOuwbjxmcgIxWyxvDHr0Mpyq.Ag91SYB2q",
@@ -111,12 +110,6 @@
       "role": "user",
       "cart": [],
       "bought": []
-=======
-      "id": 123
-    },
-    {
-      "id": 123
->>>>>>> origin/server
     }
   ],
   "products": [
@@ -133,7 +126,7 @@
       "pages": 100,
       "language": "Language 1",
       "description": "Description 1",
-      "rating": [100, 100, 100, 100, 100], // 5*, 4*, 3*, 2*, 1*
+      "rating": [100, 100, 100, 100, 100], 
       "comments": [
         {
           "avatar": "Avatar 1",
