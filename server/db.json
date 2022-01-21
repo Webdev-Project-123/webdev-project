@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "lemauanhphong",
-      "email": "lemauanhphong@gmail.com",
+      "email": "lemauanhphsong@gmail.com",
       "password": "AB5568F44",
       "phone": "00000",
       "address": "",
@@ -58,6 +58,7 @@
       "uploaded": []
     },
     {
+<<<<<<< HEAD
       "id": 3,
       "email": "lemsauanhphong@gmail.com",
       "password": "$2b$10$IV45eEvBKHNmgazH4QbSOuwbjxmcgIxWyxvDHr0Mpyq.Ag91SYB2q",
@@ -110,6 +111,12 @@
       "role": "user",
       "cart": [],
       "bought": []
+=======
+      "id": 123
+    },
+    {
+      "id": 123
+>>>>>>> origin/server
     }
   ],
   "products": [
