@@ -1,11 +1,10 @@
 const bcrypt = require('bcrypt');
 const db = require('../../models/db');
-// const db = require('../../db.json');
 
 module.exports = {
   signup: async (body) => {
-    let users = db.get('users').value();
-    let filterUser = users.filter((user) => user.email === body.email);
+    let users = await db.get('users').value();
+    let filterUser = await users.filter((user) => user.email === body.email);
 
     if (filterUser.length > 0) {
       return {
@@ -16,7 +15,7 @@ module.exports = {
 
     let salt = await bcrypt.genSalt(10);
     let hashPassword = await bcrypt.hash(body.password, salt);
-    let objectUser = await {
+    let objectUser = {
       id: users.length + 1,
       name: body.name,
       email: body.email,
@@ -28,12 +27,8 @@ module.exports = {
       cart: [],
       bought: [],
     };
-    // console.log(objectUser);
-    await db.get('users').push(objectUser).write();
 
-    // await db.get('users').value().forEach((user) => {
-    //   console.log(user);
-    // });
+    await db.get('users').push(objectUser).write();
 
     return {
       error: false,
@@ -41,7 +36,6 @@ module.exports = {
     };
   },
   login: async (body) => {
-    console.log(body);
     let users = await db.get('users').value();
     let filterUser = await users.filter((user) => user.email === body.email);
     if (filterUser.length === 1) {
@@ -70,7 +64,7 @@ module.exports = {
     } else if (filterUser.length === 0) {
       return {
         error: true,
-        msg: 'Please signup before login',
+        msg: 'Wrong password or email address',
       };
     }
   },

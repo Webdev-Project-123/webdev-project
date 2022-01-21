@@ -9,7 +9,6 @@ module.exports = {
   },
   login: async (req, res, next) => { 
     let DTO = await authService.login(req.body);
-    console.log(DTO)
     let stt = 200;
     if (DTO.error) stt = 500;
     res.status(stt).json(DTO.msg);

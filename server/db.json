@@ -101,6 +101,15 @@
       "role": "user",
       "cart": [],
       "bought": []
+    },
+    {
+      "id": 8,
+      "email": "lemsauasdanaahpsahong@gmail.com",
+      "password": "$2b$10$YAUF2Wchphe.SkUXQTc5hO3X9.kmH0CROlBWRfCkgTRG7iHP5HA4K",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
