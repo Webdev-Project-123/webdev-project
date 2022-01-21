@@ -11,6 +11,7 @@ module.exports = {
         sans: ["Open Sans", "sans-serif"],
         sourceCodePro: ["Source Code Pro", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
+        robotoS: ["Roboto Slab", "sans-serif"],
       },
     },
   },
