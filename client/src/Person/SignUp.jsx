@@ -1,38 +1,58 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "./components/Input";
 import Label from "./components/Label";
+import signUpBg from "./Image/signUpBg.jpg";
 
 function SignUp() {
   const [input, setInput] = useState({
-    username: "",
     password: "",
     confirmPass: "",
     email: "",
+    phone: "",
   });
 
   const inputStyle =
-    "w-full mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:font-ubuntu focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
+    "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
   const labelStyle =
-    "w-full flex justify-center items-center gap-3 text-[#47392b]";
+    "w-full flex justify-center items-center flex-wrap gap-3 text-[#47392b]";
 
   const handleOnChange = (e) => {
     const newInput = { ...input };
     newInput[e.target.name] = e.target.value;
+    console.log(newInput);
+    if (e.target.name === "confirmPass" || e.target.name === "password") {
+      if (newInput.confirmPass !== newInput.password) {
+        document.getElementById("confirmPass").classList.remove("opacity-0");
+        document.getElementById("confirmPass").classList.add("opacity-100");
+      } else {
+        document.getElementById("confirmPass").classList.remove("opacity-100");
+        document.getElementById("confirmPass").classList.add("opacity-0");
+      }
+    }
     setInput(newInput);
   };
 
+  useEffect(() => {
+    document.getElementById("confirmPass").classList.add("opacity-0");
+  }, []);
+
   const handleOnSignUp = () => {};
+
+  const handlePreventDefalut = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
 
   return (
     <div className="relative w-screen h-screen">
       <div className="absolute w-screen h-screen md:-translate-x-[5rem]">
         <img
           className="rounded-l-xl h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1607684442857-515a6017aaac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          src={signUpBg}
         />
       </div>
-      <div className="xl:w-2/5 md:w-[65%] sm:w-full relative float-right">
-        <div className="absolute top-7 left-7 font-robotoS font-semi flex justify-center items-center cursor-pointer group md:text-[20px]">
+      <div className="xl:w-2/5 md:w-[65%] sm:w-100 relative md:float-right">
+        <div className="absolute top-3 right-7 font-robotoS font-semi flex justify-center items-center cursor-pointer group md:text-[20px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 group-hover:-translate-x-3 transition-all ease-linear"
@@ -47,19 +67,19 @@ function SignUp() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1>Trang chủ</h1>
+          <h1 className="hidden xsm:block">Trang chủ</h1>
         </div>
-        <div className="flex flex-wrap flex-col justify-center gap-[30px] w-full h-screen p-6 lg:p-12 bg-gradient-to-tr to-[#ffffff] via-[#da973a] from-[#a16106] sm:text-xl">
+        <div className="flex flex-wrap flex-col justify-center md:gap-[30px] gap-[20px] w-full h-screen md:px-6 lg:px-12 bg-gradient-to-tr to-[#ffffff] via-[#f1b560] from-[#b83602] sm:text-xl px-3">
           <div className="h-auto">
-            <h1 className="p-0 h-content ml-8 inline-block text-[40px] text-[#51050F] font-ubuntu font-bold">
+            <h1 className="p-0 h-content ml-8 inline-block md:text-[40px] text-[30px] text-[#2b2727] font-ubuntu font-bold">
               Đăng ký ngay
             </h1>
           </div>
-          <div className="flex flex-wrap justify-between items-stretch gap-4">
+          <div className="flex flex-wrap justify-between items-stretch w-full">
             <Label className={labelStyle}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#47392b]"
+                className="h-6 w-1/10 flex-shrink-0 text-[#47392b]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -68,17 +88,20 @@ function SignUp() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
                 />
               </svg>
               <Input
-                type={"text"}
-                name="username"
-                placeholder={"Tài khoản"}
+                type={"email"}
+                name="email"
+                placeholder={"Email"}
                 onChange={handleOnChange}
-                value={input.username}
+                value={input.email}
                 className={inputStyle}
               />
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 mb-2 ml-9">
+                Invalid Email*
+              </p>
             </Label>
             <Label className={labelStyle}>
               <svg
@@ -103,6 +126,9 @@ function SignUp() {
                 value={input.password}
                 className={inputStyle}
               />
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 mb-2 ml-9">
+                Invalid Password*
+              </p>
             </Label>
             <Label className={labelStyle}>
               <svg
@@ -127,6 +153,13 @@ function SignUp() {
                 value={input.confirmPass}
                 className={inputStyle}
               />
+              <p
+                id="confirmPass"
+                onClick={handlePreventDefalut}
+                className="italic block w-full p-0 -mt-6 mb-2 ml-9"
+              >
+                Invalid Comfirm Password*
+              </p>
             </Label>
             <Label className={labelStyle}>
               <svg
@@ -140,22 +173,25 @@ function SignUp() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
               <Input
-                type={"email"}
-                name="email"
-                placeholder={"Email"}
+                type={"tel"}
+                name="phone"
+                placeholder={"Số điện thoại"}
                 onChange={handleOnChange}
-                value={input.email}
+                value={input.phone}
                 className={inputStyle}
               />
+              <p className="invisible peer-invalid:visible peer-invalid:italic block w-full p-0 -mt-6 ml-9">
+                Invalid Phone Number*
+              </p>
             </Label>
           </div>
-          <div className="self-end justify-self-end flex justify-center items-center">
+          <div className="w-full self-end justify-self-end flex justify-center items-center font-robotoS text-base -mt-5">
             <div className="text-[#47392b] float-right flex justify-center items-center">
-              <span className="mr-2">Đã có tài khoản? </span>
+              <span className="mr-2 hidden sm:inline ">Đã có tài khoản? </span>
               <a
                 href="#"
                 className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149]"
@@ -163,9 +199,22 @@ function SignUp() {
                 Đăng nhập
               </a>
             </div>
-            <button className="border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] rounded-md float-right shadow-phuongCustom font-bold active:translate-y-1 active:shadow-phuongCustomActive hover:bg-[#f5b55c]">
+            {/*  */}
+            <button className="border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right  font-bold active:translate-y-1 hover:bg-[#f7975f]">
               Đăng ký
             </button>
+          </div>
+          <div className="w-full self-center mt-5">
+            <p className="block mx-auto text-center md:w-[28rem] w-[22rem] text-[15px] md:text-xl font-robotoS text-[#47392b]">
+              Bằng việc đăng kí, bạn đã đồng ý với Wordy về{" "}
+              <a className="italic" href="#">
+                Điều khoản dịch vụ
+              </a>{" "}
+              {"& "}
+              <a className="italic" href="#">
+                Chính sách bảo mật
+              </a>{" "}
+            </p>
           </div>
         </div>
       </div>

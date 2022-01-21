@@ -13,6 +13,10 @@ module.exports = {
         ubuntu: ["Ubuntu", "sans-serif"],
         robotoS: ["Roboto Slab", "sans-serif"],
       },
+      screens: {
+        ipSE: "320px",
+        xsm: "375px",
+      },
     },
   },
   variants: {
