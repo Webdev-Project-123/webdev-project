@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require('../../models/db');
 
-const secret = process.env.SECRET_KEY;
+const secret_key = process.env.SECRET_KEY;
 // console.log(secret);
 
 module.exports = {
@@ -14,8 +14,8 @@ module.exports = {
       };
     }
 
-    let users = await db.get('users').value();
-    let filterUser = await users.filter((user) => user.email === body.email);
+    const users = await db.get('users').value();
+    const filterUser = await users.filter((user) => user.email === body.email);
 
     if (filterUser.length > 0) {
       return {
@@ -24,9 +24,9 @@ module.exports = {
       };
     }
 
-    let salt = await bcrypt.genSalt(10);
-    let hashPassword = await bcrypt.hash(body.password, salt);
-    let objectUser = {
+    const salt = await bcrypt.genSalt(10);
+    const hashPassword = await bcrypt.hash(body.password, salt);
+    const objectUser = {
       id: users.length + 1,
       name: body.name,
       email: body.email,
@@ -47,8 +47,8 @@ module.exports = {
     };
   },
   login: async (body) => {
-    let users = await db.get('users').value();
-    let filterUser = await users.filter((user) => user.email === body.email);
+    const users = await db.get('users').value();
+    const filterUser = await users.filter((user) => user.email === body.email);
     if (filterUser.length === 1) {
       const cmpResult = await bcrypt.compare(body.password, filterUser[0].password);
 
@@ -65,10 +65,10 @@ module.exports = {
           email: filterUser[0].email,
           role: filterUser[0].role,
         };
-        let signOptions = {
+        const signOptions = {
           expiresIn: '12h',
         };
-        const token = await jwt.sign(payload, secret, signOptions);
+        const token = await jwt.sign(payload, secret_key, signOptions);
 
         return {
           token,

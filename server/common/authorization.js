@@ -1,5 +1,6 @@
-const public = process.env.PUBLIC_KEY;
 const jwt = require('jsonwebtoken');
+
+const publicKey = process.env.PUBLIC_KEY;
 
 module.exports = {
   isValid: async (req, res, next) => {
@@ -13,7 +14,7 @@ module.exports = {
       };
     }
 
-    const user = await jwt.verify(token, public);
+    const user = await jwt.verify(token, publicKey);
     if (user.err) {
       return {
         error: true,
