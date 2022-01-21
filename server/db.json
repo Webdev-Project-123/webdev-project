@@ -23,6 +23,18 @@
       "role": "user",
       "cart": [],
       "bought": []
+    },
+    {
+      "id": 3,
+      "name": "Admin1",
+      "email": "hlehuy6@gmail.com",
+      "password": "$2b$10$lgy7rZL2Ljylty8kD5jMK.NbHa8vTFusmZ0u3sXcaz7XB5ggwgru.",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
@@ -882,6 +894,16 @@
         "Web",
         "Design"
       ]
+    }
+  ],
+  "reset-Token": [
+    {
+      "email": "",
+      "resetToken": ""
+    },
+    {
+      "email": "hlehuy6@gmail.com",
+      "resetToken": "54f1fc17-a5db-4f8c-aef3-12cde32e31a3"
     }
   ],
   "refresh-tokens": [
