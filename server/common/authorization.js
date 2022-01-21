@@ -23,6 +23,7 @@ module.exports = {
       };
     }
 
-    next(user);
+    req.user = user;
+    next();
   },
 };
