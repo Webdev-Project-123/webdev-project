@@ -41,3 +41,11 @@
 body {
   overflow-x: hidden;
 }
+
+.page-number {
+  @apply py-1 px-3 m-2 hover:bg-[#FFC288] rounded-lg cursor-pointer transition duration-200;
+}
+
+.selected-page-number { 
+  @apply py-1 px-3 m-2 bg-[#FEA82F] rounded-lg cursor-pointer transition duration-200 text-white;
+}
