@@ -10,7 +10,14 @@
       "avatar": "",
       "role": "admin",
       "cart": [],
-      "bought": []
+      "bought": [
+        {
+          "id": 1,
+          "title": "Collaborative Product Design",
+          "discount": 30.49,
+          "quantity": 2
+        }
+      ]
     },
     {
       "id": 2,
@@ -41,6 +48,18 @@
       "name": "name name",
       "email": "email@email.email",
       "password": "$2b$10$HjJcJu1b7xSUZT3EbIGzl.VFroF55v3L63.dtm03kSpMU1WxvLuva",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 5,
+      "name": "wibu",
+      "email": "hentaiz@gmail.com",
+      "password": "$2b$10$ARjRxvUQ99BHJJCGICYoh.Qp2J8Dj8cXWEs1ZFbFheE6XmDUiA2Gm",
       "phone": "",
       "address": "",
       "avatar": "",
@@ -2755,6 +2774,10 @@
     },
     {
       "id": 4,
+      "refreshToken": ""
+    },
+    {
+      "id": 5,
       "refreshToken": ""
     }
   ]
