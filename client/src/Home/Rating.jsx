@@ -15,7 +15,7 @@ const Rating = ({ avg }) => {
   for (let i = 0; i < Math.round(avg); i++)
     arr.push(Star(1));
 
-  for (let i = 0; i < avg - Math.round(avg); i++)
+  for (let i = 0; i < 5 - Math.round(avg); i++)
     arr.push(Star(0));
 
   return <div className='flex justify-start'>
