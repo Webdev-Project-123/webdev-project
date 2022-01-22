@@ -8,7 +8,7 @@ const { sendResetLink } = require("../../common/sendEmail");
 
 module.exports = {
   signup: async (body) => {
-    if (!body.name || !body.email || !body.name) {
+    if (!body.name || !body.email || !body.password) {
       return {
         error: true,
         msg: 'Invalid request',
