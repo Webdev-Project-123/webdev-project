@@ -149,11 +149,18 @@ module.exports = {
     try {
       const token = uuidv4();
       let info = await sendResetLink(email, token);
+      
+      const reset_Token = await db.get('reset-Token').value();
+      const rsToken = reset_Token.filter((resetToken) => resetToken.email === email)
 
-      await db.get('reset-Token').push({
-        email: email,
-        resetToken: token,
-      }).write();
+      if (rsToken.length === 0) {
+        await db.get('reset-Token').push({
+          email: email,
+          resetToken: token,
+        }).write();
+      } else {
+        await db.get('reset-Token').find({ email: email }).assign({ resetToken : token }).write();
+      }
 
       return {
         statusCode: 200,
@@ -182,8 +189,7 @@ module.exports = {
           let salt = await bcrypt.genSalt(10);
           let hashPassword = await bcrypt.hash(newPassword, salt);
 
-          // user[0].password = hashPassword;
-          await db.get('users').find({ password: user[0].password }).assign({ hashPassword }).write();
+          await db.get('users').find({ email: user[0].email }).assign({ password : hashPassword }).write();
         }
       }
 
