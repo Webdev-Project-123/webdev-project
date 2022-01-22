@@ -18,7 +18,11 @@ const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-10/JointOperation5_0.jpeg",
 ];
 
-const groups = ['Fiction', 'Nonfiction', 'All products']
+const groups = [
+  'Fiction',
+  'Nonfiction',
+  'All products'
+];
 
 const productData = [
   {
@@ -82,10 +86,10 @@ const Home = () => {
     </div>
 
     {/* GROUPS */}
-    <div className="px-16 mt-4 mb-4 flex items-center justify-center">
-      {groups.map((group, index) => {
-        <GroupThumb group={group} />
-      })}
+    <div className="px-16 mt-10 mb-4 grid grid-cols-3 gap-8">
+      {groups.map((group, index) =>
+        <GroupThumb groupData={group} key={index} />
+      )}
     </div>
 
     {/* CATEGORIES */}

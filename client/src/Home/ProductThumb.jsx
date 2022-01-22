@@ -28,11 +28,11 @@ const ProductThumb = ({ productData }) => {
     <div className='relative flex items-center justify-between px-2 pt-1 leading-tight'>
       <div>
         <Rating avg={4.5} />
-        <p className='flex items-center text-red-600 font-semibold'>600000 đ
+        <div className='flex items-center text-red-600 font-semibold'>600000 đ
           <p className='ml-2 px-2 py-1 bg-red-600 rounded-md text-white text-xs'>
             -{Math.round(100 / (770000 / 600000))}%
           </p>
-        </p>
+        </div>
         <p className='line-through text-sm text-gray-500 -top-2'>770000 đ</p>
       </div>
       <button className='absolute bottom-1 right-1 transition duration-300 hover:bg-[#FEA82F] rounded-full p-2'>

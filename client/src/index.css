@@ -17,3 +17,16 @@
   font-family: "Roboto Slab";
   src: url("./Person/Font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
+
+.card-zoom {
+  @apply overflow-hidden shadow-tuanProductThumb ease-in-out duration-500 transition bg-center;
+}
+
+.card-zoom-image {
+  @apply absolute transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+
+.card-zoom:hover, .card-zoom-image {
+  @apply scale-105;
+}
+
