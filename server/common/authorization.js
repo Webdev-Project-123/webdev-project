@@ -18,7 +18,6 @@ module.exports = {
 
       return next();
     } catch {
-      console.log("ok");
       return next(createErr(403, 'FORBIDDEN'));
     }
   },
@@ -39,7 +38,7 @@ module.exports = {
       if (filterUser.email !== req.user.email && req.user.role !== 'admin') {
         return next(createErr(403, 'FORBIDDEN'));
       }
-      
+
       req.userid = req.params.userid;
       return next();
     }
