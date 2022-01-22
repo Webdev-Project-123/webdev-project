@@ -168,7 +168,7 @@ module.exports = {
     }
   },
 
-  resetPassword: async ({ token, newPassword }) => {
+  resetPassword: async (token, newPassword) => {
     try {
       const users = await db.get('users').value();
       const reset_Token = await db.get('reset-Token').value();

@@ -42,7 +42,7 @@ module.exports = {
 
   resetPassword: async (req, res, next) => {
     try {
-      const DTO = await authService.resetPassword(req.body);
+      const DTO = await authService.resetPassword(req.params.resetToken, req.body.newPassword);
       res.status(200).json(DTO);
     } catch (error) {
       next(createErr(500, error.msg));
