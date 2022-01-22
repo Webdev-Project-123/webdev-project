@@ -16,6 +16,7 @@ module.exports = {
     );
     const productsByName = await R.filter(byName)(products);
 
+    // * Return 400 'Missing search results' error
     if (R.isEmpty(productsByName)) return { status: 400 };
 
     const DTO = {

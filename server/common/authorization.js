@@ -5,10 +5,12 @@ const db = require('../models/db');
 
 module.exports = {
   isValid: async (req, res, next) => {
-    const token = R.compose(
-      R.last,
-      R.split(' '),
-    )(req.headers.authorization);
+    if (R.isNil(req.headers.authorization)) {
+      next(createErr(401, 'UNAUTHORIZED'));
+      return;
+    }
+
+    const token = R.split(' ')(req.headers.authorization)[1];
 
     if (R.isNil(token)) {
       next(createErr(401, 'UNAUTHORIZED'));
