@@ -1,20 +1,32 @@
+const R = require('ramda');
 const db = require('../../models/db');
+const renameKeys = require('../../common/renameKeys');
 
 module.exports = {
-  view: () => {
-    const list = db.get('products').value();
+  view: async () => {
+    const products = await db.get('products').value();
 
-    let filterList = [];
-    for (let i = 0; i < list.length; ++i) {
-      filterList.push({
-        productID: list[i].id,
-        productName: list[i].title,
-        productUploadDate: list[i]['publication-date'],
-      });
-    }
+    // * Get all uploaded products
+    const uploadedProducts = await R.map(
+      R.compose(
+        renameKeys({
+          id: 'productId',
+          title: 'productName',
+          'uploaded-date': 'productUploadDate',
+        }),
+        R.pickAll(['id', 'title', 'uploaded-date']),
+      ),
+    )(products);
 
-    return {
-      list: filterList,
+    // * Return 400 'Missing uploaded products' error
+    if (R.isEmpty(uploadedProducts)) return { status: 400 };
+
+    const DTO = {
+      status: 200,
+      message: 'OK',
+      data: uploadedProducts,
     };
+
+    return DTO;
   },
-}
+};
