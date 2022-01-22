@@ -549,11 +549,7 @@
       "id": 10,
       "uploaded-date": "2022-02-30",
       "publication-date": "2016-01-05",
-      "authors": [
-        "Thomas Erl",
-        "Wajid Khattak",
-        "Paul Buhler"
-      ],
+      "authors": ["Thomas Erl", "Wajid Khattak", "Paul Buhler"],
       "publishing-company": ["Pearson"],
       "language": "English",
       "title": "Big Data Fundamentals: Concepts, Drivers & Techniques",
@@ -614,10 +610,7 @@
       "id": 11,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-05-17",
-      "authors": [
-        "Kasun Indrasiri",
-        "Sriskandarajah Suhothayan"
-      ],
+      "authors": ["Kasun Indrasiri", "Sriskandarajah Suhothayan"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Design Patterns for Cloud Native Applications",
@@ -917,20 +910,13 @@
           "name": "Ronald Weasley"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Machine Learning"
-      ]
+      "categories": ["Software Development", "Machine Learning"]
     },
     {
       "id": 17,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-10-19",
-      "authors": [
-        "Valliappa Lakshmanan",
-        "Sara Robinson",
-        "Michael Munn"
-      ],
+      "authors": ["Valliappa Lakshmanan", "Sara Robinson", "Michael Munn"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Machine Learning Design Patterns",
@@ -1400,11 +1386,7 @@
       "id": 25,
       "uploaded-date": "2022-02-30",
       "publication-date": "2018-09-17",
-      "authors": [
-        "Brenda Jin",
-        "Saurabh Sahni",
-        "Amir Shevat"
-      ],
+      "authors": ["Brenda Jin", "Saurabh Sahni", "Amir Shevat"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Designing Web APIs",
@@ -1967,11 +1949,7 @@
       "id": 36,
       "uploaded-date": "2022-02-30",
       "publication-date": "2001-11-04",
-      "authors": [
-        "Peter Pande",
-        "Robert Neuman",
-        "Roland Cavanagh"
-      ],
+      "authors": ["Peter Pande", "Robert Neuman", "Roland Cavanagh"],
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "The Six Sigma Way Team Fieldbook: An Implementation Guide for Process Improvement Teams",
@@ -2780,7 +2758,6 @@
     {
       "id": 4,
       "refreshToken": ""
-<<<<<<< HEAD
     },
     {
       "id": 5,
@@ -2789,8 +2766,6 @@
     {
       "id": 6,
       "refreshToken": ""
-=======
->>>>>>> origin/server
     }
   ]
 }
