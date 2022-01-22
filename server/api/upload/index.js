@@ -2,6 +2,8 @@ const router = require('express').Router();
 
 const uploadController = require('./controller');
 
+const authorize = require('../../common/authorization');
+
 router.get('/:userId', uploadController.view);
 router.put('/:userId/update', uploadController.update);
 router.delete('/:userId/delete', uploadController.delete);

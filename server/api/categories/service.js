@@ -9,11 +9,12 @@ module.exports = {
     // * Filter products by category
     const byCategory = R.compose(
       R.any(R.equals(R.__, category)),
+      R.map(R.toLower),
       R.prop('categories'),
     );
-    const productsByCategory = await R.filter(byCategory)(
-      products,
-    );
+    const productsByCategory = R.equals(category, 'all')
+      ? products
+      : await R.filter(byCategory)(products);
 
     // * Return 400 'Missing products by category' error
     if (R.isEmpty(productsByCategory)) return { status: 400 };

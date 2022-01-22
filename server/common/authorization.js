@@ -23,7 +23,7 @@ module.exports = {
   },
   checkPermission: async (req, res, next) => {
     if (req.valid) {
-      const userid = parseInt(req.params.userid);
+      const userid = parseInt(req.params.userid, 10);
       if (!userid) {
         return next(createErr(404, 'PAGE NOT FOUND'));
       }
