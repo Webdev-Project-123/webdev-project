@@ -1,3 +1,7 @@
 .bgClipProfile {
   clip-path: circle(19.8% at 50% 0);
 }
+
+.sideBanner {
+  clip-path: polygon(50% 91%, 0 100%, 100% 100%);
+}
