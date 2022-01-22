@@ -1,6 +1,12 @@
-function Input({ type, placeholder, name, value, onChange, className }) {
+import { forwardRef } from "react";
+
+function Input(
+  { type, placeholder, disabled, name, value, onChange, className },
+  ref
+) {
   return (
     <input
+      ref={ref}
       type={type}
       autoCorrect="off"
       autoComplete="off"
@@ -9,8 +15,9 @@ function Input({ type, placeholder, name, value, onChange, className }) {
       onChange={onChange}
       value={value}
       className={className}
+      disabled={disabled}
     />
   );
 }
 
-export default Input;
+export default forwardRef(Input);

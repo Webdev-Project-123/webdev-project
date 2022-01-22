@@ -1,13 +1,12 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Slider from "react-slick";
-import { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Styles/customSlick.css";
 import Categories from "./Categories";
 import ProductThumb from "./ProductThumb";
-import GroupThumb from "./GroupThumb";
+import '../index.css';
 
 const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-07/EunectesBannerRerun_0.jpeg",
@@ -86,10 +85,15 @@ const Home = () => {
     </div>
 
     {/* GROUPS */}
-    <div className="px-16 mt-10 mb-4 grid grid-cols-3 gap-8">
-      {groups.map((group, index) =>
-        <GroupThumb groupData={group} key={index} />
-      )}
+    <div className="px-16 mt-10 mb-4 gap-8">
+      <div
+        className='font-sans card-zoom bg-no-repeat bg-center cursor-pointer rounded-xl bg-cover bg-white w-full h-[40vh] text-center flex items-center justify-center'
+        style={{ backgroundImage: "url('./src/Home/Images/groups_background_3.jpg')" }}
+      >
+        <p className='card-zoom-text text-xl bg-opacity-90 rounded-xl px-16 py-2 font-extrabold bg-white'>
+          ALL PRODUCTS
+        </p>
+      </div>
     </div>
 
     {/* CATEGORIES */}
@@ -107,6 +111,16 @@ const Home = () => {
           <ProductThumb key={index} productData={data} />
         )}
       </div>
+    </div>
+
+    {/* Newsletter */}
+    <div className="font-sans flex items-center justify-center  bg-white px-8 py-16 mb-8 space-y-2">
+      <div>
+        <p className='font-robotoS font-extrabold text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
+        <p>Tell us what books you love.</p>
+      </div>
+      <button className="ml-12 font-robotoS font-bold bg-[#FEA82F] px-12 py-2 rounded-xl">SIGN UP
+      </button>
     </div>
 
     <Footer />

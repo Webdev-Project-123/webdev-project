@@ -19,14 +19,25 @@
 }
 
 .card-zoom {
-  @apply overflow-hidden shadow-tuanProductThumb ease-in-out duration-500 transition bg-center;
+  @apply shadow-tuanProductThumb bg-center;
 }
 
-.card-zoom-image {
-  @apply absolute transition-all duration-500 ease-in-out transform bg-center bg-cover;
+.card-zoom:hover > .card-zoom-text {
+  @apply duration-500 scale-105 transition;
 }
 
-.card-zoom:hover, .card-zoom-image {
-  @apply scale-105;
+.category {
+  @apply rounded-lg cursor-pointer px-6 py-2 hover:bg-[#FFC288] transition duration-300;
 }
 
+.filter-title {
+  @apply pl-3 pt-2 pb-0 w-60 font-bold cursor-default;
+}
+
+.filter {
+  @apply py-1 text-sm pl-6  hover:text-[#FF6701] transition duration-200;
+}
+
+body {
+  overflow-x: hidden;
+}
