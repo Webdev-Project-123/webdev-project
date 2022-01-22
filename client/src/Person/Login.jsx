@@ -39,11 +39,11 @@ function Login() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1>Trang chủ</h1>
+          <h1>Homer</h1>
         </div>
         <div className="mx-auto flex justify-center items-center gap-2 mt-12 xl:mt-[3rem] md:mt-0 h-auto">
           <h1 className="font-robotoS lg:text-3xl md:text-3xl">
-            Đăng nhập vào Wordy
+            Login to Wordy
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,16 +88,16 @@ function Login() {
             </p>
           </Label>
           <a href="#" className="hover:text-[#c55d2c]">
-            Bạn quên mật khẩu ?
+            Forgotten password ?
           </a>
         </div>
         <div className="self-end flex justify-center items-center gap-4 mt-3 md:mt-0">
           <button className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out">
-            Đăng ký
+            Sign up
           </button>
           <button className="w-[120px] relative h-10 bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all">
             <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
-              Đăng nhập
+              Login
             </span>
           </button>
         </div>
