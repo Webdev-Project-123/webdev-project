@@ -5,7 +5,6 @@ const uploadService = require('./service');
 module.exports = {
   view: async (req, res, next) => {
     const DTO = await uploadService.view();
-    console.log("ok")
     res.status(200).json({
       list: DTO.list,
     });
