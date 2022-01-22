@@ -13,8 +13,8 @@ module.exports = {
       R.sort(byHighPrice),
     )(products);
 
-    // * Return 410 'Missing hot products' error
-    if (R.isEmpty(hotProducts)) return { status: 410 };
+    // * Return 400 'Missing hot products' error
+    if (R.isEmpty(hotProducts)) return { status: 400 };
 
     const DTO = {
       status: 200,
@@ -52,8 +52,8 @@ module.exports = {
       R.propEq('id', parseInt(id, 10)),
     )(products);
 
-    // * Return 410 'Missing product' error
-    if (R.isNil(product)) return { status: 410 };
+    // * Return 400 'Missing product' error
+    if (R.isNil(product)) return { status: 400 };
 
     const DTO = {
       status: 200,
