@@ -16,9 +16,11 @@ const PaginationBar = ({ productsPerPage, numOfProducts, paginate, currPage }) =
     else
       currPageList = pageNumbers.slice(pageNumbers.length - 5, pageNumbers.length)
   }
+  else
+    currPageList = pageNumbers.slice(0, pageNumbers.length);
 
   const changeCurrPage = (page, value) => {
-    if (page === 0 && value === -1)
+    if (page === 1 && value === -1)
       return;
     if (page === pageNumbers.length && value === 1)
       return;

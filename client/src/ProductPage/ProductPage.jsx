@@ -113,7 +113,7 @@ const ProductPage = () => {
   const [products, setProducts] = useState(productData);
   const [loading, setLoading] = useState(false);
   const [currPage, setCurrPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState(4);
+  const [productsPerPage, setProductsPerPage] = useState(8);
 
   const currProducts = products.slice((currPage - 1) * productsPerPage, currPage * productsPerPage);
   console.log(currProducts.length);
