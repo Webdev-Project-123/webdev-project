@@ -48,6 +48,7 @@ module.exports = {
       msg: 'Success',
     };
   },
+
   login: async (body) => {
     const users = await db.get('users').value();
     const filterUser = await users.filter((user) => user.email === body.email);
@@ -99,6 +100,7 @@ module.exports = {
       msg: 'Error in login phase',
     };
   },
+
   token: async (body) => {
     const refreshToken = body.refreshToken;
     if (!refreshToken) {
@@ -114,8 +116,8 @@ module.exports = {
 
       if (!users) {
         return {
-          statusCode: 403,
-          msg: 'FORBIDDEN',
+          statusCode: 401,
+          msg: 'UNAUTHORIZED',
         };
       }
 
@@ -123,7 +125,7 @@ module.exports = {
       if (!emails || result.email !== emails.email) {
         return {
           statusCode: 403,
-          msg: 'FORBIDDEN',
+          msg: 'UNAUTHORIZED',
         };
       }
 
@@ -140,11 +142,11 @@ module.exports = {
     } catch (error) {
       return {
         statusCode: 403,
-        msg: 'FORBIDDEN',
+        msg: 'UNAUTHORIZED',
       };
     }
   },
-  
+
   forgetPassword: async ({ email }) => {
     try {
       const token = uuidv4();

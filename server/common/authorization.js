@@ -8,17 +8,16 @@ module.exports = {
       const authHeader = req.headers.authorization;
       const token = authHeader && authHeader.split(' ')[1];
       if (!token) {
-        return next(createErr(403, 'UNAUTHORIZED'));
+        return next(createErr(401, 'UNAUTHORIZED'));
       }
 
       const user = await jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
 
       req.valid = true;
       req.user = user;
-
       return next();
     } catch {
-      return next(createErr(403, 'FORBIDDEN'));
+      return next(createErr(401, 'UNAUTHORIZED'));
     }
   },
   checkPermission: async (req, res, next) => {
@@ -35,7 +34,7 @@ module.exports = {
       }
 
       if (filterUser.email !== req.user.email && req.user.role !== 'admin') {
-        return next(createErr(403, 'FORBIDDEN'));
+        return next(createErr(401, 'UNAUTHORIZED'));
       }
 
       req.userid = req.params.userid;
@@ -43,5 +42,11 @@ module.exports = {
     }
 
     return next(createErr(404, 'PAGE NOT FOUND'));
+  },
+  isAdmin: (req, res, next) => {
+    if (req.user.role !== 'admin') {
+      return next(createErr(401, 'UNAUTHORIZED'));
+    }
+    return next();
   },
 };
