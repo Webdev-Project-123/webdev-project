@@ -1,7 +1,5 @@
 const nodemailer = require("nodemailer");
 
-// const { db } = require('../models/db');
-
 async function sendResetLink(recipient, token) {
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -25,11 +23,6 @@ async function sendResetLink(recipient, token) {
     };
  
     let info = await transporter.sendMail(mailOptions);
-
-    // await db.get('reset-Token').push({
-    //     email: recipient,
-    //     resetToken: token,
-    // }).write();
 
     return info;
 }
