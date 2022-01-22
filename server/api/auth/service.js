@@ -2,6 +2,10 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require('../../models/db');
 
+const { v4: uuidv4 } = require("uuid");
+
+const { sendResetLink } = require("../../common/sendEmail");
+
 module.exports = {
   signup: async (body) => {
     if (!body.name || !body.email || !body.name) {
@@ -140,4 +144,58 @@ module.exports = {
       };
     }
   },
+  
+  forgetPassword: async ({ email }) => {
+    try {
+      const token = uuidv4();
+      let info = await sendResetLink(email, token);
+
+      await db.get('reset-Token').push({
+        email: email,
+        resetToken: token,
+      }).write();
+
+      return {
+        statusCode: 200,
+        messageId: info.messageId,
+        msg: "Send success",
+      };
+    } catch (error) {
+      return {
+        statusCode: 500,
+        msg: error.message
+      }
+    }
+  },
+
+  resetPassword: async ({ token, newPassword }) => {
+    try {
+      const users = await db.get('users').value();
+      const reset_Token = await db.get('reset-Token').value();
+
+      const rsToken = reset_Token.filter((tempToken) => tempToken.resetToken === token);
+
+      if (rsToken.length === 1) {
+        let user = users.filter((user) => user.email === rsToken[0].email);
+
+        if (user.length === 1) {
+          let salt = await bcrypt.genSalt(10);
+          let hashPassword = await bcrypt.hash(newPassword, salt);
+
+          // user[0].password = hashPassword;
+          await db.get('users').find({ password: user[0].password }).assign({ newPassword }).write();
+        }
+      }
+
+      return {
+        statusCode: 200,
+        msg: "OK",
+      }
+    } catch (error) {
+      return {
+        statusCode: 500,
+        msg: error.message
+      }
+    }
+  }
 };

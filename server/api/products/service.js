@@ -14,7 +14,7 @@ module.exports = {
     )(products);
 
     const DTO = {
-      status: R.isEmpty(hotProducts) ? 410 : 200,
+      status: R.isEmpty(hotProducts) ? 410 : 304,
       message: 'Hot products are ready!',
       data: await R.map(
         R.compose(
@@ -50,7 +50,7 @@ module.exports = {
     )(products);
 
     const DTO = {
-      status: R.isNil(product) ? 410 : 200,
+      status: R.isNil(product) ? 410 : 304,
       message: 'Product is ready!',
       data: await renameKeys({
         id: 'productId',
