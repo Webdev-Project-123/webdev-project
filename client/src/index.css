@@ -26,8 +26,10 @@
   @apply duration-500 scale-105 transition;
 }
 
-
 .category {
   @apply rounded-lg cursor-pointer px-6 py-2 hover:bg-[#FFC288] transition duration-300;
 }
 
+body {
+  overflow-x: hidden;
+}
