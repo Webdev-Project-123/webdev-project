@@ -5,7 +5,7 @@ import Login from "./Person/Login";
 function App() {
   return (
     <div>
-      <Login />
+      <Home />
     </div>
   );
 }
