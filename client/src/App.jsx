@@ -6,11 +6,13 @@ import Home from "./Home/Home";
 import Header from "./Home/Header";
 import Footer from "./Home/Footer";
 import Spinner from "./ProductPage/Spinner";
+import AddProduct from "./Person/Admin/AddProduct";
 function App() {
   return (
     <div>
       {/* <Header /> */}
-      <Profile />
+      <SignUp />
+      {/* <AddProduct /> */}
       {/* <Footer /> */}
     </div>
   );

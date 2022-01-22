@@ -2,9 +2,11 @@ import axios from "axios";
 import queryString from "query-string";
 
 const axiosClient = axios.create({
-  baseURL: "https://wordy-library.vercel.app/api/",
+  // baseURL: "https://wordy-library.vercel.app/api/",
+  // baseURL: "http://localhost:5000/",
+  baseURL: "https://b05f-14-250-169-69.ngrok.io",
   headers: {
-    "current-type": "application/json-patch+json",
+    // "current-type": "application/json-patch+json",
   },
   paramsSerializer: (param) => queryString.stringify(param),
 });
