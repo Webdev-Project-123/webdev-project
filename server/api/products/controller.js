@@ -6,8 +6,8 @@ module.exports = {
   hot: async (req, res, next) => {
     const DTO = await productsService.hot();
 
-    if (R.equals(DTO.status, 410)) {
-      next(createErr(410, 'Products are gone!'));
+    if (R.equals(DTO.status, 400)) {
+      next(createErr(400, 'BAD REQUEST'));
     } else res.status(200).json(DTO);
   },
 
@@ -16,8 +16,8 @@ module.exports = {
       req.params.prodId,
     );
 
-    if (R.equals(DTO.status, 410)) {
-      next(createErr(410, 'Product is gone!'));
+    if (R.equals(DTO.status, 400)) {
+      next(createErr(400, 'BAD REQUEST'));
     } else res.status(200).json(DTO);
   },
 };

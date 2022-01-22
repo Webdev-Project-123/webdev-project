@@ -21,7 +21,7 @@ async function sendResetLink(recipient, token) {
         from: '"Wordy" <hlehuy0@gmail.com>',
         to: recipient,
         subject: "Reset password link",
-        html: `<p>Your reset link: <b>https://localhost:5000/auth/${token}</b><p>`
+        html: `<p>Your reset link: <b>https://localhost:5000/api/auth/${token}</b><p>`
     };
  
     let info = await transporter.sendMail(mailOptions);

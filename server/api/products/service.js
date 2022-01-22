@@ -13,12 +13,12 @@ module.exports = {
       R.sort(byHighPrice),
     )(products);
 
-    // * Return 410 'Missing hot products' error
-    if (R.isEmpty(hotProducts)) return { status: 410 };
+    // * Return 400 'Missing hot products' error
+    if (R.isEmpty(hotProducts)) return { status: 400 };
 
     const DTO = {
       status: 200,
-      message: 'Hot products are ready!',
+      message: 'OK',
       data: await R.map(
         R.compose(
           renameKeys({
@@ -52,12 +52,12 @@ module.exports = {
       R.propEq('id', parseInt(id, 10)),
     )(products);
 
-    // * Return 410 'Missing product' error
-    if (R.isNil(product)) return { status: 410 };
+    // * Return 400 'Missing product' error
+    if (R.isNil(product)) return { status: 400 };
 
     const DTO = {
       status: 200,
-      message: 'Product is ready!',
+      message: 'OK',
       data: await renameKeys({
         id: 'productId',
         title: 'productName',

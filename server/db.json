@@ -41,9 +41,13 @@
     {
       "id": 1,
       "publication-date": "2019-05-24",
+<<<<<<< HEAD
       "authors": [
         "Austin Govella"
       ],
+=======
+      "authors": ["Austin Govella"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Collaborative Product Design",
@@ -53,6 +57,7 @@
       "price": 35.49,
       "in-stock": 100,
       "discount": 30.49,
+<<<<<<< HEAD
       "rating": [
         50,
         10,
@@ -60,6 +65,9 @@
         0,
         0
       ],
+=======
+      "rating": [50, 10, 0, 0, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -67,16 +75,24 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design"
       ]
+=======
+      "categories": ["Design"]
+>>>>>>> origin/server
     },
     {
       "id": 2,
       "publication-date": "2020-02-25",
+<<<<<<< HEAD
       "authors": [
         "Dave Malouf"
       ],
+=======
+      "authors": ["Dave Malouf"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is DesignOps?",
@@ -86,6 +102,7 @@
       "price": 23.11,
       "in-stock": 100,
       "discount": 20.11,
+<<<<<<< HEAD
       "rating": [
         10,
         30,
@@ -93,6 +110,9 @@
         10,
         0
       ],
+=======
+      "rating": [10, 30, 0, 10, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -100,16 +120,24 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design"
       ]
+=======
+      "categories": ["Design"]
+>>>>>>> origin/server
     },
     {
       "id": 3,
       "publication-date": "2019-08-25",
+<<<<<<< HEAD
       "authors": [
         "Adam Lawrence"
       ],
+=======
+      "authors": ["Adam Lawrence"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is Service Design?",
@@ -119,6 +147,7 @@
       "price": 23.33,
       "in-stock": 100,
       "discount": 23,
+<<<<<<< HEAD
       "rating": [
         5,
         30,
@@ -126,6 +155,9 @@
         10,
         0
       ],
+=======
+      "rating": [5, 30, 10, 10, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -133,17 +165,25 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design"
       ]
+=======
+      "categories": ["Design"]
+>>>>>>> origin/server
     },
     {
       "id": 4,
       "publication-date": "2020-06-30",
+<<<<<<< HEAD
       "authors": [
         "Lisa Owens",
         "Crystal Kadakia"
       ],
+=======
+      "authors": ["Lisa Owens", "Crystal Kadakia"],
+>>>>>>> origin/server
       "publishing-company": "Association for Talent Development",
       "language": "English",
       "title": "Designing for Modern Learning",
@@ -153,6 +193,7 @@
       "price": 31.45,
       "in-stock": 100,
       "discount": 31,
+<<<<<<< HEAD
       "rating": [
         0,
         10,
@@ -160,6 +201,9 @@
         10,
         1
       ],
+=======
+      "rating": [0, 10, 20, 10, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -167,16 +211,24 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design"
       ]
+=======
+      "categories": ["Design"]
+>>>>>>> origin/server
     },
     {
       "id": 5,
       "publication-date": "2018-12-10",
+<<<<<<< HEAD
       "authors": [
         "Scott Riley"
       ],
+=======
+      "authors": ["Scott Riley"],
+>>>>>>> origin/server
       "publishing-company": "Apress",
       "language": "English",
       "title": "Mindful Design: How and Why to Make Design Decisions for the Good of Those Using Your Product",
@@ -186,6 +238,7 @@
       "price": 45.99,
       "in-stock": 100,
       "discount": 45,
+<<<<<<< HEAD
       "rating": [
         10,
         10,
@@ -193,6 +246,9 @@
         0,
         0
       ],
+=======
+      "rating": [10, 10, 10, 0, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -200,16 +256,24 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design"
       ]
+=======
+      "categories": ["Design"]
+>>>>>>> origin/server
     },
     {
       "id": 6,
       "publication-date": "2022-10-25",
+<<<<<<< HEAD
       "authors": [
         "Anthony Sarkis"
       ],
+=======
+      "authors": ["Anthony Sarkis"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Training Data for Machine Learning",
@@ -219,6 +283,7 @@
       "price": 25.69,
       "in-stock": 100,
       "discount": 24.33,
+<<<<<<< HEAD
       "rating": [
         20,
         10,
@@ -226,6 +291,9 @@
         0,
         1
       ],
+=======
+      "rating": [20, 10, 5, 0, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -233,17 +301,25 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Machine Learning",
         "Data"
       ]
+=======
+      "categories": ["Machine Learning", "Data"]
+>>>>>>> origin/server
     },
     {
       "id": 7,
       "publication-date": "2019-10-22",
+<<<<<<< HEAD
       "authors": [
         "Cole Nussbaumer Knaflic"
       ],
+=======
+      "authors": ["Cole Nussbaumer Knaflic"],
+>>>>>>> origin/server
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Storytelling with Data",
@@ -253,6 +329,7 @@
       "price": 44.99,
       "in-stock": 100,
       "discount": 41.99,
+<<<<<<< HEAD
       "rating": [
         100,
         0,
@@ -260,6 +337,9 @@
         3,
         2
       ],
+=======
+      "rating": [100, 0, 10, 3, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -267,17 +347,25 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Data"
       ]
+=======
+      "categories": ["Data"]
+>>>>>>> origin/server
     },
     {
       "id": 8,
       "publication-date": "2020-12-25",
+<<<<<<< HEAD
       "authors": [
         "Kevin Poskitt",
         "Ginger Gatling"
       ],
+=======
+      "authors": ["Kevin Poskitt", "Ginger Gatling"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Managing Data Orchestration and Integration at Scale",
@@ -287,6 +375,7 @@
       "price": 11.11,
       "in-stock": 100,
       "discount": 9.99,
+<<<<<<< HEAD
       "rating": [
         0,
         30,
@@ -294,6 +383,9 @@
         10,
         10
       ],
+=======
+      "rating": [0, 30, 20, 10, 10],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -301,17 +393,25 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Data"
       ]
+=======
+      "categories": ["Data"]
+>>>>>>> origin/server
     },
     {
       "id": 9,
       "publication-date": "2021-07-16",
+<<<<<<< HEAD
       "authors": [
         "Joao Ferreira",
         "Rene Modery"
       ],
+=======
+      "authors": ["Joao Ferreira", "Rene Modery"],
+>>>>>>> origin/server
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Hands-On Microsoft Lists",
@@ -321,6 +421,7 @@
       "price": 36.74,
       "in-stock": 100,
       "discount": 35.99,
+<<<<<<< HEAD
       "rating": [
         0,
         0,
@@ -328,6 +429,9 @@
         10,
         0
       ],
+=======
+      "rating": [0, 0, 30, 10, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -335,9 +439,13 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Data"
       ]
+=======
+      "categories": ["Data"]
+>>>>>>> origin/server
     },
     {
       "id": 10,
@@ -347,9 +455,13 @@
         "Wajid Khattak",
         "Paul Buhler"
       ],
+<<<<<<< HEAD
       "publishing-company": [
         "Pearson"
       ],
+=======
+      "publishing-company": ["Pearson"],
+>>>>>>> origin/server
       "language": "English",
       "title": "Big Data Fundamentals: Concepts, Drivers & Techniques",
       "description": "<span><div><p>“This text should be required reading for everyone in contemporary business.”</p><p>–Peter Woodhull, CEO, Modus21</p><p>“The one book that clearly describes and links Big Data concepts to business utility.”</p><p>–Dr. Christopher Starr, PhD</p><p>“Simply, this is the best Big Data book on the market!”</p><p>–Sam Rostam, Cascadian IT Group</p><p>“...one of the most contemporary approaches I’ve seen to Big Data fundamentals...”</p><p>–Joshua M. Davis, PhD</p><p><strong>The Definitive Plain-English Guide to Big Data for Business and Technology Professionals</strong></p><p><em>Big Data Fundamentals</em> provides a pragmatic, no-nonsense introduction to Big Data. Best-selling IT author Thomas Erl and his team clearly explain key Big Data concepts, theory and terminology, as well as fundamental technologies and techniques. All coverage is supported with case study examples and numerous simple diagrams.</p><p>The authors begin by explaining how Big Data can propel an organization forward by solving a spectrum of previously intractable business problems. Next, they demystify key analysis techniques and technologies and show how a Big Data solution environment can be built and integrated to offer competitive advantages.</p><ul><li><p>Discovering Big Data’s fundamental concepts and what makes it different from previous forms of data analysis and data science</p></li><li><p>Understanding the business motivations and drivers behind Big Data adoption, from operational improvements through innovation</p></li><li><p>Planning strategic, business-driven Big Data initiatives</p></li><li><p>Addressing considerations such as data management, governance, and security</p></li><li><p>Recognizing the 5 “V” characteristics of datasets in Big Data environments: volume, velocity, variety, veracity, and value</p></li><li><p>Clarifying Big Data’s relationships with OLTP, OLAP, ETL, data warehouses, and data marts</p></li><li><p>Working with Big Data in structured, unstructured, semi-structured, and metadata formats</p></li><li><p>Increasing value by integrating Big Data resources with corporate performance monitoring</p></li><li><p>Understanding how Big Data leverages distributed and parallel processing</p></li><li><p>Using NoSQL and other technologies to meet Big Data’s distinct data processing requirements</p></li><li><p>Leveraging statistical approaches of quantitative and qualitative analysis</p></li><li><p>Applying computational analysis methods, including machine learning</p></li></ul></div></span>",
@@ -358,6 +470,7 @@
       "price": 33.33,
       "in-stock": 100,
       "discount": 29.99,
+<<<<<<< HEAD
       "rating": [
         0,
         0,
@@ -365,6 +478,9 @@
         20,
         10
       ],
+=======
+      "rating": [0, 0, 0, 20, 10],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -372,9 +488,13 @@
           "stars": 2
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Data"
       ]
+=======
+      "categories": ["Data"]
+>>>>>>> origin/server
     },
     {
       "id": 11,
@@ -392,6 +512,7 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 46.99,
+<<<<<<< HEAD
       "rating": [
         50,
         100,
@@ -399,6 +520,9 @@
         10,
         1
       ],
+=======
+      "rating": [50, 100, 20, 10, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -406,18 +530,26 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design",
         "Cloud"
       ]
+=======
+      "categories": ["Design", "Cloud"]
+>>>>>>> origin/server
     },
     {
       "id": 12,
       "publication-date": "2019-12-19",
+<<<<<<< HEAD
       "authors": [
         "J.R. Storment",
         "Mike Fuller"
       ],
+=======
+      "authors": ["J.R. Storment", "Mike Fuller"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Cloud FinOps",
@@ -427,6 +559,7 @@
       "price": 40.99,
       "in-stock": 100,
       "discount": 32.99,
+<<<<<<< HEAD
       "rating": [
         0,
         10,
@@ -434,6 +567,9 @@
         20,
         0
       ],
+=======
+      "rating": [0, 10, 30, 20, 0],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -441,17 +577,25 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Cloud"
       ]
+=======
+      "categories": ["Cloud"]
+>>>>>>> origin/server
     },
     {
       "id": 13,
       "publication-date": "2021-05-04",
+<<<<<<< HEAD
       "authors": [
         "Danil Zburivsky",
         "Lynda Partner"
       ],
+=======
+      "authors": ["Danil Zburivsky", "Lynda Partner"],
+>>>>>>> origin/server
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "Designing Cloud Data Platforms",
@@ -461,6 +605,7 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 22.99,
+<<<<<<< HEAD
       "rating": [
         50,
         50,
@@ -468,6 +613,9 @@
         1,
         1
       ],
+=======
+      "rating": [50, 50, 5, 1, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -475,18 +623,26 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design",
         "Cloud",
         "Data"
       ]
+=======
+      "categories": ["Design", "Cloud", "Data"]
+>>>>>>> origin/server
     },
     {
       "id": 14,
       "publication-date": "2020-02-07",
+<<<<<<< HEAD
       "authors": [
         "Roopesh Ramklass"
       ],
+=======
+      "authors": ["Roopesh Ramklass"],
+>>>>>>> origin/server
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "Oracle Cloud Infrastructure Architect Associate All-in-One Exam Guide (Exam 1Z0-1072)",
@@ -496,6 +652,7 @@
       "price": 49.99,
       "in-stock": 100,
       "discount": 46.33,
+<<<<<<< HEAD
       "rating": [
         5,
         100,
@@ -503,6 +660,9 @@
         1,
         1
       ],
+=======
+      "rating": [5, 100, 10, 1, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -510,19 +670,27 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Cloud",
         "Architect",
         "Infrastructure"
       ]
+=======
+      "categories": ["Cloud"]
+>>>>>>> origin/server
     },
     {
       "id": 15,
       "publication-date": "2021-10-15",
+<<<<<<< HEAD
       "authors": [
         "Prasenjit Sarkar",
         "Guillermo Ruiz"
       ],
+=======
+      "authors": ["Prasenjit Sarkar", "Guillermo Ruiz"],
+>>>>>>> origin/server
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Oracle Cloud Infrastructure for Solutions Architects",
@@ -532,6 +700,7 @@
       "price": 37.99,
       "in-stock": 100,
       "discount": 35.99,
+<<<<<<< HEAD
       "rating": [
         0,
         0,
@@ -539,6 +708,9 @@
         50,
         5
       ],
+=======
+      "rating": [0, 0, 10, 50, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -546,18 +718,26 @@
           "stars": 2
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Cloud",
         "Architect",
         "Infrastructure"
       ]
+=======
+      "categories": ["Cloud"]
+>>>>>>> origin/server
     },
     {
       "id": 16,
       "publication-date": "2019-09-30",
+<<<<<<< HEAD
       "authors": [
         "Aurélien Géron"
       ],
+=======
+      "authors": ["Aurélien Géron"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition",
@@ -567,6 +747,7 @@
       "price": 70.69,
       "in-stock": 100,
       "discount": 50.99,
+<<<<<<< HEAD
       "rating": [
         0,
         0,
@@ -574,6 +755,9 @@
         51,
         6
       ],
+=======
+      "rating": [0, 0, 12, 51, 6],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -603,6 +787,7 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 45.69,
+<<<<<<< HEAD
       "rating": [
         50,
         50,
@@ -610,6 +795,9 @@
         1,
         2
       ],
+=======
+      "rating": [50, 50, 10, 1, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -617,17 +805,25 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design",
         "Machine Learning"
       ]
+=======
+      "categories": ["Design", "Machine Learning"]
+>>>>>>> origin/server
     },
     {
       "id": 18,
       "publication-date": "2022-06-25",
+<<<<<<< HEAD
       "authors": [
         "Chip Huyen"
       ],
+=======
+      "authors": ["Chip Huyen"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Designing Machine Learning Systems",
@@ -637,6 +833,7 @@
       "price": 26.66,
       "in-stock": 100,
       "discount": 23.22,
+<<<<<<< HEAD
       "rating": [
         1,
         3,
@@ -644,6 +841,9 @@
         10,
         50
       ],
+=======
+      "rating": [1, 3, 2, 10, 50],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -651,18 +851,26 @@
           "stars": 1
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Design",
         "Machine Learning"
       ]
+=======
+      "categories": ["Design", "Machine Learning"]
+>>>>>>> origin/server
     },
     {
       "id": 19,
       "publication-date": "2020-07-20",
+<<<<<<< HEAD
       "authors": [
         "Hannes Hapke",
         "Catherine Nelson"
       ],
+=======
+      "authors": ["Hannes Hapke", "Catherine Nelson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Building Machine Learning Pipelines",
@@ -672,6 +880,7 @@
       "price": 46.55,
       "in-stock": 100,
       "discount": 40.99,
+<<<<<<< HEAD
       "rating": [
         3,
         2,
@@ -679,6 +888,9 @@
         20,
         1
       ],
+=======
+      "rating": [3, 2, 30, 20, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -686,16 +898,24 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Machine Learning"
       ]
+=======
+      "categories": ["Machine Learning"]
+>>>>>>> origin/server
     },
     {
       "id": 20,
       "publication-date": "2021-10-29",
+<<<<<<< HEAD
       "authors": [
         "Ben Auffarth"
       ],
+=======
+      "authors": ["Ben Auffarth"],
+>>>>>>> origin/server
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Machine Learning for Time-Series with Python",
@@ -705,6 +925,7 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 40.99,
+<<<<<<< HEAD
       "rating": [
         10,
         10,
@@ -712,6 +933,9 @@
         30,
         40
       ],
+=======
+      "rating": [10, 10, 20, 30, 40],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -719,16 +943,24 @@
           "stars": 1
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Machine Learning"
       ]
+=======
+      "categories": ["Machine Learning"]
+>>>>>>> origin/server
     },
     {
       "id": 21,
       "publication-date": "2021-12-27",
+<<<<<<< HEAD
       "authors": [
         "James Higginbotham"
       ],
+=======
+      "authors": ["James Higginbotham"],
+>>>>>>> origin/server
       "publishing-company": "Addison-Wesley Professional",
       "language": "English",
       "title": "Principles of Web API Design: Delivering Value with APIs and Microservices",
@@ -738,6 +970,7 @@
       "price": 48.99,
       "in-stock": 100,
       "discount": 40.99,
+<<<<<<< HEAD
       "rating": [
         0,
         0,
@@ -745,6 +978,9 @@
         5,
         100
       ],
+=======
+      "rating": [0, 0, 1, 5, 100],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -752,17 +988,25 @@
           "stars": 1
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Web",
         "Design"
       ]
+=======
+      "categories": ["Web", "Design"]
+>>>>>>> origin/server
     },
     {
       "id": 22,
       "publication-date": "2019-10-23",
+<<<<<<< HEAD
       "authors": [
         "Arnaud Lauret"
       ],
+=======
+      "authors": ["Arnaud Lauret"],
+>>>>>>> origin/server
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "The Design of Web APIs",
@@ -772,6 +1016,7 @@
       "price": 55.99,
       "in-stock": 100,
       "discount": 50.11,
+<<<<<<< HEAD
       "rating": [
         20,
         30,
@@ -779,6 +1024,9 @@
         0,
         5
       ],
+=======
+      "rating": [20, 30, 1, 0, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -786,17 +1034,25 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Web",
         "Design"
       ]
+=======
+      "categories": ["Web", "Design"]
+>>>>>>> origin/server
     },
     {
       "id": 23,
       "publication-date": "2018-05-11",
+<<<<<<< HEAD
       "authors": [
         "Jennifer Robbins"
       ],
+=======
+      "authors": ["Jennifer Robbins"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Learning Web Design, 5th Edition",
@@ -806,6 +1062,7 @@
       "price": 69.69,
       "in-stock": 100,
       "discount": 46.64,
+<<<<<<< HEAD
       "rating": [
         50,
         10,
@@ -813,6 +1070,9 @@
         5,
         1
       ],
+=======
+      "rating": [50, 10, 10, 5, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -820,17 +1080,25 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Web",
         "Design"
       ]
+=======
+      "categories": ["Web", "Design"]
+>>>>>>> origin/server
     },
     {
       "id": 24,
       "publication-date": "2020-10-06",
+<<<<<<< HEAD
       "authors": [
         "Mike Amundsen"
       ],
+=======
+      "authors": ["Mike Amundsen"],
+>>>>>>> origin/server
       "publishing-company": "Pragmatic Bookshelf",
       "language": "English",
       "title": "Design and Build Great Web APIs",
@@ -840,6 +1108,7 @@
       "price": 39.99,
       "in-stock": 100,
       "discount": 29.99,
+<<<<<<< HEAD
       "rating": [
         20,
         10,
@@ -847,6 +1116,9 @@
         5,
         5
       ],
+=======
+      "rating": [20, 10, 10, 5, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -854,10 +1126,14 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Web",
         "Design"
       ]
+=======
+      "categories": ["Web", "Design"]
+>>>>>>> origin/server
     },
     {
       "id": 25,
@@ -876,6 +1152,7 @@
       "price": 24.96,
       "in-stock": 100,
       "discount": 21.42,
+<<<<<<< HEAD
       "rating": [
         2,
         3,
@@ -883,6 +1160,9 @@
         1,
         1
       ],
+=======
+      "rating": [2, 3, 30, 1, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "http://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -890,22 +1170,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Web",
         "Design"
       ]
+=======
+      "categories": ["Web", "Design"]
+>>>>>>> origin/server
     },
     {
       "id": 26,
       "publication-date": "2015-03-31",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Up & Going",
       "description": "<span><div><p>It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even <i>sufficiently</i>—whether you’re new to the language or have used it for years. With the \"You Don’t Know JS\" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid.</p><p>The series’ first book, <i>Up &amp; Going</i>, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript.</p><p>With this book you will:</p><ul><li>Learn the essential programming building blocks, including operators, types, variables, conditionals, loops, and functions</li><li>Become familiar with JavaScript's core mechanisms such as values, function closures, <i>this</i>, and prototypes</li><li>Get an overview of other books in the series—and learn why it’s important to understand <i>all</i> parts of JavaScript</li></ul></div></span>",
       "pages": 88,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491924471/750",
       "price": 37.68,
       "in-stock": 63,
@@ -917,6 +1206,13 @@
         2,
         1
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491924471/750w/",
+      "price": 37.68,
+      "in-stock": 63,
+      "discount": 33,
+      "rating": [9, 6, 1, 2, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-1@56w.png",
@@ -924,22 +1220,31 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 27,
       "publication-date": "2015-12-17",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: ES6 & Beyond",
       "description": "<span><div><p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \"You Don’t Know JS\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaScript is built.</p><p>Like other books in this series, <i>You Don’t Know JS: ES6 &amp; Beyond</i> dives into trickier parts of the language that many JavaScript programmers either avoid or know nothing about. Armed with this knowledge, you can achieve true JavaScript mastery.</p><p>With this book, you will:</p><ul><li>Learn new ES6 syntax that eases the pain points of common programming idioms</li><li>Organize code with iterators, generators, modules, and classes</li><li>Express async flow control with Promises combined with generators</li><li>Use collections to work more efficiently with data in structured ways</li><li>Leverage new API helpers, including Array, Object, Math, Number, and String</li><li>Extend your program’s capabilities through meta programming</li><li>Preview features likely coming to JS beyond ES6</li></ul></div></span>",
       "pages": 274,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491905241/750",
       "price": 33.63,
       "in-stock": 324,
@@ -951,6 +1256,13 @@
         9,
         2
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491905241/750w/",
+      "price": 33.63,
+      "in-stock": 324,
+      "discount": 29,
+      "rating": [6, 3, 9, 9, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -958,22 +1270,31 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 28,
       "publication-date": "2015-02-27",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Async & Performance",
       "description": "<span><span><span><span><span><span><p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \"You Don’t Know JS\" series, this concise yet in-depth guide focuses on new asynchronous features and performance techniques—including Promises, generators, and Web Workers—that let you create sophisticated single-page web applications <i>and</i> escape callback hell in the process.</p></span></span></span></span></span></span>",
       "pages": 303,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491905197/750",
       "price": 37.63,
       "in-stock": 98,
@@ -985,6 +1306,13 @@
         10,
         8
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491905197/750w/",
+      "price": 37.63,
+      "in-stock": 98,
+      "discount": 33,
+      "rating": [1, 6, 6, 10, 8],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -992,22 +1320,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 29,
       "publication-date": "2014-03-14",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Scope & Closures",
       "description": "<span><p/><div><p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient and effective JavaScript programmer. You’ll learn how and why they work, and how an understanding of closures can be a powerful part of your development skillset.</p><p>Like other books in the \"You Don’t Know JS\" series, <i>Scope and Closures</i> dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can achieve true JavaScript mastery.</p><ul><li>Learn about scope, a set of rules to help JavaScript engines locate variables in your code</li><li>Go deeper into nested scope, a series of containers for variables and functions</li><li>Explore function- and block-based scope, “hoisting”, and the patterns and benefits of scope-based hiding</li><li>Discover how to use closures for synchronous and asynchronous tasks, including the creation of JavaScript libraries</li></ul></div></span>",
       "pages": 91,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781449335571/750",
       "price": 35.97,
       "in-stock": 118,
@@ -1019,6 +1356,13 @@
         10,
         2
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781449335571/750w/",
+      "price": 35.97,
+      "in-stock": 118,
+      "discount": 31,
+      "rating": [4, 6, 3, 10, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-2@56w.png",
@@ -1026,22 +1370,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 30,
       "publication-date": "2014-07-17",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: this & Object Prototypes",
       "description": "<span><span><span><span><span><p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise, in-depth guide takes you inside JavaScript’s this structure and object prototypes. You’ll learn how they work and why they’re integral to behavior delegation—a design pattern in which objects are linked, rather than cloned. Like other books in the \"You Don’t Know JS\" series, this and Object Prototypes dives into trickier parts of the language that many JavaScript programmers simply avoid.</p></span></span></span></span></span>",
       "pages": 181,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491905142/750",
       "price": 37.38,
       "in-stock": 409,
@@ -1053,6 +1406,13 @@
         2,
         3
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491905142/750w/",
+      "price": 37.38,
+      "in-stock": 409,
+      "discount": 33,
+      "rating": [1, 10, 1, 2, 3],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1060,22 +1420,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 31,
       "publication-date": "2015-02-04",
+<<<<<<< HEAD
       "authors": [
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Types & Grammar",
       "description": "<span><span><span><span><span><span><p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \"You Don’t Know JS\" series, this compact guide explores JavaScript types in greater depth than previous treatments by looking at type coercion problems, demonstrating why types work, and showing you how to take advantage of these  features.</p></span></span></span></span></span></span>",
       "pages": 196,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491905159/750",
       "price": 36.93,
       "in-stock": 143,
@@ -1087,6 +1456,13 @@
         3,
         9
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491905159/750w/",
+      "price": 36.93,
+      "in-stock": 143,
+      "discount": 32,
+      "rating": [7, 9, 10, 3, 9],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1094,23 +1470,32 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "JavaScript",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 32,
       "publication-date": "2011-11-19",
+<<<<<<< HEAD
       "authors": [
         "Christopher Schmitt",
         "Kyle Simpson"
       ],
+=======
+      "authors": ["Christopher Schmitt", "Kyle Simpson"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "HTML5 Cookbook",
       "description": "<span><span><div><p>With scores of practical recipes you can use in your projects right away, this cookbook helps you gain hands-on experience with HTML5’s versatile collection of elements. You get clear solutions for handling issues with everything from markup semantics, web forms, and audio and video elements to related technologies such as geolocation and rich JavaScript APIs.</p><p>Each informative recipe includes sample code and a detailed discussion on why and how the solution works. Perfect for intermediate to advanced web and mobile web developers, this handy book lets you choose the HTML5 features that work for you—and helps you experiment with the rest.</p><ul><li>Test browsers for HTML5 support, and use techniques for applying unsupported features</li><li>Discover how HTML5 makes web form implementation much simpler</li><li>Overcome challenges for implementing native audio and video elements</li><li>Learn techniques for using HTML5 with ARIA accessibility guidelines</li><li>Explore examples that cover using geolocation data in your applications</li><li>Draw images, use transparencies, add gradients and patterns, and more with Canvas</li><li>Bring HTML5 features to life with a variety of advanced JavaScript APIs</li></ul></div></span></span>",
       "pages": 344,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781449318444/750",
       "price": 30.93,
       "in-stock": 268,
@@ -1122,6 +1507,13 @@
         3,
         5
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781449318444/750w/",
+      "price": 30.93,
+      "in-stock": 268,
+      "discount": 26,
+      "rating": [7, 5, 10, 3, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1129,23 +1521,32 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "HTML",
         "Programming"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 33,
       "publication-date": "2020-02-01",
+<<<<<<< HEAD
       "authors": [
         "Wade Trappe",
         "Lawrence C. Washington"
       ],
+=======
+      "authors": ["Wade Trappe", "Lawrence C. Washington"],
+>>>>>>> origin/server
       "publishing-company": "Pearson",
       "language": "English",
       "title": "Introduction to Cryptography with Coding Theory, 3rd Edition",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 6,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9780136758181/750",
       "price": 30.36,
       "in-stock": 351,
@@ -1157,6 +1558,13 @@
         7,
         10
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9780136758181/750w/",
+      "price": 30.36,
+      "in-stock": 351,
+      "discount": 26,
+      "rating": [3, 5, 9, 7, 10],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1164,21 +1572,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Security Engineering"
       ]
+=======
+      "categories": ["Security", "Software Development"]
+>>>>>>> origin/server
     },
     {
       "id": 34,
       "publication-date": "2013-12-13",
+<<<<<<< HEAD
       "authors": [
         "Erik Spiekermann"
       ],
+=======
+      "authors": ["Erik Spiekermann"],
+>>>>>>> origin/server
       "publishing-company": "Adobe Press",
       "language": "English",
       "title": "Stop Stealing Sheep & Find Out How Type Works, Third Edition",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9780133441147/750",
       "price": 50.91,
       "in-stock": 68,
@@ -1190,6 +1607,13 @@
         4,
         3
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9780133441147/750w/",
+      "price": 50.91,
+      "in-stock": 68,
+      "discount": 46,
+      "rating": [6, 7, 9, 4, 3],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1197,21 +1621,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Typography"
       ]
+=======
+      "categories": ["Typography"]
+>>>>>>> origin/server
     },
     {
       "id": 35,
       "publication-date": "2003-10-31",
+<<<<<<< HEAD
       "authors": [
         "Robert Charles Metzger"
       ],
+=======
+      "authors": ["Robert Charles Metzger"],
+>>>>>>> origin/server
       "publishing-company": "Digital Press",
       "language": "English",
       "title": "Debugging by Thinking",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 2,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781555583071/750",
       "price": 43.77,
       "in-stock": 351,
@@ -1223,6 +1656,13 @@
         5,
         10
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781555583071/750w/",
+      "price": 43.77,
+      "in-stock": 351,
+      "discount": 39,
+      "rating": [1, 9, 7, 5, 10],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-1@56w.png",
@@ -1230,9 +1670,13 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Team Management & Leadership"
       ]
+=======
+      "categories": ["Management", "Business"]
+>>>>>>> origin/server
     },
     {
       "id": 36,
@@ -1247,6 +1691,7 @@
       "title": "The Six Sigma Way Team Fieldbook: An Implementation Guide for Process Improvement Teams",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 53,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9780071373142/750",
       "price": 40.59,
       "in-stock": 128,
@@ -1258,6 +1703,13 @@
         3,
         1
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9780071373142/750w/",
+      "price": 40.59,
+      "in-stock": 128,
+      "discount": 36,
+      "rating": [6, 7, 3, 3, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1265,21 +1717,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Six Sigma"
       ]
+=======
+      "categories": ["Management", "Business"]
+>>>>>>> origin/server
     },
     {
       "id": 37,
       "publication-date": "2017-11-29",
+<<<<<<< HEAD
       "authors": [
         "Paul Midler"
       ],
+=======
+      "authors": ["Paul Midler"],
+>>>>>>> origin/server
       "publishing-company": "Wiley",
       "language": "English",
       "title": "What's Wrong with China",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 17,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781119213710/750",
       "price": 33.91,
       "in-stock": 131,
@@ -1291,6 +1752,13 @@
         8,
         10
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781119213710/750w/",
+      "price": 33.91,
+      "in-stock": 131,
+      "discount": 29,
+      "rating": [10, 10, 6, 8, 10],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-2@56w.png",
@@ -1298,21 +1766,30 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Inventory Management"
       ]
+=======
+      "categories": ["Management"]
+>>>>>>> origin/server
     },
     {
       "id": 38,
       "publication-date": "2013-09-23",
+<<<<<<< HEAD
       "authors": [
         "Joe Armstrong"
       ],
+=======
+      "authors": ["Joe Armstrong"],
+>>>>>>> origin/server
       "publishing-company": "Pragmatic Bookshelf",
       "language": "English",
       "title": "Programming Erlang, 2nd Edition",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781941222454/750",
       "price": 44.3,
       "in-stock": 333,
@@ -1324,6 +1801,13 @@
         5,
         4
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781941222454/750w/",
+      "price": 44.3,
+      "in-stock": 333,
+      "discount": 40,
+      "rating": [9, 4, 3, 5, 4],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1331,21 +1815,30 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Erlang"
       ]
+=======
+      "categories": ["Software Development"]
+>>>>>>> origin/server
     },
     {
       "id": 39,
       "publication-date": "2015-08-03",
+<<<<<<< HEAD
       "authors": [
         "Peter Hurley"
       ],
+=======
+      "authors": ["Peter Hurley"],
+>>>>>>> origin/server
       "publishing-company": "New Riders",
       "language": "English",
       "title": "The Headshot: The Secrets to Creating Amazing Headshot Portraits",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 30,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9780133928822/750",
       "price": 37.62,
       "in-stock": 432,
@@ -1357,6 +1850,13 @@
         9,
         1
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9780133928822/750w/",
+      "price": 37.62,
+      "in-stock": 432,
+      "discount": 33,
+      "rating": [8, 10, 1, 9, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1364,21 +1864,30 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Photography"
       ]
+=======
+      "categories": ["Photography"]
+>>>>>>> origin/server
     },
     {
       "id": 40,
       "publication-date": "2002-12-26",
+<<<<<<< HEAD
       "authors": [
         "Robin Williams"
       ],
+=======
+      "authors": ["Robin Williams"],
+>>>>>>> origin/server
       "publishing-company": "Peachpit Press",
       "language": "English",
       "title": "Robin Williams Mac OS X Book, Jaguar Edition, The",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/0321169662/750",
       "price": 42.3,
       "in-stock": 335,
@@ -1390,6 +1899,13 @@
         9,
         3
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/0321169662/750w/",
+      "price": 42.3,
+      "in-stock": 335,
+      "discount": 38,
+      "rating": [6, 6, 2, 9, 3],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1397,22 +1913,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Mac OS X"
       ]
+=======
+      "categories": ["Software Development"]
+>>>>>>> origin/server
     },
     {
       "id": 41,
       "publication-date": "2014-08-27",
+<<<<<<< HEAD
       "authors": [
         "Ted Dunning",
         "Ellen Friedman"
       ],
+=======
+      "authors": ["Ted Dunning", "Ellen Friedman"],
+>>>>>>> origin/server
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Practical Machine Learning: A New Look at Anomaly Detection",
       "description": "<span><span><span><p>Anomaly detection is the detective work of machine learning: finding the unusual, catching the fraud, discovering strange activity in large and complex datasets. But, unlike Sherlock Holmes, you may not know what the puzzle is, much less what \"suspects\" you’re looking for. This O’Reilly report uses practical example to explain how the underlying concepts of anomaly detection work.</p></span></span></span>",
       "pages": 74,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781491914151/750",
       "price": 48.54,
       "in-stock": 353,
@@ -1424,6 +1949,13 @@
         6,
         2
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781491914151/750w/",
+      "price": 48.54,
+      "in-stock": 353,
+      "discount": 44,
+      "rating": [7, 7, 7, 6, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1431,21 +1963,30 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Machine Learning"
       ]
+=======
+      "categories": ["Machine Learning"]
+>>>>>>> origin/server
     },
     {
       "id": 42,
       "publication-date": "2014-09-01",
+<<<<<<< HEAD
       "authors": [
         "William R. Killingsworth"
       ],
+=======
+      "authors": ["William R. Killingsworth"],
+>>>>>>> origin/server
       "publishing-company": "Business Expert Press",
       "language": "English",
       "title": "Saving American Manufacturing",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781606496107/750",
       "price": 36.54,
       "in-stock": 129,
@@ -1457,6 +1998,13 @@
         6,
         1
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781606496107/750w/",
+      "price": 36.54,
+      "in-stock": 129,
+      "discount": 32,
+      "rating": [8, 2, 3, 6, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1464,22 +2012,31 @@
           "stars": 4
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "History"
       ]
+=======
+      "categories": ["Business", "Marketing"]
+>>>>>>> origin/server
     },
     {
       "id": 43,
       "publication-date": "2012-07-03",
+<<<<<<< HEAD
       "authors": [
         "Bill Catlette",
         "Richard Hadden"
       ],
+=======
+      "authors": ["Bill Catlette", "Richard Hadden"],
+>>>>>>> origin/server
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Contented Cows Still Give Better Milk, Revised and Expanded: The Plain Truth about Employee Engagement and Your Bottom Line, 2nd Edition",
       "description": "<span><span><span><p><b>How to foster happier employees for a healthier bottom line</b></p><p>Managers could learn a lot from a message echoed by generations of dairy farmers: \"Contented cows give better milk.\" This book is not, repeat, not a management tome. In this fully revised and expanded edition to a book which absolutely, positively makes the case that treating people right is one of the best things any business can do for its bottom line, Contented Cows Still Give Better Milk offers sound, practical advice for those who know that their reputation as an employer is as important as bandwidth.</p><ul><li><p>Offers updated case studies and new examples from on-site research in a number of real organizations, as well as inspiring examples of companies that know how to do it right . . . and few that didn't</p></li><li><p>Fad-free prescriptive advice informed by the authors' combined four-plus decades of training and consulting with thousands of managers and employees, conducting employee engagement surveys, and translating the attendant learning to management audiences in a form they can appreciate and use</p></li><li><p>Coauthor Bill Catlette's Bottom Line Leadership Seminar has helped thousands of managers become more effective leaders</p></li></ul><p>Direct from the horse's . . . actually cow's mouth, this fully revised and expanded second edition will teach readers that having a focused, engaged, and capably led workforce is one of the best things any organization can do for its bottom line.</p></span></span></span>",
       "pages": 269,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781118331804/750",
       "price": 44.7,
       "in-stock": 419,
@@ -1491,6 +2048,13 @@
         4,
         7
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781118331804/750w/",
+      "price": 44.7,
+      "in-stock": 419,
+      "discount": 40,
+      "rating": [1, 10, 9, 4, 7],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-1@56w.png",
@@ -1498,21 +2062,30 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Content Marketing"
       ]
+=======
+      "categories": ["Marketing"]
+>>>>>>> origin/server
     },
     {
       "id": 44,
       "publication-date": "2014-08-01",
+<<<<<<< HEAD
       "authors": [
         "Liz Lee Heinecke"
       ],
+=======
+      "authors": ["Liz Lee Heinecke"],
+>>>>>>> origin/server
       "publishing-company": "Quarry Books",
       "language": "English",
       "title": "Kitchen Science Lab for Kids",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 7,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781627880404/750",
       "price": 30.47,
       "in-stock": 260,
@@ -1524,6 +2097,13 @@
         5,
         4
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781627880404/750w/",
+      "price": 30.47,
+      "in-stock": 260,
+      "discount": 26,
+      "rating": [10, 7, 3, 5, 4],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-4@56w.png",
@@ -1531,21 +2111,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Early Education Coding"
       ]
+=======
+      "categories": ["Education"]
+>>>>>>> origin/server
     },
     {
       "id": 45,
       "publication-date": "2022-01-11",
+<<<<<<< HEAD
       "authors": [
         "Agnes Hsu"
       ],
+=======
+      "authors": ["Agnes Hsu"],
+>>>>>>> origin/server
       "publishing-company": "Quarry Books",
       "language": "English",
       "title": "Recycle and Play",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 23,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9780760373194/750",
       "price": 32.69,
       "in-stock": 89,
@@ -1557,6 +2146,13 @@
         7,
         5
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9780760373194/750w/",
+      "price": 32.69,
+      "in-stock": 89,
+      "discount": 28,
+      "rating": [9, 9, 8, 7, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-1@56w.png",
@@ -1564,21 +2160,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Play Framework"
       ]
+=======
+      "categories": ["Software Development", "Web"]
+>>>>>>> origin/server
     },
     {
       "id": 46,
       "publication-date": "2021-01-11",
+<<<<<<< HEAD
       "authors": [
         "Michael F. Schein"
       ],
+=======
+      "authors": ["Michael F. Schein"],
+>>>>>>> origin/server
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "The Hype Handbook: 12 Indispensable Success Secrets From the World’s Greatest Propagandists, Self-Promoters, Cult Leaders, Mischief Makers, and Boundary Breakers",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 14,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781260470147/750",
       "price": 38.26,
       "in-stock": 107,
@@ -1590,6 +2195,13 @@
         10,
         1
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781260470147/750w/",
+      "price": 38.26,
+      "in-stock": 107,
+      "discount": 34,
+      "rating": [7, 4, 8, 10, 1],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1597,21 +2209,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Blockchain"
       ]
+=======
+      "categories": ["Blockchain", "Security"]
+>>>>>>> origin/server
     },
     {
       "id": 47,
       "publication-date": "2017-11-24",
+<<<<<<< HEAD
       "authors": [
         "Lex Sheehan"
       ],
+=======
+      "authors": ["Lex Sheehan"],
+>>>>>>> origin/server
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Learning Functional Programming in Go",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781787281394/750",
       "price": 30.38,
       "in-stock": 90,
@@ -1623,6 +2244,13 @@
         3,
         4
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781787281394/750w/",
+      "price": 30.38,
+      "in-stock": 90,
+      "discount": 26,
+      "rating": [9, 9, 6, 3, 4],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1630,21 +2258,30 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Functional Programming"
       ]
+=======
+      "categories": ["Software Development"]
+>>>>>>> origin/server
     },
     {
       "id": 48,
       "publication-date": "2019-05-13",
+<<<<<<< HEAD
       "authors": [
         "Jennifer Emery"
       ],
+=======
+      "authors": ["Jennifer Emery"],
+>>>>>>> origin/server
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Leading for Organisational Change",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 6,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781119517962/750",
       "price": 30.3,
       "in-stock": 401,
@@ -1656,6 +2293,13 @@
         7,
         2
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781119517962/750w/",
+      "price": 30.3,
+      "in-stock": 401,
+      "discount": 26,
+      "rating": [1, 8, 1, 7, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1663,22 +2307,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "FinTech"
       ]
+=======
+      "categories": ["Business", "Management"]
+>>>>>>> origin/server
     },
     {
       "id": 49,
       "publication-date": "2018-02-28",
+<<<<<<< HEAD
       "authors": [
         "Charles Palmer",
         "John Williamson"
       ],
+=======
+      "authors": ["Charles Palmer", "John Williamson"],
+>>>>>>> origin/server
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Virtual Reality Blueprints",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781786462985/750",
       "price": 47.56,
       "in-stock": 282,
@@ -1690,6 +2343,13 @@
         6,
         5
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781786462985/750w/",
+      "price": 47.56,
+      "in-stock": 282,
+      "discount": 43,
+      "rating": [8, 9, 1, 6, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-1@56w.png",
@@ -1697,22 +2357,31 @@
           "stars": 3
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Virtual Reality / Augmented Reality"
       ]
+=======
+      "categories": ["VR", "AR"]
+>>>>>>> origin/server
     },
     {
       "id": 50,
       "publication-date": "2014-11-21",
+<<<<<<< HEAD
       "authors": [
         "Barbara B. Flynn",
         "Xiande Zhao"
       ],
+=======
+      "authors": ["Barbara B. Flynn", "Xiande Zhao"],
+>>>>>>> origin/server
       "publishing-company": "CRC Press",
       "language": "English",
       "title": "Global Supply Chain Quality Management",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 9,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781439815540/750",
       "price": 36.62,
       "in-stock": 332,
@@ -1724,6 +2393,13 @@
         6,
         5
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781439815540/750w/",
+      "price": 36.62,
+      "in-stock": 332,
+      "discount": 32,
+      "rating": [4, 8, 2, 6, 5],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-2@56w.png",
@@ -1731,21 +2407,30 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Supply Chain Management"
       ]
+=======
+      "categories": ["Management", "Supply Chain"]
+>>>>>>> origin/server
     },
     {
       "id": 51,
       "publication-date": "2015-10-09",
+<<<<<<< HEAD
       "authors": [
         "Richard Templar"
       ],
+=======
+      "authors": ["Richard Templar"],
+>>>>>>> origin/server
       "publishing-company": "Pearson",
       "language": "English",
       "title": "The Rules of Work, 4th Edition",
       "description": "<span><span><span><p>For person who loves...<span><span><span><p>",
       "pages": 1,
+<<<<<<< HEAD
       "image": "https://learning.oreilly.com/library/cover/9781292088112/750",
       "price": 33.76,
       "in-stock": 298,
@@ -1757,6 +2442,13 @@
         5,
         2
       ],
+=======
+      "image": "https://learning.oreilly.com/library/cover/9781292088112/750w/",
+      "price": 33.76,
+      "in-stock": 298,
+      "discount": 29,
+      "rating": [2, 5, 6, 5, 2],
+>>>>>>> origin/server
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-5@56w.png",
@@ -1764,9 +2456,13 @@
           "stars": 5
         }
       ],
+<<<<<<< HEAD
       "categories": [
         "Life-Work Balance"
       ]
+=======
+      "categories": ["Business", "Management"]
+>>>>>>> origin/server
     }
   ],
   "reset-Token": [
