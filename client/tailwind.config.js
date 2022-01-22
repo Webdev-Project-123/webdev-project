@@ -20,6 +20,12 @@ module.exports = {
         ipSE: "320px",
         xsm: "375px",
       },
+      minWidth: {
+        'namCustome': '420px',
+      },
+      minHeight: {
+        'namCustome': '283px',
+      }
     },
   },
   variants: {
