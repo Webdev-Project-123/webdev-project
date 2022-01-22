@@ -1,5 +1,7 @@
 const authService = require('./service');
 
+const createErr = require("http-errors");
+
 module.exports = {
   signup: async (req, res, next) => {
     const DTO = await authService.signup(req.body);
@@ -34,7 +36,7 @@ module.exports = {
       const DTO = await authService.forgetPassword(req.body);
       res.status(200).json(DTO);
     } catch (error) {
-      next(error);
+      next(createErr(500, error.msg));
     }
   },
 
@@ -43,7 +45,7 @@ module.exports = {
       const DTO = await authService.resetPassword(req.body);
       res.status(200).json(DTO);
     } catch (error) {
-      next(error);
+      next(createErr(500, error.msg));
     }
   }
 };
