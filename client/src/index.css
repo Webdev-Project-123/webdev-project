@@ -36,4 +36,7 @@
 
 .filter {
   @apply py-1 text-sm pl-6  hover:text-[#FF6701] transition duration-200;
+  
+body {
+  overflow-x: hidden;
 }
