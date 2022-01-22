@@ -34,7 +34,7 @@ module.exports = {
       password: hashPassword,
       phone: '',
       address: '',
-      avatar: '', // chưa làm
+      avatar: '',
       role: 'user',
       cart: [],
       bought: [],
@@ -100,7 +100,7 @@ module.exports = {
     };
   },
   token: async (body) => {
-    const { refreshToken } = body.refreshToken;
+    const refreshToken = body.refreshToken;
     if (!refreshToken) {
       return {
         statusCode: 401,
@@ -112,7 +112,7 @@ module.exports = {
       const result = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
       const users = await db.get('refresh-tokens').find({ refreshToken }).value();
 
-      if (!users || users.length === 0) {
+      if (!users) {
         return {
           statusCode: 403,
           msg: 'FORBIDDEN',
@@ -120,7 +120,7 @@ module.exports = {
       }
 
       const emails = await db.get('users').find({ id: users.id }).value();
-      if (!emails || emails.length === 0 || result.email !== emails.email) {
+      if (!emails || result.email !== emails.email) {
         return {
           statusCode: 403,
           msg: 'FORBIDDEN',
