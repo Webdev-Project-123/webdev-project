@@ -1,20 +1,14 @@
 import React from "react";
-<<<<<<< HEAD
 import Detail from "./DetailProduct/Detail"
-
+import Header from "./Home/Header"
+import Footer from "./Home/Footer"
+import Rating from "./Home/Rating"
 function App() {
   return (
     <div className="">
+      <Header/>
      <Detail/>
-=======
-import SignUp from "./Person/SignUp";
-import Login from "./Person/Login";
-import Profile from "./Person/Profile";
-function App() {
-  return (
-    <div>
-      <Profile />
->>>>>>> origin/client
+     <Footer></Footer>
     </div>
   );
 }

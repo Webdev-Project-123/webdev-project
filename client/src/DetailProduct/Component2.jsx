@@ -4,9 +4,9 @@ import Description from "./Description";
 import Rate from "./Rate";
 const tabs=["information","description","rate"]
 function Component2() {
-    const [tabList,settabList]=useState("description");
+    const [tabList,settabList]=useState("information");
     return (
-      <div className="h-[570px] bg-[#f1d0b1] ">
+      <div className="h-max bg-[#f1d0b1]">
          <div className="ml-[80px] ">
              <div className="flex">
                 {tabs.map(tab=>(
@@ -27,7 +27,7 @@ function Component2() {
                 ))
                 }
             </div>
-            <div>
+            <div className="pb-10">
                     <Information name={tabList}/>
                     <Description name={tabList}/>
                     <Rate name={tabList}/>
