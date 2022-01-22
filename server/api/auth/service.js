@@ -168,7 +168,7 @@ module.exports = {
     }
   },
 
-  resetPassword: async ({ token, newPassword }) => {
+  resetPassword: async (token, newPassword) => {
     try {
       const users = await db.get('users').value();
       const reset_Token = await db.get('reset-Token').value();
@@ -183,7 +183,7 @@ module.exports = {
           let hashPassword = await bcrypt.hash(newPassword, salt);
 
           // user[0].password = hashPassword;
-          await db.get('users').find({ password: user[0].password }).assign({ newPassword }).write();
+          await db.get('users').find({ password: user[0].password }).assign({ hashPassword }).write();
         }
       }
 
