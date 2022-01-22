@@ -46,7 +46,7 @@ const Header = ({ isLogin }) => {
       <div className="border-2 flex rounded-md items-center">
         <input
           className="outline-0 text-sm text-white bg-inherit placeholder:text-white w-full p-2 mx-2  "
-          placeholder="Tìm sách..."
+          placeholder="Search books..."
         />
 
         <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer h-7 w-7 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">

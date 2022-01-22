@@ -7,8 +7,8 @@ const Footer = () => {
     <div className='flex-1 space-y-2'>
       <Logo />
       <p className='text-sm font-light leading-tight sm:leading-normal'>
-        Thích đọc sách tức là biết đánh đổi những giờ phút buồn tẻ không thể tránh được trong cuộc đời lấy những giờ phút lý thú.
-        Chọn ngay những cuốn sách tốt nhất tại <b>Wordy</b>.</p>
+        Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers.
+        Get the best books at <b>Wordy</b>.</p>
       <div className='flex item-center justify-start gap-3 sm:gap-5 pl-1'>
         <svg
           className="w-5 h-5 fill-white cursor-pointer"
@@ -43,21 +43,21 @@ const Footer = () => {
     </div>
 
     {/* SERVICE */}
-    <h1 className='flex-1 flex flex-wrap justify-between'>
+    <h1 className='flex-1 flex flex-wrap justify-center gap-32'>
       <div className='font-sans font-semibold space-y-4'>
-        <p>DỊCH VỤ</p>
+        <p>SERVICE</p>
         <ul className='font-light text-sm cursor-pointer space-y-1'>
-          <li >Điều khoản sử dụng</li>
-          <li >Chính sách bảo mật</li>
-          <li >Giới thiệu</li>
+          <li >Terms of use</li>
+          <li >Privacy Policy</li>
+          <li >Press & Media</li>
         </ul>
       </div>
       <div className='font-sans font-semibold space-y-4'>
-        <p>HỖ TRỢ</p>
+        <p>SUPPORT</p>
         <ul className='font-light text-sm cursor-pointer space-y-1'>
-          <li >Chính sách đổi trả</li>
-          <li >Chính sách vận chuyển</li>
-          <li >Thanh toán và xuất hóa đơn</li>
+          <li>How to return</li>
+          <li>Shipping & Delivery</li>
+          <li>How to pay</li>
         </ul>
       </div>
     </h1>
@@ -66,7 +66,7 @@ const Footer = () => {
     <h1 className='flex-1 flex-wrap'>
       <div className='pl-16'>
         <div className='font-sans font-semibold space-y-4'>
-          <p>VỀ CHÚNG TÔI</p>
+          <p>ABOUT US</p>
           <div className='flex items-baseline font-light text-sm gap-16 cursor-pointer'>
             <ul>
               <li>Nguyễn Đức Phương</li>
