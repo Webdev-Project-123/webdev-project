@@ -51,7 +51,7 @@ function SignUp() {
           src={signUpBg}
         />
       </div>
-      <div className="xl:w-2/5 md:w-[65%] sm:w-100 relative md:float-right">
+      <div className="xl:w-[45%] md:w-[65%] sm:w-full relative md:float-right">
         <div className="absolute top-3 right-7 font-robotoS font-semi flex justify-center items-center cursor-pointer group md:text-[20px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,12 +67,12 @@ function SignUp() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1 className="hidden xsm:block">Trang chủ</h1>
+          <h1 className="hidden xsm:block">Home</h1>
         </div>
         <div className="flex flex-wrap flex-col justify-center md:gap-[30px] gap-[20px] w-full h-screen md:px-6 lg:px-12 bg-gradient-to-tr to-[#ffffff] via-[#f1b560] from-[#b83602] sm:text-xl px-3">
           <div className="h-auto">
             <h1 className="p-0 h-content ml-8 inline-block md:text-[40px] text-[30px] text-[#2b2727] font-ubuntu font-bold">
-              Đăng ký ngay
+              Sign up now
             </h1>
           </div>
           <div className="flex flex-wrap justify-between items-stretch w-full">
@@ -191,32 +191,36 @@ function SignUp() {
           </div>
           <div className="w-full self-end justify-self-end flex justify-center items-center font-robotoS text-base -mt-5">
             <div className="text-[#47392b] float-right flex justify-center items-center">
-              <span className="mr-2 hidden sm:inline ">Đã có tài khoản? </span>
+              <span className="mr-2 hidden sm:inline ">
+                Already have account?{" "}
+              </span>
               <a
                 href="#"
                 className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149] "
               >
-                Đăng nhập
+                Login
               </a>
             </div>
             {/*  */}
             <button className="relative border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right font-bold active:translate-y-1 before:absolute before:w-0 before:h-full before:left-0 before:bottom-0 hover:before:w-full before:bg-[#fa8947] before:transition-all before:ease-in-out">
               <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
-                Đăng kí
+                Sign up
               </span>
             </button>
           </div>
           <div className="w-full self-center mt-5">
-            <p className="block mx-auto text-center md:w-[28rem] w-[22rem] text-[15px] md:text-xl font-robotoS text-[#47392b]">
-              Bằng việc đăng kí, bạn đã đồng ý với Wordy về{" "}
-              <a className="italic" href="#">
-                Điều khoản dịch vụ
-              </a>{" "}
-              {"& "}
-              <a className="italic" href="#">
-                Chính sách bảo mật
-              </a>{" "}
+            <p className="block mx-auto text-center w-full text-[15px] md:text-[20px] font-robotoS text-[#47392b]">
+              By resistering, you have agreed with Wordy about{" "}
             </p>
+            <div className="flex justify-center items-center gap-2">
+              <a className="italic font-robotoS text-[#47392b]" href="#">
+                Terms of service
+              </a>{" "}
+              {"&"}
+              <a className="italic font-robotoS text-[#47392b]" href="#">
+                Privacy policy
+              </a>{" "}
+            </div>
           </div>
         </div>
       </div>
