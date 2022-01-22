@@ -1,0 +1,18 @@
+.slick-prev:before,
+.slick-next:before {
+  color: #FEA82F;
+  font-size: 25px;
+}
+.slick-prev {
+  left: 12px;
+  z-index: 1;
+}
+.slick-next {
+  right: 12px;
+} 
+.slick-slide img {
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
+}
