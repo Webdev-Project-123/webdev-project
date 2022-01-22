@@ -35,6 +35,42 @@
       "role": "user",
       "cart": [],
       "bought": []
+    },
+    {
+      "id": 4,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$Cptt.dGUVtsb0VV1FftgpOI4rEDcWqVI.YvbVgCVlKSs.DzD67BPa",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 5,
+      "name": "adminadminadmin",
+      "email": "adminadmin@gmail.com",
+      "password": "$2b$10$I9cIKl0VS8HgSowL.f.Riu0UwsN4p6m8AGJjf3tzhVBFCX83E3mrS",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 6,
+      "name": "name name",
+      "email": "email@email.email",
+      "password": "$2b$10$hSslHboMFJW/newZYHLSDeIskE.glwVqac6nHkZr053.dmpgCixjO",
+      "phone": "",
+      "address": "",
+      "avatar": "",
+      "role": "user",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
@@ -3230,6 +3266,18 @@
     {
       "id": 2,
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI4MzQzMjAsImV4cCI6MTY0MjkyMDcyMH0.rREUv0euho_UY0ASkGOV1xWRiPmnTnewAKvsCIPbgxM"
+    },
+    {
+      "id": 4,
+      "refreshToken": ""
+    },
+    {
+      "id": 5,
+      "refreshToken": ""
+    },
+    {
+      "id": 6,
+      "refreshToken": ""
     }
   ],
   "uploaded": []
