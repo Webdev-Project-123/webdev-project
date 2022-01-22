@@ -5,7 +5,7 @@ const uploadController = require('./controller');
 const authorize = require('../../common/authorization');
 
 router.use('/', authorize.isAdmin);
-router.get('/:userId', uploadController.view);
+router.get('/', uploadController.view);
 router.put('/:userId/update', uploadController.update);
 router.delete('/:userId/delete', uploadController.delete);
 
