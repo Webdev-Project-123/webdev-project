@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       {/* <Header /> */}
-      <SignUp />
-      {/* <AddProduct /> */}
+      {/* <SignUp /> */}
+      <AddProduct />
       {/* <Footer /> */}
     </div>
   );

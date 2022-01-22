@@ -1,5 +1,6 @@
 import Input from "../components/Input";
 import Label from "../components/Label";
+import Upload from "../components/Upload";
 
 function AddProduct() {
   const inputStyle =
@@ -54,7 +55,7 @@ function AddProduct() {
           <Label></Label>
         </div>
       </div>
-      <div className="w-2/5 h-full bg-sky-300"></div>
+      <div className="w-2/5 h-full bg-sky-300">{/* <Upload /> */}</div>
     </div>
   );
 }
