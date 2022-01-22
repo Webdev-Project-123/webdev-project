@@ -7,7 +7,6 @@ module.exports = {
     const products = await db.get('products').value();
 
     // * Filter products by category
-
     const byCategory = R.compose(
       R.any(R.equals(R.__, category)),
       R.map(R.toLower),
