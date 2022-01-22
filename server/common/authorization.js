@@ -29,7 +29,6 @@ module.exports = {
       }
 
       req.params.userid = userid;
-      console.log(userid);
       const filterUser = await db.get('users').find({ id: userid }).value();
       if (!filterUser) {
         return next(createErr(404, 'PAGE NOT FOUND'));
