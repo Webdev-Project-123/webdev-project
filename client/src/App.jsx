@@ -5,7 +5,7 @@ import Profile from "./Person/Profile";
 function App() {
   return (
     <div>
-      <Profile />
+      <Home />
     </div>
   );
 }
