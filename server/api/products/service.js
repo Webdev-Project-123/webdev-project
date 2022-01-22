@@ -18,7 +18,7 @@ module.exports = {
 
     const DTO = {
       status: 200,
-      message: 'Hot products are ready!',
+      message: 'OK',
       data: await R.map(
         R.compose(
           renameKeys({
@@ -57,7 +57,7 @@ module.exports = {
 
     const DTO = {
       status: 200,
-      message: 'Product is ready!',
+      message: 'OK',
       data: await renameKeys({
         id: 'productId',
         title: 'productName',

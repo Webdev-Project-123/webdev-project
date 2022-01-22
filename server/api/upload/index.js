@@ -1,9 +1,9 @@
-// const router = require('express').Router();
+const router = require('express').Router();
 
-// const uploadController = require('./controller');
+const uploadController = require('./controller');
 
-// router.get('/:user-id', uploadController.view);
-// router.put('/:user-id/update', uploadController.update);
-// router.delete('/:user-id/delete', uploadController.delete);
+router.get('/:userId', uploadController.view);
+router.put('/:userId/update', uploadController.update);
+router.delete('/:userId/delete', uploadController.delete);
 
-// module.exports = router;
+module.exports = router;

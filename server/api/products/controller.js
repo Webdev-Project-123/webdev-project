@@ -7,7 +7,7 @@ module.exports = {
     const DTO = await productsService.hot();
 
     if (R.equals(DTO.status, 410)) {
-      next(createErr(410, 'Products are gone!'));
+      next(createErr(410, 'MISSING'));
     } else res.status(200).json(DTO);
   },
 
@@ -17,7 +17,7 @@ module.exports = {
     );
 
     if (R.equals(DTO.status, 410)) {
-      next(createErr(410, 'Product is gone!'));
+      next(createErr(410, 'MISSING'));
     } else res.status(200).json(DTO);
   },
 };
