@@ -32,6 +32,27 @@ function Profile() {
 
   const uploadFileRef = useRef();
 
+  useEffect(() => {
+    const labelList = document.querySelectorAll(".label");
+    const inputList = document.querySelectorAll(".input");
+
+    for (let i = 0; i < inputList.length; i++) {
+      labelList[i].classList.add("bg-[#F0ECE3]");
+      inputList[i].classList.add("border-none");
+    }
+
+    setDisabled((prev) => {
+      const newDis = [...prev];
+      return prev.map((el) => true);
+    });
+  }, []);
+
+  useEffect(() => {
+    window.onmousemove = () => {
+      document.getElementById("bg").click();
+    };
+  });
+
   const handleShowPassword = () => {
     setShowPassword((prev) => {
       if (!prev) inputRef.current.type = "text";
@@ -51,7 +72,7 @@ function Profile() {
 
     for (let i = 0; i < enableList.length; i++) {
       if (enableList[i] === e.target) {
-        if (i >= 2) i += 1;
+        if (i >= 1) i += 2;
 
         labelList[i].classList.remove("bg-[#F0ECE3]");
         inputList[i].classList.remove("border-none");
@@ -74,37 +95,25 @@ function Profile() {
     setInfo(newInfo);
   };
 
-  useEffect(() => {
-    const labelList = document.querySelectorAll(".label");
-    const inputList = document.querySelectorAll(".input");
-
-    for (let i = 0; i < inputList.length; i++) {
-      labelList[i].classList.add("bg-[#F0ECE3]");
-      inputList[i].classList.add("border-none");
-    }
-
-    setDisabled((prev) => {
-      const newDis = [...prev];
-      return prev.map((el) => true);
-    });
-  }, []);
-
   const handleEnableChangePassword = (e) => {
-    const enableList = document.querySelectorAll(".enalble");
-    const labelList = document.querySelectorAll(".label");
-    const inputList = document.querySelectorAll(".input");
-    labelList[2].classList.remove("bg-[#F0ECE3]");
-    inputList[2].classList.remove("border-none");
+    const confirm = window.confirm("Do you want to reset your password?");
+    if (confirm) {
+      const enableList = document.querySelectorAll(".enalble");
+      const labelList = document.querySelectorAll(".label");
+      const inputList = document.querySelectorAll(".input");
+      labelList[2].classList.remove("bg-[#F0ECE3]");
+      inputList[2].classList.remove("border-none");
 
-    setEnableCPass((prev) => !prev);
+      setEnableCPass((prev) => !prev);
 
-    setDisabled((prev) => {
-      const newDis = [...prev];
-      return newDis.map((el, index) => {
-        if (index === 2) return false;
-        return true;
+      setDisabled((prev) => {
+        const newDis = [...prev];
+        return newDis.map((el, index) => {
+          if (index === 2 || index === 1) return false;
+          return true;
+        });
       });
-    });
+    }
   };
 
   const handleSubmit = () => {
@@ -126,6 +135,7 @@ function Profile() {
       });
     });
   };
+
   const handleSubmitPassword = () => {
     const inputPassword = document.querySelectorAll(".input")[2];
     const labelPassword = document.querySelectorAll(".label")[2];
@@ -135,7 +145,10 @@ function Profile() {
   };
 
   return (
-    <div className="flex w-screen h-screen overflow-x-hidden justify-center items-center lg:py-[3rem] md:py-[7rem] font-robotoS">
+    <div
+      id="bg"
+      className="flex w-screen h-screen overflow-x-hidden justify-center items-center lg:py-[3rem] md:py-[7rem] font-robotoS"
+    >
       {popUp && <Upload popUp={popUp} setPopUs={setPopUs} />}
       <div className="bg-[#f5f1f1] lg:w-[70%] w-[97%] h-4/5 lg:h-[100%] md:h-[95%] flex flex-col items-center justify-center rounded-md">
         <div className="bg-[#FF8243] w-full lg:h-[23%] h-[15%] md:h-[20%] flex-shrink-0 rounded-t-md flex flex-wrap justify-around items-center">
@@ -312,11 +325,10 @@ function Profile() {
               </Label>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 cursor-pointer enalble"
+                className="h-6 w-6 cursor-pointer invisible"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                onClick={handleEnableChange}
               >
                 <path
                   strokeLinecap="round"

@@ -5,10 +5,10 @@ const axiosClient = axios.create({
   // baseURL: "https://wordy-library.vercel.app/api/",
   baseURL: "http://localhost:5000/",
   // baseURL: "https://b05f-14-250-169-69.ngrok.io",
-  // headers: {
-  //   "current-type": "json",
-  // },
-  // paramsSerializer: (param) => queryString.stringify(param),
+  headers: {
+    "current-type": "json",
+  },
+  paramsSerializer: (param) => queryString.stringify(param),
 });
 
 axiosClient.interceptors.request.use(

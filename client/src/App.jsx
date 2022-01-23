@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+import React from "react";
+import Detail from "./DetailProduct/Detail"
+import Header from "./Home/Header"
+import Footer from "./Home/Footer"
+import Rating from "./Home/Rating"
+function App() {
+  return (
+    <div className="">
+      <Header/>
+     <Detail />
+     <Footer/>
+    </div>
+=======
 import React, { useState } from "react";
 import SignUp from "./Person/SignUp";
 import Login from "./Person/Login";
@@ -22,6 +36,7 @@ function App() {
         </Routes>
       </SearchContext.Provider>
     </BrowserRouter>
+>>>>>>> 0f19da8c6acc6d7af61ab815c4bd9fe44b513c21
   );
 }
 
