@@ -118,7 +118,7 @@ module.exports = {
       return {
         statusCode: 500,
         msg: 'Error in login',
-      }
+      };
     }
   },
 
