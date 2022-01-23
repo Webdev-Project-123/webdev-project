@@ -4,29 +4,102 @@ const renameKeys = require('../../common/renameKeys');
 
 module.exports = {
   view: async () => {
-    const products = await db.get('products').value();
+    try {
+      const products = await db.get('products').value();
 
-    // * Get all uploaded products
-    const uploadedProducts = await R.map(
-      R.compose(
+      // * Get all uploaded products
+      const uploadedProducts = await R.map(
+        R.compose(
+          renameKeys({
+            id: 'productId',
+            title: 'productName',
+            'uploaded-date': 'productUploadDate',
+          }),
+          R.pickAll(['id', 'title', 'uploaded-date']),
+        ),
+      )(products);
+
+      // * Return 400 'Missing uploaded products' error
+      if (R.isEmpty(uploadedProducts)) return { status: 400 };
+
+      const DTO = {
+        status: 200,
+        message: 'OK',
+        data: uploadedProducts,
+      };
+
+      return DTO;
+    } catch (err) {
+      return err;
+    }
+  },
+
+  add: async (product, url) => {
+    try {
+      const products = await db.get('products').value();
+
+      // * Get the last product
+      const lastProduct = await R.last(products);
+
+      // * Add missing fields to the new product
+      const addMissingFields = R.mergeLeft({
+        image: url,
+        rating: [],
+        comments: [],
+        id: R.compose(R.add(1), R.prop('id'))(lastProduct),
+      });
+
+      // * Initialize new product
+      const newProduct = await R.compose(
+        addMissingFields,
         renameKeys({
-          id: 'productId',
-          title: 'productName',
-          'uploaded-date': 'productUploadDate',
+          productName: 'title',
+          productPrice: 'price',
+          productPages: 'pages',
+          productAuthors: 'authors',
+          productDesc: 'description',
+          productInStock: 'in-stock',
+          productLanguage: 'language',
+          productSalePrice: 'discount',
+          productCategories: 'categories',
+          productUploadDate: 'uploaded-date',
+          productPublishDate: 'publication-date',
+          productPublishComp: 'publishing-company',
         }),
-        R.pickAll(['id', 'title', 'uploaded-date']),
-      ),
-    )(products);
+      )(product);
 
-    // * Return 400 'Missing uploaded products' error
-    if (R.isEmpty(uploadedProducts)) return { status: 400 };
+      await db.get('products').push(newProduct).write();
 
-    const DTO = {
-      status: 200,
-      message: 'OK',
-      data: uploadedProducts,
-    };
+      const DTO = {
+        status: 200,
+        message: 'OK',
+      };
 
-    return DTO;
+      return DTO;
+    } catch (err) {
+      return err;
+    }
+  },
+
+  delete: async ({ productIds }) => {
+    try {
+      const remove = async (productId) => {
+        await db
+          .get('products')
+          .remove({ id: productId })
+          .write();
+      };
+
+      await R.forEach(remove)(productIds);
+
+      const DTO = {
+        status: 200,
+        message: 'OK',
+      };
+
+      return DTO;
+    } catch (err) {
+      return err;
+    }
   },
 };
