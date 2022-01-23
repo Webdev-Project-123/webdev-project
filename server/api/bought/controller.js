@@ -4,10 +4,19 @@ const boughtService = require('./service');
 
 module.exports = {
   boughtInfo: async (req, res, next) => {
-    const DTO = await boughtService.boughtInfo(req.userid);
-
-    if (R.equals(DTO.status, 200)) {
-      res.status(200).json(DTO);
-    } else next(createErr(503, 'SERVICE UNAVAILABLE'));
+    try {
+      const DTO = await boughtService.boughtInfo(req, res, next);
+      const stt = DTO.statusCode ? DTO.statusCode : 500;
+      res.status(stt).json({
+        statusCode: stt,
+        msg: DTO.msg,
+        list: DTO.list,
+      });
+    } catch {
+      res.status.json({
+        statusCode: 500,
+        msg: 'Error in boughtInfo',
+      });
+    }
   },
 };
