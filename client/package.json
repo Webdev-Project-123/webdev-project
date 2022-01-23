@@ -8,6 +8,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "form-data": "^4.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.2.1",
