@@ -196,6 +196,7 @@ module.exports = {
         statusCode: 200,
         messageId: info.messageId,
         msg: "Send success",
+        resetToken: token
       };
     } catch (error) {
       return {
