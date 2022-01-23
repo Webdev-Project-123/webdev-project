@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from './Header';
 
 const Footer = () => {
-  return <div className='flex px-1 sm:px-16 py-5 bg-[#FF6701] rounded-t-xl text-white gap-2 sm:gap-8'>
+  return <div className='flex px-1 sm:px-16 py-5 bg-[#FF6701] rounded-t-xl text-white  sm:gap-8'>
     <div className='flex-1 space-y-2'>
       <Logo />
       <p className='text-sm font-light leading-tight sm:leading-normal'>
@@ -42,18 +42,20 @@ const Footer = () => {
     </div>
 
     {/* SERVICE */}
-    <h1 className='flex-1 flex flex-wrap justify-center gap-32'>
-      <div className='font-sans font-semibold space-y-4'>
+    <h1 className='flex-1 flex flex-wrap'>
+      <div className='font-sans font-semibold'>
         <p>SERVICE</p>
-        <ul className='font-light text-sm cursor-pointer space-y-1'>
+        <ul className='font-light text-sm cursor-pointer'>
           <li >Terms of use</li>
           <li >Privacy Policy</li>
           <li >Press & Media</li>
         </ul>
       </div>
-      <div className='font-sans font-semibold space-y-4'>
+    </h1>
+    <h1 className='flex-1 flex flex-wrap'>
+      <div className='font-sans font-semibold'>
         <p>SUPPORT</p>
-        <ul className='font-light text-sm cursor-pointer space-y-1'>
+        <ul className='font-light text-sm cursor-pointer'>
           <li>How to return</li>
           <li>Shipping & Delivery</li>
           <li>How to pay</li>
@@ -63,22 +65,19 @@ const Footer = () => {
 
     {/* ABOUT US */}
     <h1 className='flex-1 flex-wrap'>
-      <div className='pl-16'>
-        <div className='font-sans font-semibold space-y-4'>
-          <p>ABOUT US</p>
-          <div className='flex items-baseline font-light text-sm gap-16 cursor-pointer'>
-            <ul>
-              <li>Nguyễn Đức Phương</li>
-              <li>Nguyễn Ngọc Nam</li>
-              <li>Hoàng Đình Anh Tuấn</li>
-              <li>Vưu Mỹ Quyên</li>
-            </ul>
-            <ul>
-              <li>Phạm Tuấn Anh</li>
-              <li>Lê Mậu Anh Phong</li>
-              <li>Lê Huy Hoàng</li>
-            </ul>
-          </div>
+
+      <div className='font-sans font-semibold'>
+        <p>ABOUT US</p>
+        <div className='flex font-light text-sm gap-8 cursor-pointer'>
+          <ul>
+            <li>Nguyễn Đức Phương</li>
+            <li>Nguyễn Ngọc Nam</li>
+            <li>Hoàng Đình Anh Tuấn</li>
+            <li>Vưu Mỹ Quyên</li>
+            <li>Phạm Tuấn Anh</li>
+            <li>Lê Mậu Anh Phong</li>
+            <li>Lê Huy Hoàng</li>
+          </ul>
         </div>
       </div>
     </h1>

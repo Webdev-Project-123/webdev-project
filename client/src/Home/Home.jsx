@@ -93,12 +93,12 @@ const Home = () => {
     </div>
 
     {/* CATEGORIES */}
-    <div className="px-2 sm:px-16 mt-9 mb-4">
+    <div className="hidden sm:block px-2 sm:px-16 mt-8 mb-4">
       <Categories />
     </div>
 
     {/* HOT DEALS */}
-    <div className="px-2 sm:px-16 py-4 mb-4">
+    <div className="px-2 sm:px-16 py-4 my-4">
       <h1 className="py-2 text-xl rounded-t-lg text-center font-extrabold bg-[#FEA82F]">
         HOT DEALS!
       </h1>
@@ -110,12 +110,12 @@ const Home = () => {
     </div>
 
     {/* Newsletter */}
-    <div className="font-sans flex items-center justify-center  bg-white px-8 py-16 mb-8 space-y-2">
+    <div className="font-sans flex items-center justify-center  bg-white px-8 py-8 sm:py-16 mb-8 space-y-2">
       <div>
-        <p className='font-robotoS font-extrabold text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
-        <p>Tell us what books you love.</p>
+        <p className='font-robotoS font-extrabold text-lg sm:text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
+        <p className='text-xs sm:text-base'>Tell us what books you love.</p>
       </div>
-      <button className="ml-4 w-1/4 md:w-1/5 md:ml-6 lg:w-[15%] font-robotoS font-bold bg-[#FEA82F] p-2 rounded-xl">SIGN UP
+      <button className="ml-4 w-1/4 md:w-1/5 md:ml-6 lg:w-[15%] text-xs sm:text-base font-robotoS font-bold bg-[#FEA82F] p-2 rounded-xl">SIGN UP
       </button>
     </div>
 

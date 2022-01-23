@@ -116,7 +116,8 @@ const SearchPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setSearchTitle(searchValue);
+    const pathName = decodeURIComponent(window.location.pathname.slice(8));
+    setSearchTitle(pathName);
   }, [navigate])
 
   return <div className='bg-[#FCECDD] '>
