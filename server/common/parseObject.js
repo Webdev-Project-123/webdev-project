@@ -14,11 +14,19 @@ const parsedToNumberList = [
   'productSalePrice',
 ];
 
+const removeHeadSquareBracket = R.when(
+  (val) => R.equals(R.head(val), '['),
+)(R.drop(1));
+
+const removeLastSquareBracket = R.when(
+  (val) => R.equals(R.last(val), ']'),
+)(R.dropLast(1));
+
 const toArray = R.compose(
   R.map(R.replace(/"/g, '')),
   R.split(','),
-  R.dropLast(1),
-  R.drop(1),
+  removeLastSquareBracket,
+  removeHeadSquareBracket,
 );
 
 const parseArray = R.mapObjIndexed((idx, key, obj) => {
