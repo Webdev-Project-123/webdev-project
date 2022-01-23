@@ -17,10 +17,10 @@ const ProductThumb = ({ productData }) => {
     five: 20
   }
 
-  return <div className='bg-gray-50 flex-1 rounded-lg transition duration-300 hover:cursor-pointer 
-  hover:shadow-tuanProductThumb py-2 px-2 m-4 min-w-[200px] h-[360px]'>
-    <div className='w-full h-[70%]'>
-      <img src={productData.image} className='m-auto rounded-lg object-cover h-[100%]' />
+  return <div className='m-auto scale-95 lg:scale-100 bg-gray-50 flex-1 rounded-lg transition duration-300 hover:cursor-pointer 
+  hover:shadow-tuanProductThumb py-2 px-2 my-2 w-[180px] sm:w-[220px] max-h-[360px]'>
+    <div className='h-[70%]'>
+      <img src={productData.image} className='m-auto rounded-lg object-fill h-full' />
     </div>
 
     <p className='title h-[13%] px-2 pt-2  font-semibold leading-tight text-sm'>{productData.name}</p>

@@ -49,3 +49,7 @@ body {
 .selected-page-number { 
   @apply py-1 px-3 m-2 bg-[#FEA82F] rounded-lg cursor-pointer transition duration-200 text-white;
 }
+
+.hot-deal {
+  @apply bg-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 rounded-b-lg;
+}
