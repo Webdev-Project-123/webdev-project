@@ -3,7 +3,6 @@ import Input from "./components/Input";
 import Label from "./components/Label";
 import signUpBg from "./Image/signUpBg.jpg";
 import signUpApi from "../apiClient/signUpApi";
-import axiosClient from "../apiClient/axiosClient";
 
 function SignUp() {
   const [input, setInput] = useState({
@@ -39,10 +38,10 @@ function SignUp() {
 
   const handleSignUp = async () => {
     try {
-      const res = await axiosClient.post("api/auth/sign-up", {
-        email: "email@email.email",
-        password: "password",
-        name: "name name",
+      const res = await signUpApi.post({
+        email: input.email,
+        password: input.password,
+        name: input.name,
       });
 
       console.log(res);
