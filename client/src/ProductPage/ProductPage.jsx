@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../Home/Footer';
 import Header from '../Home/Header';
 import Filter from './Filter';
@@ -112,17 +113,18 @@ const ProductPage = () => {
   const [products, setProducts] = useState(productData);
   const [loading, setLoading] = useState(false);
   const [currPage, setCurrPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState(8);
+  const [productsPerPage] = useState(8);
 
   const currProducts = products.slice((currPage - 1) * productsPerPage, currPage * productsPerPage);
-  console.log(currProducts.length);
 
   const paginate = (pageNumber) => setCurrPage(pageNumber);
-
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log(1);
+  }, [navigate])
 
   return <div className='bg-[#FCECDD]'>
-    <Header isLogin={false} />
-
+    <Header />
     <div className='my-8 flex gap-4'>
       {/* Filter Bar | Left Content */}
       <Filter className='inline' />

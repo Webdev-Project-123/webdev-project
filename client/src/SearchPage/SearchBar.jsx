@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SearchContext } from './SearchContext';
 
 const SearchBar = () => {
-  const [searchValue, setSearchValue] = useState('');
-
-  let navigate = useNavigate();
+  const [searchValue, setSearchValue] = useContext(SearchContext);
+  const navigate = useNavigate();
 
   const handleSubmit = e => {
-    e.preventDefault();
+    e.preventDefault()
     navigate(`/search/${searchValue}`);
   }
 

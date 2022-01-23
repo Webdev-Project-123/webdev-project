@@ -3,7 +3,6 @@ import { Logo } from './Header';
 
 const Footer = () => {
   return <div className='flex px-1 sm:px-16 py-5 bg-[#FF6701] rounded-t-xl text-white gap-2 sm:gap-8'>
-
     <div className='flex-1 space-y-2'>
       <Logo />
       <p className='text-sm font-light leading-tight sm:leading-normal'>

@@ -6,19 +6,21 @@ import Home from "./Home/Home";
 import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
-import Header from "./Home/Header";
-import Footer from "./Home/Footer";
-import AddProduct from "./Person/Admin/AddProduct";
+import { SearchContext } from "./SearchPage/SearchContext";
 
 function App() {
+  const [searchValue, setSearchValue] = useState("");
+
   return (
     <BrowserRouter>
-      <Routes path="/">
-        <Route index element={<Login />} />
-        <Route path="sign-up" element={<SignUp />} />
-        <Route path="upload" element={<AddProduct />} />
-        {/* <Route path="search" /> */}
-      </Routes>
+      <SearchContext.Provider value={[searchValue, setSearchValue]}>
+        <Routes path="/">
+          <Route index element={<Home />} />
+          <Route path="categories/*" element={<ProductPage />} />
+          <Route path="search/*" element={<SearchPage />} />
+          <Route path="*" />
+        </Routes>
+      </SearchContext.Provider>
     </BrowserRouter>
     // <AddProduct />
   );

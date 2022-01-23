@@ -29,21 +29,30 @@ const PaginationBar = ({ productsPerPage, numOfProducts, paginate, currPage }) =
 
   return <nav className='rounded-md mt-2 flex justify-center'>
     <ul className='flex justify-center w-fit bg-white rounded-lg'>
-      <li className='page-number flex items-center' onClick={() => changeCurrPage(currPage, -1)} >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M15 19l-7-7 7-7" />
-        </svg>
-      </li>
+      {/* Prev button */}
+      {currPage !== 1 &&
+        <li className='page-number flex items-center' onClick={() => changeCurrPage(currPage, -1)} >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M15 19l-7-7 7-7" />
+          </svg>
+        </li>
+      }
+
+      {/* Page number */}
       {currPageList.map((page, index) =>
         <li key={index} onClick={() => paginate(page)} className={page === currPage ? 'selected-page-number' : 'page-number'}>
           {page}
         </li>
       )}
-      <li className='page-number flex items-center' onClick={() => changeCurrPage(currPage, 1)}>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M9 5l7 7-7 7" />
-        </svg>
-      </li>
+
+      {/* Next button */}
+      {currPage !== pageNumbers.length &&
+        <li className='page-number flex items-center' onClick={() => changeCurrPage(currPage, 1)}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M9 5l7 7-7 7" />
+          </svg>
+        </li>
+      }
     </ul>
   </nav>
 };

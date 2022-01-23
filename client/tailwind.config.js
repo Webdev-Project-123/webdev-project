@@ -21,6 +21,12 @@ module.exports = {
         xsm: "376px",
         ip12Pro: "391px",
       },
+      minWidth: {
+        'namCustome': '420px',
+      },
+      minHeight: {
+        'namCustome': '283px',
+      }
     },
   },
   variants: {

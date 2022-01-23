@@ -7,7 +7,7 @@ import "./Styles/customSlick.css";
 import Categories from "./Categories";
 import ProductThumb from "./ProductThumb";
 import '../index.css';
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-07/EunectesBannerRerun_0.jpeg",
@@ -16,12 +16,6 @@ const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-10/BlemishineRerun.jpeg",
   "https://gamepress.gg/arknights/sites/arknights/files/2021-10/FartoothBanner_0.jpeg",
   "https://gamepress.gg/arknights/sites/arknights/files/2021-10/JointOperation5_0.jpeg",
-];
-
-const groups = [
-  'Fiction',
-  'Nonfiction',
-  'All products'
 ];
 
 const productData = [
@@ -75,38 +69,40 @@ const slider = () => {
 }
 
 const Home = () => {
+
   return <div className="bg-[#FCECDD]">
     <Header />
     {/* BANNERS*/}
-    <div className="px-4 pt-8 mb-4 flex">
+    <div className="px-0 sm:px-4 pt-8 mb-4 flex">
       <div className="w-full">
         {slider()}
       </div>
     </div>
 
     {/* All Products */}
-    <div className="px-16 mt-10 mb-4 gap-8">
-      <div
-        className='font-sans card-zoom bg-no-repeat bg-center cursor-pointer rounded-xl bg-cover bg-white w-full h-[40vh] text-center flex items-center justify-center'
+    <div className="px-2 sm:px-16 mt-10 gap-8 aspect-[4.5]">
+      <Link
+        to='/categories'
+        className='font-sans card-zoom bg-no-repeat bg-center cursor-pointer rounded-xl h-full bg-cover bg-white w-full text-center flex items-center justify-center'
         style={{ backgroundImage: "url('./src/Home/Images/groups_background_3.jpg')" }}
       >
-        <p className='card-zoom-text text-xl bg-opacity-90 rounded-xl px-16 py-2 font-extrabold bg-white'>
+        <p className='card-zoom-text md:w-1/4 md:text-lg lg:w-1/5 lg:text-xl bg-opacity-90 rounded-xl p-2 font-extrabold bg-white'>
           ALL PRODUCTS
         </p>
-      </div>
+      </Link>
     </div>
 
     {/* CATEGORIES */}
-    <div className="px-16 mt-9 mb-4">
+    <div className="px-2 sm:px-16 mt-9 mb-4">
       <Categories />
     </div>
 
     {/* HOT DEALS */}
-    <div className="px-16 py-4 mb-4">
+    <div className="px-2 sm:px-16 py-4 mb-4">
       <h1 className="py-2 text-xl rounded-t-lg text-center font-extrabold bg-[#FEA82F]">
         HOT DEALS!
       </h1>
-      <div className="bg-white grid md:grid-cols-4 lg:grid-cols-5 rounded-b-lg">
+      <div className="hot-deal">
         {productData.map((data, index) =>
           <ProductThumb key={index} productData={data} />
         )}
@@ -119,7 +115,7 @@ const Home = () => {
         <p className='font-robotoS font-extrabold text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
         <p>Tell us what books you love.</p>
       </div>
-      <button className="ml-12 font-robotoS font-bold bg-[#FEA82F] px-12 py-2 rounded-xl">SIGN UP
+      <button className="ml-4 w-1/4 md:w-1/5 md:ml-6 lg:w-[15%] font-robotoS font-bold bg-[#FEA82F] p-2 rounded-xl">SIGN UP
       </button>
     </div>
 
