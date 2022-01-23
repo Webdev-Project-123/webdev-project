@@ -61,7 +61,6 @@ function AddProduct() {
       payload.productPrice = +payload.productPrice;
       payload.productSalePrice = +payload.productSalePrice;
 
-      console.log(data);
       data.append("productName", input.productName);
       data.append("productAuthors", payload.productAuthors);
       data.append("productCategories", payload.productCategories);
@@ -69,17 +68,12 @@ function AddProduct() {
       data.append("productPublishComp", input.productPublishComp);
       data.append("productPublishDate", payload.productPublishDate);
       data.append("productPrice", payload.productPrice);
-      console.log(data);
       data.append("productSalePrice", payload.productSalePrice);
       data.append("productPages", payload.productPages);
       data.append("productLanguage", input.productLanguage);
       data.append("productDesc", input.productDesc);
       data.append("productInStock", payload.productInStock);
       data.append("productImage", image);
-
-      for (var key of data.entries()) {
-        console.log(key[0] + ", " + key[1]);
-      }
 
       const res = await uploadProductApi.post(data);
       console.log(res);

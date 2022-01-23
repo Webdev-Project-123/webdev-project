@@ -16,10 +16,6 @@ function Login() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(isLogin);
-  }, [isLogin]);
-
   const inputStyle =
     "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
   const labelStyle =
@@ -65,7 +61,9 @@ function Login() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1>Home</h1>
+          <Link to="/">
+            <h1>Home</h1>
+          </Link>
         </div>
         <div className="mx-auto flex justify-center items-center gap-2 mt-12 xl:mt-[3rem] md:mt-0 h-auto">
           <h1 className="font-robotoS lg:text-3xl md:text-3xl">

@@ -213,7 +213,7 @@ function SignUp() {
               <span className="mr-2 hidden sm:inline ">
                 Already have account?{" "}
               </span>
-              <Link to="/">
+              <Link to="/login">
                 <a
                   href="#"
                   className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149] "
