@@ -3,6 +3,7 @@ import SignUp from "./Person/SignUp";
 import Login from "./Person/Login";
 import Profile from "./Person/Profile";
 import Home from "./Home/Home";
+import AddProduct from "./Person/Admin/AddProduct";
 import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
@@ -21,6 +22,7 @@ function App() {
           <Route path="search/*" element={<SearchPage />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="login" element={<Login />} />
+          <Route path="upload" element={<AddProduct />} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>
