@@ -73,14 +73,14 @@ const Home = () => {
   return <div className="bg-[#FCECDD]">
     <Header />
     {/* BANNERS*/}
-    <div className="px-0 sm:px-4 pt-8 mb-4 flex">
+    <div className="px-0 sm:px-4 mb-4 fle py-4 sm:py-8">
       <div className="w-full">
         {slider()}
       </div>
     </div>
 
     {/* All Products */}
-    <div className="px-2 sm:px-16 mt-10 gap-8 aspect-[4.5]">
+    <div className="px-2 sm:px-16 mt-4 gap-8 aspect-[4.5]">
       <Link
         to='/categories'
         className='font-sans card-zoom bg-no-repeat bg-center cursor-pointer rounded-xl h-full bg-cover bg-white w-full text-center flex items-center justify-center'
@@ -93,12 +93,12 @@ const Home = () => {
     </div>
 
     {/* CATEGORIES */}
-    <div className="hidden sm:block px-2 sm:px-16 mt-8 mb-4">
+    <div className="px-2 sm:px-16 mt-4 sm:my-8 mb-4">
       <Categories />
     </div>
 
     {/* HOT DEALS */}
-    <div className="px-2 sm:px-16 py-4 my-4">
+    <div className="px-2 sm:px-16 my-2 ">
       <h1 className="py-2 text-xl rounded-t-lg text-center font-extrabold bg-[#FEA82F]">
         HOT DEALS!
       </h1>
@@ -110,7 +110,7 @@ const Home = () => {
     </div>
 
     {/* Newsletter */}
-    <div className="font-sans flex items-center justify-center  bg-white px-8 py-8 sm:py-16 mb-8 space-y-2">
+    <div className="font-sans flex items-center justify-center  bg-white my-8 px-8 py-8 sm:py-16 mb-8 space-y-2">
       <div>
         <p className='font-robotoS font-extrabold text-lg sm:text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
         <p className='text-xs sm:text-base'>Tell us what books you love.</p>
