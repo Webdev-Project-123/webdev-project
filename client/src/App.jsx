@@ -3,6 +3,7 @@ import SignUp from "./Person/SignUp";
 import Login from "./Person/Login";
 import Profile from "./Person/Profile";
 import Home from "./Home/Home";
+import AddProduct from "./Person/Admin/AddProduct";
 import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
@@ -17,9 +18,11 @@ function App() {
         <Routes path="/">
           <Route index element={<Home />} />
           <Route path='categories' element={<ProductPage />} />
-          <Route path='categories/:category/' element={<ProductPage />} />
-          <Route path='search/:searchValue/' element={<SearchPage />} />
-          <Route path='*' />
+          <Route path="categories/:category/" element={<ProductPage />} />
+          <Route path="search/:searchValue/" element={<SearchPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="sign-up" element={<SignUp />} />
+          <Route path="*" />
         </Routes>
       </SearchContext.Provider>
     </BrowserRouter>
