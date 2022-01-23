@@ -76,9 +76,10 @@ module.exports = {
 
         if (cmpResult) {
           const payload = {
-            username: filterUser[0].username,
+            username: filterUser[0].name,
             email: filterUser[0].email,
             role: filterUser[0].role,
+            id: filterUser[0].id,
           };
 
           const accessToken = await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '10m' });
