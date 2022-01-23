@@ -21,6 +21,7 @@ function App() {
           <Route path="search/:searchValue/" element={<SearchPage />} />
           <Route path="login" element={<Login />} />
           <Route path="sign-up" element={<SignUp />} />
+          <Route path="upload" element={<AddProduct />} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>

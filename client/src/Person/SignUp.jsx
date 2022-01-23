@@ -41,6 +41,13 @@ function SignUp() {
 
   const handleSignUp = async () => {
     try {
+      if (
+        !input.email ||
+        !input.password ||
+        !input.name ||
+        input.password !== input.confirmPass
+      )
+        throw new Error("Infomation is not correct or not be filled");
       const request = {
         email: input.email,
         password: input.password,
@@ -48,7 +55,7 @@ function SignUp() {
       };
       const res = await signUpApi.post(request);
       console.log(res);
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       alert("Sign up fail");
       console.error(error);
