@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from '../Home/Rating';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 const categories = ['Romance', 'Fantasy', 'Horror', 'Manga', 'Sci-fi', 'Mystery', 'Art',
@@ -14,12 +14,19 @@ const Filter = () => {
     <nav>
       {categories.map((category, index) => {
         if (index === categories.length - 1)
-          return <ul key={index} className='filter rounded-b-lg'>
+          return <Link
+            to={`/categories/${category.toLowerCase()}`}>
+            <ul key={index} className='filter rounded-b-lg'>
+              {category}
+            </ul>
+          </Link>
+        return <Link
+          to={`/categories/${category.toLowerCase()}`}>
+          <ul key={index} className='filter'>
             {category}
           </ul>
-        return <ul key={index} className='filter'>
-          {category}
-        </ul>
+        </Link>
+
       }
       )}
     </nav>

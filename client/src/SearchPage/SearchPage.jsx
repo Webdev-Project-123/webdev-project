@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import Footer from '../Home/Footer';
 import Header from '../Home/Header';
-import PaginationPage from '../ProductPage/PaginationPage';
+import ProductThumb from '../Home/ProductThumb';
+import { SearchContext } from './SearchContext';
 
 const productData = [
   {
@@ -108,15 +111,26 @@ const productData = [
 ]
 
 const SearchPage = () => {
-  // const [results, setResults] = useState([]);
+  const [searchValue] = useContext(SearchContext);
+  const [searchTitle, setSearchTitle] = useState('');
+  const navigate = useNavigate();
 
-  console.log(123);
+  useEffect(() => {
+    setSearchTitle(searchValue);
+  }, [navigate])
 
   return <div className='bg-[#FCECDD] '>
     <Header />
-    <div className='py-8 w-full'>
-      <div className='mx-16 rounded-lg bg-white'>
-        <PaginationPage products={productData} loading={false} />
+    <div className='px-2 sm:px-16 py-4 mb-4'>
+      <h1 className='text-center mt-2 sm:mt-4 text-2xl'>
+        Search results for <b>{searchTitle}</b>
+      </h1>
+      <div className='py-4 sm:py-8 w-full'>
+        <div className='hot-deal rounded-lg'>
+          {productData.map((data, index) =>
+            <ProductThumb key={index} productData={data} />
+          )}
+        </div>
       </div>
     </div>
     <Footer />

@@ -11,7 +11,6 @@
   right: 12px;
 } 
 .slick-slide img {
-  height: 70vh;
   object-fit: cover;
   border-radius: 10px;
   margin: auto;
