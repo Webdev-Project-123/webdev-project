@@ -44,6 +44,7 @@ module.exports = {
     await db.get('refresh-tokens').push({ id: objectUser.id, refreshToken: '' }).write();
 
     return {
+      statusCode: 200,
       error: false,
       msg: 'Success',
     };
