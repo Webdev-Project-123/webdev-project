@@ -13,12 +13,11 @@ module.exports = {
       }
 
       const normalProperties = ['name', 'address', 'phone', 'avatar'];
-      for (let i = 0; i < normalProperties.length; ++i) {
-        const p = normalProperties[i];
+      await normalProperties.forEach(async (p) => {
         if (req.body[p]) {
-          user.assign({ [p]: req.body[p] }).write();
+          await user.assign({ [p]: req.body[p] }).write();
         }
-      }
+      });
 
       return {
         statusCode: 200,
