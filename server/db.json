@@ -57,21 +57,9 @@
     },
     {
       "id": 5,
-      "name": "Phuong",
-      "email": "dp@gmail.com",
-      "password": "$2b$10$.f/DPAXz8eo1OBwR5WxrGu/UZ..aILsaLauTxWHcCWfOqI4a8dEW.",
-      "phone": "",
-      "address": "",
-      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
-      "role": "admin",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 6,
-      "name": "123",
-      "email": "new@gmail.com",
-      "password": "$2b$10$vey0YFa7RQVqr8P4TASjmOXpawoP4yNUCwoixp6si46Uc1K7KKCjC",
+      "name": "wibu",
+      "email": "hentaiz@gmail.com",
+      "password": "$2b$10$xZ9EGXdOZtrvUtyHyKbVgO5FU4fgpLVnygiYcWqoa40I2wSVEEX2W",
       "phone": "",
       "address": "",
       "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
@@ -85,9 +73,7 @@
       "id": 1,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-05-24",
-      "authors": [
-        "Austin Govella"
-      ],
+      "authors": ["Austin Govella"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Collaborative Product Design",
@@ -97,13 +83,7 @@
       "price": 35.49,
       "in-stock": 100,
       "discount": 30.49,
-      "rating": [
-        50,
-        10,
-        0,
-        0,
-        0
-      ],
+      "rating": [50, 10, 0, 0, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -124,17 +104,13 @@
           "name": "Thomas Edison"
         }
       ],
-      "categories": [
-        "Design"
-      ]
+      "categories": ["Design"]
     },
     {
       "id": 2,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-02-25",
-      "authors": [
-        "Dave Malouf"
-      ],
+      "authors": ["Dave Malouf"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is DesignOps?",
@@ -144,13 +120,7 @@
       "price": 23.11,
       "in-stock": 100,
       "discount": 20.11,
-      "rating": [
-        10,
-        30,
-        0,
-        10,
-        0
-      ],
+      "rating": [10, 30, 0, 10, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -183,17 +153,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Design"
-      ]
+      "categories": ["Design"]
     },
     {
       "id": 3,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-08-25",
-      "authors": [
-        "Adam Lawrence"
-      ],
+      "authors": ["Adam Lawrence"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "What Is Service Design?",
@@ -203,13 +169,7 @@
       "price": 23.33,
       "in-stock": 100,
       "discount": 23,
-      "rating": [
-        5,
-        30,
-        10,
-        10,
-        0
-      ],
+      "rating": [5, 30, 10, 10, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -242,18 +202,13 @@
           "name": "Steve Jobs"
         }
       ],
-      "categories": [
-        "Design"
-      ]
+      "categories": ["Design"]
     },
     {
       "id": 4,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-06-30",
-      "authors": [
-        "Lisa Owens",
-        "Crystal Kadakia"
-      ],
+      "authors": ["Lisa Owens", "Crystal Kadakia"],
       "publishing-company": "Association for Talent Development",
       "language": "English",
       "title": "Designing for Modern Learning",
@@ -263,13 +218,7 @@
       "price": 31.45,
       "in-stock": 100,
       "discount": 31,
-      "rating": [
-        0,
-        10,
-        20,
-        10,
-        1
-      ],
+      "rating": [0, 10, 20, 10, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -296,17 +245,13 @@
           "name": "Voldermort"
         }
       ],
-      "categories": [
-        "Design"
-      ]
+      "categories": ["Design"]
     },
     {
       "id": 5,
       "uploaded-date": "2022-02-30",
       "publication-date": "2018-12-10",
-      "authors": [
-        "Scott Riley"
-      ],
+      "authors": ["Scott Riley"],
       "publishing-company": "Apress",
       "language": "English",
       "title": "Mindful Design: How and Why to Make Design Decisions for the Good of Those Using Your Product",
@@ -316,13 +261,7 @@
       "price": 45.99,
       "in-stock": 100,
       "discount": 45,
-      "rating": [
-        10,
-        10,
-        10,
-        0,
-        0
-      ],
+      "rating": [10, 10, 10, 0, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -355,17 +294,13 @@
           "name": "Peter"
         }
       ],
-      "categories": [
-        "Design"
-      ]
+      "categories": ["Design"]
     },
     {
       "id": 6,
       "uploaded-date": "2022-02-30",
       "publication-date": "2022-10-25",
-      "authors": [
-        "Anthony Sarkis"
-      ],
+      "authors": ["Anthony Sarkis"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Training Data for Machine Learning",
@@ -375,13 +310,7 @@
       "price": 25.69,
       "in-stock": 100,
       "discount": 24.33,
-      "rating": [
-        20,
-        10,
-        5,
-        0,
-        1
-      ],
+      "rating": [20, 10, 5, 0, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -432,18 +361,13 @@
           "name": "Feliks Zemdegs"
         }
       ],
-      "categories": [
-        "Machine Learning",
-        "Data"
-      ]
+      "categories": ["Machine Learning", "Data"]
     },
     {
       "id": 7,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-10-22",
-      "authors": [
-        "Cole Nussbaumer Knaflic"
-      ],
+      "authors": ["Cole Nussbaumer Knaflic"],
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Storytelling with Data",
@@ -453,13 +377,7 @@
       "price": 44.99,
       "in-stock": 100,
       "discount": 41.99,
-      "rating": [
-        100,
-        0,
-        10,
-        3,
-        2
-      ],
+      "rating": [100, 0, 10, 3, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -510,18 +428,13 @@
           "name": "Hermione"
         }
       ],
-      "categories": [
-        "Data"
-      ]
+      "categories": ["Data"]
     },
     {
       "id": 8,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-12-25",
-      "authors": [
-        "Kevin Poskitt",
-        "Ginger Gatling"
-      ],
+      "authors": ["Kevin Poskitt", "Ginger Gatling"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Managing Data Orchestration and Integration at Scale",
@@ -531,13 +444,7 @@
       "price": 11.11,
       "in-stock": 100,
       "discount": 9.99,
-      "rating": [
-        0,
-        30,
-        20,
-        10,
-        10
-      ],
+      "rating": [0, 30, 20, 10, 10],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -588,18 +495,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Data"
-      ]
+      "categories": ["Data"]
     },
     {
       "id": 9,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-07-16",
-      "authors": [
-        "Joao Ferreira",
-        "Rene Modery"
-      ],
+      "authors": ["Joao Ferreira", "Rene Modery"],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Hands-On Microsoft Lists",
@@ -609,13 +511,7 @@
       "price": 36.74,
       "in-stock": 100,
       "discount": 35.99,
-      "rating": [
-        0,
-        0,
-        30,
-        10,
-        0
-      ],
+      "rating": [0, 0, 30, 10, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -642,22 +538,14 @@
           "name": "Remus Lupin"
         }
       ],
-      "categories": [
-        "Data"
-      ]
+      "categories": ["Data"]
     },
     {
       "id": 10,
       "uploaded-date": "2022-02-30",
       "publication-date": "2016-01-05",
-      "authors": [
-        "Thomas Erl",
-        "Wajid Khattak",
-        "Paul Buhler"
-      ],
-      "publishing-company": [
-        "Pearson"
-      ],
+      "authors": ["Thomas Erl", "Wajid Khattak", "Paul Buhler"],
+      "publishing-company": ["Pearson"],
       "language": "English",
       "title": "Big Data Fundamentals: Concepts, Drivers & Techniques",
       "description": "<span><div><p>“This text should be required reading for everyone in contemporary business.”</p><p>–Peter Woodhull, CEO, Modus21</p><p>“The one book that clearly describes and links Big Data concepts to business utility.”</p><p>–Dr. Christopher Starr, PhD</p><p>“Simply, this is the best Big Data book on the market!”</p><p>–Sam Rostam, Cascadian IT Group</p><p>“...one of the most contemporary approaches I’ve seen to Big Data fundamentals...”</p><p>–Joshua M. Davis, PhD</p><p><strong>The Definitive Plain-English Guide to Big Data for Business and Technology Professionals</strong></p><p><em>Big Data Fundamentals</em> provides a pragmatic, no-nonsense introduction to Big Data. Best-selling IT author Thomas Erl and his team clearly explain key Big Data concepts, theory and terminology, as well as fundamental technologies and techniques. All coverage is supported with case study examples and numerous simple diagrams.</p><p>The authors begin by explaining how Big Data can propel an organization forward by solving a spectrum of previously intractable business problems. Next, they demystify key analysis techniques and technologies and show how a Big Data solution environment can be built and integrated to offer competitive advantages.</p><ul><li><p>Discovering Big Data’s fundamental concepts and what makes it different from previous forms of data analysis and data science</p></li><li><p>Understanding the business motivations and drivers behind Big Data adoption, from operational improvements through innovation</p></li><li><p>Planning strategic, business-driven Big Data initiatives</p></li><li><p>Addressing considerations such as data management, governance, and security</p></li><li><p>Recognizing the 5 “V” characteristics of datasets in Big Data environments: volume, velocity, variety, veracity, and value</p></li><li><p>Clarifying Big Data’s relationships with OLTP, OLAP, ETL, data warehouses, and data marts</p></li><li><p>Working with Big Data in structured, unstructured, semi-structured, and metadata formats</p></li><li><p>Increasing value by integrating Big Data resources with corporate performance monitoring</p></li><li><p>Understanding how Big Data leverages distributed and parallel processing</p></li><li><p>Using NoSQL and other technologies to meet Big Data’s distinct data processing requirements</p></li><li><p>Leveraging statistical approaches of quantitative and qualitative analysis</p></li><li><p>Applying computational analysis methods, including machine learning</p></li></ul></div></span>",
@@ -666,13 +554,7 @@
       "price": 33.33,
       "in-stock": 100,
       "discount": 29.99,
-      "rating": [
-        0,
-        0,
-        0,
-        20,
-        10
-      ],
+      "rating": [0, 0, 0, 20, 10],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -717,18 +599,13 @@
           "name": "Peter"
         }
       ],
-      "categories": [
-        "Data"
-      ]
+      "categories": ["Data"]
     },
     {
       "id": 11,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-05-17",
-      "authors": [
-        "Kasun Indrasiri",
-        "Sriskandarajah Suhothayan"
-      ],
+      "authors": ["Kasun Indrasiri", "Sriskandarajah Suhothayan"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Design Patterns for Cloud Native Applications",
@@ -738,13 +615,7 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 46.99,
-      "rating": [
-        50,
-        100,
-        20,
-        10,
-        1
-      ],
+      "rating": [50, 100, 20, 10, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -765,19 +636,13 @@
           "name": "Harry Potter"
         }
       ],
-      "categories": [
-        "Design",
-        "Cloud"
-      ]
+      "categories": ["Design", "Cloud"]
     },
     {
       "id": 12,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-12-19",
-      "authors": [
-        "J.R. Storment",
-        "Mike Fuller"
-      ],
+      "authors": ["J.R. Storment", "Mike Fuller"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Cloud FinOps",
@@ -787,13 +652,7 @@
       "price": 40.99,
       "in-stock": 100,
       "discount": 32.99,
-      "rating": [
-        0,
-        10,
-        30,
-        20,
-        0
-      ],
+      "rating": [0, 10, 30, 20, 0],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -814,18 +673,13 @@
           "name": "Antone Cantine"
         }
       ],
-      "categories": [
-        "Cloud"
-      ]
+      "categories": ["Cloud"]
     },
     {
       "id": 13,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-05-04",
-      "authors": [
-        "Danil Zburivsky",
-        "Lynda Partner"
-      ],
+      "authors": ["Danil Zburivsky", "Lynda Partner"],
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "Designing Cloud Data Platforms",
@@ -835,13 +689,7 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 22.99,
-      "rating": [
-        50,
-        50,
-        5,
-        1,
-        1
-      ],
+      "rating": [50, 50, 5, 1, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -880,19 +728,13 @@
           "name": "Antone Cantine"
         }
       ],
-      "categories": [
-        "Design",
-        "Cloud",
-        "Data"
-      ]
+      "categories": ["Design", "Cloud", "Data"]
     },
     {
       "id": 14,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-02-07",
-      "authors": [
-        "Roopesh Ramklass"
-      ],
+      "authors": ["Roopesh Ramklass"],
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "Oracle Cloud Infrastructure Architect Associate All-in-One Exam Guide (Exam 1Z0-1072)",
@@ -902,13 +744,7 @@
       "price": 49.99,
       "in-stock": 100,
       "discount": 46.33,
-      "rating": [
-        5,
-        100,
-        10,
-        1,
-        1
-      ],
+      "rating": [5, 100, 10, 1, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -959,18 +795,13 @@
           "name": "Thomas Edison"
         }
       ],
-      "categories": [
-        "Cloud"
-      ]
+      "categories": ["Cloud"]
     },
     {
       "id": 15,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-10-15",
-      "authors": [
-        "Prasenjit Sarkar",
-        "Guillermo Ruiz"
-      ],
+      "authors": ["Prasenjit Sarkar", "Guillermo Ruiz"],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Oracle Cloud Infrastructure for Solutions Architects",
@@ -980,13 +811,7 @@
       "price": 37.99,
       "in-stock": 100,
       "discount": 35.99,
-      "rating": [
-        0,
-        0,
-        10,
-        50,
-        5
-      ],
+      "rating": [0, 0, 10, 50, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1025,17 +850,13 @@
           "name": "Thomas Edison"
         }
       ],
-      "categories": [
-        "Cloud"
-      ]
+      "categories": ["Cloud"]
     },
     {
       "id": 16,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-09-30",
-      "authors": [
-        "Aurélien Géron"
-      ],
+      "authors": ["Aurélien Géron"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition",
@@ -1045,13 +866,7 @@
       "price": 70.69,
       "in-stock": 100,
       "discount": 50.99,
-      "rating": [
-        0,
-        0,
-        12,
-        51,
-        6
-      ],
+      "rating": [0, 0, 12, 51, 6],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1090,20 +905,13 @@
           "name": "Ronald Weasley"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Machine Learning"
-      ]
+      "categories": ["Software Development", "Machine Learning"]
     },
     {
       "id": 17,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-10-19",
-      "authors": [
-        "Valliappa Lakshmanan",
-        "Sara Robinson",
-        "Michael Munn"
-      ],
+      "authors": ["Valliappa Lakshmanan", "Sara Robinson", "Michael Munn"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Machine Learning Design Patterns",
@@ -1113,13 +921,7 @@
       "price": 50.99,
       "in-stock": 100,
       "discount": 45.69,
-      "rating": [
-        50,
-        50,
-        10,
-        1,
-        2
-      ],
+      "rating": [50, 50, 10, 1, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1170,18 +972,13 @@
           "name": "Grindelwald"
         }
       ],
-      "categories": [
-        "Design",
-        "Machine Learning"
-      ]
+      "categories": ["Design", "Machine Learning"]
     },
     {
       "id": 18,
       "uploaded-date": "2022-02-30",
       "publication-date": "2022-06-25",
-      "authors": [
-        "Chip Huyen"
-      ],
+      "authors": ["Chip Huyen"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Designing Machine Learning Systems",
@@ -1191,13 +988,7 @@
       "price": 26.66,
       "in-stock": 100,
       "discount": 23.22,
-      "rating": [
-        1,
-        3,
-        2,
-        10,
-        50
-      ],
+      "rating": [1, 3, 2, 10, 50],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1242,19 +1033,13 @@
           "name": "Jessica"
         }
       ],
-      "categories": [
-        "Design",
-        "Machine Learning"
-      ]
+      "categories": ["Design", "Machine Learning"]
     },
     {
       "id": 19,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-07-20",
-      "authors": [
-        "Hannes Hapke",
-        "Catherine Nelson"
-      ],
+      "authors": ["Hannes Hapke", "Catherine Nelson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Building Machine Learning Pipelines",
@@ -1264,13 +1049,7 @@
       "price": 46.55,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [
-        3,
-        2,
-        30,
-        20,
-        1
-      ],
+      "rating": [3, 2, 30, 20, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1321,17 +1100,13 @@
           "name": "Ronald Weasley"
         }
       ],
-      "categories": [
-        "Machine Learning"
-      ]
+      "categories": ["Machine Learning"]
     },
     {
       "id": 20,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-10-29",
-      "authors": [
-        "Ben Auffarth"
-      ],
+      "authors": ["Ben Auffarth"],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Machine Learning for Time-Series with Python",
@@ -1341,13 +1116,7 @@
       "price": 47.99,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [
-        10,
-        10,
-        20,
-        30,
-        40
-      ],
+      "rating": [10, 10, 20, 30, 40],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1368,17 +1137,13 @@
           "name": "Max Park"
         }
       ],
-      "categories": [
-        "Machine Learning"
-      ]
+      "categories": ["Machine Learning"]
     },
     {
       "id": 21,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-12-27",
-      "authors": [
-        "James Higginbotham"
-      ],
+      "authors": ["James Higginbotham"],
       "publishing-company": "Addison-Wesley Professional",
       "language": "English",
       "title": "Principles of Web API Design: Delivering Value with APIs and Microservices",
@@ -1388,13 +1153,7 @@
       "price": 48.99,
       "in-stock": 100,
       "discount": 40.99,
-      "rating": [
-        0,
-        0,
-        1,
-        5,
-        100
-      ],
+      "rating": [0, 0, 1, 5, 100],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1439,18 +1198,13 @@
           "name": "Draco Malfoy"
         }
       ],
-      "categories": [
-        "Web",
-        "Design"
-      ]
+      "categories": ["Web", "Design"]
     },
     {
       "id": 22,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-10-23",
-      "authors": [
-        "Arnaud Lauret"
-      ],
+      "authors": ["Arnaud Lauret"],
       "publishing-company": "Manning Publications",
       "language": "English",
       "title": "The Design of Web APIs",
@@ -1460,13 +1214,7 @@
       "price": 55.99,
       "in-stock": 100,
       "discount": 50.11,
-      "rating": [
-        20,
-        30,
-        1,
-        0,
-        5
-      ],
+      "rating": [20, 30, 1, 0, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1511,18 +1259,13 @@
           "name": "Peter Parker"
         }
       ],
-      "categories": [
-        "Web",
-        "Design"
-      ]
+      "categories": ["Web", "Design"]
     },
     {
       "id": 23,
       "uploaded-date": "2022-02-30",
       "publication-date": "2018-05-11",
-      "authors": [
-        "Jennifer Robbins"
-      ],
+      "authors": ["Jennifer Robbins"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Learning Web Design, 5th Edition",
@@ -1532,13 +1275,7 @@
       "price": 69.69,
       "in-stock": 100,
       "discount": 46.64,
-      "rating": [
-        50,
-        10,
-        10,
-        5,
-        1
-      ],
+      "rating": [50, 10, 10, 5, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1589,18 +1326,13 @@
           "name": "Max Park"
         }
       ],
-      "categories": [
-        "Web",
-        "Design"
-      ]
+      "categories": ["Web", "Design"]
     },
     {
       "id": 24,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-10-06",
-      "authors": [
-        "Mike Amundsen"
-      ],
+      "authors": ["Mike Amundsen"],
       "publishing-company": "Pragmatic Bookshelf",
       "language": "English",
       "title": "Design and Build Great Web APIs",
@@ -1610,13 +1342,7 @@
       "price": 39.99,
       "in-stock": 100,
       "discount": 29.99,
-      "rating": [
-        20,
-        10,
-        10,
-        5,
-        5
-      ],
+      "rating": [20, 10, 10, 5, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1649,20 +1375,13 @@
           "name": "Sirius Black"
         }
       ],
-      "categories": [
-        "Web",
-        "Design"
-      ]
+      "categories": ["Web", "Design"]
     },
     {
       "id": 25,
       "uploaded-date": "2022-02-30",
       "publication-date": "2018-09-17",
-      "authors": [
-        "Brenda Jin",
-        "Saurabh Sahni",
-        "Amir Shevat"
-      ],
+      "authors": ["Brenda Jin", "Saurabh Sahni", "Amir Shevat"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Designing Web APIs",
@@ -1672,13 +1391,7 @@
       "price": 24.96,
       "in-stock": 100,
       "discount": 21.42,
-      "rating": [
-        2,
-        3,
-        30,
-        1,
-        1
-      ],
+      "rating": [2, 3, 30, 1, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1717,18 +1430,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Web",
-        "Design"
-      ]
+      "categories": ["Web", "Design"]
     },
     {
       "id": 26,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-03-31",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Up & Going",
@@ -1738,13 +1446,7 @@
       "price": 37.68,
       "in-stock": 63,
       "discount": 33,
-      "rating": [
-        9,
-        6,
-        1,
-        2,
-        1
-      ],
+      "rating": [9, 6, 1, 2, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1783,18 +1485,13 @@
           "name": "Hermione"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 27,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-12-17",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: ES6 & Beyond",
@@ -1804,13 +1501,7 @@
       "price": 33.63,
       "in-stock": 324,
       "discount": 29,
-      "rating": [
-        6,
-        3,
-        9,
-        9,
-        2
-      ],
+      "rating": [6, 3, 9, 9, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1855,18 +1546,13 @@
           "name": "Tony Stark"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 28,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-02-27",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Async & Performance",
@@ -1876,13 +1562,7 @@
       "price": 37.63,
       "in-stock": 98,
       "discount": 33,
-      "rating": [
-        1,
-        6,
-        6,
-        10,
-        8
-      ],
+      "rating": [1, 6, 6, 10, 8],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1909,18 +1589,13 @@
           "name": "Ronald Weasley"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 29,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-03-14",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Scope & Closures",
@@ -1930,13 +1605,7 @@
       "price": 35.97,
       "in-stock": 118,
       "discount": 31,
-      "rating": [
-        4,
-        6,
-        3,
-        10,
-        2
-      ],
+      "rating": [4, 6, 3, 10, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -1975,18 +1644,13 @@
           "name": "Peter Parker"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 30,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-07-17",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: this & Object Prototypes",
@@ -1996,13 +1660,7 @@
       "price": 37.38,
       "in-stock": 409,
       "discount": 33,
-      "rating": [
-        1,
-        10,
-        1,
-        2,
-        3
-      ],
+      "rating": [1, 10, 1, 2, 3],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2047,18 +1705,13 @@
           "name": "Feliks Zemdegs"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 31,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-02-04",
-      "authors": [
-        "Kyle Simpson"
-      ],
+      "authors": ["Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "You Don't Know JS: Types & Grammar",
@@ -2068,13 +1721,7 @@
       "price": 36.93,
       "in-stock": 143,
       "discount": 32,
-      "rating": [
-        7,
-        9,
-        10,
-        3,
-        9
-      ],
+      "rating": [7, 9, 10, 3, 9],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2125,19 +1772,13 @@
           "name": "Voldermort"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 32,
       "uploaded-date": "2022-02-30",
       "publication-date": "2011-11-19",
-      "authors": [
-        "Christopher Schmitt",
-        "Kyle Simpson"
-      ],
+      "authors": ["Christopher Schmitt", "Kyle Simpson"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "HTML5 Cookbook",
@@ -2147,13 +1788,7 @@
       "price": 30.93,
       "in-stock": 268,
       "discount": 26,
-      "rating": [
-        7,
-        5,
-        10,
-        3,
-        5
-      ],
+      "rating": [7, 5, 10, 3, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2180,19 +1815,13 @@
           "name": "Remus Lupin"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 33,
       "uploaded-date": "2022-02-30",
       "publication-date": "2020-02-01",
-      "authors": [
-        "Wade Trappe",
-        "Lawrence C. Washington"
-      ],
+      "authors": ["Wade Trappe", "Lawrence C. Washington"],
       "publishing-company": "Pearson",
       "language": "English",
       "title": "Introduction to Cryptography with Coding Theory, 3rd Edition",
@@ -2202,13 +1831,7 @@
       "price": 30.36,
       "in-stock": 351,
       "discount": 26,
-      "rating": [
-        3,
-        5,
-        9,
-        7,
-        10
-      ],
+      "rating": [3, 5, 9, 7, 10],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2241,18 +1864,13 @@
           "name": "Albert Dumbledore"
         }
       ],
-      "categories": [
-        "Security",
-        "Software Development"
-      ]
+      "categories": ["Security", "Software Development"]
     },
     {
       "id": 34,
       "uploaded-date": "2022-02-30",
       "publication-date": "2013-12-13",
-      "authors": [
-        "Erik Spiekermann"
-      ],
+      "authors": ["Erik Spiekermann"],
       "publishing-company": "Adobe Press",
       "language": "English",
       "title": "Stop Stealing Sheep & Find Out How Type Works, Third Edition",
@@ -2262,13 +1880,7 @@
       "price": 50.91,
       "in-stock": 68,
       "discount": 46,
-      "rating": [
-        6,
-        7,
-        9,
-        4,
-        3
-      ],
+      "rating": [6, 7, 9, 4, 3],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2289,17 +1901,13 @@
           "name": "Jessica"
         }
       ],
-      "categories": [
-        "Typography"
-      ]
+      "categories": ["Typography"]
     },
     {
       "id": 35,
       "uploaded-date": "2022-02-30",
       "publication-date": "2003-10-31",
-      "authors": [
-        "Robert Charles Metzger"
-      ],
+      "authors": ["Robert Charles Metzger"],
       "publishing-company": "Digital Press",
       "language": "English",
       "title": "Debugging by Thinking",
@@ -2309,13 +1917,7 @@
       "price": 43.77,
       "in-stock": 351,
       "discount": 39,
-      "rating": [
-        1,
-        9,
-        7,
-        5,
-        10
-      ],
+      "rating": [1, 9, 7, 5, 10],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2336,20 +1938,13 @@
           "name": "Feliks Zemdegs"
         }
       ],
-      "categories": [
-        "Management",
-        "Business"
-      ]
+      "categories": ["Management", "Business"]
     },
     {
       "id": 36,
       "uploaded-date": "2022-02-30",
       "publication-date": "2001-11-04",
-      "authors": [
-        "Peter Pande",
-        "Robert Neuman",
-        "Roland Cavanagh"
-      ],
+      "authors": ["Peter Pande", "Robert Neuman", "Roland Cavanagh"],
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "The Six Sigma Way Team Fieldbook: An Implementation Guide for Process Improvement Teams",
@@ -2359,13 +1954,7 @@
       "price": 40.59,
       "in-stock": 128,
       "discount": 36,
-      "rating": [
-        6,
-        7,
-        3,
-        3,
-        1
-      ],
+      "rating": [6, 7, 3, 3, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2386,18 +1975,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Management",
-        "Business"
-      ]
+      "categories": ["Management", "Business"]
     },
     {
       "id": 37,
       "uploaded-date": "2022-02-30",
       "publication-date": "2017-11-29",
-      "authors": [
-        "Paul Midler"
-      ],
+      "authors": ["Paul Midler"],
       "publishing-company": "Wiley",
       "language": "English",
       "title": "What's Wrong with China",
@@ -2407,13 +1991,7 @@
       "price": 33.91,
       "in-stock": 131,
       "discount": 29,
-      "rating": [
-        10,
-        10,
-        6,
-        8,
-        10
-      ],
+      "rating": [10, 10, 6, 8, 10],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2446,17 +2024,13 @@
           "name": "Albert"
         }
       ],
-      "categories": [
-        "Management"
-      ]
+      "categories": ["Management"]
     },
     {
       "id": 38,
       "uploaded-date": "2022-02-30",
       "publication-date": "2013-09-23",
-      "authors": [
-        "Joe Armstrong"
-      ],
+      "authors": ["Joe Armstrong"],
       "publishing-company": "Pragmatic Bookshelf",
       "language": "English",
       "title": "Programming Erlang, 2nd Edition",
@@ -2466,13 +2040,7 @@
       "price": 44.3,
       "in-stock": 333,
       "discount": 40,
-      "rating": [
-        9,
-        4,
-        3,
-        5,
-        4
-      ],
+      "rating": [9, 4, 3, 5, 4],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2499,17 +2067,13 @@
           "name": "Remus Lupin"
         }
       ],
-      "categories": [
-        "Software Development"
-      ]
+      "categories": ["Software Development"]
     },
     {
       "id": 39,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-08-03",
-      "authors": [
-        "Peter Hurley"
-      ],
+      "authors": ["Peter Hurley"],
       "publishing-company": "New Riders",
       "language": "English",
       "title": "The Headshot: The Secrets to Creating Amazing Headshot Portraits",
@@ -2519,13 +2083,7 @@
       "price": 37.62,
       "in-stock": 432,
       "discount": 33,
-      "rating": [
-        8,
-        10,
-        1,
-        9,
-        1
-      ],
+      "rating": [8, 10, 1, 9, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2570,17 +2128,13 @@
           "name": "Voldermort"
         }
       ],
-      "categories": [
-        "Photography"
-      ]
+      "categories": ["Photography"]
     },
     {
       "id": 40,
       "uploaded-date": "2022-02-30",
       "publication-date": "2002-12-26",
-      "authors": [
-        "Robin Williams"
-      ],
+      "authors": ["Robin Williams"],
       "publishing-company": "Peachpit Press",
       "language": "English",
       "title": "Robin Williams Mac OS X Book, Jaguar Edition, The",
@@ -2590,13 +2144,7 @@
       "price": 42.3,
       "in-stock": 335,
       "discount": 38,
-      "rating": [
-        6,
-        6,
-        2,
-        9,
-        3
-      ],
+      "rating": [6, 6, 2, 9, 3],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2647,18 +2195,13 @@
           "name": "Antone Cantine"
         }
       ],
-      "categories": [
-        "Software Development"
-      ]
+      "categories": ["Software Development"]
     },
     {
       "id": 41,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-08-27",
-      "authors": [
-        "Ted Dunning",
-        "Ellen Friedman"
-      ],
+      "authors": ["Ted Dunning", "Ellen Friedman"],
       "publishing-company": "O'Reilly Media, Inc.",
       "language": "English",
       "title": "Practical Machine Learning: A New Look at Anomaly Detection",
@@ -2668,13 +2211,7 @@
       "price": 48.54,
       "in-stock": 353,
       "discount": 44,
-      "rating": [
-        7,
-        7,
-        7,
-        6,
-        2
-      ],
+      "rating": [7, 7, 7, 6, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2701,17 +2238,13 @@
           "name": "Albert"
         }
       ],
-      "categories": [
-        "Machine Learning"
-      ]
+      "categories": ["Machine Learning"]
     },
     {
       "id": 42,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-09-01",
-      "authors": [
-        "William R. Killingsworth"
-      ],
+      "authors": ["William R. Killingsworth"],
       "publishing-company": "Business Expert Press",
       "language": "English",
       "title": "Saving American Manufacturing",
@@ -2721,13 +2254,7 @@
       "price": 36.54,
       "in-stock": 129,
       "discount": 32,
-      "rating": [
-        8,
-        2,
-        3,
-        6,
-        1
-      ],
+      "rating": [8, 2, 3, 6, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2772,19 +2299,13 @@
           "name": "Sirius Black"
         }
       ],
-      "categories": [
-        "Business",
-        "Marketing"
-      ]
+      "categories": ["Business", "Marketing"]
     },
     {
       "id": 43,
       "uploaded-date": "2022-02-30",
       "publication-date": "2012-07-03",
-      "authors": [
-        "Bill Catlette",
-        "Richard Hadden"
-      ],
+      "authors": ["Bill Catlette", "Richard Hadden"],
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Contented Cows Still Give Better Milk, Revised and Expanded: The Plain Truth about Employee Engagement and Your Bottom Line, 2nd Edition",
@@ -2794,13 +2315,7 @@
       "price": 44.7,
       "in-stock": 419,
       "discount": 40,
-      "rating": [
-        1,
-        10,
-        9,
-        4,
-        7
-      ],
+      "rating": [1, 10, 9, 4, 7],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2845,17 +2360,13 @@
           "name": "Sirius Black"
         }
       ],
-      "categories": [
-        "Marketing"
-      ]
+      "categories": ["Marketing"]
     },
     {
       "id": 44,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-08-01",
-      "authors": [
-        "Liz Lee Heinecke"
-      ],
+      "authors": ["Liz Lee Heinecke"],
       "publishing-company": "Quarry Books",
       "language": "English",
       "title": "Kitchen Science Lab for Kids",
@@ -2865,13 +2376,7 @@
       "price": 30.47,
       "in-stock": 260,
       "discount": 26,
-      "rating": [
-        10,
-        7,
-        3,
-        5,
-        4
-      ],
+      "rating": [10, 7, 3, 5, 4],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2910,17 +2415,13 @@
           "name": "Remus Lupin"
         }
       ],
-      "categories": [
-        "Education"
-      ]
+      "categories": ["Education"]
     },
     {
       "id": 45,
       "uploaded-date": "2022-02-30",
       "publication-date": "2022-01-11",
-      "authors": [
-        "Agnes Hsu"
-      ],
+      "authors": ["Agnes Hsu"],
       "publishing-company": "Quarry Books",
       "language": "English",
       "title": "Recycle and Play",
@@ -2930,13 +2431,7 @@
       "price": 32.69,
       "in-stock": 89,
       "discount": 28,
-      "rating": [
-        9,
-        9,
-        8,
-        7,
-        5
-      ],
+      "rating": [9, 9, 8, 7, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -2975,18 +2470,13 @@
           "name": "Tony Stark"
         }
       ],
-      "categories": [
-        "Software Development",
-        "Web"
-      ]
+      "categories": ["Software Development", "Web"]
     },
     {
       "id": 46,
       "uploaded-date": "2022-02-30",
       "publication-date": "2021-01-11",
-      "authors": [
-        "Michael F. Schein"
-      ],
+      "authors": ["Michael F. Schein"],
       "publishing-company": "McGraw-Hill",
       "language": "English",
       "title": "The Hype Handbook: 12 Indispensable Success Secrets From the World’s Greatest Propagandists, Self-Promoters, Cult Leaders, Mischief Makers, and Boundary Breakers",
@@ -2996,13 +2486,7 @@
       "price": 38.26,
       "in-stock": 107,
       "discount": 34,
-      "rating": [
-        7,
-        4,
-        8,
-        10,
-        1
-      ],
+      "rating": [7, 4, 8, 10, 1],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3035,18 +2519,13 @@
           "name": "Antone Cantine"
         }
       ],
-      "categories": [
-        "Blockchain",
-        "Security"
-      ]
+      "categories": ["Blockchain", "Security"]
     },
     {
       "id": 47,
       "uploaded-date": "2022-02-30",
       "publication-date": "2017-11-24",
-      "authors": [
-        "Lex Sheehan"
-      ],
+      "authors": ["Lex Sheehan"],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Learning Functional Programming in Go",
@@ -3056,13 +2535,7 @@
       "price": 30.38,
       "in-stock": 90,
       "discount": 26,
-      "rating": [
-        9,
-        9,
-        6,
-        3,
-        4
-      ],
+      "rating": [9, 9, 6, 3, 4],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3083,17 +2556,13 @@
           "name": "Grindelwald"
         }
       ],
-      "categories": [
-        "Software Development"
-      ]
+      "categories": ["Software Development"]
     },
     {
       "id": 48,
       "uploaded-date": "2022-02-30",
       "publication-date": "2019-05-13",
-      "authors": [
-        "Jennifer Emery"
-      ],
+      "authors": ["Jennifer Emery"],
       "publishing-company": "Wiley",
       "language": "English",
       "title": "Leading for Organisational Change",
@@ -3103,13 +2572,7 @@
       "price": 30.3,
       "in-stock": 401,
       "discount": 26,
-      "rating": [
-        1,
-        8,
-        1,
-        7,
-        2
-      ],
+      "rating": [1, 8, 1, 7, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3142,19 +2605,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Business",
-        "Management"
-      ]
+      "categories": ["Business", "Management"]
     },
     {
       "id": 49,
       "uploaded-date": "2022-02-30",
       "publication-date": "2018-02-28",
-      "authors": [
-        "Charles Palmer",
-        "John Williamson"
-      ],
+      "authors": ["Charles Palmer", "John Williamson"],
       "publishing-company": "Packt Publishing",
       "language": "English",
       "title": "Virtual Reality Blueprints",
@@ -3164,13 +2621,7 @@
       "price": 47.56,
       "in-stock": 282,
       "discount": 43,
-      "rating": [
-        8,
-        9,
-        1,
-        6,
-        5
-      ],
+      "rating": [8, 9, 1, 6, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3191,19 +2642,13 @@
           "name": "Harry Potter"
         }
       ],
-      "categories": [
-        "VR",
-        "AR"
-      ]
+      "categories": ["VR", "AR"]
     },
     {
       "id": 50,
       "uploaded-date": "2022-02-30",
       "publication-date": "2014-11-21",
-      "authors": [
-        "Barbara B. Flynn",
-        "Xiande Zhao"
-      ],
+      "authors": ["Barbara B. Flynn", "Xiande Zhao"],
       "publishing-company": "CRC Press",
       "language": "English",
       "title": "Global Supply Chain Quality Management",
@@ -3213,13 +2658,7 @@
       "price": 36.62,
       "in-stock": 332,
       "discount": 32,
-      "rating": [
-        4,
-        8,
-        2,
-        6,
-        5
-      ],
+      "rating": [4, 8, 2, 6, 5],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3246,18 +2685,13 @@
           "name": "Ha"
         }
       ],
-      "categories": [
-        "Management",
-        "Supply Chain"
-      ]
+      "categories": ["Management", "Supply Chain"]
     },
     {
       "id": 51,
       "uploaded-date": "2022-02-30",
       "publication-date": "2015-10-09",
-      "authors": [
-        "Richard Templar"
-      ],
+      "authors": ["Richard Templar"],
       "publishing-company": "Pearson",
       "language": "English",
       "title": "The Rules of Work, 4th Edition",
@@ -3267,13 +2701,7 @@
       "price": 33.76,
       "in-stock": 298,
       "discount": 29,
-      "rating": [
-        2,
-        5,
-        6,
-        5,
-        2
-      ],
+      "rating": [2, 5, 6, 5, 2],
       "comments": [
         {
           "avatar": "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
@@ -3300,10 +2728,7 @@
           "name": "Steve Jobs"
         }
       ],
-      "categories": [
-        "Business",
-        "Management"
-      ]
+      "categories": ["Business", "Management"]
     }
   ],
   "reset-Token": [
@@ -3326,52 +2751,16 @@
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxlIE1hdSBBbmggUGhvbmciLCJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzE5MzgsImV4cCI6MTY0MzAxODMzOH0.FDLjB9-oDFo7TsgTU5Q4CXhI9CdIxJ9FjoHvFwqGoDk"
     },
     {
-      "id": 4,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImR1Y3BodW9uZ0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDI5Mjk2NDAsImV4cCI6MTY0MzAxNjA0MH0.zF7lAMCgr4DwBR2_geu9lyglxvgr0xuJlqMQLJau4bw"
-    },
-    {
-      "id": 5,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBodW9uZyIsImVtYWlsIjoiZHBAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzU1NjMsImV4cCI6MTY0MzAyMTk2M30.kwT1q46EnTsARpIw3cbK7BcNfcefJYalpS4d6JMV7ZE"
+      "id": 3,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTIwOTMwLCJleHAiOjE2NDMwMDczMzB9.mp1HOie4l0mIdUDmFqR-yHUykLCXsPpBZ3zSwnkx0-g"
     },
     {
       "id": 4,
-      "refreshToken": ""
-    },
-    {
-      "id": 4,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzY4MjgsImV4cCI6MTY0MzAyMzIyOH0.nq-x3QT44j4w-aPyoOS8qpKfiBEIviqNSxWx0pfv-as"
     },
     {
       "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 6,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEyMyIsImVtYWlsIjoibmV3QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY0MjkzNjU4NSwiZXhwIjoxNjQzMDIyOTg1fQ.nMpwX3GnxNWIKh_GzNcraQcfMDY-YQ8XB0V5QF14III"
-    },
-    {
-      "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 6,
-      "refreshToken": ""
-    },
-    {
-      "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 6,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTM4NDc0LCJleHAiOjE2NDMwMjQ4NzR9.7rRhb3i3v3zuM-3b4rLWCEzIHQLl3CJ4-MrLKQiW-xk"
     }
   ]
 }
