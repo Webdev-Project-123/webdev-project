@@ -1,4 +1,5 @@
 import Item from "../item"
+import Total from "../total";
 
 /* This example requires Tailwind CSS v2.0+ */
 const people = [
@@ -60,9 +61,17 @@ const people = [
   ]
 
   export default function Table(props) {
-      
+  let sum=0;
   const {orders}=props;
-  console.log(orders);
+  const renderItem=()=>{
+
+    return orders.map((item)=>{
+        sum+=item.total;
+       return <Item order={item} />
+    })
+  }
+  // console.log(orders);
+  
     return (
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto  ">
@@ -99,9 +108,8 @@ const people = [
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {orders.map((order) => (
-                   <Item order={order} />
-                  ))}
+                  {renderItem()}
+                  <Total total={sum}/>
                 </tbody>
               </table>
             </div>

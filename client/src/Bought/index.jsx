@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Home/Header';
 import Table from './components/table';
 import Total from './components/total';
-import { useDispatch, useSelector } from "react-redux";
-import { actListOrder } from './modules/action';
+// import { useDispatch, useSelector } from "react-red  ux";
+// import { actListOrder } from './modules/action';
 import axios from 'axios';
 import Footer from '../Home/Footer';
 export default function Bought() {
@@ -24,7 +24,7 @@ export default function Bought() {
       <div className='container mx-auto  pt-5'>
       <h1 className='text-center py-4 '>All orders</h1>
         <Table orders={state} />
-        {/* <Total/> */}
+        
         
      
         

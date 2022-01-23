@@ -6,7 +6,7 @@ export default function Item(props) {
     
   return (
     <tr key={order.id}>
-       <Link to={`/products/${order.bookId}`} >
+       <Link to={`/products/${order.productID}`} >
       <td className="px-6 py-4 whitespace-nowrap">
         <div className="flex items-center">
           <div className="flex-shrink-0 h-10 w-10">
