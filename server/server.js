@@ -52,11 +52,7 @@ app.use((err, req, res, next) => {
   const { statusCode, message } = err;
   res.status(statusCode || 500).json({
     status: statusCode || 500,
-<<<<<<< HEAD
-    message: message || "Internal Server Error",
-=======
-    message: message || 'INTERNAL SERVER ERROR',
->>>>>>> origin/server
+    message: message || "INTERNAL SERVER ERROR",
   });
 });
 
