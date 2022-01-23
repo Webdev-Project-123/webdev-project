@@ -54,6 +54,18 @@
       "role": "user",
       "cart": [],
       "bought": []
+    },
+    {
+      "id": 5,
+      "name": "wibu",
+      "email": "hentaiz@gmail.com",
+      "password": "$2b$10$xZ9EGXdOZtrvUtyHyKbVgO5FU4fgpLVnygiYcWqoa40I2wSVEEX2W",
+      "phone": "",
+      "address": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
+      "role": "admin",
+      "cart": [],
+      "bought": []
     }
   ],
   "products": [
@@ -3302,20 +3314,16 @@
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxlIE1hdSBBbmggUGhvbmciLCJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzE5MzgsImV4cCI6MTY0MzAxODMzOH0.FDLjB9-oDFo7TsgTU5Q4CXhI9CdIxJ9FjoHvFwqGoDk"
     },
     {
-      "id": 4,
+      "id": 3,
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTIwOTMwLCJleHAiOjE2NDMwMDczMzB9.mp1HOie4l0mIdUDmFqR-yHUykLCXsPpBZ3zSwnkx0-g"
     },
     {
+      "id": 4,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzY4MjgsImV4cCI6MTY0MzAyMzIyOH0.nq-x3QT44j4w-aPyoOS8qpKfiBEIviqNSxWx0pfv-as"
+    },
+    {
       "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 4,
-      "refreshToken": ""
-    },
-    {
-      "id": 4,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTM4NDc0LCJleHAiOjE2NDMwMjQ4NzR9.7rRhb3i3v3zuM-3b4rLWCEzIHQLl3CJ4-MrLKQiW-xk"
     }
   ]
 }
