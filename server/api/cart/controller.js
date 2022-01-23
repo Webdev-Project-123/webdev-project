@@ -31,5 +31,15 @@ module.exports = {
         } catch(error) {
             next(createErr(500, error.msg));
         }
+    },
+
+    cartPurchased: async(req, res, next) => {
+        try {
+            const userId = parseInt(req.params.userId, 10);
+            const DTO = await cartService.cartPurchased(userId, req.body.list);
+            res.status(200).json(DTO);
+        } catch(error) {
+            next(createErr(500, error.msg));
+        }
     }
 }
