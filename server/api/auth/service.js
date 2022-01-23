@@ -146,7 +146,7 @@ module.exports = {
         const emails = await db.get('users').find({ id: users.id }).value();
         if (!emails || result.email !== emails.email) {
           return {
-            statusCode: 403,
+            statusCode: 401,
             msg: 'UNAUTHORIZED',
           };
         }
