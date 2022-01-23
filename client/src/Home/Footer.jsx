@@ -1,8 +1,9 @@
 import React from 'react';
 import { Logo } from './Header';
+import '../index.css';
 
 const Footer = () => {
-  return <div className='flex px-1 sm:px-16 py-5 bg-[#FF6701] rounded-t-xl text-white  sm:gap-8'>
+  return <div className='flex flex-col space-y-2 px-8 md:flex-row md:px-16 py-5 bg-[#FF6701] rounded-t-xl text-white  sm:gap-8'>
     <div className='flex-1 space-y-2'>
       <Logo />
       <p className='text-sm font-light leading-tight sm:leading-normal'>
@@ -42,20 +43,50 @@ const Footer = () => {
     </div>
 
     {/* SERVICE */}
-    <h1 className='flex-1 flex flex-wrap'>
+    <h1 className='flex-1 hidden md:flex flex-wrap'>
       <div className='font-sans font-semibold'>
-        <p>SERVICE</p>
-        <ul className='font-light text-sm cursor-pointer'>
+        <p className='flex justify-between cursor-pointer md:cursor-default'>
+          SERVICE
+        </p>
+        <ul className='font-light text-sm cursor-pointer mt-2'>
           <li >Terms of use</li>
           <li >Privacy Policy</li>
           <li >Press & Media</li>
         </ul>
       </div>
     </h1>
-    <h1 className='flex-1 flex flex-wrap'>
+
+    { /* SUPPORT */}
+    <h1 className='flex-1 hidden md:flex flex-wrap'>
       <div className='font-sans font-semibold'>
-        <p>SUPPORT</p>
-        <ul className='font-light text-sm cursor-pointer'>
+        <p className='flex justify-between cursor-pointer md:cursor-default'>
+          SUPPORT
+        </p>
+        <ul className='font-light text-sm cursor-pointer mt-2'>
+          <li>How to return</li>
+          <li>Shipping & Delivery</li>
+          <li>How to pay</li>
+        </ul>
+      </div>
+    </h1>
+
+    { /* SERVICE & SUPPORT */}
+    <h1 className='flex-1 flex flex-wrap md:hidden'>
+      <div className='font-sans font-semibold'>
+        <p className='flex justify-between cursor-pointer md:cursor-default'>
+          SERVICE
+        </p>
+        <ul className='font-light text-sm cursor-pointer mt-2'>
+          <li >Terms of use</li>
+          <li >Privacy Policy</li>
+          <li >Press & Media</li>
+        </ul>
+      </div>
+      <div className=' font-sans font-semibold ml-[79px]'>
+        <p className='flex justify-between cursor-pointer md:cursor-default'>
+          SUPPORT
+        </p>
+        <ul className='font-light text-sm cursor-pointer mt-2'>
           <li>How to return</li>
           <li>Shipping & Delivery</li>
           <li>How to pay</li>
@@ -65,15 +96,18 @@ const Footer = () => {
 
     {/* ABOUT US */}
     <h1 className='flex-1 flex-wrap'>
-
       <div className='font-sans font-semibold'>
-        <p>ABOUT US</p>
-        <div className='flex font-light text-sm gap-8 cursor-pointer'>
+        <p className='flex justify-between cursor-pointer md:cursor-default'>
+          ABOUT US
+        </p>
+        <div className='font-light text-sm cursor-pointer mt-2 flex md:flex-col flex-row'>
           <ul>
             <li>Nguyễn Đức Phương</li>
             <li>Nguyễn Ngọc Nam</li>
             <li>Hoàng Đình Anh Tuấn</li>
             <li>Vưu Mỹ Quyên</li>
+          </ul>
+          <ul className='ml-8 md:ml-0'>
             <li>Phạm Tuấn Anh</li>
             <li>Lê Mậu Anh Phong</li>
             <li>Lê Huy Hoàng</li>

@@ -113,26 +113,31 @@ const ProductPage = () => {
   const [products, setProducts] = useState(productData);
   const [loading, setLoading] = useState(false);
   const [currPage, setCurrPage] = useState(1);
-  const [productsPerPage] = useState(8);
+  const productsPerPage = 8;
+  const [currCategory, setCurrCategory] = useState('ALL PRODUCTS');
 
   const currProducts = products.slice((currPage - 1) * productsPerPage, currPage * productsPerPage);
 
   const paginate = (pageNumber) => setCurrPage(pageNumber);
   const navigate = useNavigate();
   useEffect(() => {
-    console.log(1);
+    if (window.location.pathname.slice(0, 11) !== '/categories')
+      return;
+    const pathName = window.location.pathname.slice(12)
+    setCurrCategory(pathName ? decodeURI(pathName).toUpperCase() : 'ALL PRODUCTS');
   }, [navigate])
 
   return <div className='bg-[#FCECDD]'>
     <Header />
-    <div className='my-8 flex gap-4'>
+    <div className='my-4 sm:my-8 flex md:flex-row flex-col gap-4'>
       {/* Filter Bar | Left Content */}
-      <Filter className='inline' />
+      <Filter />
 
       {/* Right Content */}
-      <div className='mr-16 w-full'>
+      <div className='mx-2 sm:mx-16 md:mr-16 md:ml-0'>
+        <div className='text-center text-xl font-bold p-2 rounded-t-lg bg-[#FEA82F]'>{currCategory}</div>
         {/* Product List */}
-        <div className='w-full bg-white rounded-lg'>
+        <div className='bg-white rounded-b-lg'>
           <PaginationPage products={currProducts} loading={loading} />
         </div>
 

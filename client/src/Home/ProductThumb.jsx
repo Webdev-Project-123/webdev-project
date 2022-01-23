@@ -23,7 +23,7 @@ const ProductThumb = ({ productData }) => {
     five: 20,
   };
 
-  return <div className='m-2 sm:m-7 md:m-3 lg:m-5 bg-gray-100 rounded-lg transition duration-300 hover:cursor-pointer 
+  return <div className='m-2 sm:m-7 md:m-3 lg:m-5 bg-gray-50 rounded-lg transition duration-300 hover:cursor-pointer 
   hover:shadow-tuanProductThumb p-2 sm:my-4 aspect-[0.75]'>
     <div className='h-[75%]'>
       <img src={productData.image} className='m-auto rounded-lg object-fill h-full' />

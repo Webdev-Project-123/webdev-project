@@ -27,7 +27,7 @@
 }
 
 .category {
-  @apply rounded-lg cursor-pointer px-6 py-2 hover:bg-[#FFC288] transition duration-300;
+  @apply rounded-lg cursor-pointer lg:px-6 px-4 py-2 hover:bg-[#FFC288] transition duration-300;
 }
 
 .filter-title {
@@ -52,4 +52,8 @@ body {
 
 .hot-deal {
   @apply bg-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 rounded-b-lg;
+}
+
+.small-footer{
+  @apply w-full
 }

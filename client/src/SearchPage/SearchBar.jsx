@@ -8,17 +8,21 @@ const SearchBar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (window.location.pathname.slice(0, 8) !== '/search/')
+      return;
     const pathName = decodeURIComponent(window.location.pathname.slice(8));
     setSearchValue(pathName);
   }, []);
 
   const handleSubmit = e => {
     e.preventDefault();
+    if (!searchValue)
+      return;
     const encoded = encodeURIComponent(searchValue);
     navigate(`/search/${encoded}`);
   }
 
-  return <form className="border-2 flex rounded-md items-center" onSubmit={handleSubmit}>
+  return <form className="min-w-[170px] border-2 flex rounded-md items-center" onSubmit={handleSubmit}>
     <input
       value={searchValue}
       onChange={(e) => setSearchValue(e.target.value)}
