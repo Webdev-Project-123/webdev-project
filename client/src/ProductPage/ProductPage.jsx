@@ -4,7 +4,6 @@ import Header from '../Home/Header';
 import Filter from './Filter';
 import PaginationBar from './PaginationBar';
 import PaginationPage from './PaginationPage';
-import Spinner from './Spinner';
 
 const productData = [
   {

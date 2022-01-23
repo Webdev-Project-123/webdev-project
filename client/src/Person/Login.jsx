@@ -2,6 +2,7 @@ import { useState } from "react";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import loginBg from "./Image/loginBg.jpg";
+import loginApi from "../apiClient/loginApi";
 
 function Login() {
   const [input, setInput] = useState({
@@ -13,6 +14,15 @@ function Login() {
     const newInput = { ...input };
     newInput[e.target.name] = e.target.value;
     setInput(newInput);
+  };
+
+  const handleLogin = async () => {
+    try {
+      const res = loginApi.post(input);
+      console.log(res);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const inputStyle =

@@ -81,6 +81,7 @@ function Upload({ setPopUs, popUp }) {
               <img
                 src={avatar?.preview}
                 className="w-full h-full object-cover"
+                alt=""
               />
             </div>
             <div className="w-full h-auto flex justify-center items-center gap-[30px] md:gap-[100px] mb-7">
