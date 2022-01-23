@@ -12,12 +12,16 @@ module.exports = {
         };
       }
 
-      const normalProperties = ['name', 'address', 'phone', 'avatar'];
-      await normalProperties.forEach(async (p) => {
+      const normalProperties = ['name', 'address', 'phone'];
+      normalProperties.forEach(async (p) => {
         if (req.body[p]) {
           await user.assign({ [p]: req.body[p] }).write();
         }
       });
+
+      if (req.body.avatar) {
+        await user.assign({ avatar: req.file.path }).write();
+      }
 
       return {
         statusCode: 200,
