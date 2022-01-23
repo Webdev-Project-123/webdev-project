@@ -1,14 +1,17 @@
 import Component1 from "./Component1";
 import Component2 from "./Component2";
-
-function Detail() {
+import Average from "./Average"
+import SumStar from "./SumStar";
+function Detail(props) {
+  let avg=SumStar();
+  console.log(avg);
     return (
       <div className="">
           <div>
-              <Component1/>
+              <Component1  />
           </div>
           <div>
-            <Component2/>
+            <Component2 />
           </div>
       </div>
     );

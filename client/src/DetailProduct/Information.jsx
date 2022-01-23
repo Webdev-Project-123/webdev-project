@@ -2,8 +2,8 @@ function Information(props) {
     if(props.name=="information")
     {
         return (
-              <div className=" flex flex-wrap text-lg mt-[20px] h-max">
-                <div className=" flex min-w-namCustome bg-white rounded-l-2xl h-max p-[20px] ">
+              <div className=" flex flex-wrap text-lg mt-[20px] h-max lg:justify-start justify-center">
+                <div className=" flex lg:min-w-namCustome bg-white min-w-[360px] h-max p-[20px] rounded-xl ">
                     {/* icon1 */}
                     <div className="">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -28,23 +28,23 @@ function Information(props) {
                         {/* name1 */}
                     <div className="ml-[2px]  font-bold ">
                         <p className="flex">ID product: </p>
-                        <p className="flex mt-[15px]">Publishing Company:</p>
+                        <p className="flex mt-[15px]">Company:</p>
                         <p className="flex mt-[15px]">Supplier:</p>
                         <p className="flex mt-[15px]">Author:</p>
                         <p className="flex mt-[15px]">Category:</p>
                         <p className="flex mt-[15px]">Language:</p>
                     </div>
                         {/* content1 */}
-                    <div className="ml-[10px] ">
-                        <p className="flex">8935246924402</p>
-                        <p className="flex mt-[15px]">NXB Hồng Đức</p>
-                        <p className="flex mt-[15px]">NXB Hồng Đức</p>
-                        <p className="flex mt-[15px]">Hoàng Ngọc Quỳnh</p>
-                        <p className="flex mt-[15px]">Tình cảm</p>
-                        <p className="flex mt-[15px]">English</p>
+                    <div className=" flex flex-col items-center ml-[10px] ">
+                        <p className="">8935246924402</p>
+                        <p className="mt-[15px]">NXB Hồng Đức</p>
+                        <p className="mt-[15px]">NXB Hồng Đức</p>
+                        <p className="mt-[15px]">Hoàng Ngọc Quỳnh</p>
+                        <p className="mt-[15px]">Tình cảm</p>
+                        <p className="mt-[15px]">English</p>
                     </div>
                 </div>
-                <div className=" flex min-w-namCustome  bg-white rounded-r-2xl p-[20px] min-h-namCustome h-max">
+                <div className=" flex lg:min-w-namCustome lg:mt-0 mt-[-16px] bg-white min-w-[360px] p-[20px]  min-h-namCustome h-max rounded-xl">
                     <div className="">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -63,19 +63,19 @@ function Information(props) {
                         </svg>
                     </div>
                     <div className="ml-[5px]  font-bold">
-                        <p className="flex">Publishing Date:</p>
-                        <p className="flex mt-[15px] ">Weight: </p>
-                        <p className="flex mt-[15px]">Size:</p>
-                        <p className="flex mt-[15px]">Types:</p>
-                        <p className="flex mt-[15px]">Page Numbers:</p>
+                        <p className="">Date:</p>
+                        <p className="mt-[15px] ">Weight: </p>
+                        <p className="mt-[15px]">Size:</p>
+                        <p className="mt-[15px]">Types:</p>
+                        <p className="mt-[15px]">Pages:</p>
                         
                     </div>
-                    <div className="ml-[10px] ">
-                        <p className="flex">2022</p>
+                    <div className=" flex flex-col items-center ml-[10px] ">
+                        <p className="">2022</p>
                         <p className="flex mt-[15px]">400g</p>
-                        <p className="flex mt-[15px]">20x20</p>
-                        <p className="flex mt-[15px]">Bìa cứng, bìa mềm</p>
-                        <p className="flex mt-[15px]">300</p>
+                        <p className="mt-[15px]">20x20</p>
+                        <p className="mt-[15px]">Paperback, Hardcover</p>
+                        <p className="mt-[15px]">300</p>
                     </div>
                 </div>
 

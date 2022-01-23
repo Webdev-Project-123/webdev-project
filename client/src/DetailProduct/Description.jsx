@@ -1,5 +1,4 @@
 function Description(props) {
-    console.log(props.name);
      if(props.name=="description")
      {
          return (

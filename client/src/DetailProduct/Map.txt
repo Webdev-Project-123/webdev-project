@@ -1,0 +1,12 @@
+DetailProduct
+    -Header
+    -Detail: 
+        +Component1
+        +Component2:
+            .Information
+            .Description
+            .Rate:
+                _CommentPerson
+                
+    -Footer
+
