@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
-import './Styles/customProductThumb.css';
-import Rating from './Rating';
+import React, { useState } from "react";
+import "./Styles/customProductThumb.css";
+import Rating from "./Rating";
 
 const ProductThumb = ({ productData }) => {
   const rating = (ratings) => {
-    let length = ratings.one + ratings.two + ratings.three + ratings.four + ratings.five;
-    let sum = ratings.one + ratings.two * 2 + ratings.three * 3 + ratings.four * 4 + ratings.five * 5;
+    let length =
+      ratings.one + ratings.two + ratings.three + ratings.four + ratings.five;
+    let sum =
+      ratings.one +
+      ratings.two * 2 +
+      ratings.three * 3 +
+      ratings.four * 4 +
+      ratings.five * 5;
     return sum / length;
-  }
+  };
 
   const sample = {
     one: 2,
     two: 2,
     three: 5,
     four: 9,
-    five: 20
-  }
+    five: 20,
+  };
 
   return <div className='m-2 sm:m-7 md:m-3 lg:m-5 bg-gray-100 rounded-lg transition duration-300 hover:cursor-pointer 
   hover:shadow-tuanProductThumb p-2 sm:my-4 aspect-[0.75]'>
@@ -43,7 +49,7 @@ const ProductThumb = ({ productData }) => {
         </svg>
       </button>
     </div>
-  </div>;
+  </div>
 };
 
 export default ProductThumb;

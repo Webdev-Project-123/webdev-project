@@ -7,19 +7,26 @@
       "password": "$2b$10$lgy7rZL2Ljylty8kD5jMK.NbHa8vTFusmZ0u3sXcaz7XB5ggwgru.",
       "phone": "",
       "address": "",
-      "avatar": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "admin",
       "cart": [],
-      "bought": []
+      "bought": [
+        {
+          "id": 1,
+          "title": "Collaborative Product Design",
+          "discount": 30.49,
+          "quantity": 2
+        }
+      ]
     },
     {
       "id": 2,
       "name": "Le Mau Anh Phong",
       "email": "ap14789654@gmail.com",
       "password": "$2b$10$n4TW91fXJkqX6bE0Wrf5s.sj/y5k76FxEsXZldEPqzWBLPT9pjakW",
-      "phone": "",
-      "address": "",
-      "avatar": "",
+      "phone": "Yeahhh",
+      "address": "Yeahhh",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "user",
       "cart": [],
       "bought": []
@@ -31,44 +38,32 @@
       "password": "$2b$10$Nf0mUwINMebTbPhBJ/GQbeIjq2YvncMNRQu8yC31aGaRwmQ0ZqVee",
       "phone": "",
       "address": "",
-      "avatar": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "user",
       "cart": [],
       "bought": []
     },
     {
       "id": 4,
-      "name": "admin",
-      "email": "admin@gmail.com",
-      "password": "$2b$10$Cptt.dGUVtsb0VV1FftgpOI4rEDcWqVI.YvbVgCVlKSs.DzD67BPa",
+      "name": "Le Mau Anh Phong",
+      "email": "heallo@gmail.com",
+      "password": "$2b$10$TBUnrisX7aHDRBp7BMoKc.46Hvmg7nk84NwqfclTSTbbz8CSnveXG",
       "phone": "",
       "address": "",
-      "avatar": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "user",
       "cart": [],
       "bought": []
     },
     {
       "id": 5,
-      "name": "adminadminadmin",
-      "email": "adminadmin@gmail.com",
-      "password": "$2b$10$I9cIKl0VS8HgSowL.f.Riu0UwsN4p6m8AGJjf3tzhVBFCX83E3mrS",
+      "name": "wibu",
+      "email": "hentaiz@gmail.com",
+      "password": "$2b$10$xZ9EGXdOZtrvUtyHyKbVgO5FU4fgpLVnygiYcWqoa40I2wSVEEX2W",
       "phone": "",
       "address": "",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 6,
-      "name": "name name",
-      "email": "email@email.email",
-      "password": "$2b$10$hSslHboMFJW/newZYHLSDeIskE.glwVqac6nHkZr053.dmpgCixjO",
-      "phone": "",
-      "address": "",
-      "avatar": "",
-      "role": "user",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
+      "role": "admin",
       "cart": [],
       "bought": []
     }
@@ -2749,23 +2744,23 @@
   "refresh-tokens": [
     {
       "id": 1,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlbWF1YW5ocGhvbmdAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyODYwODg0LCJleHAiOjE2NDI5NDcyODR9.uhOvf50ciXfxQdz6YVI3y9_oPBkNlg_0daZjcZkGiUI"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlbWF1YW5ocGhvbmdAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTA0ODkzLCJleHAiOjE2NDI5OTEyOTN9.JNVN4gMQtLhgbJYmrK-DmMUNBqfMVYz7cr9nJV_F59M"
     },
     {
       "id": 2,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI4MzQzMjAsImV4cCI6MTY0MjkyMDcyMH0.rREUv0euho_UY0ASkGOV1xWRiPmnTnewAKvsCIPbgxM"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxlIE1hdSBBbmggUGhvbmciLCJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzE5MzgsImV4cCI6MTY0MzAxODMzOH0.FDLjB9-oDFo7TsgTU5Q4CXhI9CdIxJ9FjoHvFwqGoDk"
+    },
+    {
+      "id": 3,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTIwOTMwLCJleHAiOjE2NDMwMDczMzB9.mp1HOie4l0mIdUDmFqR-yHUykLCXsPpBZ3zSwnkx0-g"
     },
     {
       "id": 4,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzY4MjgsImV4cCI6MTY0MzAyMzIyOH0.nq-x3QT44j4w-aPyoOS8qpKfiBEIviqNSxWx0pfv-as"
     },
     {
       "id": 5,
-      "refreshToken": ""
-    },
-    {
-      "id": 6,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndpYnUiLCJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTM4NDc0LCJleHAiOjE2NDMwMjQ4NzR9.7rRhb3i3v3zuM-3b4rLWCEzIHQLl3CJ4-MrLKQiW-xk"
     }
   ]
 }

@@ -6,15 +6,15 @@ import Home from "./Home/Home";
 import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
-import { SearchContext } from './SearchPage/SearchContext';
+import { SearchContext } from "./SearchPage/SearchContext";
 
 function App() {
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
 
   return (
     <BrowserRouter>
       <SearchContext.Provider value={[searchValue, setSearchValue]}>
-        <Routes path='/'>
+        <Routes path="/">
           <Route index element={<Home />} />
           <Route path='categories/:category/' element={<ProductPage />} />
           <Route path='search/:searchValue/' element={<SearchPage />} />
@@ -22,6 +22,7 @@ function App() {
         </Routes>
       </SearchContext.Provider>
     </BrowserRouter>
+    // <AddProduct />
   );
 }
 
