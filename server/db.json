@@ -7,7 +7,7 @@
       "password": "$2b$10$lgy7rZL2Ljylty8kD5jMK.NbHa8vTFusmZ0u3sXcaz7XB5ggwgru.",
       "phone": "",
       "address": "",
-      "avatar": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "admin",
       "cart": [],
       "bought": [
@@ -24,9 +24,9 @@
       "name": "Le Mau Anh Phong",
       "email": "ap14789654@gmail.com",
       "password": "$2b$10$n4TW91fXJkqX6bE0Wrf5s.sj/y5k76FxEsXZldEPqzWBLPT9pjakW",
-      "phone": "",
-      "address": "",
-      "avatar": "",
+      "phone": "Yeahhh",
+      "address": "Yeahhh",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "user",
       "cart": [],
       "bought": []
@@ -38,19 +38,7 @@
       "password": "$2b$10$Nf0mUwINMebTbPhBJ/GQbeIjq2YvncMNRQu8yC31aGaRwmQ0ZqVee",
       "phone": "",
       "address": "",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 4,
-      "name": "wibu",
-      "email": "hentaiz@gmail.com",
-      "password": "$2b$10$II/AWe8ebLlchBAfX4y.SO/TCxqJiwxo9N.J/.Yry1Fmsi26ax09u",
-      "phone": "",
-      "address": "",
-      "avatar": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
       "role": "user",
       "cart": [],
       "bought": []
@@ -3295,11 +3283,11 @@
   "refresh-tokens": [
     {
       "id": 1,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlbWF1YW5ocGhvbmdAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTA0MTU2LCJleHAiOjE2NDI5OTA1NTZ9.4M4cl8A0Du6PrZh-ms3cd8WRGizLKOuB6edkfggM3Z4"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlbWF1YW5ocGhvbmdAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjQyOTA0ODkzLCJleHAiOjE2NDI5OTEyOTN9.JNVN4gMQtLhgbJYmrK-DmMUNBqfMVYz7cr9nJV_F59M"
     },
     {
       "id": 2,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI4MzQzMjAsImV4cCI6MTY0MjkyMDcyMH0.rREUv0euho_UY0ASkGOV1xWRiPmnTnewAKvsCIPbgxM"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwMTQ3ODk2NTRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MTI2MjgsImV4cCI6MTY0Mjk5OTAyOH0.P26hrdEviLtTgXfXxCTAtE0R5uCRnTTANdOuOpSb8ZY"
     },
     {
       "id": 4,
