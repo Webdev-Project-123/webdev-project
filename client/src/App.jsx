@@ -19,6 +19,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="categories/:category/" element={<ProductPage />} />
           <Route path="search/:searchValue/" element={<SearchPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="sign-up" element={<SignUp />} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>
