@@ -11,6 +11,7 @@ module.exports = {
     if (!body.name || !body.email || !body.password) {
       return {
         error: true,
+        statusCode: 400,
         msg: 'Invalid request',
       };
     }
@@ -21,6 +22,7 @@ module.exports = {
     if (filterUser.length > 0) {
       return {
         error: true,
+        statusCode: 409,
         msg: 'Email is already existed',
       };
     }
@@ -46,6 +48,7 @@ module.exports = {
     return {
       statusCode: 200,
       error: false,
+      statusCode: 200,
       msg: 'Success',
     };
   },
@@ -59,6 +62,7 @@ module.exports = {
       if (cmpResult.err) {
         return {
           error: true,
+          statusCode: 409,
           msg: cmpResult.err,
         };
       }
@@ -86,18 +90,21 @@ module.exports = {
       if (!cmpResult) {
         return {
           error: true,
+          statusCode: 409,
           msg: 'Wrong password or email address',
         };
       }
     } else if (filterUser.length === 0) {
       return {
         error: true,
+        statusCode: 409,
         msg: 'Wrong password or email address',
       };
     }
 
     return {
       error: true,
+      statusCode: 417,
       msg: 'Error in login phase',
     };
   },
