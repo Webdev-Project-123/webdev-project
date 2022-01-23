@@ -17,12 +17,8 @@ function App() {
       <SearchContext.Provider value={[searchValue, setSearchValue]}>
         <Routes path="/">
           <Route index element={<Home />} />
-          <Route path="categories/*" element={<ProductPage />} />
-          <Route path="search/*" element={<SearchPage />} />
-          <Route path="search/*" element={<SearchPage />} />
-          <Route path="sign-up" element={<SignUp />} />
-          <Route path="login" element={<Login />} />
-          <Route path="upload" element={<AddProduct />} />
+          <Route path="categories/:category/" element={<ProductPage />} />
+          <Route path="search/:searchValue/" element={<SearchPage />} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>
