@@ -24,7 +24,8 @@ const path = require('path');
 
 // * Serving static files in public folder
 app.use(
-  express.static(path.join(__dirname, '../client/build')),
+  // express.static(path.join(__dirname, '../client/build')),
+  express.static(path.join(__dirname, './public')),
 );
 
 // * Load the server
@@ -35,11 +36,12 @@ app.listen(port, () => {
 
 // * Get homepage
 app.get('/', (req, res) => {
-  res
-    .status(200)
-    .sendFile(
-      path.join(__dirname, '../client/build/index.html'),
-    );
+  // res
+  //   .status(200)
+  //   .sendFile(
+  //     path.join(__dirname, '../client/build/index.html'),
+  //   );
+  res.status(200).redirect('homepage/index.html');
 });
 
 // * Import api module, common module
