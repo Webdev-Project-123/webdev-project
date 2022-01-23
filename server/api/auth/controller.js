@@ -23,6 +23,7 @@ module.exports = {
       const DTO = await authService.login(req.body);
       const stt = DTO.statusCode ? DTO.statusCode : 500;
       res.status(stt).json({
+        id: DTO.id,
         accessToken: DTO.accessToken,
         refreshToken: DTO.refreshToken,
         msg: DTO.msg,
