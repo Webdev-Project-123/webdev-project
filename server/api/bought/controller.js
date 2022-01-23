@@ -1,5 +1,4 @@
 const boughtService = require('./service');
-const createErr = require('http-errors');
 
 module.exports = {
   boughtInfo: async (req, res, next) => {

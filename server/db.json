@@ -45,21 +45,9 @@
     },
     {
       "id": 4,
-      "name": "name name",
-      "email": "email@email.email",
-      "password": "$2b$10$HjJcJu1b7xSUZT3EbIGzl.VFroF55v3L63.dtm03kSpMU1WxvLuva",
-      "phone": "",
-      "address": "",
-      "avatar": "",
-      "role": "user",
-      "cart": [],
-      "bought": []
-    },
-    {
-      "id": 5,
       "name": "wibu",
       "email": "hentaiz@gmail.com",
-      "password": "$2b$10$ARjRxvUQ99BHJJCGICYoh.Qp2J8Dj8cXWEs1ZFbFheE6XmDUiA2Gm",
+      "password": "$2b$10$II/AWe8ebLlchBAfX4y.SO/TCxqJiwxo9N.J/.Yry1Fmsi26ax09u",
       "phone": "",
       "address": "",
       "avatar": "",
@@ -3315,10 +3303,14 @@
     },
     {
       "id": 4,
-      "refreshToken": ""
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnRhaXpAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MDI2NDIsImV4cCI6MTY0Mjk4OTA0Mn0.eMDD_b8VNP7waRgSLHqKPuqt-YWlIPuYoEP2GnAHVt8"
     },
     {
       "id": 5,
+      "refreshToken": ""
+    },
+    {
+      "id": 4,
       "refreshToken": ""
     }
   ]
