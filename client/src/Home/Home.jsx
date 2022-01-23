@@ -7,6 +7,7 @@ import "./Styles/customSlick.css";
 import Categories from "./Categories";
 import ProductThumb from "./ProductThumb";
 import '../index.css';
+import { useNavigate } from "react-router-dom";
 
 const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-07/EunectesBannerRerun_0.jpeg",
@@ -75,8 +76,7 @@ const slider = () => {
 
 const Home = () => {
   return <div className="bg-[#FCECDD]">
-    <Header isLogin={false} />
-
+    <Header />
     {/* BANNERS*/}
     <div className="px-4 pt-8 mb-4 flex">
       <div className="w-full">
@@ -84,7 +84,7 @@ const Home = () => {
       </div>
     </div>
 
-    {/* GROUPS */}
+    {/* All Products */}
     <div className="px-16 mt-10 mb-4 gap-8">
       <div
         className='font-sans card-zoom bg-no-repeat bg-center cursor-pointer rounded-xl bg-cover bg-white w-full h-[40vh] text-center flex items-center justify-center'
@@ -124,7 +124,7 @@ const Home = () => {
     </div>
 
     <Footer />
-  </div>;
+  </div >;
 };
 
 export default Home;
