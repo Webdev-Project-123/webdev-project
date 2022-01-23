@@ -59,7 +59,19 @@
       "id": 5,
       "name": "Phuong",
       "email": "dp@gmail.com",
-      "password": "$2b$10$9FUEP6QeRL6KMU9VF6.4Y.NOn8xYYxa9jEd6iIPUPA7ORKv0n229.",
+      "password": "$2b$10$.f/DPAXz8eo1OBwR5WxrGu/UZ..aILsaLauTxWHcCWfOqI4a8dEW.",
+      "phone": "",
+      "address": "",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
+      "role": "admin",
+      "cart": [],
+      "bought": []
+    },
+    {
+      "id": 6,
+      "name": "123",
+      "email": "new@gmail.com",
+      "password": "$2b$10$vey0YFa7RQVqr8P4TASjmOXpawoP4yNUCwoixp6si46Uc1K7KKCjC",
       "phone": "",
       "address": "",
       "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
@@ -3319,7 +3331,7 @@
     },
     {
       "id": 5,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBodW9uZyIsImVtYWlsIjoiZHBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWQiOjUsImlhdCI6MTY0MjkzMzUyMywiZXhwIjoxNjQzMDE5OTIzfQ.mFF_ebO039nVzJ_3DAqzfPVHLaQO7zDTCF0heiHAFWE"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBodW9uZyIsImVtYWlsIjoiZHBAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDI5MzU1NjMsImV4cCI6MTY0MzAyMTk2M30.kwT1q46EnTsARpIw3cbK7BcNfcefJYalpS4d6JMV7ZE"
     },
     {
       "id": 4,
@@ -3339,6 +3351,26 @@
     },
     {
       "id": 5,
+      "refreshToken": ""
+    },
+    {
+      "id": 6,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEyMyIsImVtYWlsIjoibmV3QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY0MjkzNjU4NSwiZXhwIjoxNjQzMDIyOTg1fQ.nMpwX3GnxNWIKh_GzNcraQcfMDY-YQ8XB0V5QF14III"
+    },
+    {
+      "id": 5,
+      "refreshToken": ""
+    },
+    {
+      "id": 6,
+      "refreshToken": ""
+    },
+    {
+      "id": 5,
+      "refreshToken": ""
+    },
+    {
+      "id": 6,
       "refreshToken": ""
     }
   ]
