@@ -34,45 +34,53 @@ module.exports = {
   },
 
   checkPermission: async (req, res, next) => {
-    if (req.valid) {
-      const userid = parseInt(req.params.userid, 10);
+    try {
+      if (req.valid) {
+        const userid = parseInt(req.params.userid, 10);
 
-      if (R.isNil(userid)) {
-        next(createErr(400, 'BAD REQUEST'));
-        return;
-      }
+        if (R.isNil(userid)) {
+          next(createErr(400, 'BAD REQUEST'));
+          return;
+        }
 
-      req.params.userid = userid;
+        req.params.userid = userid;
 
-      const filterUser = await db
-        .get('users')
-        .find({ id: userid })
-        .value();
+        const filterUser = await db
+          .get('users')
+          .find({ id: userid })
+          .value();
 
-      if (R.isNil(filterUser)) {
-        next(createErr(400, 'BAD REQUEST'));
-        return;
-      }
+        if (R.isNil(filterUser)) {
+          next(createErr(400, 'BAD REQUEST'));
+          return;
+        }
 
-      if (
-        R.and(
-          !R.equals(filterUser.email, req.user.email),
-          !R.equals(req.user.role, 'admin'),
-        )
-      ) {
-        next(createErr(401, 'UNAUTHORIZED'));
-        return;
-      }
+        if (
+          R.and(
+            !R.equals(filterUser.email, req.user.email),
+            !R.equals(req.user.role, 'admin'),
+          )
+        ) {
+          next(createErr(401, 'UNAUTHORIZED'));
+          return;
+        }
 
-      req.userid = req.params.userid;
+        req.userid = req.params.userid;
 
-      next();
-    } else next(createErr(400, 'BAD REQUEST'));
+        next();
+      } else next(createErr(400, 'BAD REQUEST'));
+    } catch (err) {
+      next(createErr(401, 'UNAUTHORIZED'));
+    }
   },
 
   isAdmin: (req, res, next) => {
-    if (R.equals(req.user.role, 'admin')) {
-      next();
-    } else next(createErr(401, 'UNAUTHORIZED'));
+    try {
+      if (R.equals(req.user.role, 'admin')) {
+        next();
+      } else next(createErr(401, 'UNAUTHORIZED'));
+    } catch (err) {
+      next(createErr(401, 'UNAUTHORIZED'));
+    }
   },
 };
