@@ -42,6 +42,17 @@ function Login() {
     }
   };
 
+  const hadleResetToken = async () => {
+    try {
+      const refreshToken = localStorage.getItem("refreshToken");
+      if (!refreshToken) throw new Error("Can't get refreshToken");
+      const res = await loginApi.patch(refreshToken);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="w-screen h-screen relative flex justify-center items-center font-robotoS">
       <img className="h-full w-full absolute object-cover" src={loginBg} />
@@ -116,6 +127,12 @@ function Login() {
           </a>
         </div>
         <div className="self-end flex justify-center items-center gap-4 mt-3 md:mt-0">
+          <button
+            onClick={hadleResetToken}
+            className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out"
+          >
+            Reset Token
+          </button>
           <Link to="/sign-up">
             <button className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out">
               Sign up

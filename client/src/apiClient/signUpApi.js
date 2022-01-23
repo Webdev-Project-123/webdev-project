@@ -4,7 +4,7 @@ const signUpApi = {
   post(request) {
     const url = "/api/auth/sign-up";
     return axiosClient.post(url, request, {
-      Headers: {
+      headers: {
         "content-type": "application/json",
       },
     });
