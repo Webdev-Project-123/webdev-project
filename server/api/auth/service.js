@@ -163,7 +163,7 @@ module.exports = {
         };
       } catch (error) {
         return {
-          statusCode: 403,
+          statusCode: 401,
           msg: 'UNAUTHORIZED',
         };
       }
