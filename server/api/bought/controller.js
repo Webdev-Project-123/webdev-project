@@ -1,15 +1,13 @@
-const boughtService = require('./service');
+const R = require('ramda');
 const createErr = require('http-errors');
+const boughtService = require('./service');
 
 module.exports = {
   boughtInfo: async (req, res, next) => {
-    const DTO = await boughtService.boughtInfo(req, res, next);
-    const stt = DTO.statusCode ? DTO.statusCode : 500;
-    if (stt === 400) next(createErr(404, 'PAGE NOT FOUND'));
-    res.status(stt).json({
-      statusCode: stt,
-      msg: DTO.msg,
-      list: DTO.list,
-    });
+    const DTO = await boughtService.boughtInfo(req.userid);
+
+    if (R.equals(DTO.status, 200)) {
+      res.status(200).json(DTO);
+    } else next(createErr(503, 'SERVICE UNAVAILABLE'));
   },
 };

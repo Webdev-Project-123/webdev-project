@@ -10,7 +10,9 @@ module.exports = {
       return;
     }
 
-    const token = R.split(' ')(req.headers.authorization)[1];
+    const token = R.split(' ')(
+      req.headers.authorization,
+    )[1];
 
     if (R.isNil(token)) {
       next(createErr(401, 'UNAUTHORIZED'));
@@ -66,7 +68,7 @@ module.exports = {
 
   isAdmin: (req, res, next) => {
     if (R.equals(req.user.role, 'admin')) {
-      next(createErr(401, 'UNAUTHORIZED'));
-    } else next();
+      next();
+    } else next(createErr(401, 'UNAUTHORIZED'));
   },
 };
