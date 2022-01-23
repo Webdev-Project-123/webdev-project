@@ -37,7 +37,7 @@ module.exports = {
         password: hashPassword,
         phone: '',
         address: '',
-        avatar: '',
+        avatar: 'https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg',
         role: 'user',
         cart: [],
         bought: [],
@@ -118,7 +118,7 @@ module.exports = {
       return {
         statusCode: 500,
         msg: 'Error in login',
-      }
+      };
     }
   },
 
@@ -146,7 +146,7 @@ module.exports = {
         const emails = await db.get('users').find({ id: users.id }).value();
         if (!emails || result.email !== emails.email) {
           return {
-            statusCode: 403,
+            statusCode: 401,
             msg: 'UNAUTHORIZED',
           };
         }

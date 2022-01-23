@@ -58,7 +58,6 @@ module.exports = {
         if (
           R.and(
             !R.equals(filterUser.email, req.user.email),
-            !R.equals(req.user.role, 'admin'),
           )
         ) {
           next(createErr(401, 'UNAUTHORIZED'));

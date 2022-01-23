@@ -3,7 +3,7 @@ const db = require('../../models/db');
 module.exports = {
   boughtInfo: async (req, res, next) => {
     try {
-      const list = db.get('users').find({ id: req.userid }).value();
+      const list = await db.get('users').find({ id: req.userid }).value();
       return {
         error: false,
         statusCode: 200,

@@ -12,7 +12,7 @@ module.exports = {
         statusCode: DTO.statusCode,
       });
     } catch {
-      res.status.json({
+      res.status(500).json({
         statusCode: 500,
         msg: 'Error in signup',
       });
@@ -29,7 +29,7 @@ module.exports = {
         statusCode: DTO.statusCode,
       });
     } catch {
-      res.status.json({
+      res.status(500).json({
         statusCode: 500,
         msg: 'Error in login',
       });
@@ -45,7 +45,7 @@ module.exports = {
         statusCode: DTO.statusCode,
       });
     } catch {
-      res.status.json({
+      res.status(500).json({
         statusCode: 500,
         msg: 'Error in token',
       });
