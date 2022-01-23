@@ -40,7 +40,7 @@ module.exports = {
       const products = await db.get('products').value();
 
       // * parse the body
-      const product = parseObject(body);
+      const product = await parseObject(body);
 
       // * Get the last product
       const lastProduct = await R.last(products);
