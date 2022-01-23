@@ -3,8 +3,8 @@ import Component2 from "./Component2";
 import Average from "./Average"
 import SumStar from "./SumStar";
 function Detail(props) {
-  let avg=SumStar();
-  console.log(avg);
+  // let avg=SumStar();
+  // console.log(avg);
     return (
       <div className="">
           <div>
