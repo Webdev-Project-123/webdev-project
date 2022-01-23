@@ -35,10 +35,10 @@ function Upload({ setPopUs, popUp }) {
       ref={bgDisabled}
       className="absolute overflow-x-hidden z-50 top-0 left-0 w-screen h-screen bg-[rgba(0,0,0,0.6)] flex justify-center items-center"
     >
-      <div className="relative w-4/5 h-[90%] bg-[#eee] shadow-phuongProfile rounded-md flex justify-center items-center">
+      <div className="relative md:w-4/5 w-[90%] lg:h-[90%] h-[60%] bg-[#eee] shadow-phuongProfile rounded-md flex justify-center items-center">
         <button
           onClick={() => setPopUs((prev) => !prev)}
-          className="absolute top-5 right-5 text-[#3d1d1d] hover:text-[#a13a3a]"
+          className="absolute top-5 right-5 z-10 text-[#3d1d1d] hover:text-[#a13a3a]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,14 +56,23 @@ function Upload({ setPopUs, popUp }) {
           </svg>
         </button>
         {!avatar ? (
-          <div>
+          <div className="w-4/5 h-3/5 flex justify-center items-center border-dashed border border-slate-400">
             <input
+              id="file"
               type="file"
-              className=""
+              className="hidden"
               accept="image/png, image/jpg, iamge/jpeg"
               onChange={handleOnUpload}
             />
-            <button>Choose file</button>
+            <button
+              onClick={() => {
+                const file = document.getElementById("file");
+                file.click();
+              }}
+              className="md:w-1/5 w-1/3 h-[10%] bg-red-200 border-none outline-none rounded-md"
+            >
+              Choose file
+            </button>
           </div>
         ) : (
           <div className="w-3/5 h-3/5 flex justify-center items-center flex-col text-xl gap-5">
@@ -72,12 +81,13 @@ function Upload({ setPopUs, popUp }) {
               <img
                 src={avatar?.preview}
                 className="w-full h-full object-cover"
+                alt=""
               />
             </div>
-            <div className="w-full h-auto flex justify-center items-center gap-[100px] mb-7">
+            <div className="w-full h-auto flex justify-center items-center gap-[30px] md:gap-[100px] mb-7">
               <button
                 onClick={handleUploadAgain}
-                className="min-w-[180px] w-fit px-3 py-2 h-auto min-h-[40px] relative bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all"
+                className="md:min-w-[180px] min-w-[130px] md:text-xl text-sm w-fit xsm:px-3 xsm:py-2 h-auto min-h-[40px] relative bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all"
               >
                 <span className="absolute top-1/2 left-1/2 w-full py-2 -translate-x-1/2 -translate-y-1/2 z-50">
                   Upload another
@@ -85,7 +95,7 @@ function Upload({ setPopUs, popUp }) {
               </button>
               <button
                 onClick={handleSubmit}
-                className="min-w-[180px] w-fit px-3 py-2 h-auto min-h-[40px] relative bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all"
+                className="md:min-w-[180px] min-w-[130px] md:text-xl text-sm w-fit xsm:px-3 xsm:py-2 h-auto min-h-[40px] relative bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all"
               >
                 <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
                   Submit

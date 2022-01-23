@@ -2,11 +2,13 @@ import axios from "axios";
 import queryString from "query-string";
 
 const axiosClient = axios.create({
-  baseURL: "",
-  headers: {
-    // "current-type": "application/json-patch+json",
-  },
-  paramsSerializer: (param) => queryString.stringify(param),
+  // baseURL: "https://wordy-library.vercel.app/api/",
+  baseURL: "http://localhost:5000/",
+  // baseURL: "https://b05f-14-250-169-69.ngrok.io",
+  // headers: {
+  //   "current-type": "json",
+  // },
+  // paramsSerializer: (param) => queryString.stringify(param),
 });
 
 axiosClient.interceptors.request.use(
@@ -26,13 +28,10 @@ axiosClient.interceptors.response.use(
   function (res) {
     if (res && res.data) {
       return res.data;
-    } else
-      return {
-        res,
-      };
+    } else return res;
   },
   function (err) {
-    return Promise.reject(err);
+    throw err;
   }
 );
 

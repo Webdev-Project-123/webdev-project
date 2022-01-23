@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import signUpBg from "./Image/signUpBg.jpg";
+import signUpApi from "../apiClient/signUpApi";
 
 function SignUp() {
   const [input, setInput] = useState({
     password: "",
     confirmPass: "",
     email: "",
-    phone: "",
+    name: "",
   });
 
   const inputStyle =
@@ -19,7 +20,6 @@ function SignUp() {
   const handleOnChange = (e) => {
     const newInput = { ...input };
     newInput[e.target.name] = e.target.value;
-    console.log(newInput);
     if (e.target.name === "confirmPass" || e.target.name === "password") {
       if (newInput.confirmPass !== newInput.password) {
         document.getElementById("confirmPass").classList.remove("opacity-0");
@@ -36,7 +36,19 @@ function SignUp() {
     document.getElementById("confirmPass").classList.add("opacity-0");
   }, []);
 
-  const handleOnSignUp = () => {};
+  const handleSignUp = async () => {
+    try {
+      const res = await signUpApi.post({
+        email: input.email,
+        password: input.password,
+        name: input.name,
+      });
+
+      console.log(res);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const handlePreventDefalut = (e) => {
     e.stopPropagation();
@@ -121,7 +133,7 @@ function SignUp() {
               <Input
                 type={"password"}
                 name="password"
-                placeholder={"Mật khẩu"}
+                placeholder={"Password"}
                 onChange={handleOnChange}
                 value={input.password}
                 className={inputStyle}
@@ -148,7 +160,7 @@ function SignUp() {
               <Input
                 type={"password"}
                 name="confirmPass"
-                placeholder={"Xác nhận mật khẩu"}
+                placeholder={"Confirm your password"}
                 onChange={handleOnChange}
                 value={input.confirmPass}
                 className={inputStyle}
@@ -173,13 +185,13 @@ function SignUp() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
                 />
               </svg>
               <Input
-                type={"tel"}
-                name="phone"
-                placeholder={"Số điện thoại"}
+                type={"text"}
+                name="name"
+                placeholder={"Your name"}
                 onChange={handleOnChange}
                 value={input.phone}
                 className={inputStyle}
@@ -202,7 +214,10 @@ function SignUp() {
               </a>
             </div>
             {/*  */}
-            <button className="relative border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right font-bold active:translate-y-1 before:absolute before:w-0 before:h-full before:left-0 before:bottom-0 hover:before:w-full before:bg-[#fa8947] before:transition-all before:ease-in-out">
+            <button
+              onClick={handleSignUp}
+              className="relative border-none outline-none w-[100px] h-[40px] bg-[#e7b56e] text-[#47392b] shadow-phuongCustom active:shadow-phuongCustomActive rounded-md float-right font-bold active:translate-y-1 before:absolute before:w-0 before:h-full before:left-0 before:bottom-0 hover:before:w-full before:bg-[#fa8947] before:transition-all before:ease-in-out"
+            >
               <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
                 Sign up
               </span>
