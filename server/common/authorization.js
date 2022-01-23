@@ -5,27 +5,31 @@ const db = require('../models/db');
 
 module.exports = {
   isValid: async (req, res, next) => {
-    if (R.isNil(req.headers.authorization)) {
+    try {
+      if (R.isNil(req.headers.authorization)) {
+        next(createErr(401, 'UNAUTHORIZED'));
+        return;
+      }
+
+      const token = R.split(' ')(
+        req.headers.authorization,
+      )[1];
+
+      if (R.isNil(token)) {
+        next(createErr(401, 'UNAUTHORIZED'));
+      } else {
+        const user = await jwt.verify(
+          token,
+          process.env.ACCESS_TOKEN_SECRET,
+        );
+
+        req.user = user;
+        req.valid = true;
+
+        next();
+      }
+    } catch (err) {
       next(createErr(401, 'UNAUTHORIZED'));
-      return;
-    }
-
-    const token = R.split(' ')(
-      req.headers.authorization,
-    )[1];
-
-    if (R.isNil(token)) {
-      next(createErr(401, 'UNAUTHORIZED'));
-    } else {
-      const user = await jwt.verify(
-        token,
-        process.env.ACCESS_TOKEN_SECRET,
-      );
-
-      req.user = user;
-      req.valid = true;
-
-      next();
     }
   },
 
