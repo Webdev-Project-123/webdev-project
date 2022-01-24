@@ -12,7 +12,12 @@ module.exports = {
       } else res.status(200).json(DTO);
     } catch (err) {
       next(
-        createErr(500, 'INTERNAL UPLOAD VIEW METHOD ERROR'),
+        createErr(
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL UPLOAD VIEW METHOD ERROR'
+            : R.toUpper(err.message),
+        ),
       );
     }
   },
@@ -27,7 +32,12 @@ module.exports = {
       res.status(200).json(DTO);
     } catch (err) {
       next(
-        createErr(500, 'INTERNAL UPLOAD ADD METHOD ERROR'),
+        createErr(
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL UPLOAD ADD METHOD ERROR'
+            : R.toUpper(err.message),
+        ),
       );
     }
   },
@@ -40,8 +50,10 @@ module.exports = {
     } catch (err) {
       next(
         createErr(
-          500,
-          'INTERNAL UPLOAD DELETE METHOD ERROR',
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL UPLOAD DELETE METHOD ERROR'
+            : R.toUpper(err.message),
         ),
       );
     }
