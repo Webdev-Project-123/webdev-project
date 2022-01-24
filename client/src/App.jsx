@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import Detail from "./DetailProduct/Detail"
 import Header from "./Home/Header"
@@ -50,40 +49,6 @@ function App() {
      <Detail product={item} />
      {/* <Footer/> */}
     </div>
-=======
-import React, { useState } from "react";
-import SignUp from "./Person/SignUp";
-import Login from "./Person/Login";
-import Profile from "./Person/Profile";
-import Home from "./Home/Home";
-import AddProduct from "./Person/Admin/AddProduct";
-import ProductPage from "./ProductPage/ProductPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SearchPage from "./SearchPage/SearchPage";
-import { SearchContext } from "./SearchPage/SearchContext";
-import Bought from "./Bought";
-
-function App() {
-  const [searchValue, setSearchValue] = useState("");
-
-  return (
-    <BrowserRouter>
-      <SearchContext.Provider value={[searchValue, setSearchValue]}>
-        <Routes path="/">
-          <Route index element={<Home />} />
-          <Route path='categories' element={<ProductPage />} />
-          <Route path="categories/:category/" element={<ProductPage />} />
-          <Route path="search/:searchValue/" element={<SearchPage />} />
-          <Route path="login" element={<Login />} />
-          <Route path="sign-up" element={<SignUp />} />
-          <Route path="upload" element={<AddProduct />} />
-          <Route path="/bought" element={<Bought/>} />
-          <Route path="*" />
-        </Routes>
-      </SearchContext.Provider>
-    </BrowserRouter>
-    // <AddProduct />
->>>>>>> 73d4fe702ac726300807643c8a63d6b0fd3d8ab1
   );
 }
 

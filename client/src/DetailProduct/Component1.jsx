@@ -99,7 +99,7 @@ function Component1(props) {
                             </svg>
                             <p className="text-sm ml-[5px]">Return policy:</p>
                             <p className="text-sm ml-[30px] font-semibold">Return products in one month</p>
-                            <a href="#" className="text-base ml-[28px] text-sky-500 font-semibold">Xem thêm</a>
+                            <a href="#" className="text-base ml-[28px] text-sky-500 font-semibold">More informations</a>
                         </div>
                              {/* Delivery */}
                         <div className="mt-[10px] flex flex-wrap items-center" >
@@ -108,7 +108,7 @@ function Component1(props) {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
                             </svg>
                             <p className="text-sm  ml-[5px]">Delivery:</p>
-                            <p className="text-sm ml-[30px] font-semibold">4-7 ngày</p>
+                            <p className="text-sm ml-[30px] font-semibold">4-7 days</p>
                         </div>
                             {/* Selecttion */}
                         <div className="flex flex-wrap mt-[10px] items-center">
