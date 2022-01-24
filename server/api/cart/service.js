@@ -98,7 +98,7 @@ module.exports = {
                     discount: product.discount,
                     quantity: product.quantity,
                     date: `${year}-${month}-${date}`,
-                    image: bookbook.image,
+                    image: bookbook,
                 });
 
                 db.get('users').find({ id: userId }).assign({ bought : bought }).write();
