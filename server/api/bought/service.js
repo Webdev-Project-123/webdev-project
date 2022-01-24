@@ -12,6 +12,7 @@ module.exports = {
           productBoughtPrice: product.discount,
           productBoughtQuantity: product.quantity,
           productBoughtDate: product.date,
+          productImage: product.image,
         });
       });
 
