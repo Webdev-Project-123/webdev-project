@@ -91,11 +91,11 @@ module.exports = {
                 const month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
                 const year = dateObj.getFullYear();
                 bought.push({ 
-                    productID: product.id,
-                    productName: product.title,
-                    productBoughtPrice: product.discount,
-                    productBoughtQuantity: product.quantity,
-                    productBoughtDate: `${year}-${month}-${date}`,
+                    id: product.id,
+                    title: product.title,
+                    discount: product.discount,
+                    quantity: product.quantity,
+                    date: `${year}-${month}-${date}`
                 });
 
                 db.get('users').find({ id: userId }).assign({ bought : bought }).write();
