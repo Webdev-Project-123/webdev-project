@@ -19,7 +19,7 @@ async function sendResetLink(recipient, token) {
     from: '"Wordy" <hlehuy0@gmail.com>',
     to: recipient,
     subject: 'Reset password link',
-    html: `<p>Your reset link: <b>https://localhost:5000/${token}</b><p>`,
+    html: `<p>Your reset link: <b>https://wordy.vercel.app/reset-password/${token}</b><p>`,
   };
 
   const info = await transporter.sendMail(mailOptions);
