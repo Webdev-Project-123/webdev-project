@@ -15,7 +15,7 @@ router.use('/search', search);
 router.use('/products', products);
 router.use('/categories', categories);
 
-router.use(authorize.isValid);
+router.use(['/cart', '/bought', '/upload', '/account'], authorize.isValid);
 router.use('/cart', cart);
 router.use('/bought', bought);
 router.use('/upload', upload);
