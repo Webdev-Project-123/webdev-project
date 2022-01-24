@@ -8,6 +8,7 @@ import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
 import { SearchContext } from "./SearchPage/SearchContext";
+import ResetPassword from "./Person/ResetPassword";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -17,12 +18,14 @@ function App() {
       <SearchContext.Provider value={[searchValue, setSearchValue]}>
         <Routes path="/">
           <Route index element={<Home />} />
-          <Route path='categories' element={<ProductPage />} />
+          <Route path="categories" element={<ProductPage />} />
           <Route path="categories/:category/" element={<ProductPage />} />
           <Route path="search/:searchValue/" element={<SearchPage />} />
           <Route path="login" element={<Login />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="upload" element={<AddProduct />} />
+          <Route path="account/:userid" element={<Profile />} />
+          <Route path="reset-password/:token" element={<ResetPassword />} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>

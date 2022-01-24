@@ -13,7 +13,11 @@ const loginApi = {
     const url = "/api/auth/token";
     return axiosClient.patch(url, request, {
       headers: {
-        "content-type": "application/json",
+        "content-type": "application/x-www-form-urlencoded",
+        "Access-Control-Allow-Origin": "http://localhost:3000",
+        "Access-Control-Allow-Credentials": true,
+        mode: "cors",
+        credentials: "include",
       },
     });
   },
