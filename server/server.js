@@ -23,10 +23,7 @@ app.use(cors());
 const path = require('path');
 
 // * Serving static files in public folder
-app.use(
-  // express.static(path.join(__dirname, '../client/build')),
-  express.static(path.join(__dirname, './public')),
-);
+app.use(express.static(path.join(__dirname, './public')));
 
 // * Load the server
 const port = process.env.PORT || 5000;
@@ -39,11 +36,6 @@ const R = require('ramda');
 
 // * Get homepage
 app.get('/', (req, res) => {
-  // res
-  //   .status(200)
-  //   .sendFile(
-  //     path.join(__dirname, '../client/build/index.html'),
-  //   );
   res.status(200).redirect('homepage/index.html');
 });
 
