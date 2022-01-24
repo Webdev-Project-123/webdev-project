@@ -21,7 +21,7 @@ module.exports = {
       });
 
       if (req.body.avatar) {
-        await user.assign({ avatar: req.file.path }).write();
+        await user.assign({ avatar: req.file.path }).value().write();
       }
 
       return {
