@@ -36,7 +36,7 @@ module.exports = {
   checkPermission: async (req, res, next) => {
     try {
       if (req.valid) {
-        const userid = parseInt(req.params.userid, 10);
+        const userid = parseInt(req.params.userId, 10);
 
         if (R.isNil(userid)) {
           next(createErr(400, 'BAD REQUEST'));
@@ -44,6 +44,7 @@ module.exports = {
         }
 
         req.params.userid = userid;
+        req.params.userId = userid;
 
         const filterUser = await db
           .get('users')
@@ -66,6 +67,7 @@ module.exports = {
         }
 
         req.userid = req.params.userid;
+        req.userId = req.params.userid;
 
         next();
       } else next(createErr(400, 'BAD REQUEST'));
@@ -79,6 +81,48 @@ module.exports = {
       if (R.equals(req.user.role, 'admin')) {
         next();
       } else next(createErr(401, 'UNAUTHORIZED'));
+    } catch (err) {
+      next(createErr(401, 'UNAUTHORIZED'));
+    }
+  },
+
+  checkStrictPermission: async (req, res, next) => {
+    try {
+      if (req.valid) {
+        const userid = parseInt(req.params.userId, 10);
+
+        if (R.isNil(userid)) {
+          next(createErr(400, 'BAD REQUEST'));
+          return;
+        }
+
+        req.params.userid = userid;
+        req.params.userId = userid;
+
+        const filterUser = await db
+          .get('users')
+          .find({ id: userid })
+          .value();
+
+        if (R.isNil(filterUser)) {
+          next(createErr(400, 'BAD REQUEST'));
+          return;
+        }
+
+        if (
+          R.and(
+            !R.equals(filterUser.email, req.user.email),
+          )
+        ) {
+          next(createErr(401, 'UNAUTHORIZED'));
+          return;
+        }
+
+        req.userid = req.params.userid;
+        req.userId = req.params.userid;
+
+        next();
+      } else next(createErr(400, 'BAD REQUEST'));
     } catch (err) {
       next(createErr(401, 'UNAUTHORIZED'));
     }

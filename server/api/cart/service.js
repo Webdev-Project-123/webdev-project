@@ -63,8 +63,6 @@ module.exports = {
     },
     
     cartPurchased: async(userId, list) => {
-        console.log(userId)
-        console.log(list)
         try {
             list.forEach((product) => {
                 let book = db.get("products").find({ id: product.id }).value();
