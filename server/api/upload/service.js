@@ -1,6 +1,7 @@
 const R = require('ramda');
 const db = require('../../models/db');
 const renameKeys = require('../../common/renameKeys');
+const parseObject = require('../../common/parseObject');
 
 module.exports = {
   view: async () => {
@@ -34,9 +35,12 @@ module.exports = {
     }
   },
 
-  add: async (product, url) => {
+  add: async (body, url) => {
     try {
       const products = await db.get('products').value();
+
+      // * parse the body
+      const product = await parseObject(body);
 
       // * Get the last product
       const lastProduct = await R.last(products);
