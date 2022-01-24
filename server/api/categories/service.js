@@ -9,11 +9,11 @@ module.exports = {
 
       // * Filter products by category
       const byCategory = R.compose(
-        R.any(R.equals(R.__, category)),
+        R.any(R.equals(R.__, R.toLower(category))),
         R.map(R.toLower),
         R.prop('categories'),
       );
-      const productsByCategory = R.equals(category, 'all')
+      const productsByCategory = R.equals(R.toLower(category), 'all')
         ? products
         : await R.filter(byCategory)(products);
 
