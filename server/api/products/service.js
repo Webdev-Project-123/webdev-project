@@ -10,7 +10,7 @@ module.exports = {
       // * Highest prices ~ * Hot trend products
       const byHighPrice = R.descend(R.prop('price'));
       const hotProducts = await R.compose(
-        R.take(5),
+        R.take(15),
         R.sort(byHighPrice),
       )(products);
 

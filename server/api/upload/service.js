@@ -63,7 +63,7 @@ module.exports = {
         'productPublishComp',
       ])(body);
 
-      if (yeah) throw yeah;
+      if (!yeah) return { status: 409 };
 
       // * Parse the body
       const product = await parseObject(body);
@@ -114,7 +114,9 @@ module.exports = {
   delete: async (body) => {
     try {
       // * Check if the body has enough key names
-      await hasEnoughKeyNames(['productIds'])(body);
+      const yeah = await hasEnoughKeyNames(['productIds'])(body);
+
+      if (!yeah) return { status: 409 };
 
       const remove = async (productId) => {
         await db

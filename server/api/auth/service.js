@@ -37,7 +37,7 @@ module.exports = {
         password: hashPassword,
         phone: '',
         address: '',
-        avatar: 'https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg',
+        avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Finsider-coub%2Fdefault-avatars-4275c0e41f62&psig=AOvVaw1SAxUQVIHk4alF9RrDZgjF&ust=1643120723657000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIiqoe7LyvUCFQAAAAAdAAAAABAe',
         role: 'user',
         cart: [],
         bought: [],
