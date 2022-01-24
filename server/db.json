@@ -50,12 +50,12 @@
     },
     {
       "id": 5,
-      "name": "admin1 changed",
+      "name": "Nguyen Duc Phuong changed",
       "email": "hentaiz@gmail.com",
       "password": "$2b$10$xZ9EGXdOZtrvUtyHyKbVgO5FU4fgpLVnygiYcWqoa40I2wSVEEX2W",
-      "phone": "09876753762",
-      "address": "3475934958349785",
-      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642911184/DEV/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714_kb8h1l.jpg",
+      "phone": "0123456789 changed",
+      "address": "50D DTD.st changed",
+      "avatar": "https://res.cloudinary.com/dfhbhw84b/image/upload/v1642997818/DEV/wvqvqmj1o2euuqruc9hv.jpg",
       "role": "admin",
       "cart": [],
       "bought": []
@@ -3730,7 +3730,7 @@
     },
     {
       "id": 5,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5ndXllbiBEdWMgYWxvIiwiZW1haWwiOiJoZW50YWl6QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY0Mjk5NzMwNSwiZXhwIjoxNjQzMDgzNzA1fQ.4AR3U5hewDG6XXfNv1E6q9OPz8mD0ORbb9FmLcZVtcg"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMSBjaGFuZ2VkIiwiZW1haWwiOiJoZW50YWl6QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY0Mjk5Nzc3OSwiZXhwIjoxNjQzMDg0MTc5fQ.OKcXtOdg3ekTkTfM6n3ehi-LNEXmv-Upb0XEmgkTuHk"
     },
     {
       "id": 14,
