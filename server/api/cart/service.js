@@ -90,12 +90,15 @@ module.exports = {
                 const date = ("0" + dateObj.getDate()).slice(-2);
                 const month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
                 const year = dateObj.getFullYear();
+
+                let bookbook = db.get("products").find({ id: product.id }).value().image;
                 bought.push({ 
                     id: product.id,
-                    title: product.title,
-                    discount: product.discount,
-                    quantity: product.quantity,
-                    date: `${year}-${month}-${date}`
+                    title: bookbook.title,
+                    discount: bookbook.discount,
+                    quantity: bookbook.quantity,
+                    date: `${year}-${month}-${date}`,
+                    image: bookbook.image,
                 });
 
                 db.get('users').find({ id: userId }).assign({ bought : bought }).write();
