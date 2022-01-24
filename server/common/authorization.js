@@ -109,11 +109,7 @@ module.exports = {
           return;
         }
 
-        if (
-          R.and(
-            !R.equals(filterUser.email, req.user.email),
-          )
-        ) {
+        if (!R.equals(filterUser.email, req.user.email)) {
           next(createErr(401, 'UNAUTHORIZED'));
           return;
         }
