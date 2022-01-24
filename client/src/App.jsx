@@ -8,6 +8,7 @@ import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
 import { SearchContext } from "./SearchPage/SearchContext";
+import Bought from "./Bought";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -23,6 +24,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="upload" element={<AddProduct />} />
+          <Route path="/bought" element={<Bought/>} />
           <Route path="*" />
         </Routes>
       </SearchContext.Provider>
