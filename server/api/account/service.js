@@ -35,4 +35,34 @@ module.exports = {
       };
     }
   },
+  profile: async (email) => {
+    try {
+      const user = await db.get('users').find({ email }).value();
+      console.log(user)
+      if (!user) {
+        return {
+          statusCode: 500,
+          msg: 'Error in profile',
+        };
+      }
+
+      return {
+        statusCode: 200,
+        msg: 'OK',
+        profile: {
+          email,
+          name: user.name,
+          phone: user.phone,
+          address: user.address,
+          avatar: user.avatar,
+          role: user.role,
+        },
+      };
+    } catch {
+      return {
+        statusCode: 500,
+        msg: 'Error in profile',
+      };
+    }
+  },
 };
