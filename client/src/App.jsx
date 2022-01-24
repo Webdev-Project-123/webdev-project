@@ -17,10 +17,9 @@ import { SearchContext } from "./SearchPage/SearchContext";
 import ResetPassword from "./Person/ResetPassword";
 import Bought from "./Bought";
 import { CartContext } from "./GloblalContext/CartContext";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 
 function App() {
-  const [searchValue, setSearchValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [cart, setCart] = useState([]);
 
@@ -30,6 +29,7 @@ function App() {
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart")) || []);
   }, []);
+
   return (
     <BrowserRouter>
       <CartContext.Provider value={[cart, setCart]}>
@@ -39,14 +39,14 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="sign-up" element={<SignUp />} />
             <Route path="account/:userid" element={<Profile />} />
-            <Route path="/:resettoken" element={<ResetPassword />} />
+            <Route path="reset-password/:token" element={<ResetPassword />} />
             <Route path="categories" element={<ProductPage />} />
             <Route path="categories/:category/" element={<ProductPage />} />
             <Route path="search/:searchValue/" element={<SearchPage />} />
-            <Route path="upload" element={<AddProduct />} />
             <Route path="product/:productID" element={<Detail />} />
-            <Route path="reset-password/:token" element={<ResetPassword />} />
-            <Route path="/bought" element={<Bought />} />
+            <Route path="bought/:userID" element={<Bought />} />
+            <Route path="upload/:userID" element={<AddProduct />} />
+            <Route path="search/products?name=" element={<AddProduct />} />
             <Route path="*" />
           </Routes>
         </SearchContext.Provider>
