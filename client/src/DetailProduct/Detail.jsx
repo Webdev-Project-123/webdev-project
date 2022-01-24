@@ -1,6 +1,6 @@
 import Component1 from "./Component1";
 import Component2 from "./Component2";
-import Average from "./Average"
+import Average from "./Average";
 import SumStar from "./SumStar";
 const item = {
   id: 1,
@@ -38,18 +38,18 @@ const item = {
       name: "Thomas Edison",
     },
   ],
-  "categories": ["Design"]
-}
+  categories: ["Design"],
+};
 function Detail() {
-    return (
-      <div className="">
-          <div>
-            <Component1 Component1={item} />
-          </div>
-          <div>
-            <Component2 Component2={item} />
-          </div>
+  return (
+    <div className="">
+      <div>
+        <Component1 Component1={item} />
       </div>
-    );
-  }
-  export default Detail;
+      <div>
+        <Component2 Component2={item} />
+      </div>
+    </div>
+  );
+}
+export default Detail;

@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
-function Upload({ setPopUs, popUp }) {
+function Upload({ setPopUs, popUp, setAvatar, avatar }) {
   const bgDisabled = useRef();
 
-  const [avatar, setAvatar] = useState();
+  // const [avatar, setAvatar] = useState();
 
   useEffect(() => {
     window.onclick = (e) => {
@@ -14,10 +14,6 @@ function Upload({ setPopUs, popUp }) {
     };
   }, []);
 
-  useEffect(() => {
-    return () => avatar && URL.revokeObjectURL(avatar.preview);
-  }, [avatar, popUp]);
-
   const handleOnUpload = (e) => {
     const file = e.target.files[0];
     file.preview = URL.createObjectURL(file);
@@ -25,10 +21,13 @@ function Upload({ setPopUs, popUp }) {
   };
 
   const handleUploadAgain = () => {
+    avatar && URL.revokeObjectURL(avatar.preview);
     setAvatar();
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    setPopUs((prev) => !prev);
+  };
 
   return (
     <div

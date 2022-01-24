@@ -1,9 +1,10 @@
 import axiosClient from "./axiosClient";
 
-const deleteProduct = {
+const deleteProductApi = {
   delete(payload) {
     const url = "/api/upload/delete";
-    return axiosClient.delete(payload, {
+    return axiosClient.delete(url, {
+      data: payload,
       headers: {
         "content-type": "application/json",
       },
@@ -11,4 +12,4 @@ const deleteProduct = {
   },
 };
 
-export default deleteProduct;
+export default deleteProductApi;

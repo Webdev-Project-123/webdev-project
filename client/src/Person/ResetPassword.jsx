@@ -9,11 +9,11 @@ function ResetPassword() {
     confirmNewPassword: "",
   });
 
-  const { token } = useParams();
+  const { resettoken } = useParams();
 
   useEffect(() => {
-    console.log(token);
-  }, [token]);
+    console.log(resettoken);
+  }, [resettoken]);
 
   const inputStyle =
     "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";

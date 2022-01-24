@@ -23,7 +23,10 @@ app.use(cors());
 const path = require("path");
 
 // * Serving static files in public folder
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(
+  // express.static(path.join(__dirname, '../client/build')),
+  express.static(path.join(__dirname, "./public"))
+);
 
 // * Load the server
 const port = process.env.PORT || 5000;
@@ -31,9 +34,17 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
+// * Import ramda module
+const R = require("ramda");
+
 // * Get homepage
 app.get("/", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, "../client/build/index.html"));
+  // res
+  //   .status(200)
+  //   .sendFile(
+  //     path.join(__dirname, '../client/build/index.html'),
+  //   );
+  res.status(200).redirect("homepage/index.html");
 });
 
 // * Import api module, common module
@@ -49,10 +60,14 @@ app.use((req, res) => {
 
 // * The other errors handling
 app.use((err, req, res, next) => {
-  const { statusCode, message } = err;
-  res.status(statusCode || 500).json({
-    status: statusCode || 500,
-    message: message || "INTERNAL SERVER ERROR",
+  const status = err.statusCode || 500;
+  const message = R.isNil(err.message)
+    ? "INTERNAL SERVER ERROR"
+    : R.toUpper(err.message);
+
+  res.status(status).json({
+    status,
+    message,
   });
 });
 

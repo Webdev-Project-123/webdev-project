@@ -2,6 +2,7 @@ const R = require('ramda');
 const db = require('../../models/db');
 const renameKeys = require('../../common/renameKeys');
 const parseObject = require('../../common/parseObject');
+const hasEnoughKeyNames = require('../../common/hasEnoughKeyNames');
 
 module.exports = {
   view: async () => {
@@ -39,7 +40,30 @@ module.exports = {
     try {
       const products = await db.get('products').value();
 
-      // * parse the body
+      // * Check if there is an upload image
+      if (R.isNil(url)) {
+        return new Error(
+          'MISSING UPLOAD IMAGE, MAYBE INTERNAL ERROR',
+        );
+      }
+
+      // * Check if the body has enough key names
+      await hasEnoughKeyNames([
+        'productDesc',
+        'productName',
+        'productPrice',
+        'productPages',
+        'productAuthors',
+        'productInStock',
+        'productLanguage',
+        'productSalePrice',
+        'productCategories',
+        'productUploadDate',
+        'productPublishDate',
+        'productPublishComp',
+      ])(body);
+
+      // * Parse the body
       const product = await parseObject(body);
 
       // * Get the last product
@@ -85,8 +109,11 @@ module.exports = {
     }
   },
 
-  delete: async ({ productIds }) => {
+  delete: async (body) => {
     try {
+      // * Check if the body has enough key names
+      await hasEnoughKeyNames(['productIds'])(body);
+
       const remove = async (productId) => {
         await db
           .get('products')
@@ -94,7 +121,7 @@ module.exports = {
           .write();
       };
 
-      await R.forEach(remove)(productIds);
+      await R.forEach(remove)(body.productIds);
 
       const DTO = {
         status: 200,

@@ -8,103 +8,103 @@ import PaginationPage from './PaginationPage';
 
 const productData = [
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'Chuyển sinh thành giếng nước, tôi trở thành bla bla bla bla blas',
+    title: 'Chuyển sinh thành giếng nước, tôi trở thành bla bla bla bla blas',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   },
   {
-    name: 'IDK',
+    title: 'IDK',
     image: 'https://preview.redd.it/c6rlndlo41851.jpg?width=640&crop=smart&auto=webp&s=f28a8e163c0670c81a77b1c07e498d6b14a60e4d'
   }
 ]
@@ -138,7 +138,7 @@ const ProductPage = () => {
         <div className='text-center text-xl font-bold p-2 rounded-t-lg bg-[#FEA82F]'>{currCategory}</div>
         {/* Product List */}
         <div className='bg-white rounded-b-lg'>
-          <PaginationPage products={currProducts} loading={loading} />
+          <PaginationPage products={currProducts} loading={false} />
         </div>
 
         {/* Pagination Bar */}

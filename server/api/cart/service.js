@@ -64,25 +64,48 @@ module.exports = {
     
     cartPurchased: async(userId, list) => {
         try {
+            list.forEach((product) => {
+                let book = db.get("products").find({ id: product.id }).value();
+                
+                if (book["in-stock"] < product.quantity) 
+                    return {
+                        statusCode: 500,
+                        msg: "In stock is not enough",
+                        name: product.title
+                    }
+            });
+    
             await list.forEach((product) => {
+                //Remove from cart
                 let cart = db.get("users").find({ id: userId }).value().cart;
 
                 let newList = cart.filter((item) => item.id !== product.id);
 
                 db.get('users').find({ id: userId }).assign({ cart : newList }).write();
-            });
             
-            await list.forEach((product) => {
                 let bought = db.get('users').find({ id : userId}).value().bought;
 
+                // Add bought
+                const dateObj = new Date();
+                const date = ("0" + dateObj.getDate()).slice(-2);
+                const month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
+                const year = dateObj.getFullYear();
                 bought.push({ 
                     id: product.id,
                     title: product.title,
                     discount: product.discount,
-                    quantity: product.quantity
+                    quantity: product.quantity,
+                    date: `${year}-${month}-${date}`
                 });
 
                 db.get('users').find({ id: userId }).assign({ bought : bought }).write();
+
+                // Update in stock
+                let book = db.get("products").find({ id: product.id}).value();
+                let temp = book["in-stock"] - product.quantity;
+                db.get('products').find({ id: product.id }).assign({ "in-stock" : temp }).write();
+            
+
             });
 
             return {
