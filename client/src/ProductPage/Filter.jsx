@@ -27,6 +27,7 @@ const Filter = () => {
       </h1>
     </div>
 
+    {/* Drop down list */}
     <div className='md:hidden block'>
       <DropDownList categories={categories} isClicked={isClicked} />
     </div>

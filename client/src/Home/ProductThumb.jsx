@@ -4,6 +4,25 @@ import Rating from "./Rating";
 import { useContext } from "react/cjs/react.development";
 import { CartContext } from "../GloblalContext/CartContext";
 
+export const addToCart = (product, setCart) => {
+  let currCart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  if (!currCart.some(e => e.itemID === product)) {
+    currCart.push({
+      itemID: product,
+      count: 1
+    })
+  } else {
+    currCart.forEach(element => {
+      if (element.itemID === product)
+        element.count++;
+    });
+  }
+
+  localStorage.setItem('cart', JSON.stringify(currCart));
+  setCart(currCart);
+}
+
 const ProductThumb = ({ productData }) => {
 
   // const rating = (ratings) => {
@@ -27,12 +46,7 @@ const ProductThumb = ({ productData }) => {
   };
 
   const [, setCart] = useContext(CartContext);
-  const addToCart = (productID) => {
-    let currCart = JSON.parse(localStorage.getItem('cart')) || [];
-    currCart.push(productID);
-    localStorage.setItem('cart', JSON.stringify(currCart));
-    setCart(currCart);
-  }
+
 
   return <div className='m-2 sm:m-7 md:m-3 lg:m-5 bg-gray-50 rounded-lg transition duration-300 hover:cursor-pointer 
   hover:shadow-tuanProductThumb p-2 sm:my-4 aspect-[0.75]'>
@@ -57,7 +71,7 @@ const ProductThumb = ({ productData }) => {
       </div>
 
       {/* Add to Cart */}
-      <button onClick={() => addToCart(productData.title)} className='absolute bottom-1 right-1 transition duration-300 hover:bg-[#FEA82F] rounded-full p-2'>
+      <button onClick={() => addToCart(productData.title, setCart)} className='absolute bottom-1 right-1 transition duration-300 hover:bg-[#FEA82F] rounded-full p-2'>
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round"
           strokeWidth={1} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>

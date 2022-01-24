@@ -13,9 +13,12 @@ const loginIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fi
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
 </svg>
 
-const cartBadge = (itemsAmount) => {
+const cartBadge = (cart) => {
+  let itemsAmount = cart.reduce((i1, i2) => i1 + i2.count, 0);
+
   if (!itemsAmount)
     return;
+
   return <span className='absolute w-6 leading-6 rounded-full text-xs -top-3 -right-3 bg-white text-orange-500'>
     {itemsAmount < 10 ? itemsAmount : '9+'}
   </span>
@@ -43,12 +46,6 @@ const Header = () => {
 
   const [cart] = useContext(CartContext);
 
-  // let itemsAmount;
-  // useEffect(() => {
-  //   itemsAmount = localStorage.getItem('items-amount')
-  //   console.log(itemsAmount);
-  // }, []);
-
   return <div className="sticky top-0 z-10 shadow-md font-sans flex px-2 sm:px-16 items-center bg-[#FF6701] h-14 font-bold text-white space-x-2" >
     {/* BRAND NAME */}
     <Logo />
@@ -67,7 +64,7 @@ const Header = () => {
           <Link
             to='/cart'
           >
-            {cartBadge(cart.length)}
+            {cartBadge(cart)}
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round"
               strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>

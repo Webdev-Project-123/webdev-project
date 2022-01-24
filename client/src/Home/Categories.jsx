@@ -12,6 +12,8 @@ const Categories = () => {
       return 'category font-semibold text-center md:block hidden';
     if (i > 2)
       return 'category font-semibold text-center sm:block hidden';
+    if (i > 1)
+      return 'category font-semibold text-center xsm:block hidden';
     return 'category font-semibold text-center';
   }
 

@@ -72,8 +72,8 @@ const Footer = () => {
 
     { /* SERVICE & SUPPORT */}
     <h1 className='flex-1 flex flex-wrap md:hidden'>
-      <div className='font-sans font-semibold'>
-        <p className='flex justify-between cursor-pointer md:cursor-default'>
+      <div className='font-sans font-semibold w-[137px]'>
+        <p className='flex justify-between cursor-pointer'>
           SERVICE
         </p>
         <ul className='font-light text-sm cursor-pointer mt-2'>
@@ -82,13 +82,13 @@ const Footer = () => {
           <li >Press & Media</li>
         </ul>
       </div>
-      <div className=' font-sans font-semibold ml-[79px]'>
-        <p className='flex justify-between cursor-pointer md:cursor-default'>
+      <div className=' font-sans font-semibold ml-8'>
+        <p className='flex justify-between cursor-pointer'>
           SUPPORT
         </p>
         <ul className='font-light text-sm cursor-pointer mt-2'>
           <li>How to return</li>
-          <li>Shipping & Delivery</li>
+          <li>Shipping</li>
           <li>How to pay</li>
         </ul>
       </div>
