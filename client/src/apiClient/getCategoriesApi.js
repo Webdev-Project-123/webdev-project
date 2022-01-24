@@ -1,10 +1,10 @@
 import axiosClient from "./axiosClient";
 
 const getProductApi = {
-  get(id) {
-    const url = `/api/products/${id}`;
+  get(name) {
+    const url = `/api/categories/${name}`;
     return axiosClient.get(url, {
-      headers: {
+      header: {
         "content-type": "application/json",
       },
     });

@@ -6,7 +6,7 @@ import Label from "./components/Label";
 import Upload from "./components/Upload";
 import SpanWordy from "./components/SpanWordy";
 import "./Style/custom.css";
-import updateProfile from "../apiClient/updateProfile";
+import updateProfileApi from "../apiClient/updateProfileApi";
 
 function Profile() {
   const [info, setInfo] = useState({
@@ -43,9 +43,11 @@ function Profile() {
       data.append("phone", info.phone);
       data.append("avatar", avatarProfile);
       console.log(avatarProfile);
-      const res = await updateProfile.patch(data);
+      const res = await updateProfileApi.patch(data);
       console.log(res);
+      alert("Update successfull");
     } catch (error) {
+      alert("Update failed");
       console.error(error);
     }
   };
@@ -211,7 +213,7 @@ function Profile() {
               </div>
               <img
                 src={avatarProfile?.preview || avatar}
-                className="w-full h-full rounded-full"
+                className="w-full h-full rounded-full object-contain"
               />
             </div>
             <p className="text-[#fffaee] font-robotoS text-xl first hidden md:block">

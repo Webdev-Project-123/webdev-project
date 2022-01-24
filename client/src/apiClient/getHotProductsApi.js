@@ -1,8 +1,8 @@
 import axiosClient from "./axiosClient";
 
-const getProductAddList = {
+const getHotProductsApi = {
   get(request) {
-    const url = "/api/upload";
+    const url = "/api/products/hot";
     return axiosClient.get(request, {
       headers: {
         "content-type": "application/json",
@@ -11,4 +11,4 @@ const getProductAddList = {
   },
 };
 
-export default getProductAddList;
+export default getHotProductsApi;

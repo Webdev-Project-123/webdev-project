@@ -1,6 +1,6 @@
 import axiosClient from "./axiosClient";
 
-const updateProfile = {
+const updateProfileApi = {
   patch(payload) {
     const url = "/api/account/update";
     return axiosClient.patch(url, payload, {
@@ -15,4 +15,4 @@ const updateProfile = {
   },
 };
 
-export default updateProfile;
+export default updateProfileApi;

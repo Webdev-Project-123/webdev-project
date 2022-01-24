@@ -1,8 +1,8 @@
 import axiosClient from "./axiosClient";
 
-const getProductApi = {
-  get(id) {
-    const url = `/api/products/${id}`;
+const searchProductApi = {
+  get(name) {
+    const url = "/api/search/products?name=${name}";
     return axiosClient.get(url, {
       headers: {
         "content-type": "application/json",
@@ -10,4 +10,5 @@ const getProductApi = {
     });
   },
 };
-export default getProductApi;
+
+export default searchProductApi;

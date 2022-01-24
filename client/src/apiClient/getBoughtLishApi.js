@@ -1,8 +1,8 @@
 import axiosClient from "./axiosClient";
 
-const getProductApi = {
+const getBoughtListApi = {
   get(id) {
-    const url = `/api/products/${id}`;
+    const url = `/api/bought/${id}`;
     return axiosClient.get(url, {
       headers: {
         "content-type": "application/json",
@@ -10,4 +10,5 @@ const getProductApi = {
     });
   },
 };
-export default getProductApi;
+
+export default getBoughtListApi;
