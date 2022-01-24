@@ -1,16 +1,18 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react/cjs/react.development';
 import { SearchContext } from './SearchContext';
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useContext(SearchContext);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
+  // Render search value 
   useEffect(() => {
-    if (window.location.pathname.slice(0, 8) !== '/search/')
+    if (window.location.pathname.slice(0, 16) !== '/search/products')
       return;
-    const pathName = decodeURIComponent(window.location.pathname.slice(8));
+    const pathName = searchParams.get('name');
     setSearchValue(pathName);
   }, []);
 
@@ -18,8 +20,13 @@ const SearchBar = () => {
     e.preventDefault();
     if (!searchValue)
       return;
-    const encoded = encodeURIComponent(searchValue);
-    navigate(`/search/${encoded}`);
+
+    const searchPara = createSearchParams({ name: searchValue });
+
+    navigate({
+      pathname: "/search/product",
+      search: '?' + searchPara
+    })
   }
 
   return <form className="min-w-[170px] border-2 flex rounded-md items-center" onSubmit={handleSubmit}>

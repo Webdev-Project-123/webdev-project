@@ -1,5 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../GloblalContext/CartContext";
+import { isLoginContext } from "../GloblalContext/context";
 import SearchBar from "../SearchPage/SearchBar";
 import { SearchContext } from "../SearchPage/SearchContext";
 import { isLoginContext } from "../GloblalContext/context";
@@ -40,7 +42,6 @@ const loginIcon = (
 
 const cartBadge = (itemsAmount) => {
   if (!itemsAmount) return;
-
   return (
     <span className="absolute w-6 leading-6 rounded-full text-xs -top-3 -right-3 bg-white text-orange-500">
       {itemsAmount < 10 ? itemsAmount : "9+"}
@@ -76,14 +77,19 @@ export const Logo = () => {
   );
 };
 
-const Header = ({ isLogin }) => {
-  const [itemsAmount, setItemsAmount] = useState(0);
-  const addToCart = () => {
-    setItemsAmount((c) => c + 1);
-  };
+const Header = () => {
+  const [isLogin] = useContext(isLoginContext);
+
+  const [cart] = useContext(CartContext);
+
+  // let itemsAmount;
+  // useEffect(() => {
+  //   itemsAmount = localStorage.getItem('items-amount')
+  //   console.log(itemsAmount);
+  // }, []);
 
   return (
-    <div className="shadow-md font-sans flex px-2 sm:px-16 items-center bg-[#FF6701] h-14 font-bold text-white space-x-2">
+    <div className="sticky top-0 z-10 shadow-md font-sans flex px-2 sm:px-16 items-center bg-[#FF6701] h-14 font-bold text-white space-x-2">
       {/* BRAND NAME */}
       <Logo />
 
@@ -92,6 +98,37 @@ const Header = ({ isLogin }) => {
         <SearchBar />
       </div>
 
+      {/* CART AND LOGIN/ACCOUNT ICONS*/}
+      <nav className="flex-1">
+        <div className="flex items-center justify-end gap-3 sm:gap-8">
+          <button className="relative">
+            <Link to="/cart">
+              {cartBadge(cart.length)}
+              <svg
+                className="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </Link>
+          </button>
+
+          {/* Login/Account */}
+          <button>
+            <Link to={isLogin ? "/user" : "/login"}>
+              {isLogin ? userIcon : loginIcon}
+            </Link>
+          </button>
+        </div>
+      </nav>
       {/* CART AND LOGIN/ACCOUNT ICONS*/}
       <nav className="flex-1">
         <div className="flex items-center justify-end gap-3 sm:gap-8">

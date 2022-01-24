@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import Footer from '../Home/Footer';
 import Header from '../Home/Header';
 import ProductThumb from '../Home/ProductThumb';
-import { SearchContext } from './SearchContext';
 
 const productData = [
   {
@@ -111,14 +110,13 @@ const productData = [
 ]
 
 const SearchPage = () => {
-  const [searchValue] = useContext(SearchContext);
   const [searchTitle, setSearchTitle] = useState('');
-  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    const pathName = decodeURIComponent(window.location.pathname.slice(8));
+    const pathName = searchParams.get('name');
     setSearchTitle(pathName);
-  }, [navigate])
+  }, [searchParams.get('name')])
 
   return <div className='bg-[#FCECDD] '>
     <Header />
