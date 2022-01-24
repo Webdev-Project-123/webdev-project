@@ -48,7 +48,7 @@ module.exports = {
       }
 
       // * Check if the body has enough key names
-      await hasEnoughKeyNames([
+      const yeah = await hasEnoughKeyNames([
         'productDesc',
         'productName',
         'productPrice',
@@ -62,6 +62,8 @@ module.exports = {
         'productPublishDate',
         'productPublishComp',
       ])(body);
+
+      if (yeah) throw yeah;
 
       // * Parse the body
       const product = await parseObject(body);
