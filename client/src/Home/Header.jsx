@@ -5,6 +5,23 @@ import { isLoginContext } from "../GloblalContext/context";
 import SearchBar from "../SearchPage/SearchBar";
 import { SearchContext } from "../SearchPage/SearchContext";
 
+const addIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-7 w-7"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
+
 const userIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +35,23 @@ const userIcon = (
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+    />
+  </svg>
+);
+
+const logoutIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-7 w-7"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
     />
   </svg>
 );
@@ -77,9 +111,15 @@ export const Logo = () => {
 };
 
 const Header = () => {
-  const [isLogin] = useContext(isLoginContext);
+  const [isLogin, setIsLogin] = useContext(isLoginContext);
 
   const [cart] = useContext(CartContext);
+
+  let userID;
+
+  useEffect(() => {
+    userID = localStorage.getItem("userID");
+  });
 
   return (
     <div className="sticky top-0 z-10 shadow-md font-sans flex px-2 sm:px-16 items-center bg-[#FF6701] h-14 font-bold text-white space-x-2">
@@ -95,7 +135,7 @@ const Header = () => {
       <nav className="flex-1">
         <div className="flex items-center justify-end gap-3 sm:gap-8">
           <button className="relative">
-            <Link to="/cart">
+            <Link to={isLogin ? `/cart` : "/login"}>
               {cartBadge(cart.length)}
               <svg
                 className="w-7 h-7"
@@ -113,12 +153,27 @@ const Header = () => {
               </svg>
             </Link>
           </button>
-
+          {/* ADD PRODUCT */}
+          <button>
+            <Link to={isLogin ? `/account/${userID}` : "/login"}>
+              {addIcon}
+            </Link>
+          </button>
           {/* Login/Account */}
           <button>
-            <Link to={isLogin ? "/user" : "/login"}>
+            <Link to={isLogin ? `/account/${userID}` : "/login"}>
               {isLogin ? userIcon : loginIcon}
             </Link>
+          </button>
+          <button
+            onClick={() => {
+              localStorage.removeItem("accessToken");
+              localStorage.removeItem("refreshToken");
+              localStorage.removeItem("userID");
+              setIsLogin((prev) => false);
+            }}
+          >
+            <Link to="/">{logoutIcon}</Link>
           </button>
         </div>
       </nav>

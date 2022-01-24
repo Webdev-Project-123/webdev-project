@@ -18,6 +18,7 @@ import ResetPassword from "./Person/ResetPassword";
 import Bought from "./Bought";
 import { CartContext } from "./GloblalContext/CartContext";
 import { useEffect } from "react";
+import NoMatch from "./NoMatch";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -47,7 +48,7 @@ function App() {
             <Route path="bought/:userID" element={<Bought />} />
             <Route path="upload/:userID" element={<AddProduct />} />
             <Route path="search/products?name=" element={<AddProduct />} />
-            <Route path="*" />
+            <Route path="nomatch" element={<NoMatch />} />
           </Routes>
         </SearchContext.Provider>
       </CartContext.Provider>
