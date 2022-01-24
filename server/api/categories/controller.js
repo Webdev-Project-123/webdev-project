@@ -15,8 +15,10 @@ module.exports = {
     } catch (err) {
       next(
         createErr(
-          500,
-          'INTERNAL CATEGORIES GET METHOD ERROR',
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL CATEGORIES GET METHOD ERROR'
+            : R.toUpper(err.message),
         ),
       );
     }
