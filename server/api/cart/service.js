@@ -95,7 +95,7 @@ module.exports = {
                     productName: product.title,
                     productBoughtPrice: product.discount,
                     productBoughtQuantity: product.quantity,
-                    productBoughtData: `${year}-${month}-${date}`,
+                    productBoughtDate: `${year}-${month}-${date}`,
                 });
 
                 db.get('users').find({ id: userId }).assign({ bought : bought }).write();
