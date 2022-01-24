@@ -23,14 +23,10 @@ app.use(cors());
 const path = require("path");
 
 // * Serving static files in public folder
-<<<<<<< HEAD
-app.use(express.static(path.join(__dirname, "../client/build")));
-=======
 app.use(
   // express.static(path.join(__dirname, '../client/build')),
-  express.static(path.join(__dirname, './public')),
+  express.static(path.join(__dirname, "./public"))
 );
->>>>>>> origin/server
 
 // * Load the server
 const port = process.env.PORT || 5000;
@@ -39,18 +35,13 @@ app.listen(port, () => {
 });
 
 // * Get homepage
-<<<<<<< HEAD
 app.get("/", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, "../client/build/index.html"));
-=======
-app.get('/', (req, res) => {
   // res
   //   .status(200)
   //   .sendFile(
   //     path.join(__dirname, '../client/build/index.html'),
   //   );
-  res.status(200).redirect('homepage/index.html');
->>>>>>> origin/server
+  res.status(200).redirect("homepage/index.html");
 });
 
 // * Import api module, common module
