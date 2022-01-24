@@ -8,23 +8,32 @@ import ProductPage from "./ProductPage/ProductPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage/SearchPage";
 import { SearchContext } from "./SearchPage/SearchContext";
+import { CartContext } from "./GloblalContext/CartContext";
+import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
+  const [cart, setCart] = useState([]);
 
+  {/* Init cart */ }
+  useEffect(() => {
+    setCart(JSON.parse(localStorage.getItem('cart')) || []);
+  }, [])
   return (
     <BrowserRouter>
-      <SearchContext.Provider value={[searchValue, setSearchValue]}>
-        <Routes path="/">
-          <Route index element={<Home />} />
-          <Route path='categories' element={<ProductPage />} />
-          <Route path="categories/:category/" element={<ProductPage />} />
-          <Route path="search/:searchValue/" element={<SearchPage />} />
-          <Route path="login" element={<Login />} />
-          <Route path="sign-up" element={<SignUp />} />
-          <Route path="*" />
-        </Routes>
-      </SearchContext.Provider>
+      <CartContext.Provider value={[cart, setCart]}>
+        <SearchContext.Provider value={[searchValue, setSearchValue]}>
+          <Routes path="/">
+            <Route index element={<Home />} />
+            <Route path='categories' element={<ProductPage />} />
+            <Route path="categories/:category/" element={<ProductPage />} />
+            <Route path="search/:searchValue/" element={<SearchPage />} />
+            <Route path="login" element={<Login />} />
+            <Route path="sign-up" element={<SignUp />} />
+            <Route path="*" />
+          </Routes>
+        </SearchContext.Provider>
+      </CartContext.Provider>
     </BrowserRouter>
     // <AddProduct />
   );

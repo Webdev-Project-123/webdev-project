@@ -8,6 +8,9 @@ import Categories from "./Categories";
 import ProductThumb from "./ProductThumb";
 import '../index.css';
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import Spinner from "../ProductPage/Spinner";
 
 const banners = [
   "https://gamepress.gg/arknights/sites/arknights/files/2021-07/EunectesBannerRerun_0.jpeg",
@@ -69,6 +72,23 @@ const slider = () => {
 }
 
 const Home = () => {
+  const [hotDeal, setHotDeal] = useState();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get('https://fakestoreapi.com/products');
+        setHotDeal(res);
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    fetchData();
+  }, [])
 
   return <div className="bg-[#FCECDD]">
     <Header />
@@ -102,8 +122,9 @@ const Home = () => {
       <h1 className="py-2 text-xl rounded-t-lg text-center font-extrabold bg-[#FEA82F]">
         HOT DEALS!
       </h1>
-      <div className="hot-deal">
-        {productData.map((data, index) =>
+      <div className={loading ? 'flex mt-2 justify-center' : "hot-deal"}>
+        {loading && <Spinner />}
+        {hotDeal && hotDeal.data.map((data, index) =>
           <ProductThumb key={index} productData={data} />
         )}
       </div>
@@ -115,8 +136,11 @@ const Home = () => {
         <p className='font-robotoS font-extrabold text-lg sm:text-3xl text-[#FF6701]'>Sign up for our Newsletter</p>
         <p className='text-xs sm:text-base'>Tell us what books you love.</p>
       </div>
-      <button className="ml-4 w-1/4 md:w-1/5 md:ml-6 lg:w-[15%] text-xs sm:text-base font-robotoS font-bold bg-[#FEA82F] p-2 rounded-xl">SIGN UP
-      </button>
+      <Link to='/sign-up' className='text-center ml-4 w-1/4 md:w-1/5 md:ml-6 lg:w-[15%] text-xs sm:text-base bg-[#FEA82F] p-2 rounded-xl'>
+        <button className="font-bold font-robotoS">
+          SIGN UP
+        </button>
+      </Link>
     </div>
 
     <Footer />
