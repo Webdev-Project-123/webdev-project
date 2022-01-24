@@ -3,6 +3,7 @@ import Input from "./components/Input";
 import Label from "./components/Label";
 import signUpBg from "./Image/signUpBg.jpg";
 import signUpApi from "../apiClient/signUpApi";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [input, setInput] = useState({
@@ -11,6 +12,8 @@ function SignUp() {
     email: "",
     name: "",
   });
+
+  const navigate = useNavigate();
 
   const inputStyle =
     "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
@@ -38,14 +41,23 @@ function SignUp() {
 
   const handleSignUp = async () => {
     try {
-      const res = await signUpApi.post({
+      if (
+        !input.email ||
+        !input.password ||
+        !input.name ||
+        input.password !== input.confirmPass
+      )
+        throw new Error("Infomation is not correct or not be filled");
+      const request = {
         email: input.email,
         password: input.password,
         name: input.name,
-      });
-
+      };
+      const res = await signUpApi.post(request);
       console.log(res);
+      navigate("/login");
     } catch (error) {
+      alert("Sign up fail");
       console.error(error);
     }
   };
@@ -79,7 +91,9 @@ function SignUp() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1 className="hidden xsm:block">Home</h1>
+          <Link to="/">
+            <h1 className="hidden xsm:block">Home</h1>
+          </Link>
         </div>
         <div className="flex flex-wrap flex-col justify-center md:gap-[30px] gap-[20px] w-full h-screen md:px-6 lg:px-12 bg-gradient-to-tr to-[#ffffff] via-[#f1b560] from-[#b83602] sm:text-xl px-3">
           <div className="h-auto">
@@ -206,12 +220,14 @@ function SignUp() {
               <span className="mr-2 hidden sm:inline ">
                 Already have account?{" "}
               </span>
-              <a
-                href="#"
-                className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149] "
-              >
-                Login
-              </a>
+              <Link to="/login">
+                <a
+                  href="#"
+                  className="text-[#47392b] rounded-md float-right font-bold mr-5 hover:text-[#be3149] "
+                >
+                  Login
+                </a>
+              </Link>
             </div>
             {/*  */}
             <button

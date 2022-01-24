@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import loginBg from "./Image/loginBg.jpg";
 import loginApi from "../apiClient/loginApi";
+import { isLoginContext } from "../GloblalContext/context";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [input, setInput] = useState({
     email: "",
     password: "",
   });
+
+  const [isLogin, setIsLogin] = useContext(isLoginContext);
+
+  const navigate = useNavigate();
+
+  const inputStyle =
+    "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
+  const labelStyle =
+    "w-full flex justify-center items-center flex-wrap gap-3 text-[#47392b]";
 
   const handleChangeInput = (e) => {
     const newInput = { ...input };
@@ -18,17 +29,29 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = loginApi.post(input);
+      const res = await loginApi.post(input);
+      setIsLogin(true);
+      localStorage.setItem("accessToken", res.accessToken);
+      localStorage.setItem("refreshToken", res.refreshToken);
+      localStorage.setItem("userID", res.id);
+      navigate("/upload");
       console.log(res);
     } catch (error) {
+      alert("Error email or password");
       console.error(error);
     }
   };
 
-  const inputStyle =
-    "peer w-9/10 flex-shirnk-0 flex-grow mb-4 py-2 pr-2 outline-none border-b-2 border-b-[#47392b] placeholder:text-[#47392b] bg-transparent placeholder:text-[#51050F] placeholder:text-[1rem] placeholder:font-robotoS focus:placeholder:text-transparent placeholder:transition-colors placeholder:ease-out";
-  const labelStyle =
-    "w-full flex justify-center items-center flex-wrap gap-3 text-[#47392b]";
+  const hadleResetToken = async () => {
+    try {
+      const refreshToken = localStorage.getItem("refreshToken");
+      if (!refreshToken) throw new Error("Can't get refreshToken");
+      const res = await loginApi.patch(refreshToken);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="w-screen h-screen relative flex justify-center items-center font-robotoS">
@@ -49,7 +72,9 @@ function Login() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <h1>Homer</h1>
+          <Link to="/">
+            <h1>Home</h1>
+          </Link>
         </div>
         <div className="mx-auto flex justify-center items-center gap-2 mt-12 xl:mt-[3rem] md:mt-0 h-auto">
           <h1 className="font-robotoS lg:text-3xl md:text-3xl">
@@ -102,10 +127,21 @@ function Login() {
           </a>
         </div>
         <div className="self-end flex justify-center items-center gap-4 mt-3 md:mt-0">
-          <button className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out">
-            Sign up
+          <button
+            onClick={hadleResetToken}
+            className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out"
+          >
+            Reset Token
           </button>
-          <button className="w-[120px] relative h-10 bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all">
+          <Link to="/sign-up">
+            <button className="relative w-[120px] h-10 before:bg-[#c55d2c] before:bottom-0 before:left-0 before:absolute before:w-full before:scale-0 before:h-[1px] hover:before:scale-100 before:transition-all before:ease-in-out">
+              Sign up
+            </button>
+          </Link>
+          <button
+            onClick={handleLogin}
+            className="w-[120px] relative h-10 bg-[#fcd3ac] rounded-md transition-all ease-linear after:ease-out after:absolute after:bottom-0 after:left-0 after:rounded-md after:w-full after:h-0 after:bg-[#FEA82F] hover:after:h-full after:transition-all"
+          >
             <span className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-50">
               Login
             </span>

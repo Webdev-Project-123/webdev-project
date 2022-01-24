@@ -3,17 +3,13 @@ import queryString from "query-string";
 
 const axiosClient = axios.create({
   // baseURL: "https://wordy-library.vercel.app/api/",
-  baseURL: "http://localhost:5000/",
-  // baseURL: "https://b05f-14-250-169-69.ngrok.io",
-  headers: {
-    "current-type": "json",
-  },
+  baseURL: "http://localhost:5000",
   paramsSerializer: (param) => queryString.stringify(param),
 });
 
 axiosClient.interceptors.request.use(
   function (config) {
-    const accessToken = window.localStorage.getItem("accessToken");
+    const accessToken = localStorage.getItem("accessToken");
     if (accessToken) {
       config.headers.Authorization = `Bearer ${accessToken}`;
     }

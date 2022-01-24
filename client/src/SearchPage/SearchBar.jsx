@@ -1,17 +1,28 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react/cjs/react.development';
 import { SearchContext } from './SearchContext';
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useContext(SearchContext);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (window.location.pathname.slice(0, 8) !== '/search/')
+      return;
+    const pathName = decodeURIComponent(window.location.pathname.slice(8));
+    setSearchValue(pathName);
+  }, []);
+
   const handleSubmit = e => {
-    e.preventDefault()
-    navigate(`/search/${searchValue}`);
+    e.preventDefault();
+    if (!searchValue)
+      return;
+    const encoded = encodeURIComponent(searchValue);
+    navigate(`/search/${encoded}`);
   }
 
-  return <form className="border-2 flex rounded-md items-center" onSubmit={handleSubmit}>
+  return <form className="min-w-[170px] border-2 flex rounded-md items-center" onSubmit={handleSubmit}>
     <input
       value={searchValue}
       onChange={(e) => setSearchValue(e.target.value)}
