@@ -4,9 +4,10 @@ const cartController = require("./controller");
 
 const authorize = require("../../common/authorization");
 
-router.get("/:userId", authorize.checkPermission, cartController.cartInfo);
-router.put("/:userId/add", authorize.checkPermission, cartController.cartAdd);
-router.delete("/:userId/delete", authorize.checkPermission, cartController.cartDelete);
-router.put("/:userId/purchased", authorize.checkPermission, cartController.cartPurchased);
+router.use(authorize.checkPermission);
+router.get("/:userId", cartController.cartInfo);
+router.put("/:userId/add", cartController.cartAdd);
+router.delete("/:userId/delete", cartController.cartDelete);
+router.put("/:userId/purchased", cartController.cartPurchased);
 
 module.exports = router;
