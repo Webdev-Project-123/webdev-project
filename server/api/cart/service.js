@@ -94,9 +94,9 @@ module.exports = {
                 let bookbook = db.get("products").find({ id: product.id }).value().image;
                 bought.push({ 
                     id: product.id,
-                    title: bookbook.title,
-                    discount: bookbook.discount,
-                    quantity: bookbook.quantity,
+                    title: product.title,
+                    discount: product.discount,
+                    quantity: product.quantity,
                     date: `${year}-${month}-${date}`,
                     image: bookbook.image,
                 });
