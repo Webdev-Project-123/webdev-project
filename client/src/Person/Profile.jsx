@@ -6,6 +6,7 @@ import Label from "./components/Label";
 import Upload from "./components/Upload";
 import SpanWordy from "./components/SpanWordy";
 import "./Style/custom.css";
+import updateProfile from "../apiClient/updateProfile";
 
 function Profile() {
   const [info, setInfo] = useState({
@@ -17,11 +18,14 @@ function Profile() {
     role: "admin",
   });
 
+  let data = new FormData();
+
+  const [avatarProfile, setAvatarProfile] = useState();
+
   const [disabled, setDisabled] = useState([false, false, false, false, false]);
 
   const [popUp, setPopUs] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [enableCPass, setEnableCPass] = useState(false);
 
   const inputRef = useRef();
 
@@ -31,6 +35,20 @@ function Profile() {
     "label w-full flex justify-center items-center md:flex-wrap gap-3 text-[#47392b] rounded-md";
 
   const uploadFileRef = useRef();
+
+  const handleSubmitUpdate = async () => {
+    try {
+      data.append("name", info.name);
+      data.append("address", info.address);
+      data.append("phone", info.phone);
+      data.append("avatar", avatarProfile);
+      console.log(avatarProfile);
+      const res = await updateProfile.patch(data);
+      console.log(res);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
     const labelList = document.querySelectorAll(".label");
@@ -95,27 +113,6 @@ function Profile() {
     setInfo(newInfo);
   };
 
-  const handleEnableChangePassword = (e) => {
-    const confirm = window.confirm("Do you want to reset your password?");
-    if (confirm) {
-      const enableList = document.querySelectorAll(".enalble");
-      const labelList = document.querySelectorAll(".label");
-      const inputList = document.querySelectorAll(".input");
-      labelList[2].classList.remove("bg-[#F0ECE3]");
-      inputList[2].classList.remove("border-none");
-
-      setEnableCPass((prev) => !prev);
-
-      setDisabled((prev) => {
-        const newDis = [...prev];
-        return newDis.map((el, index) => {
-          if (index === 2 || index === 1) return false;
-          return true;
-        });
-      });
-    }
-  };
-
   const handleSubmit = () => {
     const labelList = document.querySelectorAll(".label");
     const inputList = document.querySelectorAll(".input");
@@ -136,20 +133,19 @@ function Profile() {
     });
   };
 
-  const handleSubmitPassword = () => {
-    const inputPassword = document.querySelectorAll(".input")[2];
-    const labelPassword = document.querySelectorAll(".label")[2];
-    labelPassword.classList.add("bg-[#F0ECE3]");
-    inputPassword.classList.add("border-none");
-    setEnableCPass((prev) => !prev);
-  };
-
   return (
     <div
       id="bg"
       className="flex w-screen h-screen overflow-x-hidden justify-center items-center lg:py-[3rem] md:py-[7rem] font-robotoS"
     >
-      {popUp && <Upload popUp={popUp} setPopUs={setPopUs} />}
+      {popUp && (
+        <Upload
+          popUp={popUp}
+          setPopUs={setPopUs}
+          setAvatar={setAvatarProfile}
+          avatar={avatarProfile}
+        />
+      )}
       <div className="bg-[#f5f1f1] lg:w-[70%] w-[97%] h-4/5 lg:h-[100%] md:h-[95%] flex flex-col items-center justify-center rounded-md">
         <div className="bg-[#FF8243] w-full lg:h-[23%] h-[15%] md:h-[20%] flex-shrink-0 rounded-t-md flex flex-wrap justify-around items-center">
           <svg
@@ -213,7 +209,10 @@ function Profile() {
                   />
                 </svg>
               </div>
-              <img src={avatar} className="w-full h-full rounded-full" />
+              <img
+                src={avatarProfile?.preview || avatar}
+                className="w-full h-full rounded-full"
+              />
             </div>
             <p className="text-[#fffaee] font-robotoS text-xl first hidden md:block">
               Welcome! Nguyen Duc Phuong
@@ -497,7 +496,10 @@ function Profile() {
             </div>
             <div className="w-full self-center h-[10%] flex justify-center items-center">
               <button
-                onClick={handleSubmit}
+                onClick={() => {
+                  handleSubmitUpdate();
+                  handleSubmit();
+                }}
                 className="w-2/5 h-full bg-[#fdd9a3] md:mt-0 mt-8 rounded-md border-none outline-none relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:bg-[#fc9663] hover:before:scale-100 before:scale-0 before:transition-all before:ease-in-out before:rounded-md shadow-phuongCustom active:translate-y-1 active:shadow-none"
               >
                 <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full flex justify-center items-center">
