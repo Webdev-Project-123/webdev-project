@@ -2,6 +2,8 @@ import Component1 from "./Component1";
 import Component2 from "./Component2";
 import Average from "./Average";
 import SumStar from "./SumStar";
+import Header from "../Home/Header";
+import Footer from "../Home/Footer";
 const item = {
   id: 1,
   "uploaded-date": "2022-02-30",
@@ -43,12 +45,14 @@ const item = {
 function Detail() {
   return (
     <div className="">
+      <Header />
       <div>
         <Component1 Component1={item} />
       </div>
       <div>
         <Component2 Component2={item} />
       </div>
+      <Footer />
     </div>
   );
 }

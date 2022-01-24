@@ -137,7 +137,7 @@ const Header = () => {
       </div>
 
       {/* CART AND LOGIN/ACCOUNT ICONS*/}
-      <nav className="flex-1">
+      <nav className="flex-1 md:block hidden">
         <div className="flex items-center justify-end gap-3 sm:gap-8">
           <button className="relative">
             <Link to={isLogin ? `/cart` : "/login"}>
@@ -171,11 +171,12 @@ const Header = () => {
             </Link>
           </button>
           <button
+            className={!isLogin ? "hidden" : "block"}
             onClick={() => {
               localStorage.removeItem("accessToken");
               localStorage.removeItem("refreshToken");
               localStorage.removeItem("userID");
-              setIsLogin((prev) => false);
+              setIsLogin(false);
             }}
           >
             <Link to="/">{logoutIcon}</Link>

@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import avatar from "./Image/avatar.jpg";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import Upload from "./components/Upload";
 import SpanWordy from "./components/SpanWordy";
+import { isLoginContext } from "../GloblalContext/context";
 import "./Style/custom.css";
 import updateProfileApi from "../apiClient/updateProfileApi";
 
@@ -11,6 +13,8 @@ import Header from "../Home/Header";
 import Footer from "../Home/Footer";
 
 function Profile() {
+  const [isLogin, setIsLogin] = useContext(isLoginContext);
+
   const [info, setInfo] = useState({
     name: "Nguyen Duc Phuong",
     email: "ducphuong@gmail.com",
@@ -19,6 +23,8 @@ function Profile() {
     address: "50D DTD.st",
     role: "admin",
   });
+
+  const navigate = useNavigate();
 
   let data = new FormData();
 
@@ -37,6 +43,10 @@ function Profile() {
     "label w-full flex justify-center items-center md:flex-wrap gap-3 text-[#47392b] rounded-md";
 
   const uploadFileRef = useRef();
+
+  useEffect(() => {
+    if (!isLogin) navigate("/login");
+  }, [isLogin]);
 
   const handleSubmitUpdate = async () => {
     try {

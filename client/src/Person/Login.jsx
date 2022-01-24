@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import ForgotPassword from "./components/ForgotPassword";
@@ -57,7 +57,7 @@ function Login() {
       )}
       <div className="w-screen h-screen relative flex justify-center items-center font-robotoS">
         <img className="h-full w-full absolute object-cover" src={loginBg} />
-        <div className="relative xl:w-2/5 xl:h-3/5 md:w-4/5 md:h-3/5 sm:h-3/5 w-11/12 h-5/6 md:px-10 px-7 bg-[rgb(252,236,221,0.95)] rounded-md flex justify-center gap-5 md:gap-8 flex-col text-[#2b2727] z-10">
+        <div className="relative xl:w-2/5 xl:h-3/5 md:w-4/5 md:h-3/5 sm:h-3/5 w-11/12 min-h-[30rem] h-5/6 md:px-10 px-7 bg-[rgb(252,236,221,0.95)] rounded-md flex justify-center gap-5 md:gap-8 flex-col text-[#2b2727] z-10">
           <div className="absolute top-5 left-5 w-auto h-auto flex group cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
