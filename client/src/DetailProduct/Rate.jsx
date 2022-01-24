@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Rating from "../Home/Rating";
 import CommentPerson from "./CommentPerson";
+import Average from "./Average";
+import SumStar from "./SumStar";
 function Rate(props) {
      if(props.name=="rating")
      {
@@ -18,51 +20,22 @@ function Rate(props) {
 
                     <div className="flex flex-col items-center justify-center lg:ml-[25px]">
                         <div className="flex  items-end text-3xl">
-                            <p className="text-7xl text-yellow-400">4</p>/5
+                            <p className="text-7xl text-yellow-400"> {Average(props.rate["rating"])} </p>/5
                         </div>
                         <div>
-                            <Rating avg={4}/>
+                            <Rating avg={Average(props.rate["rating"])}/>
                         </div>
-                        <p className="text-base text-stone-500">(Have 99 rating)</p>
+                        <p className="text-base text-stone-500">(Have {SumStar(props.rate["rating"])} rating)</p>
                     </div>   
                            
                     {/* Comment */}
 
                     <div className="lg:ml-[100px] md:ml-[25px] mt-[20px]">
-                        {/* person1 */}
-                        <div>
-                            <div className="flex items-center">
-                                <img  className="rounded-full w-[40px]"src="http://daisyui.com/tailwind-css-component-profile-3@56w.png" alt="" />
-                                <p className=" ml-[5px] font-bold text-sky-500">Nguyễn Văn Nguyễn</p>
-                                <div className="ml-[5px]">
-                                 <Rating avg="5"/>
-                                </div>
-                            </div>
-
-                            <div className="ml-[50px]">
-                            <p className="text-xs mt-[-10px] opacity-75">Once week ago</p>
-                            <p className="w-[300px]">Truyện hay lắm mọi người</p>
-                            </div>
-
-                        </div>
-                         {/* person2 */}
-                         <div>
-                            <div className="flex items-center">
-                                <img  className="rounded-full w-[40px]"src="http://daisyui.com/tailwind-css-component-profile-3@56w.png" alt="" />
-                                <p className=" ml-[5px] font-bold text-sky-500">Nguyễn Văn Nguyễn</p>
-                                <div className="ml-[5px]">
-                                 <Rating avg="5"/>
-                                </div>
-                            </div>
-
-                            <div className="ml-[50px]">
-                            <p className="text-xs mt-[-10px] opacity-75">Once week ago</p>
-                            <p className="w-[300px]">Truyện hay lắm mọi người</p>
-                            </div>
-
-                        </div>
-                        {/* Person3 */}
-                        <CommentPerson/>
+                        {
+                                props.rate["comments"].map(comment=>(
+                                    <CommentPerson personComment={comment}/>
+                                ))
+                        }
 
                     </div>
                     {/* CommentRating */}

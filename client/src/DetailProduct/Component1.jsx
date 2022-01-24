@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Rating from "../Home/Rating";
+import Average from "./Average";
+import SumStar from "./SumStar";
 
 function Component1(props) {
-    const number=10;
+    const item=props.Component1;
+    let cart={
+        productID: item["id"],
+        productName: item["title"],
+        productPrice: item["discount"],
+        productQuantity: 0
+    }
+    useEffect(()=>{
+        cart.productQuantity=counts;
+        console.log(cart);
+    })
+    const number=item["in-stock"];
     const [counts, setCounts]=useState(1);
     const handleClick=(number,value)=>{
         if(value>=1 && value<=number)
@@ -19,7 +32,7 @@ function Component1(props) {
                     >
                         <img className="rounded-2xl m-1[0px] lg:h-[400px] lg:w-[450px] h-[340px] w-[340px] shadow-phuongCustomActive shadow-black
                                         lg:hover:h-[450px] lg:hover:w-[500px] lg:hover:rounded-3xl lg:duration-1000
-                        " src="http://daisyui.com/tailwind-css-component-profile-3@56w.png" alt="" srcset="" />
+                        " src={`${item["image"]}`} alt="" srcset="" />
                     </div>
 
                      {/*Detail */}
@@ -31,12 +44,12 @@ function Component1(props) {
                         <h1 
                             className="font-bold text-2xl mt-[20px] font-robotoS"
                         >
-                        Chòm Sao Linh Thú - Tập 2 
+                        {item["title"]}
                         </h1>
                         {/* Star */}
                         <div className="flex mt-2 opacity-50 items-center">
-                            <Rating avg={4}/>
-                            <p className="ml-[10px]">Have 99 rating</p>
+                            <Rating avg={Average( item["rating"] )}/>
+                            <p className="ml-[10px]">Have {SumStar(item["rating"])} rating</p>
                         </div>
                             {/* ShortInformation */}
                         <div className="flex flex-wrap mt-[5px]">
@@ -44,18 +57,18 @@ function Component1(props) {
                             <div>
                                 <div className="flex">
                                      <p className="text-sm mt-[2px]">Supplier:</p>
-                                    <p className="text-base ml-[8px] font-semibold">NXB Kim Đồng</p>
+                                    <p className="text-base ml-[8px] font-semibold">{item["publishing-company"]}</p>
                                 </div>
                                 <div className="flex">
                                      <p className="text-sm mt-[2px]">Company:</p>
-                                    <p className="text-base ml-[8px] font-semibold">NXB Kim Đồng</p>
+                                    <p className="text-base ml-[8px] font-semibold">{item["publishing-company"]}</p>
                                 </div>
                             </div>
                                 {/* in4-2 */}
                             <div className="lg:ml-[50px] sm:ml-0">
                                 <div className="flex">
                                      <p className="text-sm mt-[2px]">Author:</p>
-                                    <p className="text-base ml-[8px] font-semibold">Matsuri Akino</p>
+                                    <p className="text-base ml-[8px] font-semibold">{item["authors"]}</p>
                                 </div>
                                 <div className="flex">
                                      <p className="text-sm mt-[2px]">Types:</p>
@@ -72,9 +85,9 @@ function Component1(props) {
                             <h3 className="ml-[5px]">Price:</h3>
                            <p className="mt-[9px] ml-[10px] opacity-50 line-through
                            ">
-                               {70}$
+                               {item["price"]}$
                            </p>
-                            <p className="text-2xl  text-red-500 font-bold ml-[10px]">{500}$</p>
+                            <p className="text-2xl  text-red-500 font-bold ml-[10px]">{item["discount"]}$</p>
                             <div className="flex items-center lg:ml-[20px] ml-[10px] bg-red-600 text-white px-[8px] py-[15px] rounded-3xl h-[20px] animate-bounce shadow-phuongCustom shadow-slate-500 ">
                                 <p>Super sale</p>
                             </div>
@@ -139,7 +152,7 @@ function Component1(props) {
                                     </svg>
                                 </button>
                             </div>
-                                <p className="text-sm lg:mt-0 mt-[10px] ml-[20px] text-slate-800 font-bold"> Only have {number} products</p>
+                                <p className="text-sm lg:mt-0 mt-[10px] ml-[20px] text-slate-800 font-bold"> Only have {item["in-stock"]} products</p>
                         </div>
                             {/* Add to the cart */}
                             <div className="mt-[20px] justify-center flex text-white h-[50px]">

@@ -36,12 +36,12 @@ function Information(props) {
                     </div>
                         {/* content1 */}
                     <div className=" flex flex-col items-center ml-[10px] ">
-                        <p className="">8935246924402</p>
-                        <p className="mt-[15px]">NXB Hồng Đức</p>
-                        <p className="mt-[15px]">NXB Hồng Đức</p>
-                        <p className="mt-[15px]">Hoàng Ngọc Quỳnh</p>
-                        <p className="mt-[15px]">Tình cảm</p>
-                        <p className="mt-[15px]">English</p>
+                        <p className="">{props.information["id"]}</p>
+                        <p className="mt-[15px]">{props.information["publishing-company"]}</p>
+                        <p className="mt-[15px]">{props.information["publishing-company"]}</p>
+                        <p className="mt-[15px]">{props.information["authors"][0]}</p>
+                        <p className="mt-[15px]">{props.information["categories"][0]}</p>
+                        <p className="mt-[15px]">{props.information["language"]}</p>
                     </div>
                 </div>
                 <div className=" flex lg:min-w-namCustome lg:mt-0 mt-[-16px] bg-white min-w-[360px] p-[20px]  min-h-namCustome h-max rounded-xl">
@@ -71,11 +71,11 @@ function Information(props) {
                         
                     </div>
                     <div className=" flex flex-col items-center ml-[10px] ">
-                        <p className="">2022</p>
+                        <p className="">{props.information["publication-date"]}</p>
                         <p className="flex mt-[15px]">400g</p>
                         <p className="mt-[15px]">20x20</p>
                         <p className="mt-[15px]">Paperback, Hardcover</p>
-                        <p className="mt-[15px]">300</p>
+                        <p className="mt-[15px]">{props.information["pages"]}</p>
                     </div>
                 </div>
 
