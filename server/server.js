@@ -34,6 +34,9 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
+// * Import ramda module
+const R = require('ramda');
+
 // * Get homepage
 app.get('/', (req, res) => {
   // res
@@ -59,10 +62,14 @@ app.use((req, res) => {
 
 // * The other errors handling
 app.use((err, req, res, next) => {
-  const { statusCode, message } = err;
-  res.status(statusCode || 500).json({
-    status: statusCode || 500,
-    message: message || 'INTERNAL SERVER ERROR',
+  const status = err.statusCode || 500;
+  const message = R.isNil(err.message)
+    ? 'INTERNAL SERVER ERROR'
+    : R.toUpper(err.message);
+
+  res.status(status).json({
+    status,
+    message,
   });
 });
 

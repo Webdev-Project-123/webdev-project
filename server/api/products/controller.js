@@ -13,8 +13,10 @@ module.exports = {
     } catch (err) {
       next(
         createErr(
-          500,
-          'INTERNAL PRODUCTS HOT METHOD ERROR',
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL PRODUCTS HOT METHOD ERROR'
+            : R.toUpper(err.message),
         ),
       );
     }
@@ -32,8 +34,10 @@ module.exports = {
     } catch (err) {
       next(
         createErr(
-          500,
-          'INTERNAL PRODUCTS GET METHOD ERROR',
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL PRODUCTS GET METHOD ERROR'
+            : R.toUpper(err.message),
         ),
       );
     }

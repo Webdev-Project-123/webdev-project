@@ -15,8 +15,10 @@ module.exports = {
     } catch (err) {
       next(
         createErr(
-          500,
-          'INTERNAL SEARCH SEARCH METHOD ERROR',
+          err.statusCode || 500,
+          R.isNil(err.message)
+            ? 'INTERNAL SEARCH SEARCH METHOD ERROR'
+            : R.toUpper(err.message),
         ),
       );
     }
