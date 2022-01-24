@@ -36,15 +36,15 @@ function Information(props) {
                     </div>
                         {/* content1 */}
                     <div className=" flex flex-col items-center ml-[10px] ">
-                        <p className="">8935246924402</p>
-                        <p className="mt-[15px]">NXB Hồng Đức</p>
-                        <p className="mt-[15px]">NXB Hồng Đức</p>
-                        <p className="mt-[15px]">Hoàng Ngọc Quỳnh</p>
-                        <p className="mt-[15px]">Tình cảm</p>
-                        <p className="mt-[15px]">English</p>
+                        <p className="">{props.information["id"]}</p>
+                        <p className="mt-[15px]">{props.information["publishing-company"]}</p>
+                        <p className="mt-[15px]">{props.information["publishing-company"]}</p>
+                        <p className="mt-[15px]">{props.information["authors"][0]}</p>
+                        <p className="mt-[15px]">{props.information["categories"][0]}</p>
+                        <p className="mt-[15px]">{props.information["language"]}</p>
                     </div>
                 </div>
-                <div className=" flex lg:min-w-namCustome lg:mt-0 mt-[-16px] bg-white min-w-[360px] p-[20px]  min-h-namCustome h-max rounded-xl">
+                <div className=" flex lg:min-w-namCustome lg:mt-0 md:mt-0 mt-[-16px] bg-white min-w-[360px] p-[20px]  min-h-namCustome h-max rounded-xl">
                     <div className="">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -71,11 +71,11 @@ function Information(props) {
                         
                     </div>
                     <div className=" flex flex-col items-center ml-[10px] ">
-                        <p className="">2022</p>
+                        <p className="">{props.information["publication-date"]}</p>
                         <p className="flex mt-[15px]">400g</p>
-                        <p className="mt-[15px]">20x20</p>
+                        <p className="mt-[15px]">20x20cm</p>
                         <p className="mt-[15px]">Paperback, Hardcover</p>
-                        <p className="mt-[15px]">300</p>
+                        <p className="mt-[15px]">{props.information["pages"]}</p>
                     </div>
                 </div>
 

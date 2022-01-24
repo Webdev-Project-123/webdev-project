@@ -5,6 +5,7 @@ import Rate from "./Rate";
 
 const tabs=["information","description","rating"]
 function Component2(props) {
+    const item2=props.Component2;
     const [tabList,settabList]=useState("information");
     return (
       <div className="h-max bg-[#f1d0b1]">
@@ -29,9 +30,9 @@ function Component2(props) {
                 }
             </div>
             <div className="pb-10">
-                    <Information  name={tabList}/>
-                    <Description  name={tabList}/>
-                    <Rate name={tabList}/>
+                    <Information information={item2} name={tabList}/>
+                    <Description description={item2} name={tabList}/>
+                    <Rate rate={item2} name={tabList}/>
             </div>
 
         </div>

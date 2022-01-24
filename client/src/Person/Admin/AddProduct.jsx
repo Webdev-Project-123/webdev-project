@@ -14,12 +14,12 @@ function AddProduct() {
     productUploadDate: "",
     productPublishComp: "",
     productPublishDate: "",
-    productPrice: 0,
-    productSalePrice: 0,
-    productPages: 0,
+    productPrice: NaN,
+    productSalePrice: NaN,
+    productPages: NaN,
     productLanguage: "",
     productDesc: "",
-    productInStock: 0,
+    productInStock: NaN,
   });
 
   const [date, setDate] = useState({
@@ -47,6 +47,27 @@ function AddProduct() {
 
   const handleUploadProduct = async () => {
     try {
+      let allFill = 0;
+
+      for (let props in input) {
+        if (input[props] && props !== "productUploadDate") {
+          allFill++;
+          console.log(props);
+        }
+      }
+
+      for (let props in date) {
+        if (date[props]) {
+          allFill++;
+          console.log(props);
+        }
+      }
+      if (image) allFill++;
+
+      console.log(allFill);
+
+      if (allFill < 14) throw new Error("Missing information");
+
       const payload = { ...input };
       payload.productPublishDate = `${date.date}-${date.month}-${date.year}`;
       payload.productAuthors = payload.productAuthors.split(" ");
@@ -57,11 +78,6 @@ function AddProduct() {
       const toyear = toDate.getFullYear();
 
       payload.productUploadDate = `${today}-${tomonth + 1}-${toyear}`;
-
-      payload.productPages = +payload.productPages;
-      payload.productInStock = +payload.productInStock;
-      payload.productPrice = +payload.productPrice;
-      payload.productSalePrice = +payload.productSalePrice;
 
       data.append("productName", input.productName);
       data.append("productAuthors", payload.productAuthors);
@@ -79,7 +95,9 @@ function AddProduct() {
 
       const res = await uploadProductApi.post(data);
       console.log(res);
+      alert("Upload successfull");
     } catch (error) {
+      alert("Upload failed, check your information");
       console.error(error);
     }
   };
